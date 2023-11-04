@@ -92,8 +92,7 @@ def tiktoken_len(text):
 def clean_string(input_doc):
     placeholder = "<DOUBLE_NEWLINE>"
     step1 = input_doc.page_content.replace("\n\n", placeholder)
-    step2 = step1.replace("\n", "").replace(" ", "")
-    step2 = step2.replace(".", "")
+    step2 = step1.replace("\n", "").replace(" ", "").replace(".", "").replace('\x00', "")
     result = step2.replace(placeholder, "\n\n")
     cleaned_text = re.sub('[\ue000-\uf8ff]', '', result)
     final_text = re.sub(r'\s+', "", cleaned_text)

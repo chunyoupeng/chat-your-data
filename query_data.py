@@ -1,9 +1,12 @@
 from httpx import stream
+from langchain.schema import StrOutputParser
+from langchain.llms import OpenAI
 from langchain.chains import RetrievalQA, ConversationalRetrievalChain
 from langchain.output_parsers import ResponseSchema
 from langchain.output_parsers import StructuredOutputParser
 from langchain.callbacks.manager import CallbackManager
 from langchain.prompts.prompt import PromptTemplate
+from langchain.prompts import ChatPromptTemplate
 from langchain.vectorstores.base import VectorStoreRetriever
 from langchain.chat_models import ChatOpenAI
 from langchain.chat_models import AzureChatOpenAI
@@ -40,49 +43,58 @@ Answer:"""
 
 template_zh = """
 ### Instruction ###
-Take deep and think step by step.
-您是一个专业和熟练的作家,能够根据如下背景中的所有信息,回答问题, 组织成一个连贯的段落。
-只能根据提供的背景材料回答. 如果您不知道答案,只需说“嗯,我不确定”。不要试图编造答案。您可以在给定的文本基础上扩展.
-写作风格符合常见的中文学术写作风格。
-=========
+您是一个很能写的写作助手,写的文章字数又多,文章又优美.能够根据下面<context>中的所有信息写出文章.
+多引用背景材料, 对每一个例子都要有具体的分析, 避免出现总结性的语句.如果出现相关的数据,作者名,文章名,必须要全部引用出来 .不能漏掉. 
+如果您不知道答案,只需说“嗯,我不确定”。不要试图编造答案。
+写作风格符合常见的中文学术写作风格。要包函<context>中的所有内容.
+<context>
 背景: {context}
-=========
-问题:{question}
-除了人名和文献引用之外, 其它的输出必须用中文输出.
-输出：
+<context/>
+用中文输出.1000字
 """
 
+# 你应该针对你的问题进行针对性提问和扩展。你不能回答提出的问题, 只能分点提问,你的输出只能是问题, 输出5个问题, 用中文回答.
 question_generator_template = """
 Take deep and think step by step.
-您是一个专业和熟练的作家,能够根据用户的反馈提取所有相关的信息,并组织成一个连贯的段落。如果您不知道答案,只需说“嗯,我不确定”。不要试图编造答案。您可以在给定的文本基础上扩展.写作风格符合常见的中文学术写作风格。
-现在你是一个提问小助手, 你非常善于提问,但不会回答问题.你的任务是根据下面提供的问题将问题进行扩展, 制造出更多的问题,用来指导写作.只提出5个问题就可以了.要从不同的角度去提问,
+现在你是一个提问小助手, 你非常善于提问,但不会回答问题.你的任务是根据下面提供的问题将问题进行扩展, 制造出更多的问题,用来指导写作.只提出8个问题就可以了.要从不同的角度去提问,
 因为我想得到不同观点的相关信息.
 =========
 你输出的是一系列的问题而不是分析.要以问号结尾.参考如下问题:
 Template:
-Question是: 什么叫废物固体处理?我们可以从废物固处理得到什么?
-你应该输出:
+<Question>: 什么叫废物固体处理?我们可以从废物固处理得到什么?
+<Output>:
     1. 废物固体处理的定义是什么，它与其他废物处理方式有何不同？
     2. 废物固体处理的历史背景和发展是怎样的？
     3. 哪些因素促使我们需要对废物固体进行处理？
     4. 废物固体处理的各个阶段包括哪些步骤？
     5. 哪些技术和方法常用于废物固体处理？
-上面的问题只是参考，你应该针对你的问题进行针对性提问和扩展。你不能回答提出的问题, 只能分点提问,你的输出只能是问题, 输出5个问题, 用中文回答.
 =========
 Question是: {question}
-输出:
+<Output>:
+"""
+
+sentence_change_template = """
+你的任务是把下面的陈述句改成一个有启发性的疑问句,只输出疑问句:
+陈述句:{question}
+疑问句:
 """
 
 QA_PROMPT = PromptTemplate(template=template_zh, input_variables=[
                            "question", "context"])
 QG_PROMPT = PromptTemplate(
     template=question_generator_template, input_variables=["question"])
-
+SENTENCE_CHANGE_PROMPT = PromptTemplate.from_template(template=sentence_change_template)
+ANSWER_PROMPT = ChatPromptTemplate.from_messages(
+    [
+        ("system", template_zh),
+        ("user", "{question}"),
+    ]
+)
 PATH = "vector_src"
 OUT_PATH = "out"
 
 
-def get_llm(name):
+def get_llm(name, temperature=0.1):
     endpoint_url = "http://127.0.0.1:8000"
     glm = ChatGLM(
         endpoint_url=endpoint_url,
@@ -90,39 +102,70 @@ def get_llm(name):
         top_p=0.3,
         model_kwargs={"sample_model_args": False},
     )
+
+    ai = OpenAI(
+        model="gpt-3.5-turbo",
+        openai_api_base="http://localhost:8000/v1",
+        openai_api_key="EMPTY",
+        max_tokens=8000,
+        temperature=temperature,
+        streaming=True,
+        callbacks=[StreamingStdOutCallbackHandler()]
+    )
     local_llm = ChatOpenAI(
         model="gpt-3.5-turbo",
         openai_api_base="http://localhost:8000/v1",
         openai_api_key="EMPTY",
         max_tokens=8000,
-        temperature=0.1,
-        streaming=True,
-        callbacks=[StreamingStdOutCallbackHandler()]
+        temperature=temperature,
+        # streaming=True,
+        # callbacks=[StreamingStdOutCallbackHandler()]
     )
 
     openai_llm = ChatOpenAI(
         openai_api_base="https://aiapi.xing-yun.cn/v1",
         openai_api_key="sk-3e5wTBAl2iFDvQvW9b5693C90a97425eBf3b4bEa558eC66a",
-        temperature=0.1,
+        temperature=temperature,
         model_name="gpt-4",
-        streaming=True,  # ! important
-        callbacks=[StreamingStdOutCallbackHandler()]  # ! important
+        # streaming=True,  # ! important
+        # callbacks=[StreamingStdOutCallbackHandler()]  # ! important
+    )
+
+    openai_llm_3 = ChatOpenAI(
+        openai_api_base="https://aiapi.xing-yun.cn/v1",
+        openai_api_key="sk-3e5wTBAl2iFDvQvW9b5693C90a97425eBf3b4bEa558eC66a",
+        temperature=temperature,
+        model_name="gpt-3.5-turbo",
+        # streaming=True,  # ! important
+        # callbacks=[StreamingStdOutCallbackHandler()]  # ! important
     )
     if name == 'local':
         return local_llm
     elif name == 'openai':
         return openai_llm
+    elif name == 'openai_3':
+        return openai_llm_3
     elif name == 'glm':
         return glm
     return None
 
 
-def QG_chain():
+def get_chain(prompt_name, llm_name='local'):
 
-    llm = get_llm('local')
-    # llm = ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0.6)
-    llm_chain = LLMChain(prompt=QG_PROMPT, llm=llm)
-    return llm_chain
+    llm = get_llm(llm_name)
+    qg_chain = QG_PROMPT | llm | StrOutputParser()  # Generate question
+    sentence_change_chain = SENTENCE_CHANGE_PROMPT | llm | StrOutputParser() # Generate ?
+    # From docs import useful information
+
+    doc_chain = ANSWER_PROMPT | llm | StrOutputParser()
+    chain = None 
+    if prompt_name == 'qg':
+        chain = qg_chain
+    elif prompt_name == 'sentence_change':
+        chain = sentence_change_chain
+    elif prompt_name == 'doc':
+        chain = doc_chain
+    return chain
 
 
 def init():
@@ -136,12 +179,11 @@ def init():
         os.makedirs(OUT_PATH)
 
 
-def load_retriever():
-    to_file = PATH + "/" + sys.argv[1] + "-vectorstore.pkl"
+def load_db(root_path):
+    to_file = PATH + "/" + root_path + "-vectorstore.pkl"
     with open(to_file, "rb") as f:
-        vectorstore = pickle.load(f)
-    retriever = VectorStoreRetriever(vectorstore=vectorstore)
-    return retriever
+        db = pickle.load(f)
+    return db
 
 
 
