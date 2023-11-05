@@ -1,4 +1,4 @@
-#指定ChatGLM2-6B的API endpoint url，用langchain的ChatOpanAI类初始化一个ChatGLM的chat模型
+# ----------------------PI endpoint url，用langchain的ChatOpanAI类初始化一个ChatGLM的chat模型
 from langchain.chat_models import ChatOpenAI
 llm = ChatOpenAI(
         model="gpt-3.5-turbo",

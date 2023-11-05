@@ -78,7 +78,14 @@ sentence_change_template = """
 陈述句:{question}
 疑问句:
 """
+thanks_template = """你的任务是结合文本内容和给出的论文致谢写出一个更丰富,内容更多的论文致谢部份
+文本:
+{text}
+参考论文致谢:
+{thanks}
+丰富后的论文致谢:
 
+"""
 QA_PROMPT = PromptTemplate(template=template_zh, input_variables=[
                            "question", "context"])
 QG_PROMPT = PromptTemplate(
@@ -90,20 +97,17 @@ ANSWER_PROMPT = ChatPromptTemplate.from_messages(
         ("user", "{question}"),
     ]
 )
+THANKS_PROMPT = PromptTemplate.from_template(
+    template=thanks_template
+)
 PATH = "vector_src"
 OUT_PATH = "out"
 
 
 def get_llm(name, temperature=0.1):
-    endpoint_url = "http://127.0.0.1:8000"
-    glm = ChatGLM(
-        endpoint_url=endpoint_url,
-        max_token=80000,
-        top_p=0.3,
-        model_kwargs={"sample_model_args": False},
-    )
 
-    ai = OpenAI(
+
+    stream = ChatOpenAI(
         model="gpt-3.5-turbo",
         openai_api_base="http://localhost:8000/v1",
         openai_api_key="EMPTY",
@@ -145,8 +149,8 @@ def get_llm(name, temperature=0.1):
         return openai_llm
     elif name == 'openai_3':
         return openai_llm_3
-    elif name == 'glm':
-        return glm
+    elif name == 'stream':
+        return stream
     return None
 
 
@@ -155,6 +159,7 @@ def get_chain(prompt_name, llm_name='local'):
     llm = get_llm(llm_name)
     qg_chain = QG_PROMPT | llm | StrOutputParser()  # Generate question
     sentence_change_chain = SENTENCE_CHANGE_PROMPT | llm | StrOutputParser() # Generate ?
+    thanks_chain = THANKS_PROMPT | llm |StrOutputParser()
     # From docs import useful information
 
     doc_chain = ANSWER_PROMPT | llm | StrOutputParser()
@@ -165,6 +170,8 @@ def get_chain(prompt_name, llm_name='local'):
         chain = sentence_change_chain
     elif prompt_name == 'doc':
         chain = doc_chain
+    elif prompt_name == 'thanks':
+        chain = thanks_chain
     return chain
 
 

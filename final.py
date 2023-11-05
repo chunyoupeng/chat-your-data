@@ -17,6 +17,18 @@ set_verbose(True)
 # 写作
 
 
+def get_thanks(content):
+    thanks = """论文致谢:
+    这篇论文的完成得到了许多人的帮助与支持。我首先要向我的指导老师表示最深的感激，感谢您的无私奉献和精心指导。同时，我也要感谢那些与我并肩奋斗的同学，你们的友情与支持是我前进的力量。最重要的，我要感谢我的父母，你们是我永远的坚强后盾。每当想到大学生活，我都会感慨万千。"""
+    chain = get_chain('thanks')
+    return chain.invoke({"text": content, "thanks": thanks})
+
+def get_reference(content):
+    import re
+    pattern = re.compile(r'\[\d+\].*?(?=\n|$)')
+    matches = pattern.findall(content)
+    rt = '\n'.join(matches)
+    return rt
 
 def to_docx(filename):
 
@@ -74,10 +86,11 @@ def extend_content(question, content):
     原文:
     {text}
 
-    对原文扩写, 作为{question}的一部份，并引用相关的具体研究和数据支持你的论点。"""
+    对原文扩写, 作为{question}研究中的一部份"""
     write_prompt = PromptTemplate.from_template(temp)
     write_chain = write_prompt | llm | StrOutputParser()
     rt = write_chain.invoke({"text":content, "question": question})
+    rt = rt.replace("首先，", "").replace("其次，", "更进一步的说").replace("最后，", "").replace("再者 ，","").replace("再次 ，","")
     print(f"The second content is {rt}")
     return rt
 
@@ -97,4 +110,13 @@ if __name__ == "__main__":
             result = extend_content(question, draft_text)
             final_file.write(result + "\n\n")
     final_file.close()
+    with open(final_file_path, "a+", encoding="utf-8") as f:
+        f.seek(0)
+        content = f.read()
+        refs = get_reference(content=content)
+        ref_text = "\n参考文献\n\n" + refs + "\n"
+        f.write(ref_text) 
+        thanks = get_thanks(content[0:2000])
+        text = "\n## 致谢\n\n" + thanks + "\n"
+        f.write(text)
     to_docx(final_file_path)
