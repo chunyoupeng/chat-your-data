@@ -9,6 +9,11 @@ import sys
 import tiktoken  # !pip install tiktoken
 
 OUT_PAPER_PATH="out_paper"
+INPUT_PAPER_PATH="input_paper"
+if not os.path.exists(OUT_PAPER_PATH):
+    os.mkdir(OUT_PAPER_PATH)
+if not os.path.exists(INPUT_PAPER_PATH):
+    os.mkdir(INPUT_PAPER_PATH)
 
 tokenizer = tiktoken.get_encoding('p50k_base')
 def tiktoken_len(text):
@@ -18,15 +23,13 @@ def tiktoken_len(text):
     )
     return len(tokens)
 
-llm = get_llm("glm")
+llm = get_llm("local")
 trans_template = """
 你的任务是下面的内容翻译成中文.Only output the translated version of the original text. Don't fucking talking!
 要翻译的文本:{context}
 """
 prompt_template = PromptTemplate.from_template(trans_template)
 chain = LLMChain(llm=llm, prompt=prompt_template)
-if not os.path.exists(OUT_PAPER_PATH):
-    os.makedirs(OUT_PAPER_PATH)
 
 def translate_document(document):
     trans_text_splitter = RecursiveCharacterTextSplitter(
@@ -62,4 +65,4 @@ def load_paper(directory):
             print(f"{filename} load successfully")
 
 if __name__ == "__main__":
-    load_paper("en_papers")
+    load_paper(INPUT_PAPER_PATH)
