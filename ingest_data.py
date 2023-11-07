@@ -28,7 +28,6 @@ def convert_docx_to_pdf_and_delete(source_folder):
         # Full path to the doc/docx file
         input_file_path = os.path.join(source_folder, doc_file)
         output_file_path = os.path.join(source_folder, os.path.splitext(doc_file)[0] + '.pdf')
-        
         # Convert using libreoffice
         subprocess.call(['libreoffice', '--headless', '--convert-to', 'pdf', '--outdir', source_folder, input_file_path])
 
@@ -80,8 +79,8 @@ def delete_space(path):
 
 
 
-
 def tiktoken_len(text):
+    tokenizer = tiktoken.get_encoding('p50k_base')
     tokens = tokenizer.encode(
         text,
         disallowed_special=()
@@ -105,8 +104,7 @@ def clean_string(input_doc):
 
 
 
-
-if __name__ == "__main__":
+def main():
 
     PATH = "vector_src"
     print("Loading data...")
@@ -119,6 +117,8 @@ if __name__ == "__main__":
         os.makedirs(PATH)
 
     DIR_SAVED = PATH + "/" + sys.argv[1] + "-vectorstore.pkl"
+    if os.path.exists(DIR_SAVED):
+        return
     folder_path = "docs/" + sys.argv[1]  # path to xx_src
     convert_docx_to_pdf_and_delete(folder_path)
     loader = PyPDFDirectoryLoader(folder_path)
@@ -148,3 +148,6 @@ if __name__ == "__main__":
 
     with open(DIR_SAVED, "wb") as f:
         pickle.dump(vectorstore, f)
+
+if __name__ == "__main__":
+    main()

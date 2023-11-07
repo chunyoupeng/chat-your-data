@@ -1,5 +1,6 @@
 # import 
 from os import write
+import random
 from change_sentence import *
 from query_data import *
 from langchain.prompts import PromptTemplate
@@ -21,7 +22,10 @@ def get_thanks(content):
     thanks = """论文致谢:
     这篇论文的完成得到了许多人的帮助与支持。我首先要向我的指导老师表示最深的感激，感谢您的无私奉献和精心指导。同时，我也要感谢那些与我并肩奋斗的同学，你们的友情与支持是我前进的力量。最重要的，我要感谢我的父母，你们是我永远的坚强后盾。每当想到大学生活，我都会感慨万千。"""
     chain = get_chain('thanks')
-    return chain.invoke({"text": content, "thanks": thanks})
+    rt =  chain.invoke({"text": content, "thanks": thanks})
+    rt = rt.replace("首先，", "").replace("其次，", "").replace("最后，", "").replace("再者 ，","").replace("再次 ，","")
+    return rt 
+
 
 def get_reference(content):
     import re
@@ -90,7 +94,7 @@ def extend_content(question, content):
     write_prompt = PromptTemplate.from_template(temp)
     write_chain = write_prompt | llm | StrOutputParser()
     rt = write_chain.invoke({"text":content, "question": question})
-    rt = rt.replace("首先，", "").replace("其次，", "更进一步的说").replace("最后，", "").replace("再者 ，","").replace("再次 ，","")
+    rt = rt.replace("首先，", "").replace("其次，", "").replace("最后，", "").replace("再者 ，","").replace("再次 ，","")
     print(f"The second content is {rt}")
     return rt
 

@@ -23,8 +23,8 @@ if __name__ == "__main__":
         for title, statement in questions.items():
             c.print("question is " + statement)
             if statement:
-                question = get_chain('sentence_change', llm_name='openai').invoke({"question": statement})
-                new_questions = get_chain("qg", llm_name='openai').invoke({"question": question}).split('\n')
+                question = get_chain('sentence_change', llm_name='openai_3').invoke({"question": statement})
+                new_questions = get_chain("qg", llm_name='openai_3').invoke({"question": question}).split('\n')
                 # new_question = get_chain.run(question=question).split('\n')
                 new_questions = [question] + new_questions
                 c.print(f"==============================\nNew questions is {new_questions}")
