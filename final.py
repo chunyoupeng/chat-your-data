@@ -1,5 +1,6 @@
 # import 
 from os import write
+import re
 import random
 from change_sentence import *
 from query_data import *
@@ -95,6 +96,9 @@ def extend_content(question, content):
     write_chain = write_prompt | llm | StrOutputParser()
     rt = write_chain.invoke({"text":content, "question": question})
     rt = rt.replace("首先，", "").replace("其次，", "").replace("最后，", "").replace("再者 ，","").replace("再次 ，","")
+    pattern = r"（[^）]*）"
+    rt = re.sub(pattern, "", rt)
+
     print(f"The second content is {rt}")
     return rt
 
