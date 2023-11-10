@@ -1,0 +1,822 @@
+1
+Towards Robust and Efficient Communications
+for Urban Air Mobility
+Dennis Becker1, Lukas Schalk1,
+1Institute of Communications and Navigation, German Aerospace Center (DLR), Wessling, Germany
+Abstract
+For the realization of the future urban air mobility, reliable information exchange based on robust and efficient communication
+between all airspace participants will be one of the key factors to ensure safe operations. Especially in dense urban scenarios,
+the direct and fast information exchange between drones based on Drone-to-Drone communications is a promising technology for
+enabling reliable collision avoidance systems. However, to mitigate collisions and to increase overall reliability, unmanned aircraft still
+lack a redundant, higher-level safety net to coordinate and monitor traffic, as is common in today’s civil aviation. In addition, direct
+and fast information exchange based on ad hoc communication is needed to cope with the very short reaction times required to avoid
+collisions and to cope with the the high traffic densities. Therefore, we are developing a D2D communication and surveillance system,
+called DroneCAST, which is specifically tailored to the requirements of a future urban airspace and will be part of a multi-link
+approach. In this work we discuss challenges and expected safety-critical applications that will have to rely on communications for
+UAM and present our communication concept and necessary steps towards DroneCAST. As a first step towards an implementation,
+we equipped two drones with hardware prototypes of the experimental communication system and performed several flights around
+the model city to evaluate the performance of the hardware and to demonstrate different applications that will rely on robust and
+efficient communications.
+Index Terms —unmanned aviation, urban air mobility, drone-to-drone communications, collision avoidance, measurements, flight
+demonstration
+NOMENCLATURE
+AGC Automatic Gain Control
+CNPC Control and Non Payload Communication
+COTS Commercially off the Shelf
+DAA Detect and Avoid
+DroneCAST Drone Communication and Surveillance Technology
+D2D Drone-to-Drone
+GBAS Ground Based Augmentation System
+GPSDO GPS Disciplined Oscillator
+LOS Line of Sight
+SDR Software Defined Radio
+SNR Signal to Noise Ratio
+UAM Urban Air Mobility
+UTM Unmanned Aircraft System Traffic Management
+1 Introduction
+In the near future, the urban airspace will be shared by
+piloted as well as unpiloted and autonomous aircraft, so-
+called drones. Current airspace management concepts, such
+as SESAR U-Space [1] and NASA UTM [2], rely on a
+reliable exchange of information between all participants for
+a safe integration of the new participants in urban airspace.
+In particular, unpiloted aircraft such as drones depend on this
+data exchange. Although robust communication is a central
+aspect of all concepts, there is currently no communication
+system that has been adapted to the specific challenges of this
+environment. In addition, due to the high density of drones,
+the management of urban airspace, called Unmanned Aircraft
+System Traffic Management (UTM), will be fundamentally
+different from the way it is currently handled in civil aviation.
+Continuous remote control of all the drones by a remote
+pilot in communication with UTM will not be possible dueto the high traffic density and short reaction times needed
+to avoid collisions. Instead, UTM will heavily rely on pre-
+planned and conflict-free trajectories as well as continuous
+monitoring. Drones will fly these trajectories in an automated
+or autonomous manner. The implementation of this UTM
+concept will rely, at least in part, on existing communications
+infrastructure, such as mobile communication in order to
+connect the drones to the UTM [3] . Under ideal conditions,
+this approach may seem sufficient. However, upon closer
+inspection, weaknesses quickly become apparent, such as a
+lack of redundancy or a lack of an overarching safety net, as
+is common in civil aviation and shipping, or as is envisioned
+for future autonomous driving [4]–[7] .
+But the urban environment is very challenging from a physical
+layer point of view, with rich multipath signal propagation as
+well as shadowing and diffraction events when flying close to
+surrounding objects such as tall buildings. Therefore, we are
+developing an ad hoc communication concept that is adapted
+to the specific challenges of the urban environment and takes
+into account the requirements of the potential applications.
+The ad hoc communication concept refers to the technical
+communication on the air interface between different nodes
+and is designed as a redundant data link in addition to other
+communication options in the context of a multi-link approach.
+2 Challenges and Applications for Communi-
+cation Systems for Urban Air Mobility
+Communication systems for use in urban airspace face
+unique challenges that must be considered when selecting an
+appropriate system. The expected high density of drones mustarXiv:2309.08796v1  [eess.SP]  15 Sep 20232
+be considered along with high mobility in three-dimensional
+space and rapidly changing topologies. Communication re-
+sources are limited and must be shared by all participants,
+whether airborne or ground based. The efficient use of re-
+sources and scalability is critical. In urban environments, the
+transmitted electromagnetic signals are reflected, scattered and
+diffracted by many surrounding objects such as buildings,
+vegetation and cars like illustrated in fig. 1 The multipath
+propagation of the signal can cause unfavorable overlap at the
+receiver and must be taken into account during reception to
+allow reconstruction of the transmitted signal. In addition, such
+interference can also be expected between different signals of
+the participants, especially in the air, where there is a high
+visibility between the vehicles and possible communication
+infrastructures in a dense space [8]. In addition, direct signal
+propagation can be expected to be shadowed by larger objects
+such as buildings at lower altitudes, so that only reflected and
+diffracted components can be received. Influences from the air-
+craft itself, such as shadowing from their frame, electrical and
+mechanical sources of interference, must also be considered.
+Fig. 1: Major signal propagation effects to consider in the
+urban D2D communications channel.
+The layout of the aircraft’s capability may also lead to
+possible limitations in terms of size, weight and power con-
+sumption, known as SWaP constraints. This must then be taken
+into account in the choice of the transceiver performance.
+In addition, the requirements of various applications and
+future regulations in the field of urban air mobility are not
+yet well known. Figure 2 provides an overview of several
+other categories that interact with communications in the
+urban airspace and may need to be considered. In addition
+to the specific signal propagation effects already mentioned,
+any application that requires information exchange with the
+airborne vehicles may also place direct requirements on the
+communication system. For example, a certain amount of data
+must be transmitted within a certain time, the data link must
+be highly available, or a minimum number of subscribers,
+i.e., scalability, must be ensured. There may also be indirect
+requirements or influences on the communication system. For
+example, a command or important information for an aircraft
+to avoid an obstacle may need to be provided in a more timely
+manner if the aircraft is traveling faster, if the aircraft is verysluggish in the evasion obstacles, or has a limited mobility.
+Also, if position accuracy is degraded, increased separation
+and other separation rules may need to be applied, requiring
+more timely or frequent information exchanges. An on-board
+autonomy system may need to send information back to UTM,
+depending on the level of autonomy, or require certain clear-
+ances that may not be automated. Required security measures
+also mean increased data exchange and data volume. More
+broadly, various environmental factors place demands on the
+communications system. Weather, for example, can degrade
+signal propagation conditions or affect flight performance,
+such as in the case of strong wind gusts. In addition, events
+such as bird strikes may require active detection and transmis-
+sion of critical information to the aircraft.
+However, for communication in urban environments, col-
+lision avoidance in densely populated airspace will be a
+key application, as reliable and decentralized exchange of
+position data and trajectories between individual drones will be
+required. In this context, there is a high demand for the lowest
+possible transmission latency to enable the shortest possible
+reaction times.
+3 Multi-link Approach for Robust Communi-
+cation
+To realize the upcoming UAM, a wide variety of appli-
+cations will be used, each with different requirements on
+communication. It is therefore very difficult for a single com-
+munication system to cover the wide range of requirements.
+Therefore, we pursue a multi-link approach, i.e. a combination
+of different data links, as it is also aimed at in other concepts
+[2], [9]–[11]. A multi-link approach combining different data
+link technologies has many advantages over a single data
+link. The increase in redundancy and the increase in the
+performance of the overall system are the key aspects here.
+In addition, the initial effort required for the step-by-step
+implementation of applications such as U-Space Services is
+reduced. Existing communication systems can be used first,
+even if they have not been adapted for the application, and
+then future adapted data links can be added or the existing
+systems can be adapted according to the requirements. We
+distinguish different systems in the categories of infrastructure
+communication and adhoc communication.
+For most use cases, the already existing communication
+infrastructure in the urban area will be sufficient, since for a
+large part the exchange of information is not security-critical
+and the required amounts of data can be transmitted over it
+with a certain delay. Since collision avoidance is a particularly
+safety-critical application in urban areas, we consider an
+specifically tailored and redundant safety network based on
+an ad hoc communication system to be the most important
+element for this application. In this case, important information
+for collision avoidance should be exchanged primarily via a
+direct and adapted data link between vehicles.
+We consider the construction of a combined communication
+and monitoring system, which shall meet the following
+characteristics.3
+Fig. 2: Overview of categories that have direct or indirect mutual relationships with communication for Urban Air Mobility.
+1)Cooperative Collision Avoidance
+Cooperative collision avoidance based on ad hoc
+communication between drones will be implemented
+that creates an additional, decentralized safety net
+without having to rely on communication infrastructure.
+2)Redundant Monitoring and Tracking of Aircraft
+Not only can ad hoc communications be used to
+establish a direct link between drones, but redundant
+monitoring of drone movements can be established
+using appropriate ground stations to support the UTM.
+This can be done using the position messages of
+all drones in range, which are already broadcast for
+collision avoidance.
+3)Backup Datalink
+For most applications, non-critical information can be
+sent over existing communication infrastructure. Nev-
+ertheless, it may be useful to have a redundant bi-
+directional data link available for this as well to increase
+reliability. Furthermore, it is not yet possible to estimate
+which other possible critical applications will require a
+reliable data link or low latencies in addition to collision
+avoidance. Therefore, it makes sense to build a basic
+backup data link that goes beyond a conventional pure
+beaconing system for collision avoidance. Here it would
+be possible to establish only direct links between the
+airborne participants and possible ground stations or to
+allow links over multiple ”hops”. A ”multihop” com-
+munication across multiple participants would signifi-
+cantly increase the capability of a backup data link and
+create a new communication infrastructure, but implies
+additional effort in implementation and overhead in the
+communication itself. For example, routing algorithms
+would need to be implemented to route messages to therecipient via the correct path. The challenge here lies
+primarily in the rapidly changing network topology due
+to the high mobility of participants and changing sig-
+nal propagation conditions. Thus, an initially preferred
+connection path between two nodes as part of a route
+can quickly become unfavorable or even fail completely
+if the communication characteristics deteriorate or the
+connection is quickly disrupted by shadowing.
+Figure 3 illustrates such an multi-link approach considering
+mobile communication and sat-based communication as avail-
+able infrastructure in urban environments.
+Fig. 3: Multi-link approach as communication concept in DLR
+project HorizonUAM.4
+4 Adhoc Communication as Solution for Colli-
+sion Avoidance in Urban Airspace
+In road traffic, drivers avoid collisions with other vehicles
+by using their eyes to monitor their surroundings and braking
+or swerving as soon as they detect that another vehicle is on a
+collision course. In today’s vehicles, optional assistance sys-
+tems help the driver detect potential collisions. For example,
+adaptive cruise control systems use on-board sensors such as
+RADAR, LIDAR, or cameras to adjust the vehicle’s speed to
+maintain a safe distance from vehicles ahead.
+Beyond that, a variety of other sensors can be used to
+detect collision courses in road traffic, air traffic, rail traffic,
+or maritime traffic. Basically, sensors can be divided into
+two types: Cooperative obstacle detection sensors and non-
+cooperative obstacle detection sensors. Figure 4 provides an
+overview of the different sensor types for detect-and-avoid
+(DAA) systems.
+Fig. 4: Overview and classification of Detect-and-Avoid sys-
+tems.
+Cooperative obstacles actively attract attention, for example
+by emitting a signal. Non-cooperative obstacles do not call
+attention to themselves. Sensors that detect non-cooperative
+systems can be further divided into active and passive systems.
+Active systems emit a signal and detect the reflection of
+the obstacle. An example of an active system is a RADAR.
+Passive systems detect obstacles by detecting unintentionally
+emitted signals, such as thermal radiation. Cooperative systems
+are widely used in all traffic domains to create situational
+awareness among vehicles. Therefore, every vehicle is required
+to periodically transmit its own position and intent to nearby
+vehicles via an ad-hoc communications system. Popular sys-
+tems are 1090 Extended Squitter for air traffic, IEEE 802.11p
+for road traffic, RCAS for rail traffic and AIS for maritime
+traffic.
+The main advantage of cooperative systems is the fact that
+cooperative systems typically provide very accurate informa-
+tion about position, direction, and speed, as well as addi-
+tional information that non-cooperative systems cannot easily
+provide, such as the type of target and its state. Moreover,ad-hoc communication is a way of transmitting data without
+relying on any fixed infrastructure. It has several advantages
+for collision avoidance, especially in critical situations where
+every millisecond counts. Ad-hoc communication can achieve
+lower latency than infrastructure communication, which means
+that the data can be delivered faster and more reliably. Ad-hoc
+communication can also serve as a backup in case the infras-
+tructure communication fails or is not available. Compared to
+RADAR and LIDAR, ad-hoc communication can cover higher
+ranges and works even in case of signal shadowing, which is
+when the signal is blocked or weakened by objects or weather
+conditions. Furthermore, ad-hoc communication can enable
+extended information exchange between the communicating
+vehicles, such as evasion instructions and information about
+trajectories. This can help to coordinate the actions and avoid
+conflicts. Finally, ad-hoc communication can have lower power
+consumption than RADAR, which means that it can save
+energy and reduce costs.
+Cooperative detect and avoid via ad-hoc communication
+systems has also some disadvantages. First, the information
+that is transmitted must be trusted, since there is no guarantee
+that it is accurate or authentic. Therefore, security measures are
+needed to ensure the reliability and integrity of the communi-
+cation. Second, ad-hoc communication requires an additional
+communication module, which adds costs, weight and power
+consumption to the vehicles or participants. This may affect
+their performance and efficiency. However, safety should not
+be compromised for the sake of saving resources. Third, ad-
+hoc communication can only detect uncooperative participants,
+who do not share their information or intentions with others.
+This means that there may be some hidden or unexpected
+threats that are not accounted for by the communication.
+5 Development of a Drone-to-Drone Channel
+Model for Urban Environments based on
+Measurements
+In 2019, German Aerospace Center (DLR) conducted a
+wideband channel sounding measurement campaign with
+two small hexacopters to measure drone-to-drone (D2D)
+propagation characteristics in an urban environment. The
+campaign took place at the DLR site in Oberpfaffenhofen,
+Germany, in three different environments with different
+flight trajectories including critical scenarios, where two
+communicating drones are not always in LOS to each
+other and are on a collision course. A channel sounding
+signal was transmitted in the C-band at 5.2 GHz with a
+bandwidth of 100 MHz and a transmit power of 30 dBm
+using omnidirectional and vertically polarized radiating
+antennas mounted underneath the drones. The measurement
+setup, hardware equipment and flight scenarios are described
+in detail in [12], [13].
+Based on these measurements, we proposed a wideband
+channel model for D2D scenarios in urban environments in
+[14] to help evaluating and validating different communica-
+tion concepts and datalink candidates via simulations without5
+having the need to perform complex and time costly mea-
+surement campaigns. By considering the underlying signal
+propagation effects in urban environments the robustness of
+datalink candidates can be improved. The model follows a
+geometrical-statistical channel modeling (GSCM) approach
+and incorporates coarse-grained knowledge about realistic
+locations and shapes for buildings to model the propagation
+effects closely to their physical cause in real-world. It is
+antenna independent and considers the identified dominant
+signal propagation effects from our measurements, but can
+easily incorporate further statistics. A more detailed discussion
+on the propagation characteristics and preliminary steps are
+presented in [15] and [16]. Figure 5 gives an overview of the
+model elements and fig. 6 shows the steps in the simulation
+chain.
+Fig. 5: Overview of elements for the D2D channel model.
+First, coarse-grained abstract building shapes are placed
+according to the scenario under investigation. The locations
+and shapes of buildings in the surrounding environment very
+much influence the propagation characteristics of the urban
+D2D channel and therefore this initial placement helps to
+achieve realistic distribution of all other model elements. For
+this, statistical descriptions for urban environments like in
+the ITU-R Rec. P.1410 model [17] for example or direct 3D
+geometries from land surveying offices or similar can be used.
+Fig. 6: Overview of the simulation chain for the D2D channel
+model.
+After the definition of the building shapes, the flight trajec-
+tories are defined and the properties of two different elements
+are drawn from statistical distributions. There are point scat-
+terers with certain opening angles and scattering losses placed
+at different positions on the surfaces as well as reflection
+surfaces with certain dimensions and reflection losses. After
+this initialization phase the scenario is fully defined and the
+communication channel properties are generated in a snap-
+shot based manner given the targeted time resolution. Then
+different propagation effects are calculated for the simplified
+resulting signal paths for all elements. Finally, the super-
+imposed signal is calculated at the receiver.
+6 Development of DroneCAST
+As an essential part of the described multi-link approach
+in sec.3, we aim to develop a data link tailored to the
+special requirements and challenges for the safe operation of
+UA Vs in urban areas. As a redundant data link based on the
+direct exchange between the vehicles, this supplements the
+communication alongside the available communication infras-
+tructure such as through mobile or sat communication. The
+concept for this ad hoc communication first takes into account
+the requirements imposed by the main application, collision
+avoidance, since this is the most safety-critical application and
+the exchange of information is given priority. But we expect
+following three different applications within UAM that will
+have rely on communication to airspace participants over the
+radio and are safety-critical to ensure a safe operation. First,6
+cooperative collision avoidance based on direct communica-
+tions will be needed resolve potential conflicts in the last
+course of action like shown in fig. 8a. In order to ensure
+the high requirements for navigation such as high position
+accuracy and high availability, the navigation concept will
+also rely on redundant design of onboard sensors such as
+GNSS, IMU or cameras and the fusion of these sensor data.
+In addition to his, broadcasting GNSS correction data from
+ground based augmentation system (GBAS) groundstations
+to airborne vehicles may support their navigation. For this,
+information must be transmitted from the ground stations to
+the drones like shown in fig. 8b. As third possible application,
+broadcasting important infos from vertiports to all vehicles in
+close distance such as in emergency cases for example might
+be needed like illustrated in fig 8c.
+For this we proposed Drone Communication and Suriveil-
+lance Technology (DroneCAST) [18] in order to establish an
+additional, decentralized and robust safety layer for the UTM
+concept as third level of the general levels like shown in
+fig. 7. We discussed first design decisions as well as analyzed
+requirements for DroneCAST. It is supposed to work reliably
+up to a drone density of 100 drones per square kilometer
+while using not more than 5 MHz of frequency bandwidth
+in the C-band at between 5030 MHz to 5091 MHz, which is
+already foreseen for drone communications. Major identified
+challenges are the severe multipath propagation environment
+and sudden shadowing events from a physical layer point-of-
+view and the high expected drone densities as well as limited
+communication resources from a medium access control point-
+of-view.
+Fig. 7: Three general levels of deconfliction.
+(a) Collision Avoidance
+(b) GBAS Transmitter
+(c) Vertiport Communication
+Fig. 8: Expected safety-critical applications for urban air
+mobility relying on communications over radio interface.7
+7 Experimental Platform and Flightdemonstra-
+tions towards DroneCAST
+As a first step towards an implementation of DroneCAST,
+we equipped two drones with hardware prototypes of the
+experimental communication system and performed several
+flights around the model city to evaluate the performance
+of the hardware in comparison to commercially-off-the-shelf
+(COTS) hardware and to demonstrate different applications
+that will rely on robust and efficient communications. The
+flight tests are to show if the hardware is suitable for a later
+implementation and can be flown by our drones.
+7.1 Experimental Radio
+The basis hardware for our experimental radio is a
+Software Defined Radio (SDR) together with a software
+implementation of the IEEE 802.11p WiFi standard for
+vehicular communication [7] on an small companion
+computer. The software implementation, which consists of
+different building blocks for a transmission system, runs
+in GNU radio, a signal processing framework, and was
+developed as an open source stack in [19]. In order increase
+the transmitted signal power of the SDR we added an signal
+amplifier and for time synchronization we are using a GPS
+disciplined oscillator that can be accessed by the SDR.
+Following list gives an overview of the hardware elements
+of the experimental radio.
+•Software Defined Radio: Ettus USRP B210
+•Companion Computer: Intel NUC (Ubuntu 20.04.6
+LTS, GNU Radio)
+•Amplifier: Coaxial ZX60-83LN 21 dB gain
+•Time Synchronization: Board Mounted GPSDO
+(TCXO)
+•Power Supply: 100 W DC Converter for 19V , 100 W
+DC Converter for 6V
+The elements are also illustrated in the payload setup shown
+in fig. 10.
+The GNU radio implementation uses a TAP interface, which
+is a virtual Ethernet device, on the companion computer and
+it enables to use the SDR as an IP based data link device.
+Thus, the experimental radio is able to transmit different
+application data via IP interface. As first modifications to-
+wards DroneCAST we also changed the center frequency to
+5050 MHz, which is within the foreseen frequency band of
+5030 MHz to 5091 MHz and halved the bandwidth from
+10 MHz to 5 MHz and tested the modifications.
+We first evaluated the performance of our setup under ideal
+laboratory conditions by connecting two experimental radios
+with defined attenuators. Thereby we transmitted 25·103
+packets of 125 Byte payload data with a transmission rate
+of 10 Hz for different attenuation values with and without
+amplifying the signal. Without amplification the USRP B210
+is able to transmit with up to 10 dBm. With the amplifier we
+set the resulting transmission power to about 23 dBm in order
+to achieve similar transmission power as for the COTS radio, a
+Cohda Wireless Mk5. The amplifier has a gain of 21 dB, which
+means the same settings on the SDR result in a transmissionpower about 2 dBm. We repeated the measurement with and
+without the amplifier in order to evaluate if the amplifier causes
+signal distortions which would lead to increased packet errors.
+Figure 9 shows the resulting packet error rates over different
+attenuation values. Furthermore, it shows the Signal to Noise
+Ratio (SNR) values at packet reception indicated by the SDR.
+These values help us to evaluate the in-flight measurement
+results described in section 7.3.
+Fig. 9: Measured packet error rates and received SNR values
+under ideal lab conditions without and without signal ampli-
+fication.
+We can clearly see, that the two measurements with and
+without amplifier only differ according to the gain of 21 dB.
+Therefore, we assume a low-distortion amplification and the
+amplifier is feasible for our setup. Furthermore, the measure-
+ments reveal that the radios are only able to receive packets
+in a certain SNR range. For attenuation of 110 dB and 90 dB
+respectively the received signal power is too low and starting
+with 90 dB and 70 dB respectively the signal power starts to
+overdrive the radio until no packet can be decoded any more.
+The dynamic range is relatively small, because there is no
+active automatic gain control (AGC). The hardware offers a
+built-in AGC, but the hardware driver does not active it when
+using the GNU radio framework.
+7.2 Integrated Payload on Hexacopter and Flighttrial
+Setup
+We integrated our experimental radio as payload on our
+hexacopters. We are using two custom build hexacopters8
+based on DJI S900 airframes with upgraded E1200 propulsion
+system. They are equipped with two 10 Ah batteries at nominal
+voltage of 22.2 V and are able to carry up to 3 kg of
+payload with a flight time of approximately 15 to 20 minutes.
+Furthermore, they are using a Pixhawk 2 flight controller
+and have Raspberry Pi 4 companion computers in order to
+communicate with the flight controller via MA VLink messages
+over a serial interface. Figure 10 shows the main elements
+of our flight trial setup used for all in-flight measurements.
+Thereby we switched between the experimental radio and the
+COTS radio, but we were also able to carry both payloads for
+the flight demonstrations.
+Fig. 10: Overview of elements for integrated paylaod on
+drones.
+This setup enables the transmission of flight controller data
+over the radios for different applications and also to send
+commands to the flight controller.
+7.3 In-flight Measurements
+We equipped our two hexacopters with the given hardware
+prototypes for collecting in-flight measurement data in and
+around the model city. In order to asses the experimental
+radio, we first performed three different flight missions and
+compared the performance between the experimental radio and
+the COTS hardware. Then we measured the performance when
+flying close and in between the model city providing nonLOS
+scenarios. Figure 11 illustrates the overall flight trial setup for
+the measurements consisting of our two hexacopters equipped
+with one of the two payload options.
+The measurements and results are discussed in the follow-
+ing sections. Overall the measurements and demonstrations
+showed a feasible bidirectional information exchange for the
+experimental radio setup. We increased the transmission power
+by using an signal amplifier in order to achieve similar
+transmission power compared to the COTS radio and we used
+additional GPSDO extension boards in order to synchronize all
+the radios with GPS time reference. However, the performance
+of our experimental radio was slightly worse to the COTShardware due to a missing AGC and weaker SNR values. In
+all line of sight (LOS) measurement scenarios, no packet losses
+occurred for the COTS radio whereas the experimental radio
+showed packet errors between 4%−8%.
+Fig. 11: Overview of flight trial setup for the in-flight mea-
+surements.
+7.3.1 Flight Mission 1
+For Mission 1 the transmitting drone was hovering at a
+defined height of 15 m and the receiving drone was flying
+four circles with a radius of 30 m around the hovering drone
+in three different heights at 10 m, 15 m and 20 m. Figure 12
+illustrates the flight mission and figure 13 shows the flight
+heights as well as the distances between the drones as direct
+three-dimensional distance and as two-dimensional distance
+above the ground. The flying drone always headed towards
+the next mission waypoint indicated as dots in the figure.
+Due to navigation accuracy, the flown trajectories were not
+always the same but closely followed the path given the
+waypoints for all measurement scenarios. In this scenario, the
+distance between the drones stays more or less the same and
+only slightly changes with the drone heights. Therefore, this
+scenario enables to analyze the impact of air frame shadowing
+without changing the fading due to multipath propagation.
+7.3.2 Results Mission 1
+Figure 14 shows the measured received SNR values of the
+experimental radio for the whole flight and the instants in time
+when packets where not successfully received together with
+the distances. It can be seen that mostly packet errors occur
+at low SNR values and the SNR values reveal a repeating
+pattern and vary between values lower than 10 dB and higher
+than 30 dB. Figure 15 shows again the received SNR value
+and the packet errors overlay-ed on the trajectories in two and
+three dimensional layouts. On the map we can clearly see that
+the repeating pattern of the SNR values results from different
+height independent viewing angles between the drones and are
+caused by the airframe shadowing of the hovering drone. The
+overall packet error rate for this measurement was about 4%
+and the main reason was a too weak achieved SNR value for
+the experimental radio.
+For comparison to the experimental radio we performed
+this measurement for the COTS hardware. Figure 16 shows
+the received SNR values and the distances, but this time no
+packet errors have occurred. The repeating pattern is again
+recognizable and the indicated values are higher compared to
+the values of the experimental radio but the differences are
+similar. This result shows, that the COTS radio can achieve
+higher SNR values for the same received signal powers.9
+(a) 2D
+(b) 3D
+Fig. 12: Mission 1: Waypoint mission points and flight trajec-
+tories for transmitting (TX) and receiving (RX) drone.
+Fig. 13: Mission 1: Heights of drones and distances between
+them.
+Fig. 14: Mission 1: Measurement results for experimental radio
+setup.
+(a) 2D
+(b) 3D
+Fig. 15: Mission 1: Measurement results overlay-ed on map
+for experimental radio setup.10
+Figure 17 illustrates the results again on a map. We again
+Fig. 16: Mission 1: Measurement results for COTS hardware
+setup.
+can clearly see the influence of the airframe shadowing.
+7.3.3 Flight Mission 2
+For Mission 2 the receiving drone flew the same flight
+trajectory as in Mission 1, but the transmitting drone was
+hovering at a different position outside the circles. In this
+scenario, the distance between the drones changes in order
+to analyze the influence of fading in comparison to the results
+of Mission 1. Figure 18 illustrates the mission plotted on a
+map and fig. 19 shows the drones heights and the distances
+between them.
+7.3.4 Results Mission 2
+Figure 20 shows the measured received SNR values of the
+experimental radio for the whole flight and the instants in time
+when packets where not successfully received together with
+the distances. It can be seen that mostly packet errors occur
+at low SNR values and the SNR values reveal a repeating
+pattern and vary between values lower than 10 dB and higher
+than 30 dB. Figure 21 shows again the received SNR value
+and the packet errors overlay-ed on the trajectories in two and
+three dimensional layouts. On the map we can clearly see that
+the repeating pattern of the SNR values results from different
+height independent viewing angles between the drones and are
+caused by airframe shadowing but this time of the hovering
+drone and the flying drone. In comparison to Mission 1,
+slightly more packet errors occur. The overall packet error
+rate for this measurement was about 8%and the main reason
+was a too weak achieved SNR value for the experimental radio
+caused by airframe shadowing.
+For comparison to the experimental radio we performed this
+measurement for the COTS hardware. Figure 22 shows the
+received SNR values and the distances, but no packet errors
+have occurred. The repeating pattern is again recognizable and
+the indicated values are higher compared to the values of the
+experimental radio but the differences are similar. Figure 23
+illustrates the results again on a map. We again can clearly
+see the influence of the airframe shadowing.
+(a) 2D
+(b) 3D
+Fig. 17: Mission 1: Measurement results on map for COTS
+hardware setup.
+7.3.5 Flight Mission 3
+For Mission 3 both drones were flying at heights about 20 m
+above ground on parallel trajectories and were repeatingly
+coming close down to about 10 m distance and flying away
+from each other to about 60 m distance. For this scenario
+the viewing angles only changed when flying forwards or
+backwards the trajectory in order to analyze the influences
+of fading and distance without airframe shadowing.
+7.3.6 Results Mission 3
+Figure 26 shows the measured received SNR values of the
+experimental radio for the whole flight and the instants in time
+when packets where not successfully received together with
+the distances. This time we can see packet errors additionally
+due to high SNR values when the receiver was not able to
+handle the high signal power. Figure 27 shows again the
+received SNR values and the packet errors overlay-ed on the
+trajectories in two and three dimensional layouts. On the map
+we can clearly see that the repeating pattern of the SNR values
+mostly results from the distances between the drones. When11
+(a) 2D
+(b) 3D
+Fig. 18: Mission 2: Waypoint mission points and flight trajec-
+tories for transmitting and receiving drone.
+Fig. 19: Mission 2: Heights of drones and distances between.
+they come close to each other at half of the mission path then
+Fig. 20: Mission 2: Measurement results for SDR setup.
+(a) 2D
+(b) 3D
+Fig. 21: Mission 2: Measurement results on map for SDR
+setup.
+the received signal power gets too high due to low distance12
+Fig. 22: Mission 2: Measurement results for COTS hardware
+setup.
+(a) 2D
+(b) 3D
+Fig. 23: Mission 2: Measurement results on map for COTS
+hardware setup.
+(a) 2D
+(b) 3D
+Fig. 24: Mission 3: Waypoint mission points and flight trajec-
+tories for transmitting and receiving drone.
+Fig. 25: Mission 3: Heights of drones and distances between.
+and when they are at furthest distance away from each other,13
+Fig. 26: Mission 3: Measurement results for SDR setup.
+the received signal power gets too low. The overall packet
+(a) 2D
+(b) 3D
+Fig. 27: Mission 3: Measurement results on map for SDR
+setup.error rate for this measurement was about 6%.
+For comparison to the experimental radio we performed this
+measurement for the COTS hardware. Figure 28 shows the
+received SNR values and the distances, but no packet errors
+have occurred. The repeating pattern is again recognizable and
+the indicated values are higher compared to the values of the
+experimental radio but the differences are similar. Figure 29
+Fig. 28: Mission 3: Measurement results for COTS hardware
+setup.
+illustrates the results again on a map. We again can clearly
+see the influence of the airframe shadowing.
+7.4 Flight Demonstrations at Model City
+In addition to our measurements, we also demonstrated
+following different drone-to-drone and drone-to-infrastructure
+communications around the model city
+•Secured Transmission of differential ground augmenta-
+tion data (GBAS) with broadcast authentication protocol
+TESLA [20]
+•Transmission of the drone’s live position and monitoring
+on a ground station
+•Cooperative collision avoidance by broadcasting flight
+trajectories and automatically stopping the drones to hold
+position
+For this we used the overall setup shown in fig. 30. For the
+collision avoidance scenario we used our experimental radio
+for the D2D communication and transmitted monitoring mes-
+sages down to a ground station via the COTS radio. In order
+to exchange trajectory information and to send commands to
+the flight controllers in order to stop their flight missions in
+case of emergent collision, we executed a python script on
+the raspberry pi companion computers on the drones and used
+the pymavlink library in order to communicate with the flight
+controller via MA VLink.14
+(a) 2D
+(b) 3D
+Fig. 29: Mission 3: Measurement results on map for COTS
+hardware setup.
+Fig. 30: Overview of major elements of flight trial setup.Figure. 31 shows a video screenshot of the collision avoid-
+ance scenario demonstrated with our experimental setup at the
+model city. Thereby it shows the Live Monitoring screen with
+the received trajectories of both drones at a time when the
+collision avoidance application stopped the drones flight and
+sent an emergency message down to the monitoring ground
+station.
+Fig. 31: Flight demonstration of collision avoidance with
+experimental setup at model city.
+For the GBAS transmission for the drones we used one
+drone as broadcasting station at the ground like shown in
+fig. 32 and let one drone fly in and around the model city.
+In order to secure the transmission we used an software
+implementation of the TESLA protocol that was already
+demonstrated in our group at a flight trial with a piloted aircraft
+to secure the broadcast of GBAS correction data via LDACS
+[21].
+Fig. 32: Flight demonstration of secured GBAS transmission
+to drone around model city.
+8 Conclusion and Outlook
+In this work, we presented a multi-link approach with a
+focus on an ad-hoc communication concept that will help to
+reduce the probability of mid-air collisions and thus increase
+social acceptance of urban air mobility. As an essential part15
+of the described multi-link approach, we aim to develop
+DroneCAST, a data link tailored to the special requirements
+and challenges in urban airspace, in order to establish an
+additional, decentralized and robust safety layer for the UTM
+concept. For the development of DroneCAST, we make use of
+our Drone-to-Drone Channel Model for Urban Environments,
+which is based on measurements in order to increase the
+robustness and efficiency. As a first step towards an implemen-
+tation, we equipped two drones with hardware prototypes of
+an experimental communication system and performed several
+flights around a model city to evaluate the performance of the
+hardware and to demonstrate different applications that will
+rely on robust and efficient communications. Results showed
+the feasibility of the experimental hardware setup. However,
+a missing automatic gain control for this setup resulted in a
+weaker performance compared to a COTS radio. Therefore,
+in the next steps we aim to develop a next level hardware
+prototype for a DroneCAST radio and also will target physical
+layer robustness and security topics.
+References
+[1] SESAR Joint Undertaking, “U-space blueprint,” 2017.
+[2] FAA/NASA, “UTM Concept of Operations V2,” Mar. 2020.
+[3] D. Geister, “DLR U-Space Blueprint,” p. 26, 2017.
+[4] RTCA, “DO-260B - Minimum Operational Performance Standards for
+1090 MHz Extended Squitter Automatic Dependent Surveillance -
+Broadcast (ADS-B) and Traffic Information Services - Broadcast (TIS-
+B),“,” 2009.
+[5] RTCA, “DO-282B with Corrigendum 1 - Minimum Operational Perfor-
+mance Standards for Univer-sal Access Transceiver (UAT) Automatic
+Dependent Surveillance – Broadcast,“,” 2011.
+[6] ITU, “Technical characteristics for an automatic identification system
+using timedivision multiple access in the VHF maritime mobile band,
+Recommendation ITU-R M.1371-4,” 2014.
+[7]802.11p-2010 - IEEE Standard for Information Technology– Local
+and Metropolitan Area Networks– Specific Requirements– Part 11:
+Wireless LAN Medium Access Control (MAC) and Physical Layer (PHY)
+Specifications Amendment 6: Wireless Access in Vehicular Env. Place
+of publication not identified: IEEE, 2010.
+[8] B. Van Der Bergh, A. Chiumento, and S. Pollin, “LTE in the sky: Trading
+off propagation benefits with interference costs for aerial nodes,” IEEE
+Communications Magazine , vol. 54, no. 5, pp. 44–50, May 2016.
+[9] I. Z. Kovacs, “DroC2om - 763601 - D4.3 Integrated cellular-satellite
+inter-system design solutions for high reliability UAS data links,” p. 68,
+2019.
+[10] Fraunhofer Heinrich-Hertz-Institut, “SUCOM - Superior UTM Commu-
+nication System, https://sucom.tech/,” 2022.
+[11] J. C. Dauer, Ed., Automated Low-Altitude Air Delivery: Towards Au-
+tonomous Cargo Transportation with Drones , ser. Research Topics in
+Aerospace. Cham: Springer International Publishing, 2022.
+[12] D. Becker and L. Schalk, “Enabling Air-to-Air Wideband Channel
+Measurements between Small Unmanned Aerial Vehicles with Optical
+Fibers,” in 2019 IEEE/AIAA 38th Digital Avionics Systems Conference
+(DASC) . San Diego, CA, USA: IEEE, Sep. 2019, pp. 1–7.
+[13] D. Becker, U.-C. Fiebig, and L. Schalk, “Wideband Channel Measure-
+ments and First Findings for Low Altitude Drone-to-Drone Links in an
+Urban Scenario,” in 2020 14th European Conference on Antennas and
+Propagation (EuCAP) . Copenhagen, Denmark: IEEE, Mar. 2020, pp.
+1–5.
+[14] D. Becker, U.-C. Fiebig, and L. M. Schalk, “Modeling the Drone-to-
+Drone Communications Channel for Urban Environments,” in 2023 17th
+European Conference on Antennas and Propagation (EuCAP) , Firenze,
+Italy, 2023.
+[15] D. Becker, U.-C. Fiebig, and L. M. Schalk, “Drone-to-drone propagation
+characteristics in urban safety-critical scenarios,” in 2022 IEEE Confer-
+ence on Antenna Measurements and Applications (CAMA) . Guangzhou,
+China: IEEE, Dec. 2022, pp. 1–6.[16] D. Becker and U.-C. Fiebig, “Measurement Based Identification of
+MPCs in an Urban Drone-To-Drone Propagation Scenario,” in 2022 16th
+European Conference on Antennas and Propagation (EuCAP) , Madrid,
+2022.
+[17] ITU, “RECOMMENDATION ITU-R P.1410-5 - Propagation data and
+prediction methods required for the design of terrestrial broadband radio
+access systems operating in a frequency range from 3 to 60 GHz,” p. 34,
+2012.
+[18] L. M. Schalk and D. Becker, “DroneCAST – Analysis of Requirements
+and Discussion of First Design Decisions,” in 2022 IEEE/AIAA 41st
+Digital Avionics Systems Conference (DASC) . Portsmouth, V A, USA:
+IEEE, Sep. 2022, pp. 1–9.
+[19] B. Bloessl, M. Segata, C. Sommer, and F. Dressler, “Towards an Open
+Source IEEE 802.11p stack: A full SDR-based transceiver in GNU
+Radio,” in 2013 IEEE Vehicular Networking Conference . Boston, MA,
+USA: IEEE, Dec. 2013, pp. 143–149.
+[20] A. Perrig, R. Canetti, J. D. Tygar, and D. Song, “The TESLA Broadcast
+Authentication Protocol,” p. 11, 2003.
+[21] N. Maurer, T. Graupl, M. A. Bellido-Manganell, D. M. Mielke, A. Filip-
+Dhaubhadel, O. Heirich, D. Gerbeth, M. Felux, L. M. Schalk, D. Becker,
+N. Schneckenburger, and M. Schnell, “Flight Trial Demonstration of
+Secure GBAS via the L-band Digital Aeronautical Communications
+System (LDACS),” IEEE Aerospace and Electronic Systems Magazine ,
+vol. 36, no. 4, pp. 8–17, Apr. 2021.

@@ -1,0 +1,537 @@
+Impact of UA Vs Equipped with ADS-B on the Civil
+Aviation Monitoring System
+Yiyang Liao†, Lei Zhang†, Ziye Jia†, Chao Dong†∗, Yifan Zhang†, Qihui Wu†, Huiling Hu∦and Bin Wang∦
+†The Key Laboratory of Dynamic Cognitive System of Electromagnetic Spectrum Space,
+Ministry of Industry and Information Technology, Nanjing University of Aeronautics and Astronautics
+∦Middle-south Regional Air Traffic Management Bureau of CAAC
+∗Corresponding author, email: dch@nuaa.edu.cn
+Abstract —In recent years, there is an increasing demand for
+unmanned aerial vehicles (UA Vs) to complete multiple applica-
+tions. However, as unmanned equipments, UA Vs lead to some
+security risks to general civil aviations. In order to strengthen
+the flight management of UA Vs and guarantee the safety, UA Vs
+can be equipped with automatic dependent surveillance-broadcast
+(ADS-B) devices. In addition, as an automatic system, ADS-B can
+periodically broadcast flight information to the nearby aircrafts
+or the ground stations, and the technology is already used in civil
+aviation systems. However, due to the limited frequency of ADS-B
+technique, UA Vs equipped with ADS-B devices result in the loss
+of packets to both UA Vs and civil aviation. Further, the operation
+of civil aviation are seriously interfered. Hence, this paper firstly
+examines the packets loss of civil planes at different distance, then
+analyzes the impact of UA Vs equipped with ADS-B on the packets
+updating of civil planes. The result indicates that the 1090MHz
+band blocking is affected by the density of UA Vs. Besides, the
+frequency capacity is affected by the requirement of updating
+interval of civil planes. The position updating probability within
+3s is 92.3 %if there are 200 planes within 50km and 20 UA Vs
+within 5km. The position updating probability within 3s is 86.9 %
+if there are 200 planes within 50km and 40 UA Vs within 5km.
+Index Terms —UA V , ADS-B, civil aviation, frequency band
+blocking.
+I. I NTRODUCTION
+WITH the development of low-altitude economics, the
+unmanned aerial vehicles (UA Vs) play increasingly
+important roles in this area [1]. Moreover, UA Vs are considered
+as a significant technique in the future wireless access network
+[2] [3]. UA Vs can be utilized to many applications, such as
+surveillance system, aviation photography, information retrans-
+mission, etc. Besides, UA Vs can be applied to many detailed
+scenarios such as fire rescue, ecological observation, terrain
+exploration, etc [4]. However, how to ensure the safe operation
+of UA Vs becomes an important issue due to the lack of on-
+board operation. One possible solution is to equip UA Vs with
+automatic dependent surveillance-broadcast (ADS-B) facilities,
+which is maturely applied in civil aviations [5].
+ADS-B in international civil aviation organization (ICAO)
+is used to assist traditional primary and secondary radar
+surveillance [6]. An aircraft equipped with ADS-B can auto-
+matically transmit its position as well as other information to
+the surrounding aircrafts, vehicles and ground stations (GS) [7].These information not only helpful to flying safety but to other
+aspects like communication network as well [8]. The ADS-B
+technique allows aircrafts to identify each other’s positions,
+and automatically maintain safe distance. In addition, ADS-B
+helps the air traffic controller (ATC) to monitor and control the
+aircrafts on the route or approaching the airport terminal. In
+short, ADS-B has the following advantages:
+•ADS-B helps build new air route in remote aeras lacking
+ground radar stations, such as polar regions, mountains
+and oceans.
+•ADS-B helps improve the navigation accuracy, reduce the
+flight safety separation distance and increase the available
+airspace.
+•ADS-B helps the planes to climb and descend without the
+contact with ATC, to avoid the unavailable airspace and
+flexibly change air route.
+UA Vs equipped with ADS-B system contribute to the fly-
+ing safety, and simplify the UA V control by the air traffic
+management (ATM). However, this approach has a limitation
+that the ADS-B system in UA Vs and civil aviation share the
+same frequency band (1090MHz). Due to the limited frequency
+resources, if many UA Vs use this frequency band, the data
+packets from UA Vs and civil planes will have conflicts, result-
+ing in the packets loss and the longer delay of civil aviation
+related information. It seriously interferes the monitoring of
+civil aviation by the ATM. Due to the fault tolerance of air
+route updating interval, some UA Vs can access within the
+same frequency. However, the frequency resource utilization
+decreases if the number of accessed UA Vs is too small. Thus,
+how to balance the number of UA Vs and civil planes becomes
+an essential problem.
+There exist some related works, for example, [9] points out
+that due to the low threshold of software defined radio and the
+openness of 1090MHz, the packets loss in this frequency band
+becomes increasingly serious. The loss rate of packets 50km
+away from the GS is as high as 62 %. [10] points out that 1500
+aircrafts can be support to send the ADS-B signal only if the
+channel can be perfectly allocated. However, apart from ADS-
+B signal (S-mode extended signal), there also exist abundant
+S-mode and A/C-mode signal in the channel. Hence, the qua-arXiv:2307.01534v1  [eess.SP]  4 Jul 2023Planes with ADS -B
+UAVs with ADS -B100km
+GSX
+YZ
+OFig. 1. Considered airspace model.
+TABLE I
+S-M ODE EXTENDED PACKET
+Bytes 5bits 3bits 24bits 56bits 24bits
+Field Name DF CA/CF AA ME PI
+ntity of 1500 is only a theoretical value [11]. In [12], the
+authors use the downlink format (DF) 17 code to represent civil
+planes and the DF 18 code to represent UA Vs. It points out that
+the influence of frequency band blocking is mainly affected by
+the density and the signal transmission power of UA Vs. Based
+on ALOHA protocol, [13] discusses the relationship between
+the load and the throughput, and the relationship between the
+number of planes and the successful receiving probability. [14]
+points out that the channel capacity is mainly affected by the
+link bit error rate, and changes as the requirement of packets
+updating interval varies. However, these works don’t take the
+civil planes and UA Vs into account at the same time. Also,
+these works don’t consider the 3D model as well as the channel
+error.
+As shown in Fig. 1, this paper studies the influence of UA Vs
+equipped with ADS-B on 1090MHz and analyzes the infulence
+of certain number of UA Vs accommodated under a given
+packets updating interval of civil planes. Firstly, this work
+examines the packets collision loss of civil planes at different
+distance without UA Vs. Then, we consider the error loss into
+the channel propagation. Finally, we analyze the packets loss of
+civil planes with different number of UA Vs. The data indicates
+that the 1090MHz band blocking is affected by the density of
+the UA Vs. Besides, the frequency capacity is affected by the
+requirement of updating interval of civil planes.
+The rest of this paper is organized as follows. The ADS-B
+related packets are introduced in Section II. Channel model
+is introduced in Section III. Section IV provides the simula-
+tion results and corresponding analyses. Section V draws the
+conclusions.TABLE II
+PACKET INTERV AL
+ADS-B Packet Generating interval (s) Shaking interval (s)
+POS 0.5 0.4∼0.6
+VEL 0.5 0.4∼0.6
+ID 5 4.8∼5.2
+AOS 2.5 2.4∼2.6
+TSS 1.25 1.2∼1.3
+TABLE III
+AIR TO GROUND DATA LINK
+Air-ground 95 %probability of position updating interval
+Range 3 miles around terminal 5 miles en route
+Updating interval (s) 3 6
+II. ADS-B R ELATED PACKETS
+This Section demonstrates the structure of classic ADS-B
+packet and the functions of different fields. Then, this Section
+elaborates the detailed information about airborne position
+packet. Finally, this Section introduces the shaking interval of
+all ADS-B affiliated packets.
+A. Structure of Classic ADS-B Packet
+ADS-B is the S-mode extended data packet, and its main
+body length is 112 bits, as shown in Table I [15]. The DF field
+is 5 bits long and is used to distinguish different downlink
+formats. DF=17 indicates that the S-mode transponder sends
+ADS-B packets, while DF=18 indicates that the nonS-mode
+transponder sends ADS-B packets. The code ability/code for-
+mat (CA/CF) field has different meanings with different DF
+values. If DF=17, the field is CA, indicating the transponder
+capability. If DF=18, the field is CF, indicating the encoding
+format. The aircraft address (AA) field indicates the address
+of the transmitting device. The message (ME) field contains
+the ADS-B service data. The parity and identity (PI) field is
+a downlink field, indicating parity and identity. However, each
+ADS-B packet has 8 bits control string, so a single ADS-B
+packet has a total of 120 bits and lasts 120 µs. ADS-B packets
+are sent periodically by the aircrafts, or the corresponding
+packets can be sent after being triggered by specific events.
+Different ME fields respectively contain the aircraft airborne
+position (POS), aircraft identification and category (ID), air-
+borne velocity (VEL), aircraft operational status (AOS), aircraft
+target status and other information (TSS). Different ADS-B
+packets and their corresponding generating interval are shown
+in Table II. The average generating interval of POS packet is
+0.5s, and the interval of VEL packet is 0.5s. Furthermore, the
+interval of ID packet is 5s, and the interval of AOS packet is
+2.5s. The interval of TSS packet is 1.25s. In order to mitigate
+conflicts, the generating interval is not a fixed interval, but a
+shaking interval.
+B. Airborne Position Packet
+The ADS-B system broadcasts the POS packets to the
+outside world with a period of 0.5s, which is the most importantpacket of all ADS-B afiliated packets. After receiving several
+POS packets, the GS generates the track of the corresponding
+aircraft on its radar. When packets are continuously lost, the
+GS clears the flight path of the aircraft, and the aircraft is
+deemed to leave its controlled airspace. Due to the impact
+of packets collision or channel fading, POS packets are lost
+inevitably. So the position updating interval is introduced to
+measure the updating quality, which means the GS doesn’t need
+to receive all the POS packets, but to receive a POS packet in
+a limited time. As shown in Table III, as for the air-ground
+data link, the ADS-B receiver at the airport terminal requires a
+95%probability of no more than 3s, for the updating interval
+of the POS packet of the aircrafts within 3 miles. The ADS-
+B receiver on the air route requires a 95 %probability of no
+more than 6s, for the updating interval of the POS packet of
+the aircrafts within 5 miles [16].
+C. The shaking interval
+In this paper, we introduce the shaking interval to replace the
+average generating interval aiming to mitigate packets conflict.
+As shown in Table II, the shaking interval of POS packet is
+[0.4s, 0.6s]. The shaking interval of VEL packet is [0.4s, 0.6s].
+The shaking interval of ID packet is [4.8s, 5.2s]. The shaking
+interval of AOS packet is [2.4s, 2.6s]. The shaking interval
+of TSS packet is [1.2s, 1.3s]. The S-mode packet (SMAG)
+payload is 56-bits, and with the 8 bits control string, the actual
+total length is 64 bits. In [17], the authors point out that the
+ratio of the number of S-mode and ADS-B packets is 1:1, so
+we assume that each aircraft transmits 5 S-mode packets per
+second.
+III. C HANNEL MODEL
+As shown in Fig. 1, planes are randomly distributed in the
+airspace with a radius of 50km. Due to the small size and
+limited endurance distance, UA Vs are randomly distributed in
+the airspace with a radius of 5km. The ADS-B receiver in GS
+is located in the two-dimensional geometric center within the
+airspace range.
+All planes and UA Vs access the channel of 1090MHz by
+random access, i.e., the ALOHA protocol is adopted as the
+media access control (MAC) protocol.
+All aircrafts are within the one-hop range, i.e., packets do
+not need to be relayed. If a packet has no error code during
+the channel transmission and does not overlap with the packets
+sent by other aircrafts, it can reach the GS and be correctly
+received.
+In processing radio signals, the power or amplitude of a
+signal is usually expressed in decibels (dB). The following
+formulas use dB to express the signal relationship.
+The ADS-B transmission power of the planes are fixed at P
+(dBm) and the ADS-B transmission power of the UA Vs are
+fixed at p(dBm). GS is set as a ADS-B receiving station
+with a receiving sensitivity of A(dBm). A random distance
+parameter d∈(0km∼50km) is generated for each aircraft,
+and it represents the straight distance from the aircraft to GS.When the considered time is small, it is assumed that each
+aircraft is quasi-static, i.e., the distance from each aircraft to
+GS is invariable. All software-defined radio transmissions are
+considered as line-of-sight. f(MHz) represents the working
+frequency. Then, the propagation Loss (dBm) is calculated by
+the following propagation formula:
+Loss = 32.44 + 20lg d+ 20lg f. (1)
+ADS-B packets adopt 8 PSK channel encoding form for 112
+bits [18] [19]. The input signal power of the demodulator S
+(dBm) is:
+S=P−Loss. (2)
+AndSmust satisfies: S≥A. The gaussian white noise
+power is N=n0×B.n0is the power density of gaussian white
+noise, and Bis the bandwidth. Since the ADS-B system oper-
+ates at 1090MHz, this frequency band belongs to the ultra-high
+frequency. In the civil aviation system, 962MHz ∼1213MHz is
+used for distance measuring equipment system, and the channel
+interval is 1MHz. However, 1090MHz is remained for the
+ADS-B system. Hence, the bandwidth B=1MHz. The input
+signal to noise ratio (SNR) of the demodulator is r:
+r=S
+N. (3)
+The bit error rate Peformula of M-scale PSK is:
+Pe= 1−1
+2πZπ
+M
+−π
+Me−r[1 +√
+4πrcosθer(cosθ)2
+1√
+2πZ√
+2rcosθ
+−∞e−x2
+2dx]dθ.(4)
+When Mis 8, the bit error rate Peformula is approximated as:
+Pe≈erfc(r
+rsinπ
+M). (5)
+In reality, there are three situations for packets loss: packets
+collision, packets error, and error packet conflicts with intact
+packet. Packets collision means two packets arrive at the GS
+simultaneously, which makes the packets discarded. Packets
+error means some error codes occur during the channel propa-
+gation, which also makes the packets discarded. What’s more
+the packet may continue to reach the GS even it has bit errors
+and conflicts with intact packet, resulting in packets collision.
+Therefore, it is not possible to simply generate a random factor
+at the aircraft to judge whether the packet has bit errors and
+discard it directly. Besides, a random factor cannot be generated
+at the GS to determine whether the packet has bit errors and
+discard it directly. Moreover, to guarantee the fairness to all
+packets, random factor i∈(0∼1)is set in the aircraft. And
+ifi <(1−Pe), we record it as a good packet in the array.
+Ifi≥(1−Pe), the packet is recorded as a bad packet in the
+array. Since all packets propagating in the free space, leading
+to the collisions with each other and generating packets loss,
+the GS discards bad packets in statistics collection.Start
+Initialize the interval s for generating  packet s
+Set simulation time
+Aircrafts generate initial packets
+Queue the first packet in line
+Advance  simulation clock
+Slot startPackets type
+VEL POS AOS TSS SMAG ID
+Add sequence number
+Events type
+Slot start Sending endSending
+ startMAC 
+receivedArrived
+Carrier 
+sense
+ Packets conflict
+MAC  
+receivedRecord   
+sending 
+and 
+receiving
+ time
+Sending 
+endRecord   
+channel 
+status
+Sending 
+startStatistics on  
+received 
+packets 
+Statistics on 
+continuous 
+packet 
+lossRecord 
+arriving 
+time
+Generate 
+new packets 
+at shaking 
+interval
+ArrivedSlot end 
+Slot endNo
+Simulation time endYes
+No
+Collect results
+EndYesNoYesPlug back into 
+sending queue
+Packets 
+error
+NoYesPlug back into 
+sending queueFig. 2. Flowchart.
+IV. S IMULATION RESULTS AND ANALYSES
+In this Section, we use CodeBlocks to conduct simulations,
+aiming to examine the capcity of 1090MHz. The simulations
+are based on queueing system with discrete events. The events
+only appear at countable time points, so the system state can
+only change at countable time points. Without continuity, event
+processing only needs to be carried out when events change.
+The system simulation flow chart is shown in the Fig. 2. The
+total simulation time is set as 500 seconds. The operating
+frequency is 1090MHz.
+50 100 150 200
+Number of planes0.880.90.920.940.960.981The received ratioMaximum
+Average
+MinimumFig. 3. The received ratio on different planes.
+The received ratio used in the simulations is defined as:
+The received ratio =Number of packets received by GS
+Number of packets sent by aircrafts.
+(6)
+In Fig. 3, 50/100/150/200 planes are set respectively, and
+the ADS-B only sends POS packet and ID packet. There only
+exists collision packets loss. The number of planes and the
+received ratio are shown in Fig. 3. As from the Fig. 3, different
+numbers of planes correspond to different received ratio. As the
+number of planes increases, the collision of packets intensifies,
+and the received ratio decreases.
+As shown in Fig. 4, the number of planes is fixed as 200,
+and the ADS-B sends POS packet, ID packet, VEL packet, TSS
+packet, AOS packet and S-mode packet. There exists collision
+packets loss. As shown in Fig. 4, after the introduction of 6
+kinds of packets, the received ratio decreases significantly, and
+the average received ratio is 68.15 %. The loss of the POS
+packet of GS is shown in Table IV. The preceding packets loss
+cases do not include each other. GS successfully receives 632
+POS packets and lost 372 POS packets. The average period of
+generating POS packet is 0.5s. If the requirement of updating
+interval is 3s, i.e., more than 6 consecutive packets loss are
+regarded as the position is not updated. The position updating
+probability within 3s is 97.8 %.
+As demonstrated in Fig. 5, each plane is added with the
+distance factor, and the packets propagation is added with the
+channel model. After adding the distance factor, apart from
+the loss of packets caused by collision, error codes caused by
+propagation loss also make packets discarded. The number of
+planes is fixed as 200, and the ADS-B sends 6 kinds of packets.
+The relationship between the received ratio and distance is
+shown in Fig. 5. As the distance increases, the propagation
+loss increases, the packet error increases, and the received ratio
+decreases. The average received ratio is 48.66 %. The loss of
+the POS packet of GS is shown in Table IV. In total, 464 POS
+packets are received and 533 POS packets are lost. The average
+period of generating POS packet is 0.5s. If the requirement of
+updating interval is 3s, i.e., more than 6 consecutive packets
+loss are regarded as the position is not updated. The position
+updating probability within 3s is 93.2 %.0 50 100 150 200
+Plane No.0 to No.1990.660.670.680.690.70.71 The received ratioFig. 4. The received ratio on different planes.
+0 10 20 30 40 50
+Distance (km)0.40.450.50.550.60.650.7The received ratio
+Fig. 5. The received ratio on planes at different distance.
+A total of 200 planes and 20 UA Vs are set in Fig. 6.
+The planes are randomly distributed in the 0 ∼50km airspace
+range with P=44dBm (25W), and the UA Vs are randomly
+distributed in the 0 ∼5km airspace range with p=30dBm (1W).
+The receiving sensitivity Aof GS is set as -93dBm. All aircrafts
+send 6 kinds of packets and there exist collision loss and
+error loss. The relationship between the received ratio and
+distance of planes and UA Vs is shown in Fig. 6. Due to
+the limited frequency band of 1090MHz, the introduction of
+UA Vs aggravates the packets collision loss of planes. At the
+same time, due to the limited load of UA Vs, the transmission
+power of ADS-B on UA Vs is also smaller than that of planes.
+Therefore, although the distance between GS and UA Vs is
+shorter, UA Vs loss rate is larger than that of civil planes. The
+average received ratio of GS is 46.55 %. The loss of POS packet
+of GS is shown in Table IV. A total of 579 POS packets are
+received, and 422 POS packets are lost. If the requirement of
+updating interval is 3s, i.e., more than 6 consecutive packets
+loss are regarded as the position is not updated. The position
+updating probability within 3s is 92.3 %.
+In Fig. 7, a total of 200 planes and 40 UA Vs are considered.
+The planes are randomly distributed in the 0 ∼50km airspace
+range with P=44dBm (25W), and the UA Vs are randomly
+distributed in the 0 ∼5km airspace range with p=30dBm (1W).
+The receiving sensitivity Aof GS is set as -93dBm. All aircrafts
+0 10 20 30 40 50
+Distance (km)0.350.40.450.50.550.60.650.7The received ratioPlanes
+UAVsFig. 6. The received ratio on planes and UA Vs at different
+distance.
+0 10 20 30 40 50
+Distance (km)0.350.40.450.50.550.60.65 The received ratioPlanes
+UAVs
+Fig. 7. The received ratio on planes and UA Vs at different
+distance.
+send 6 kinds of packets and there exist collision loss and error
+loss. The relationship between the received ratio and distance
+of planes and UA Vs is shown in Fig. 7. The average received
+ratio of the GS is 45.25 %. The loss of the POS packet of GS
+is shown in Table IV. A total of 364 POS packets are received
+and 629 POS packets are lost. If the requirement of updating
+interval is 3s, i.e., more than 6 consecutive packets loss are
+regarded as the position is not updated. The position updating
+probability within 3s is 86.9 %.
+V. C ONCLUSIONS
+This work analyses the impact of UA Vs equipped with ADS-
+B on the civial planes at the frequency of 1090MHz. A couple
+of conditions are set up. Firstly, we assume that only civil
+planes sending 2 kinds of packets access the 1090MHz, as the
+number of planes increases, the received ratio decreases. The
+packets may be discarded only due to collision loss. Then, we
+add 6 kinds of packets, which accords with the actual situation.
+Furthermore, we introduce the channel model, which means the
+packets may be discarded due to the error loss. Finally, we add
+the UA Vs into the simulation, examining the received ratio and
+the position updating probability. The simulation data indicatesTABLE IV
+PACKETS LOSS OF AIRBORNE POSITION
+N packets are lost consecutively Times (GS in Fig. 4) Times (GS in Fig. 5) Times (GS in Fig. 6) Times (GS in Fig. 7)
+1 packet 144 82 134 95
+2 packets 50 49 40 46
+3 packets 25 36 24 36
+4 packets 5 14 8 22
+5 packets 1 11 3 11
+6 packets 1 11 2 10
+7 packets 2 5 1 6
+8 packets 1 3 3 2
+9 packets 0 1 4 4
+10 packets 0 0 1 1
+11 packets 0 0 0 1
+16 packets 0 0 0 1
+that the 1090MHz band blocking is affected by the density of
+the UA Vs. Besides, the frequency capacity is affected by the
+requirement of updating interval of civil planes. As the distance
+increases, the received ratio decreases. The loss ratio of planes
+50km away from GS can approximately reach 60 %. Moreover,
+when there are 200 planes in the 50km radius airspace and 20
+UA Vs in the 5km radius airspace, the average received ratio of
+GS is 46.55 %and the position updating probability is 92.3 %.
+If the number of UA Vs changed to 40, the average received
+ratio of GS is 45.25 %and the position updating probability is
+86.9%.
+REFERENCES
+[1] Y . Zhang, Z. Jia, C. Dong, Y . Liu, L. Zhang and Q. Wu, "Recurrent
+LSTM-based UA V Trajectory Prediction with ADS-B Information," IEEE
+Globecom , Rio de Janeiro, Brazil, 2022.
+[2] L. Gupta, R. Jain and G. Vaszkun, "Survey of Important Issues in
+UA V Communication Networks," in IEEE Communications Surveys &
+Tutorials , vol. 18, no. 2, pp. 1123-1152, Secondquarter 2016, doi:
+10.1109/COMST.2015.2495297.
+[3] Q. Zhang, J. Chen, L. Ji, Z. Feng, and Z. Chen, "Response delay
+optimization in mobile edge computing enabled UA V swarm," IEEE
+Trans. Veh. Technol. , vol. 69, no. 99, pp. 3280-3295, 2020.
+[4] Z. Jia, M. Sheng, J. Li, Dusit Niyato and Z. Han, "LEO-satellite-assisted
+UA V: Joint trajectory and data collection for Internet of remote things in
+6G aerial access networks," IEEE Internet Things J. , vol. 8, no. 12, pp.
+9814-9826, 2021.
+[5] G. Gui, Z. Zhou, J. Wang, F. Liu and J. Sun, "Machine Learning
+Aided Air Traffic Flow Analysis Based on Aviation Big Data," in IEEE
+Transactions on Vehicular Technology , vol. 69, no. 5, pp. 4817-4826,
+May 2020, doi: 10.1109/TVT.2020.2981959.
+[6] Y . Zhou, H. Liu, and B. Li, "Research on update interval of ADS-B
+position reports in Tianjin terminal area," Journal of Xi’an Aeronautical
+University , vol. 38, no. 1, pp. 53-58, 2020.
+[7] P. Tang, "Research on performance evaluation technology of data mon-
+itoring based on ADS-B," Ph.D. dissertation, Civil Aviation University
+of China , 2015.
+[8] S. ur Rahman, G. Kim, Y . Cho and A. Khan, "Positioning of UA Vs
+for throughput maximization in software-defined disaster area UA V
+communication networks," in Journal of Communications and Networks ,
+vol. 20, no. 5, pp. 452-463, Oct. 2018, doi: 10.1109/JCN.2018.000070.
+[9] M. Strohmeier, M. Schafer, V . Lenders and I. Martinovic, "Realities and
+challenges of nextgen air traffic management: the case of ADS-B." IEEE
+Commun Mag , vol. 52, pp. 111-118, 2014.
+[10] J. Sun and J. Hoekstra, "Analyzing aircraft surveillance signalquality at
+the 1090 megahertz radio frequency," 9th International Conference on
+Research in Air Transportation , 2020.[11] Y . Zhao, "Design and implementation of 1090MHz channel monitoring
+function verification module," Ph.D. dissertation, Civil Aviation Univer-
+sity of China , 2020.
+[12] P. Jonas, M. Jancik, S. Holoda and J. Bodart, "Impact of SUAS equipped
+with ADS-B on 1090MHz environment," 2020 New Trends in Civil
+Aviation (NTCA) , 2020.
+[13] R. Pryt and R. Vincent, "A simulation of signal collisions over the
+north atlantic for a spaceborne ADS-B receiver using aloha protocol,"
+Positioning , vol. 6, no. 3, pp. 23-31, 2016.
+[14] H. Liu, S. Wu, D. Qin and D. Li, "Performance analysis of surveil-
+lance capacity of satellite-based ADS-B receiver," Acta Aeronautica et
+Astronatica Sinica , vol. 39, no. 5, pp. 8, 2018.
+[15] E. M. Valovage, "A method to measure the 1090 MHz interference
+environment," Integrated Communications, Navigation and Surveillance
+Conference , 2009.
+[16] R. Michael Guterres, Stanly R. Jones, Gregory L. Orrell and Robert
+C. Strain, "ADS-B surveillance system performance with samll UAS
+at low altitudes", American Institute of Aeronautics and Astronautics ,
+doi: https://www.mitre.org/news-insights/publication/ads-b-surveillance-
+system-performance-small-uas-low-altitudes, unpublished.
+[17] Garcia M. A, Stafford J, Minnix J. and Dolan J, "Aireon space based
+ADS-B performance model", Integrated Communication, Navigation and
+Surveillance Conference , C2-1-C2-10, 2015.
+[18] H. Wang, Q. Sun, H. Li, Z. Huang and D. He, "Techniques to increase
+1090ES capacity based on phase modulation," Telecommunication Engi-
+neering , vol. 55, no. 4, pp. 385-389, 2015.
+[19] Q. Huang, H. Wang, F. Wang and Z. Shi, "Implementation of transceiver
+for increasing 1090ES capacity based on software radio platform,"
+Telecommunication Engineering | Telecomm Eng , vol. 60, no. 3, pp. 298-
+302, 2020.

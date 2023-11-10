@@ -1,0 +1,667 @@
+Risk assessment techniques for civil aviation security
+Galileo Tamasia, Micaela Demichelab,n
+aEnte Nazionale per l’Aviazione Civile —Direzione Progetti, Studi e Ricerche, Via di Villa Ricotti, 42, 00161 Roma, Italy
+bSAfeR—Centro Studi su Sicurezza, Afﬁdabilit /C18a e Rischi, Dipartimento di Scienza dei Materiali e Ingegneria Chimica, Politecnico di Torino, Corso Duca degli Abruzzi, 24,
+10129 Torino, Italy
+article info
+Article history:
+Received 25 May 2009
+Received in revised form
+2 March 2011
+Accepted 3 March 2011
+Available online 8 April 2011
+Keywords:
+Civil aviation security
+Airport security
+Risk assessment
+RAMS
+Terrorist threatsabstract
+Following the 9/11 terrorists attacks in New York a strong economical effort was made to improve and
+adapt aviation security, both in infrastructures as in airplanes. National and international guidelines
+were promptly developed with the objective of creating a security management system able to
+supervise the identiﬁcation of risks and the deﬁnition and optimization of control measures.
+Risk assessment techniques are thus crucial in the above process, since an incorrect risk
+identiﬁcation and quantiﬁcation can strongly affect both the security level as the investments needed
+to reach it.
+The paper proposes a set of methodologies to qualitatively and quantitatively assess the risk in the
+security of civil aviation and the risk assessment process based on the threats, criticality and
+vulnerabilities concepts, highlighting their correlation in determining the level of risk.
+RAMS techniques are applied to the airport security system in order to analyze the protection
+equipment for critical facilities located in air-side, allowing also the estimation of the importance of the
+security improving measures vs. their effectiveness.
+&2011 Elsevier Ltd. All rights reserved.
+1. Introduction
+The terrorist attack of September 11th 2001, observed from
+a socio-economic, cultural and political point of view, had a
+tremendous negative impact on air transport never seen before
+in aviation, unparalleled in history [1–3].
+Proper measures have soon been taken following the considera-
+tions emerged after the attacks and most of they are listed in the
+seventh edition of Annex 17 of the Chicago Convention of the
+International Civil Aviation Organization (ICAO) [4,5]. Annex 17 is
+the key document concerning aviation security and is the primary
+Annex for security-related Standards and Recommended Practices.
+ICAO realised immediately the urgency and the need for restoring
+the integrity of the aviation system and met representatives from
+32 nations to discuss new security measures. The ICAO has then
+implemented 66 security standards and 16 Recommended Practices
+(SRPs) and has recommended the Universal Security Audit Program
+(USAP). USAP program promotes global aviation security through the
+auditing of Contracting States o n a regular basis to determine the
+status of implementation of ICAO Annex 17 security standards.Since 9/11, new measures have been taken in order to protect
+the aircrafts from hijacking and sabotage threats and new
+preventive methodologies have been developed to prevent
+actions, which could threaten the aircraft security.
+Other methods and innovative procedures are being developed
+to improve the airport security system and to protect it from new
+threats, such as the Laser Beams which could blind the pilots,
+the use of Hand Portable Air Defense Systems (MANPADS)
+and explosives which could shoot down the aircraft during the
+landing or take-off procedures.
+The heads of the aviation industry, such as ACI, IATA, IACA,
+Airbus and Boeing have formed the Global Aviation Security Audit
+Group (GASAG). They strongly afﬁrm that the security of the
+aviation (AVSEC) is not only a responsibility of the civil aviation
+industry, but also is a security problem of the nations. They have
+also underlined the importance of government bodies and of the
+intelligence in the control of the new emerging threats.
+New countermeasures was suggested, included hundred per
+cent baggage screening, explosives detection, biometric identiﬁ-
+cation of passengers and, maybe, remote check-in, risk based
+threat perception analysis and identiﬁcation of non-risk passen-
+gers instead of the rarer risk-passenger, as well as in-ﬂight
+measures like using Sky Marshals, strengthening cockpit doors
+and cabin monitoring from within the cockpit [6–11].
+Thus far, carrying arms has been banned, but the possibility of
+arming, or, at least, training the crew in unarmed combat is beingContents lists available at ScienceDirect
+journal homepage: www.elsevier.com/locate/ressReliability Engineering and System Safety
+0951-8320/$ - see front matter &2011 Elsevier Ltd. All rights reserved.
+doi:10.1016/j.ress.2011.03.009nCorresponding author. Tel.: þ390110904629; fax: þ390110904665.
+E-mail addresses: g.tamasi@enac.rupa.it (G. Tamasi),
+micaela.demichela@polito.it (M. Demichela).Reliability Engineering and System Safety 96 (2011) 892–899seriously considered. Research is also ongoing to improve the
+efﬁcacy of some of these countermeasures.
+After 9/11 greater attention has been paid to what is estab-
+lished in the Annex 17 in the ﬁeld of the security programs.
+Particularly, the concepts of threat assessment and risk manage-
+ment have been underlined. Both concepts lead to a basic
+methodology able to face effectively the threats addressed to
+the civil aviation system.
+In the restricted Doc ICAO 8973 [12], the methodologies of threat
+assessment and risk management are outlined. These methodologies
+have both an analytical and semi-quantitative approach based
+on numerical scores. However, ot her methodologi es can be applied
+in aviation security and they will be delineated later in the
+present paper.
+2. Risk management and risk assessment for airport security
+The current security measures in world airports cannot assure
+total protection against every typology of threats, but an effective
+risk management approach can prepare better against acts of
+terrorism [13,14]. Security risk management is an analytical and
+systematic process, which allows the evaluation of the probability
+of a threat to result in a negative action towards an infrastructure,
+people or critical functions of the airport system. Risk manage-
+ment principles acknowledge that while risk generally cannot be
+eliminated, enhancing protection from known or potential threats
+can reduce it.
+The risk management allows the detection of actions, which
+could reduce the risk and mitigate the consequences of an attack.
+The risk management allows to implement and to maintain
+efﬁcient over time all countermeasures, gradually reducing the
+risk, in view of a constant improvement, within acceptable values.
+A good risk management approach lean on risk assessment
+composed by three primary elements: a threat assessment, a
+vulnerability assessment, and a criticality assessment.
+A threat assessment identiﬁes and evaluates threats based on
+various factors, including capability and intentions as well as the
+potential lethality of an attack.
+A vulnerability assessment is a process that identiﬁes weak-
+nesses that may be exploited by terrorists and suggests options to
+eliminate or mitigate those weaknesses. A criticality assessment
+is a process designed to systematically identify and evaluate an
+organization’s assets based on their values, the importance of its
+mission or function, the group of people at risk, or the signiﬁcance
+of a structure.
+After the evaluation of the effectiveness of the security con-
+trols, the risk assessment allows the evaluation of the potential
+effects resulting from threats, with reference to each vulnerable
+area. The risk assessment, therefore, is performed in order to
+evaluate the risk associated to each critical element of the airport
+and the loss related to the success of threats. In most cases, the
+risk assessment procedure attempts to strike an economic bal-
+ance between the impact of risks and the cost of security
+solutions intended to manage them.
+The analysis of the Annual Losses Expected (ALE) determined
+through the risk assessment allows to take decision on the
+amount of economic resources necessary to implement the
+countermeasures. Of course, the cost of countermeasures is only
+a percentage of the ALE’s. Besides, the countermeasures enables
+the ALE’s to remain within acceptable risk limits.
+3. Qualitative and quantitative risk assessment
+Risk is a multifaceted issue and must be addressed with methods
+that are appropriate for the decisions to be taken. Historically, riskassessment and risk management professionals have focused on
+accident risks, natural hazard risks, business interruption risks,
+project risks, and ﬁnancial risks. I n these areas, organizations have
+used very systematic processe s and tools to understand and
+prioritize these diverse risks, es pecially those with catastrophic
+consequences.
+Security related risks are another broad category of risks with
+potentially catastrophic consequences, that after 9/11 has been
+receiving signiﬁcant attention [15,16]. While security related risks
+require a different approach than other types of risk, the same
+fundamentals apply. Terrorist attacks and other unlawful acts are
+a different type of threat, but they pose risks in much the same
+way as other threats.
+In a risk assessment carried on for the security in an airport,
+the analysis has to underline:
+/C15the level of the current risk,
+/C15the possible consequences of attacks,
+/C15the actions to be undertaken if the residual risk is superior to
+the tolerable values.
+The quantitative risk assessment can be subdivided in the
+followings steps:
+/C15Threat assessment
+– Detection of the presence of hostile groups in the home
+territory.
+– Evaluation of the threat level in the nation.
+– Evaluation of the threat level near airports.
+/C15Vulnerability assessment
+– Analysis of the critical points and the functional importance
+of airport systems and infrastructures.
+– Evaluation, within the system of airport security, of protec-
+tion systems for every critical infrastructure and evaluation
+of the accessibility and vulnerability levels.
+/C15Criticality assessment
+– Analysis of the potential accidental scenarios consequent to
+the success of the attacks on critical targets.
+– Analysis of the costs for the re-establishment of the critical
+targets and evaluation of the missed indirect incomes
+because of their unavailability.
+– Evaluation of the economic losses related to every acciden-
+tal scenario.
+The quantiﬁcation can be done through the followings gen-
+eralized relations:
+Risk ¼Frequency ðFÞ/C2Consequence ðCÞð 1Þ
+Frequency ðFÞ¼initiating event frequency
+/C2probability all safeguards fail ð2Þ
+Risk ¼½Threat ðTÞ/C2Vulnerability ðVÞ/C138 /C2Criticality ðCÞð 3Þ
+Where Threat ( T) is a measure of the likelihood that a speciﬁc
+type of attack will be initiated against a speciﬁc target (that is, a
+scenario). Vulnerability ( V) is a measure of the likelihood that
+various safeguards against a scenario will fail. Criticality ( C) is the
+magnitude of the negative effects if the attack is successful. Fig. 1
+shows the approach for the risk assessment.
+One of the key challenges in deﬁning a framework for collect-
+ing, organizing, and reporting the risk-based information is to
+determine what level of precision is appropriate to support the
+decisions to be taken.
+In particular, the goal of this study was to propose a frame-
+work for risk assessment able to support the decision making inG. Tamasi, M. Demichela / Reliability Engineering and System Safety 96 (2011) 892–899 893the design and/or optimization of protection levels for airport
+security.
+High or even medium precision may not necessarily be
+achievable, particularly when the speciﬁc technology for achiev-
+ing a given antiterrorism capability is not deﬁned or is under
+development [17,18].
+Several approaches can help accomplishing this objective.
+Matrix based semi-quantitative approach can be based on
+threat, vulnerability, and consequence categories that can be used
+to capture security related risks information. Assigning numerical
+scores to each category of threat and vulnerability and assigning
+‘‘representative’’ loss estimates to the consequence categories will
+provide a scoring system that will express the measure of risk in
+terms of loss exposure, which can be directly compared to cost of
+implementation, thus providing a meaningful beneﬁt/cost index
+for relative ranking.
+A mixed quantitative and semi-quantitative experimental risk
+based design is experimentally ongoing in designing the new
+security systems of Lampedusa and Pantelleria airports that are
+managed directly by the ENAC, the Civil Aviation Authority, Italy.
+The qualitative analysis, instead, which is at present conducted
+in Italy, is based on Security Audit, primarily constituted by check
+lists elaborated by ENAC on the indications of the current Italian
+and European Community legislation.
+The check lists and the inspective procedures are obviously
+integrated in order to take into consideration the international
+legislation and the technical security recommendations (ICAO,
+ECAC, and IATA).The Security Audit particularly refers to the following areas:
+/C15Organization and management of the security systems at
+national level and cooperation with other states.
+/C15Organization and management of the security systems at
+airport level.
+/C15Control of the access to the airport structures.
+/C15Passengers and hand baggage.
+/C15Hold baggages.
+/C15Aircraft and ﬂight procedures.
+/C15Cargo and catering.
+/C15Ability to answer to illegitimate actions and contingency planning.
+The results are given as predetermined levels of conformity to
+the actual security standards. The level of vulnerability and the
+necessary countermeasures to be implemented are expressed for
+each airport area.
+The qualitative risk survey is completed with a report submitted
+to the airport management companies and to other subjects charged
+with the security services who must solve the critical points shown
+and ranked by the analysis within a ﬁxed temporal term.
+4. Vulnerability and criticality analysis through modiﬁed
+recursive HAZOP and Fault Tree Analysis
+A vulnerability assessment is a process that identiﬁes weak-
+nesses in physical structures, p ersonnel protection systems,Consider full range of 
+potential scenarioSelect a Scenario
+Characterize
+Maximum
+Consequence
+Develop
+Threat
+ Scenarios
+Assess
+Criticality
+For Scenarios
+Characterize
+Risk of Scenarios
+Is
+Risk Level 
+<Tollerable 
+Risk?End
+YesNo
+Handle Threats 
+Known
+Through intelligence
+Assess
+Threat
+for ScenariosRearrange Scenarios
+Considering
+New ControlStrategies
+Develop Risk Control
+StrategiesRely on standard
+Protections
+Assess
+Vunerability
+For Scenarios
+NoYesIs
+Maximum
+Consequence
+<x ?
+Fig. 1. Risk assessment approach.G. Tamasi, M. Demichela / Reliability Engineering and System Safety 96 (2011) 892–899 894processes, or other areas that may be exploited by terrorists and
+may suggest options to eliminate or mitigate those weaknesses. For
+example, a vulnerability assessment might reveal weaknesses in an
+organization’s security systems o r unprotected key infrastructure
+such as power supplies, ATC control towers, and electric facilities.
+A criticality assessment is a process designed to systematically
+identify and evaluate important assets and infrastructure in terms
+of various factors, such as the mission and signiﬁcance of a target.
+For example, power generators, radio navigation aids, computer
+networks might be identiﬁed as ‘‘critical’’ in terms of their
+importance to airport security, airport economic activity, and
+airport safety. In addition, facilities might be critical at certain
+times, but not others. For example, a runway when in use in
+heavy air trafﬁc and low visibility conditions may represent an
+important target. Criticality assessments are important because
+they provide a basis for identifying which assets and structures
+are relatively more important to protect from an attack.
+The use of Reliability, Availability, Maintainability, and Safety
+(RAMS) techniques in vulnerability and criticality assessment of
+an airport is here described applying it to a key electrical facility
+that is a vital part of equipments needed for the airport exercise.
+The equipments are usually located in airside in the physical
+areas. The physical areas usually present in the airport requiring
+protection are shown in Fig. 2 .The airport perimeter fence is the ﬁrst physical defense and
+together with technological systems is a fundamental component
+of the airport security system. Inside the airport perimeter there
+are other critical areas which are protected with further combina-
+tions of technological systems.
+The technological systems are connected through a centralized
+architecture that manages the monitoring, the events and
+the states of alarm. An example of simpliﬁed architecture is
+illustrated in Fig. 3 .
+In the case study the vulnerability and criticality of an airport
+security protection system of an electric substation for power
+supply the airﬁeld ground lighting and radio navigation aids has
+been approached through the Recursive Operability Analysis
+[18–20] and the Fault Tree Analysis. These methodologies allow
+the examination of both logical and probabilistic behavior of the
+protection system.
+An electric substation dedicated to Airﬁeld Ground Lights (AGL)
+and Radio Navigation Aids (RNA) is an important part of the airport
+electrical systems and, together with other electric components, it
+is of vital importance for the operations of every airport luminous
+visual aids and of the radio navigation aids. The radio navigation
+aids lead the aircraft to a precision instrumental approach to the
+runway while the luminous visual aids allow the pilots to verify
+the correctness of approach procedure. The unavailability of these
+systems due to the lack of power supply makes the airport runway
+unavailable and this, for the airports with only one runway, causes
+the unavailability of the whole airport.
+The immediate lack of power supply of radio navigation aids
+and visual aids can cause severe anomalies in the air trafﬁc
+system and can lead to an accidental sequence that could cause
+air disaster as shown in Hazop analysis depicted in Table 1 . For
+these reason the electrical network and the electric substation
+could constitute the target of severe threats by external entity
+aiming at disabling it through illegal actions.
+The simpliﬁed sketch of the monitoring and protection sys-
+tems of electric substation, subjected to the vulnerability assess-
+ment, is illustrated in Fig. 4 .
+The protection system can be considered as composed by:
+/C15Physical perimeter fence with metallic enclosure.
+/C15System of microwaves sensors.
+ Fig. 2. The physical areas usually present in an airport.
+AIRPORT INTEGRATED SECURITY SYSTEMHARDWARE
+ROOMPRIMARY
+OPERATIVE
+ROOMSECONDARY
+OPERATIVE
+ROOMPERIMETER
+PROTECTIONSVIDEO
+SURVEILLANCEINTERNAL
+PERIMETERACCESS
+CONTROLSYSTEM
+1
+SYSTEM
+N
+DATA
+NETWORKSYSTE
+3
+OTHER SYSTEM
+INTEGRATIONSYSTEM
+2
+Fig. 3. Simpliﬁed security protection system architecture.G. Tamasi, M. Demichela / Reliability Engineering and System Safety 96 (2011) 892–899 895/C15System of perimeter video surveillance.
+/C15Airside millimeter-wave radar.
+/C15Surveillance patrol.
+/C15Physical perimeter of electric substation and protection system
+with sensitive wire.
+/C15System of second internal perimeter video surveillance.
+/C15Protection system of electrical facility internal area through
+volumetric sensors.
+The security systems above illustrated are predisposed to
+identify the presence of external non-authorized entities in each
+part of the airside in order to be able to immediately activate
+suitable countermeasures.
+A hostile entity, that wants to reach the electric substation, has
+to disable or to avoid all the control systems already installed
+outside and inside the airport. The vulnerability of the system is
+obviously connected with its leaning to become unavailable after
+an attack to some essential components of protection system is
+carried out.
+Through a Recursive Operability Analysis (ROA) is possible,
+therefore, to examine in a better way the functionality of the
+system and its ability to protect the potential targets.
+Furthermore, it is possible to evaluate the differential vulner-
+ability, in comparison to the conditions of normal operation, if
+some components of the system are put out of order under attack.
+The ROA allows the Fault Trees to be directly extracted by the
+analysis tables, for the quantiﬁcation of the identiﬁed Top Events.
+4.1. Recursive Operability Analysis
+InFig. 5 , the ROA analysis related to the security protection
+system in Fig. 4 is shown.
+This analysis is related to the technological failure of the
+protection systems and, at this stage, does not take into account
+the voluntary damaging or by-passing carried on by airport
+operators.
+External Perimeter Defence 
+Video Surveillance 1 
+MicroWave Barrier 
+Surveillance Patrols   
+Millimeter Wave Radar 
+Video Surveillance 2 Sensibile Wire System 
+Electical 
+Substation 
+Fig. 4. Simpliﬁed scheme of monitoring and protection systems.
+Deviation Causes Consequences Alarm Systems Automatic
+Protection 
+SystemsTop
+Event
+Bypass external 
+enclosure Damage airport 
+enclosure1 e n o Z e d i S r i A y r t n E
+Entry Air Side Zone 1 Overcoming external 
+perimeter Entry Air Side Zone 2 Microwave System 
+Video Surveillance 
+Entry Air Side Zone 2 Entry Air Side Zone 1 Entry Air Side Zone 3 Millimetric Radar 
+Patrol Surveillance 
+Entry Air Side Zone 3 Entry Air Side Zone 2 Entry Area Electric 
+Facility Sensitive Wire 
+Protection System
+Video surveillance 
+Entry Area Electric 
+FacilityEntry Air Side Zone 3 Entry Electric Facility Volumetric Control 
+System  TE1 
+Unavailability Electrical 
+FacilityAccessibility Electrical 
+Facility Night Flights  Unavailability RWY for 
+Unavailability 
+Radioassistance and 
+Luminous Visual Monitoring Electric 
+TWR Facility TE2 &
+Sabotage group 
+presence 
+Unavailability RWY Unavailability Electrical 
+Facility Night Flights Anomaly Air Traffic 
+ControlMonitoring TWR ATC   TE3 
+Anomaly Air Traffic 
+ControlUnavailability RWY Aircraft accident Aircraft Avionics   TE4 
+Aircraft accident Anomaly Air Traffic 
+ControlAir disaster Emergency Center 
+Airport Monitoring  TE5 Rescue & Fire 
+Fighting
+Fig. 5. Recursive Operability Analysis.G. Tamasi, M. Demichela / Reliability Engineering and System Safety 96 (2011) 892–899 8964.2. Fault Tree Analysis
+The Fault Tree for Top Event 1 (ref. Fig. 5 ) directly drawn from
+the ROA tables was solved using ASTRA FTA Software [21–24] and
+it is shown in Figs. 6 and 7 :
+The reliability parameters used in numerical solution of the
+Fault Tree are detailed in Table 1 .
+Some probabilistic parameters are gathered from reliability data-
+banks [25], the missing ones related to the airport security systems
+was given by the producers of the hardware apparatuses. The cutsets
+are listed according to their probabilistic importance in Table 2 .Through the simple model here described, it is possible to
+analyze the two cutsets, that for an external hostile entity is very
+difﬁcult to contemporarily disable both the operators of the
+airport security center (E1) and the surveillance patrols (E1B)
+and after to climb over the perimeter enclosure (E14).
+It is much more simple to attack the monitoring network
+(ERM), to climb over the monitoring enclosure (E14) and to reach
+the electric substation deceiving the controls of the surveillance
+patrols (E1B).
+The initiating events are illustrated according to their impor-
+tance in Table 3 .
+Fig. 6. Astra Fault Tree —part 1.
+Fig. 7. Astra Fault Tree —part 2.G. Tamasi, M. Demichela / Reliability Engineering and System Safety 96 (2011) 892–899 897This classiﬁcation allows, both in phase of design of a new
+system and in phase of analysis or change of an existing system,
+to understand which system needs to be improved.
+With such analysis tools, the relative importance of system
+components can be examined, with the possibility to improve
+both the general architecture and the behavior of every sub-
+system.
+The analysis of the accessibility has shown, through the
+examination of cuts sets, that a hostile group to have a successful
+action needs to:
+/C15know the facilities airport conﬁguration and the position of the
+target,
+/C15know the airport surveillance procedures,
+/C15have knowledge of alarms network,
+/C15have equipments to climb over the perimeter enclosure,
+/C15have equipments to disable the alarm network,
+/C15have weapons and tools to shoot the patrol controls,
+/C15have weapons and tools to disable the electric substation.
+After carrying out the structure vulnerability analysis and the
+criticality analysis, we have also outlined the proﬁle of the hostile
+external entity. The criticality analysis conducted also by ROA had
+individualized (see Fig. 5 ) the consequences of an attack in terms
+of economic losses, denial of service, negative image to passen-
+gers. To complete the risk assessment procedure (see Fig. 1 )i ti s
+necessary to evaluate the likelihood that the proﬁled entity has to
+decide to attack the target.
+By using the threat assessment, the risk assessment procedure
+is completed then by deﬁning the likelihood that one speciﬁc
+hostile entity has, under particular conditions, to attack and
+overcome the protections of a vulnerable target, thus producing
+consequences to which an economic value is associated.The results can be expressed as Annual Losses Expected (ALE)
+and they are a good indicator in deciding the investments in
+the security sector. The threat assessment methodology which
+completes the risk assessment procedure will be shortly
+illustrated soon.
+5. Threat assessment
+This last step is fundamental to perform a complete risk
+assessment related to security aspects, but it is still a critical point
+and characterized by large uncertainties and lack of objectivism.
+A threat assessment is used to evaluate the likelihood of
+terrorist activity against a given asset or location. It is a decision
+support tool that helps to establish and prioritize security-
+program requirements, planning, and resource allocations.
+A threat assessment identiﬁes and evaluates each threat on the
+basis of various factors, including capability, intention, and
+lethality of an attack.
+The deﬁnition of a realistic or real threat set to be taken into
+account is delegated to the intelligence, and to the government
+bodies (in Italy the Ministry of Defense and the Ministry of
+Interior). Nevertheless, the civil aviation authority contributes to
+the identiﬁcation of the key elements to be kept into considera-
+tion in the analysis.
+In the identiﬁcation of threats addressed to the civil aviation
+there are different sources of empirical evidence and of available
+statistic data. They have to be valued considering every factor
+which could result in a terrorist event.
+The ICAO, e.g. has deﬁned a semi-quantitative methodology
+which considers the presence in the nation of terrorist groups, the
+historical records of aviation attacks, the level of internal strike,
+the entity of the economic problems, the number of the airport
+ﬂights and the number of high risk ﬂights. From elaboration of
+these indicators which are numerically quantiﬁed in a matrix you
+can have numerical scores which can be easily connected with the
+likelihood of an attack.
+Similarly, the probability that a group with speciﬁc character-
+istics, ability, information and equipments is motivated to start a
+predetermined terrorist action can be valued, as in the case of the
+disabling of an electric substation underlined before.
+6. Conclusions
+A set of scenario attacks towards a speciﬁc target can be
+investigated trough examination of its vulnerability and its
+criticality.
+Each potential scenario can be studied in order to have an
+estimation of the current risk level, the evaluation of possible
+economic losses on an annual base, and the set of the counter-
+measures to adopt in order to reduce the risk.
+The quantitative analysis carried out with RAMS methodolo-
+gies has shown the possibility to investigate vulnerabilities and
+criticality of the airport components. The use of the previous
+analysis results, melted with the result of threat assessment
+complete the risk assessment procedure. The procedure offer as
+result the likelihood that an attack is successful in the selected
+scenario, so, is possible to have the likelihood that the airport
+have an economic loss and others serious problems. The cumu-
+lative set of scenarios investigated deﬁne at the end of the process
+the necessary indication to select suitable countermeasures also
+in terms of economical investment.
+The maintenance of countermeasures over time is a task of the
+risk management and it is fundamental to protect the airport
+infrastructures and to plan changes to airport security systems.Table 1
+Primary events input data.
+Event name Unavailability Description
+E1 1.5000E-03 MI security operator
+E10 1.0000E-03 MI microwave sensors alarm
+E14 5.0000E-01 MI perimeter defense
+E1B 1.0000E-02 MI patrol operators
+E2 1.0000E-03 MI volumetric sensors alarm
+E4 1.0000E-03 MI video surveillance
+E6 1.0000E-04 MI sensitive wire alarm
+E9 1.0000E-04 MI millimeter-wave radar alarm
+ERM 1.0000E-05 MI alarms telematics network
+Table 2
+Minimal cutsets listed in order of probability importance.
+# Q W Minimal cutsets
+1 7.5000E-06 7.5000E-06 E1 E14 E1B
+2 5.0000E-08 5.0000E-08 E14 E1B ERM
+Table 3
+Primary events listed in order of importance.
+Event Importance Description
+E1B 1.0000E þ00 MI patrol operators
+E14 1.0000E þ00 MI perimeter defense
+E1 9.9337E-01 MI security Operators
+ERM 6.6225E-03 MI alarms telematics networkG. Tamasi, M. Demichela / Reliability Engineering and System Safety 96 (2011) 892–899 898The effectiveness of the quantitative techniques borrowed
+from the industrial risk assessment for airport security purposes
+has been demonstrated through their application to a simple case
+study, that could be seen as a part of a complete and more
+detailed analysis.
+The optimized design of the airport security system, its ability
+to innovate and to modify itself in consequence of the results of
+risk assessment is surely the best indicator of the ability to
+answer to the new incumbent threats and to assure an acceptable
+security risk level to the passenger and airport operators.
+Acknowledgments
+The authors would like to express their thankfulness to
+Prof. Norberto Piccinini (Politecnico di Torino) who initiated and
+encouraged the present work, to Paolo Mazzaracchio of Civil
+Aviation Authority, Italy —Airports Technologies Ofﬁce, for the
+continuous and precious suggestions, to Roberto Passatore of Civil
+Aviation Authority, Italy —Security Directorate, for his unique
+indications, and last but not least to Mladen Cala of ICAO Security
+International, for the signiﬁcant help in the research of references.
+References
+[1] Dillingham GL. Post-september 11th initiatives and long-term challenges.
+New York: United States General Accounting Ofﬁce; 2004.
+[2] Coughlin CC, Cohen JP, Khan SR. Aviation security and terrorism: a review of
+the economic issues. In: Federal Reserve Bank of St. Louis. Working papers
+2002-009A. St. Louis; 2004, p.1–16.
+[3] Ito H, Lee D. Assessing the impact of the september 11 terrorist attacks on
+U.S. airline demand. USA: Brown University Economics Department; 2003.
+[4] Dillingham GL. Progress since september 11, 2001, and the challenges ahead.
+New York: United States General Accounting Ofﬁce; 2003.
+[5] ICAO. Annex 17. Annexes to the convention on international civil aviation.
+Montreal: ICAO; 2002.
+[6] Salter MB. SeMS and sensibility: security management systems and the
+management of risk in the Canadian Air Transport Security Authority. Journal
+of Air Transport Management 2007:389–98.
+[7] Olapiriyakul S, Das S. Design and analysis of a two-stage security screening
+and inspection system. Journal of Air Transport Management 2007:67–74.
+[8] Gkritza K, Niemeier D, Mannering F. Airport security screening and changing
+passenger satisfaction: an exploratory assessment. Journal of Air Transport
+Management 2006:213–9.[9] Lazar Babu VL, Batta R, Lin L. Passenger grouping under constant threat
+probability in an airport security system. European Journal of Operational
+Research 2006:633–44.
+[10] Eiceman GA, Schmidt H, Cagan AA. Explosives detection using differential
+mobility spectrometry. Counterterrorist Detection Techniques of Explosives
+2007:61–90.
+[11] Xiaofeng Nie Rajan, Batta Colin G, Drury Li Lin. Passenger grouping with risk
+levels in an airport security system. European Journal of Operational
+Research 2009;194(2):574–84.
+[12] ICAO. DOC 8973 restricted —security manual for safeguarding civil aviation
+against Acts of unlawful interference, Annexes to the convention on inter-
+national civil aviation. Montreal, Canada: ICAO; 2002. 2002.
+[13] Decker Raymond J. Key elements of a risk management approach. New York,
+USA: United States General Accounting Ofﬁce; 2003 October 12 2001.
+p. 1–11.
+[14] Moteff John. Risk management and critical infrastructure protection: asses-
+sing, integrating, and managing threats, vulnerabilities and consequences.
+Washington, USA: Congressional Research Service; 2004 September 2 2004.
+p. 1-27.
+[15] Jenkins BD. Security risk analysis and management, 1998. Hollywood, USA:
+Countermeasures Inc; 1998 p. 1–16.
+[16] Winther R, Johnsen O, Axel Gran B., Security assessments of safety critical
+systems using HAZOPs, In: Proceedings of safecomp 2001. Budapest.
+Hungary; 26–28 September 2001.
+[17] Barry AS, Mazel DS. Airport perimeter security: where we’ve been, where we
+are, and where we’re going, In: Proceedings of technologies for homeland
+security, 2008 IEEE conference on digital object identiﬁer; 2008. p. 57–62.
+[18] Piccinini N, Ciarambino I. Operability analysis devoted to the development of
+logic trees. Reliability Engineering and System Safety 1997;55:227–41.
+[19] Demichela M, Marmo L, Piccinini N. Recursive operability analysis of a
+complex plant with multiple protection devices. Reliability Engineering and
+System Safety 2002;77(3). September 2002, 301–308(8).
+[20] Demichela M, Piccinini N, Ciarambino I, Contini S. How to avoid the
+generation of logic loops in the construction of fault trees. In: Proceedings
+of reliability and maintainability symposium, 2002. Seattle, WA, USA; 2002.
+p. 178–85.
+[21] Scheer S, Contini SM, Wilikens MA, Cojazzi GG, De Cola G. ASTRA, an
+integrated tool set for complex systems dependability studies. Workshop
+on tool support for systems speciﬁcation, development and veriﬁcation
+(TOOLS ’98). Univ. Kiel. 2–4 June 1998. Malente (D) —ORA 41374; 1998.
+[22] Scheer S, Contini SM, Wilikens MA. ASTRA FTA, a powerful software tool for
+fault tree analysis —special publications/I.99.51. Ispra, VA, Italy: European
+Commission, Joint Research Centre; 1999.
+[23] Scheer S, Contini SM, Wilikens MA. ASTRA PTD, probabilistic time dependent
+analysis module of ASTRA —Special Publications/I.99.50. Ispra, VA, Italy:
+European Commission, Joint Research Centre; 1999.
+[24] Scheer S, Contini SM, Wilikens MA. ASTRA-SAM, a powerful software tool for
+on-line sensitivity analysis —special publications/I.99.49. Ispra, VA, Italy:
+European Commission, Joint Research Centre; 1999.
+[25] EIREDA. European industry reliability data handbook. C.E.C. —J.R.C./ICEI
+21020 ISPRA (Varese) Italy. EDF-DER/SPT 93206 Saint Denis (Paris) France;
+1991.G. Tamasi, M. Demichela / Reliability Engineering and System Safety 96 (2011) 892–899 899

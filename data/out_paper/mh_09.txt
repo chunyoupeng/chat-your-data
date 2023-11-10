@@ -1,0 +1,646 @@
+Preliminary Assessment of Alternative 
+Navigation Means for Civil Aviation 
+ 
+Sherman Lo, Per Enge, Stanford University 
+Frederick Niles,  The MITRE Corporation 
+Robert Loh, Innovative Solutions International 
+Leo Eldredge, Mitchell Narins, Federal Aviation Administration 
+ 
+ 
+ABSTRACT 
+ 
+The Federal Aviation Administration (FAA) is looking to develop alternative navigation means to global navigation 
+satellite systems (GNSS) and GPS.  While the national 
+airspace (NAS) includes many navigation systems such as 
+distance measuring equipment (DME), VHF omni 
+directional ranging (VOR), or non directional beacon 
+(NDB), they are not capable to supporting the increased 
+capabilities, capacity and efficient operations that GPS 
+will provide.  Thus it is important to examine, design and 
+develop new alternatives capable of providing similar level of service and operational efficiencies as GPS.  One 
+idea is to develop alternatives based on existing or soon to 
+be existing FAA systems and infrastructure.  The paper details a preliminary study on using FAA infrastructure 
+such as DME and ground based transceiver (GBT) as 
+building blocks for a future system.  The system is to be capable for providing navigation to support future needs 
+of the NAS even in the event of GPS interference or 
+outage. 
+ 
+INTRODUCTION  
+ 
+The increasing integration of GPS and GNSS into critical 
+infrastructure has created tremendous benefits.  In 
+aviation, for example, the introduction of GPS avionics will lead to improved capacity and efficiency in the 
+National Airspace (NAS).   Its use allows for closer 
+spacing and more flexible pro cedures in the form of Area 
+Navigation (RNAV) and Required Navigation 
+Performance (RNP).  GPS also allows more accurate and 
+frequent surveillance information as it is the predominant source of navigation information in Automatic Dependent 
+Surveillance Broadcast (ADS-B).   
+ Unfortunately, these benefits  goes away when GPS and 
+GNSS becomes unavailable.  Vulnerabilities of GPS and 
+satellite navigation are well known and documented, particularly by reports such as Volpe [1].  The concern is 
+that once we rely on the operational benefits brought by 
+the use of GPS, it may be difficult or impossible to revert 
+to a without significant economi c loss and societal costs.  
+The vulnerability of critical infrastructure and GPS is   addressed in Homeland Security Presidential Directive 7 
+(HSPD-7) and National Security Presidential Directive 39 
+(NSPD-39), respectively [2][3].  NSPD-39 addresses the need to examine and mitigate GPS vulnerability, 
+particularly where it is relied upon in critical 
+infrastructure.  The Federal Aviation Administration (FAA) Navigation Services Directorate has been 
+examining how to mitigate GPS vulnerability.  It has 
+recently formed an Alterna tive Position Navigation and 
+Time (APNT) group to provide a thorough investigation 
+of navigation in the event GPS is unavailable.  The goal is 
+to develop a means to maintain aviation operations indefinitely during a GPS interference or outage event.  
+This entails minimizing th e economic impact of and 
+maintaining safety during an outage event.  To accomplish this, an APNT system should provide en route 
+capabilities over the conterminous United States 
+(CONUS) as well as terminal and approach capabilities at economically important airports.      
+ 
+One area that has been a fo cus for APNT is examining 
+navigation alternatives based on infrastructure in the 
+NAS.  The NAS infrastructure may be useful as building 
+blocks for a future system capable for providing viable 
+alternative navigation.  The infrastructure includes 
+distance measuring equipment (DME) and ground based transceiver (GBT) for ADS-B.  While the group is 
+examining other alternatives, this paper only covers the 
+use of DME and GBT for APNT.  
+OUTLINE 
+ 
+This paper starts with some background on the APNT 
+technical study.  It discusses the performance desired 
+from an alternative navigation system that supports continued operations in the loss of GPS.  This is a critical 
+first step to system de sign and constrains the 
+infrastructure and designs that have utility.  
+Additionally, the NAS infrastructure and design possible 
+systems using these components are discussed.   Some 
+background on DME and GBT is given.  Several possible 
+architectures for us ing the infrastructure are detailed. 
+ The paper concludes with accuracy coverage studies.  It 
+examines the ability of the different architectures to meet 
+RNP 1.0 for en route in CONUS and RNP 0.3 for 
+terminal/approach at high traffic airports and areas. 
+ 
+BACKGROUND 
+ 
+ALTERNATIVE POSITI ON NAVIGATION & 
+TIME (APNT) 
+  
+As previous mentioned, the APNT group is assessing 
+alternate navigation means for aviation to mitigate the 
+effects of GPS outage or interference.  The overall goal is to develop a comprehensive assessment that will lead to 
+the development of an operational system.  As such, it 
+will examine not just technical and performance aspects of alternative navigation means but also institutional, 
+operational and development planning issues.  This paper 
+is only focused on one part  of the technical efforts. 
+ 
+TECHNICAL EVALUATION 
+ 
+Technical evaluation seeks to develop and examine 
+systems that can achieve the mission of the APNT group.  
+This includes aspects of system design, as well as performance, and integrity analyses.  Specifically, the 
+primary requirements of the system are to support en 
+route (RNP 1.0) over CONUS and RNP 0.3 at required airports.  The short term goal is to narrow down to a few 
+promising candidates for next phase of study.  Many 
+systems such as enhanced Loran, iGPS and others have 
+already been studied for this purpose and will be 
+considered in the evaluation.  The focus of this paper is on 
+developing systems based on current or some to be 
+existing FAA infrastructure such as DME and GBT. 
+Specifically, this paper examines the ability of different designs using these system s to meet the primary 
+requirements. 
+ 
+ALTERNATIVES & OPTIONS 
+ 
+Several design alternatives and options are available.  
+Infrastructure includes using DME and/or GBT ground   assets.  With these assets, several architectures have been 
+proposed and developed.  This section will discuss the 
+infrastructure, possible archit ectures, and the method for 
+analysis.   
+ 
+INFRASTRUCTURE  
+ 
+DME is a two way or request-reply ranging system.  
+Traditional  DME, known as DME/N, utilize pulse pairs 
+between 962 to 1213 MHz to conduct this transaction.  
+Each DME is assigned a frequency for uplink and another for downlink.  The difference between these two 
+frequencies is 63 MHz.  The frequency is typically 
+selected to minimize interference with other DMEs.   DME equipment is limited to about 3000 pulse pair per 
+second resulting in a capacity of about 300 aircraft.  
+Additional background on DME is given in [4].  Figure 1 
+shows the current location of DME stations in  CONUS.  These are the locations  used in the analysis.   
+Note that future plans will add a few additional stations to 
+improve en route coverage.  
+DME/N performance has been specified in a couple of 
+standards.  ICAO annex 10 specifies DME/N accuracy as 
+being 0.17 nautical miles (nm), 95% [5].  FAA Advisory 
+Circular (AC90-100A) specifies a more complicated 
+formulation where accuracy depends on signal in space 
+(sis) and airborne receiver (ai r) [6].  This is seen in 
+Equation 1 where 
+sis is given as 0.05 nm.  The specified 
+accuracy of the airborne receiv er is dependent on distance 
+from the transmitter and is given in Equation 2.    
+22
+range air sis    (1)   
+  max 0.085 ,.00125air nm d     (2) 
+ 
+ 
+Figure 1.  DME station locations in CONUS 
+ 
+Improved version of DME can have better performance.  For example, precision DME (DME/P) provides greater 
+accuracy in part by using a di fferent pulse shape [7].   
+However, the improvement is only at close range (within a few nautical miles) and is not available to DME/N 
+users.  ICAO Annex 10 also specifies DME/P accuracies.  
+Note that the study and coverage map does not show DME/P and approach DMEs.  Another example is that 
+DME manufacturers have indicated newer DMEs can 
+support higher limits on number of pulses.    
+Modification to existing DME may be necessary to 
+support some of the architect ures. One change may be the 
+need to provide some data capability.  Another is 
+increasing the limit on number of pulses.  Such potential 
+modifications have been examined and are believed feasible.  The exact method and feasibility is still being 
+worked on and is beyond the scope of this paper.  
+Additionally, we will also consider reasonable 
+improvements for these systems such as better ranging or 
+data capacity.  The installation of a few additional stations and use of DME/P will also be considered.  
+ 
+ 
+Figure 2. Proposed GBT station locations in CONUS  
+ 
+Ground based transceivers (GBT) are the basic ground 
+element supporting automatic dependent broadcast- 
+surveillance (ADS-B).  GBTs receive aircraft broadcasted ADS-B reports and sends the in formation to air traffic.  
+Additionally, GBTs can transmit traffic information 
+services broadcast (TIS-B) and other flight information 
+services broadcast (FIS-B) to nearby aircraft.  There are 
+two basic ADS-B communication protocols: 1090 Extended Squitter at 1090  MHz and Universal Access 
+Transceiver (UAT) at 978 MHz [8][9][10].  Figure 2 
+shows the proposed locations for GBT in CONUS.  There are about 800 planned sites.  The locations of the actual 
+installed sites may differ from the plan. 
+ APNT has examined basic ways of modifying these GBT 
+to support the ranging and positioning methods discussed 
+next.  Preliminary study indicat es that there are feasible 
+methods to achieve ranging.  The difficulty of achieving 
+the implementation depends on both the method and data 
+channel.  As GBT transmissions were not developed for ranging, range accuracy is not known.  For the 
+preliminary analysis, GBT ranging performance is 
+assumed to be similar to that of DME.  Additionally, it is assumed that they have the same coverage profile as a 
+DME transmitter.  While these two assumptions are likely 
+not precisely true, they are adequate for initial analysis. 
+ 
+With these infrastructures, mu ltiple configurations are 
+possible.  Four options are to use the current DME sites 
+only, the GBT sites only, both DME and GBT sites, or all 
+sites with a few reasonable additions to the infrastructure.  The final option is conceivable as it is possible to field 
+both DME and GBT at locations such as cellular towers.  
+The addition of a few such sites could be useful for improving coverage in vital areas (such as a busy airport).  
+ARCHITECTURES 
+ 
+With the infrastructure, there are several architectures that can be developed for navigation. Three possible 
+architectures are: 1) Broadcas t, 2) Request-Reply and 3) 
+Hybrid.  Additionally, positioning in these architectures can be aircraft based or ground based.  In aircraft based, 
+the aircraft determines positions from measurements that 
+it makes.  In ground based, the FAA calculates the aircraft position from measurements made on the ground and 
+transmits it to the aircraft.  The position transmission is an 
+additional step over aircraft based design and may need 
+security such as encrypti on to prevent spoofing.  
+However, the payoff for ground based designs is that it could minimize the changes required on board the aircraft 
+to have APNT.  This enhances adoption of the 
+technology.  
+The first architecture is broadcas t.  In this architecture, the 
+aircraft position can be derived with only one party sending a broadcast.  In an aircraft based design, the 
+ground infrastructure will broadcast in a time coordinated 
+manner.  Given DME and GBT will be used, the broadcast will likely be time multiplexed.   The aircraft 
+will then be able to calculate pseudo ranges to each 
+station that it receives a broadcast.  Hence, it operates like GPS or GPS pseudolites.  In a ground based design, the 
+aircraft broadcasts.  The broadcast is then received by 
+multiple, time synchronized ground stations.  The reception by each ground stati on results in a pseudo range 
+to the aircraft which is then used to determine position.  
+With the position transmitted back to aircraft.  This 
+technique, known as multilateration, has been utilized and 
+has been tested in several locations using ADS-B.  The broadcast architecture is passive and so has very high 
+capacity.  However, it requires the ground to be time 
+synchronized and needs a mini mum of three stations for 
+horizontal positioning since pseudo ranges are used. 
+ 
+Another potential architecture is request-reply or traditional two way ranging.  Utilizing this architecture 
+begins by having one party sends a request or 
+interrogation.  Once the second party receives the request, it transmits a response after a known delay.  The first 
+party then calculates range fr om reception of the reply.  
+DME operates in this fashion and an aircraft based design using request-reply should operate similar to DME.  A 
+ground base design is similar to the ranging function 
+performed by secondary surveillance radars (SSR).  A SSR queries an aircraft an d calculates distance to the 
+aircraft from the reply.  Becau se of the interactive nature 
+of request-reply, there is limited capacity.  However, the 
+minimum number of measurements need for horizontal 
+positioning is only two as we have true range measurements. 
+ Ideally, we would like a system with high capacity while 
+requiring only two stations for positioning.  High capacity 
+is needed to support for crowded airspaces such as New 
+York or Los Angeles.  Reducing the number of stations needed for positioning is vital for approach.  DME and 
+GBT are line of sight (LOS) systems and the number of 
+stations visible decreases with altitude.  As a result, we developed hybrid architectures. 
+ 
+Hybrid architectures contain some aspects of both the 
+previous architecture.  Transforming pseudo ranges to 
+true ranges requires knowing the time offset between the 
+ground and the aircraft.  Th is can be accomplished using 
+two way communications between the aircraft and the 
+ground.  Afterwards, the broadcast approach can be used for as long as the ground and aircraft clocks are 
+synchronized.  This minimizes the number of two 
+communications required while only needing a minimum of two required station for horizontal positioning.  
+However, it also requires the ground to be time 
+synchronized and increases system complexity.  
+ORGANIZING THE ACCURACY ANALYSIS 
+ 
+With so many options possible, it is necessary to develop 
+a methodology to analyze the potential systems 
+architectures in an organized and manageable manner.  As 
+such, we take three steps.  First, the architectures are 
+grouped into two basic categorie s.  The second step is to 
+generalize the analysis by parameterizing by ranging accuracy.  The third step is to examine the base level of 
+requirements.  This means starting with the basic 
+infrastructure (DME only, DME and GBT) and one flight 
+level for each of two basic operations (en route, 
+approach).    
+ARCHITECTURE 
+ 
+The architectures can be organized into two basic 
+categories: true range and pseudo range based.  The 
+request-reply and hybrid
+ architectures utilize true range 
+and require a minimum of two stations for horizontal 
+position.  The broadcast architectures are pseudo range 
+based and require a minimum of three stations for positioning. 
+ 
+PARAMETERIZING BY ACCURACY 
+ 
+One major difference between the architectures is ranging 
+accuracy.  The categorization ab ove allows us to perform 
+analysis with range accuracy being a sensitivity 
+parameter.  This is accomplished by developing dilution 
+of precision (DOP) coverage maps based on the basic 
+categories.   A MITRE DME coverage tool was used to 
+generate such DOP maps.  This tool utilizes high resolution digital terrain elevation data (DTED Level 1) 
+as well as standard models for DME propagation model, performance and coverage.  With the DOP map, we can 
+determine the positioning accuracy as a function of 
+ranging accuracy as seen in Equation 3. 
+ 
+22
+pos range air sis DOP DOP    (3) 
+ 
+However, having positioning error is only one step the 
+determining if RNP accuracy is met.  RNP level is the 
+total system error (TSE) accuracy (95%).  For example, RNP 0.3 means the 95% TSE level is at or below 0.3 
+nautical miles.  TSE is the sum of flight technical error 
+(FTE) and navigation system error (NSE).  The position 
+error gives the NSE.   FTE depends on the airframe and 
+the flight system.  For the initial analysis, FTE from RTCA document DO-208 is used.  A basic summary is 
+seen in Table 1 [11].  More extensive models are provided 
+for each airframe and flight in strument as seen in Boeing 
+documents [12]. 
+ 
+Source/Air 
+frame 737 747-400 757/767 777 DO-208 
+Manual with 
+MAP 0.15/0.208 0.402 0.5 0.5 0.5 
+LNAV with 
+FD 0.05/0.073 0.206 0.206 0.206 0.25 
+LNAV w. 
+autopilot 0.025/0.068 0.088 0.088 0.088 0.125 
+Table 1.  FTE assumptions (in nm) form various air 
+frame documents and DO-208 
+ 
+INFRASTRUCTURE & FLIGHT ALTITUDES 
+ 
+Two infrastructure options are used in the initial analysis.  
+DME sites only represent the base case of using one 
+system.  Additionally, using DME also represents the baseline case.  This case will also provide some indication 
+of the performance of using GBT sites only as there is a 
+similar density of GBT stations.  The second case is to examine using both DME and GBT sites.  This will 
+indicate what is achievable if both systems can be used 
+together.  Additionally, seeing where the coverage of this case fails will help us determine if the addition of a few 
+extra stations will be beneficial. 
+ Several flight levels (FL) need to be supported to provide 
+en route or approach capabilities.  For the initial analysis, 
+we used 5000 feet above ground level (AGL) for en route.  
+This altitude is envisioned as the lowest needed to support 
+en route.  It also represents a worst case scenario as the number of visible DME and GBT decreases with altitude.  
+For approach, 500 feet AGL was used as it is near the 
+minimum altitude for RNP 0.3.  
+COVERAGE ANALYSIS 
+ 
+The methodology allows to us organize the analysis in a 
+meaningful manner.   This section presents the coverage analysis results for en route over CONUS and approach at 
+two major airspaces: San Francisco Bay Area and 
+Washington DC. 
+ 
+CONUS AT 5000 FT AGL 
+ 
+The first case to consider is the en route over CONUS.  
+We begin by examining the DOP coverage for each architecture and infrastructure.  Figure 3 shows the DOP 
+coverage for true range architectures when using DME 
+and GBT ground infrastructure. 
+ 
+ 
+Figure 3. CONUS DOPs for True Range at 5000 ft 
+AGL with DME & GBT 
+ 
+The target operation for th e en route airspace over 
+CONUS is RNP 1.0.  For RNP 1.0, a total system 
+accuracy (95%) of 1 nm must be achieved.  Some of the 
+error is due to FTE and a value of 0.25 nm (1 ), 
+equivalent to roughly 0.5 nm (95%), is used.  This value 
+is consistent with standards such as DO-208 and AC90-
+100A.  For ranging, range = 0.17 nm is used.  This value 
+is the worst expect performance of DME given the 
+standards.  Figure 4 shows the RNP coverage for true 
+range architectures provided both DME and GBT stations 
+are used.  The results show that coverage for RNP 1.0 
+essentially follows that of the DOP (down to the 
+resolution of the plots).  In examining each case, it was found that given the assumptions on FTE and range 
+accuracy, the DOP coverage (DOP <= 5) and RNP 1.0 is 
+essentially the same.  Figure 
+5, Figure 6 and Figure 7 
+show the DOP coverage for the scenarios true range with 
+DME only, pseudo range with DME and GBT, and 
+pseudo range with DME only, respectively.  From these 
+figures, it can be seen that all have coverage holes.  However, the coverage holes of the pseudo range, DME 
+only scenario is very signif icant and likely not acceptable. 
+ 
+ 
+Figure 4. RNP coverage in CONUS for True Range at 
+5000 ft AGL with DME & GBT 
+ 
+ 
+Figure 5. CONUS DOPs for True Range at 5000 ft 
+AGL with DME 
+ 
+ 
+Figure 6. CONUS DOPs for Pseudo Range at 5000 ft 
+AGL with DME & GBT 
+ 
+  
+Figure 7. CONUS DOPs for Pseudo Range at 5000 ft 
+AGL with DME only  
+The results are summarized in Table 2.  The summary 
+indicates the method and a judgment on the amount of coverage gaps based on the evaluation.  The 
+architecture/infrastructure co mbinations are ranked from 
+1 to 4 in descending order of coverage.  
+ 
+DME & GBT 
+True Range 
+(Request-Reply, Hybrid) 
+A few coverage gaps (1) DME only 
+True Range 
+(Request-Reply, Hybrid) 
+Some coverage gaps (2) 
+DME & GBT 
+Pseudo Range 
+(Broadcast) 
+Some coverage gaps (3)  DME only 
+Pseudo Range 
+(Broadcast) 
+Significant coverage gaps (4)  
+Table 2. CONUS Results 
+ 
+APPROACH AT 500 FT AGL 
+ 
+The other consideration is approach and supporting RNP 
+0.3 in the terminal area.  For the initial study, a few major 
+airports were examined.  Two areas with multiple major airports were used.  The San Francisco bay area has three 
+major airports in San Francisco (SFO), Oakland (OAK), 
+and San Jose (SJC) International.  The Washington D.C. 
+area also has three major airports – Dulles (IAD), 
+National (DCA), and Baltimore-Washington (BWI) International.  As the minimum altitude for coverage can 
+vary, a value of 500 ft AGL was selected is as a 
+reasonable approximation to the minimum altitude.  
+The analysis examines the resulting RNP coverage given 
+different level of ranging errors.  Two levels, 
+range = 
+0.085 nm and 0.17 nm, are first examined as they 
+represent the smallest and largest level of random error from the standards.  Another value to determine is the 
+maximum allowable level of ranging error that will 
+provide acceptable RNP 0.3 cove rage about the airport.  
+For the preliminary analysis, the determination is partly 
+subjective and examines just  the area about the airport 
+without consideration to the specific approaches utilized.  More detailed analysis will involve overlaying the 
+approaches for each airport.  The maximum range error 
+allows us to make some comparisons between the 
+different options with one metric.  
+SAN FRANCISCO BAY AREA 
+ 
+The San Francisco bay area was selected both due to the 
+density of major airports in the vicinity and the 
+mountainous terrain.  The terrain makes coverage challenging for line of sight transmissions such as DME 
+and GBT. 
+ 
+ 
+Figure 8. RNP 0.3 coverage using true range 
+architecture and DME & GBT sites ( range = 0.085 nm) 
+ 
+ 
+Figure 9. RNP 0.3 coverage using true range 
+architecture and DME & GBT sites ( range = 0.17 nm) 
+ 
+The most optimistic case is th at of a true range system 
+using both DME and GBT sites.  Figure 8 and Figure 9 
+show the RNP 0.3 coverage for range = 0.085 nm and 0.17 
+nm range error.  RNP 0.3 coverage seems adequate for the 
+range = 0.085 nm case with the exception of perhaps SJC 
+from the southeast.  If range is increased to 0.17 nm, RNP 
+0.3 coverage at the airports  considered is essentially 
+eliminated.  Further study shows that to support RNP 0.3 
+for all airports (with the exception of SJC from the southwest), the maximum allowable ranging error is 
+roughly 0.10 nm.  It turns out that regardless of the 
+method used, additional coverage is needed to support 
+SJC from the southeast.  Given this, SJC from the southeast is not considered when determining the 
+maximum range error for RNP 0.3 coverage in all cases. 
+ Next, we examine the true range scenario using only 
+DME.  Figure 10 and Figure 11 show the RNP 0.3 
+coverage for 
+range = .085 nm and 0.17 nm range error, 
+respectively.  The results are similar to the previous case.  
+Again, analysis indicates that  to support the RNP 0.3, the 
+maximum allowable ranging error is roughly 0.10 nm. 
+ 
+ 
+Figure 10. RNP 0.3 coverage using true range 
+architecture and DME sites only ( range = 0 .085 nm)  
+ 
+ 
+Figure 11. RNP 0.3 coverage using true range 
+architecture and DME only sites ( range = 0.17 nm) 
+ 
+Pseudo range architectures have worse coverage due to 
+the requirement of having an additional station.  Figure 12 
+and Figure 13 show the RNP 0.3 coverage given range = 
+0.085 nm for the architecture with DME & GBT and 
+DME only, respectively.  RNP 0.3 is very limited in these two cases.  In fact, to provide reasonable RNP 0.3 coverage, the maximum allowable ranging error is much 
+lower – 0.06 nm or less.  Even with this ranging accuracy, 
+there will still be coverage holes around each airport for 
+the DME only infrastructure as seen in the plots.  
+ 
+Figure 12. RNP 0.3 coverage using pseudo range 
+architecture and DME & GBT sites ( range = 0.085 nm) 
+ 
+ 
+Figure 13. RNP 0.3 coverage using pseudo range 
+architecture and DME sites only ( range = 0.085 nm) 
+ 
+DME & GBT 
+True Range 
+0.10 nm  DME only 
+True Range 
+0.085 nm  
+DME & GBT+ 
+Pseudo Range 
+0.06 nm  DME only* 
+Pseudo Range 
+0.06 nm  
+Table 3. Summary Results for San Francisco 
+ 
+Table 3 summarizes the results for approach in the major 
+airports of the San Francisco bay area.  It shows each 
+combination of architecture a nd infrastructure along with 
+the estimated maximum allowa ble ranging error that can 
+still provide reasonable RNP 0.3 coverage.  There are 
+additional caveats for the pseudo range cases.  For pseudo ranging with DME and GBT, SJC cannot be supported 
+(
++).  For pseudo ranging with DME only, there are coverage holes around each airport (and SJC cannot be 
+supported) (*).   
+ 
+WASHINGTON DC AREA 
+ 
+The Washington DC area was also examined.  The results 
+were similar to those found previously for San Francisco 
+though the performance was generally a little better since 
+its terrain is less rugged.  Figure 14  shows an example 
+plot from the DC area.  It shows the performance of the 
+true range architecture when using DME and GBT with 
+range = 0.17 nm.  Table 4 summarizes the results in a 
+similar manner as Table 3.  Again, there are some caveats.  
+For true ranging with DME only, there are coverage holes 
+around BWI and IAD (+).  For pseudo ranging with DME 
+only, there is no coverage at BWI and IAD (*).  As seen 
+from the results, the maximum allowable ranging error for 
+RNP 0.3 coverage can be a little higher in the DC area.  
+This is expected as the area  has fewer terrain features 
+obstruct the LOS to ground stations at low altitudes. 
+ 
+ 
+Figure 14. RNP 0.3 coverage using true range 
+architecture and DME & GBT sites ( range = 0.17 nm) 
+ 
+DME & GBT 
+True Range 
+0.12 nm  DME only+ 
+True Range 
+0.085 nm  
+DME & GBT 
+Pseudo Range 
+0.085 nm  DME only* 
+Pseudo Range 
+0.085 nm  
+Table 4. Summary Results for Washington DC 
+ 
+ 
+CONCLUSIONS  
+ 
+This paper examines some of the options being studied by 
+the FAA to provide alternative navigation to GNSS.  The 
+paper focuses on systems based on existing or soon to be existing FAA infrastructure such as DME and GBTs.  
+Specifically, the preliminar y analysis examines the 
+coverage performance of systems using these elements to support RNP 1.0 through CONUS and RNP 0.3 approach 
+capabilities to vital airports.   
+ 
+Three architectures were studied. Depending on implementation, the position solution can be calculated 
+either in the aircraft or by the ground for any of the 
+architectures studied. One architecture is to use passive ranging which yields pseudo ranges. Three pseudo ranges 
+are needed to derive a horizontal position solution.  
+Another means is request-reply or two way ranging.  This reduces the number of requ ired measurements to two 
+since it yields true ranges.  However, its capacity is 
+limited.  The third means is hybrid technique whereby 
+passive ranging is suppleme nted by occasional two way 
+communications is used to synchronize the aircraft with the ground transmitters.  This provides for capacity 
+benefits.  Since true ranges are derived, only two 
+transmitters are needed for horizontal positioning.   
+Performance and coverage was assessed for both en route 
+in CONUS and for approach at several airports.  The result for en route is promising as only one technique 
+(pseudo range with DME infrastructure) has extensive 
+RNP 1.0 coverage gaps for en route at 5000 ft AGL.  Both the San Francisco and Washington DC areas were used 
+for the airport study.  With the true range based 
+techniques, RNP 0.3 around the airport seems achievable without significant improvement in DME range accuracy.  
+For the pseudo range method, DME range accuracy will 
+need to improve.    
+The analysis presented here is not meant to be conclusive.  
+Rather, it is an initial analysis meant to provide a general 
+idea of the performance level.  For example, the currently 
+existing DME and planned GBT sites were used for the analysis.  Future FAA plans include adding a few more 
+DME to fill in some en route gaps.  Furthermore, other 
+changes and features such as approach DMEs were not initially included in the analysis.  
+ 
+ACKNOWLEDGMENTS 
+ 
+The authors would like to thank the FAA Navigation 
+Services Directorate for supporting this work.  We would also like to acknowledge the rest of the APNT Team for 
+their inputs. 
+ 
+DISCLAIMER 
+ 
+The views expressed herein ar e those of the authors and 
+are not to be construed as official or reflecting the views 
+of the Federal Aviation Administration or Department of 
+Transportation. 
+ 
+REFERENCES 
+ [1] John A Volpe National Transportation Systems 
+Center, Vulnerability Assessment of the Transportation 
+Infrastructure relying on the Global Positioning System, 
+Final Report, August 29 2001  
+[2] Office of the Press Secretary, The White House, 
+Homeland Security Presidential Directive 7 (HSPD-7): Critical Infrastructure Identification, Prioritization, and 
+Protection, December 17, 2003 
+ [3] Office of the Press Secretary, The White House, 
+National Security Presidential Directive 39 (NSPD-39): 
+U.S. Space-Based Position, Navigation, and Timing 
+Policy, December 8, 2004 
+ [4] Myron Kayton, Walter R. Fried, “Avionics 
+Navigation Systems,” Wiley Interscience, 2nd Edition, 
+1997  
+[5] International Civil Aviation Organization, “Annex 10 
+to the Convention on International Civil Aviation: Aeronautical Telecommunications”, Volume 1: Radio 
+Navigation Aids, 6
+th Edition, July 2006. 
+ [6] Federal Aviation Administration, AFS-400 
+“Advisory Circular,”  No. 90 -100A,  U.S. Terminal and 
+En Route Area Navigation (RNAV) Operations, September 2007 
+ 
+[7] Braasch, M., "Current Developments in Signal 
+Modeling of the Precision Distance Measuring 
+Equipment", Master's Thesis, Ohio University, 
+Department of Electrical and Computer Engineering, 
+Athens, Ohio, November 1989. 
+ [8] RTCA Special Committee 186, “Minimum Aviation 
+System Performance Standards for Automatic Dependent 
+Surveillance Broadcast (ADS ‑B),” Document No. 
+RTCA/DO-242A, 2002 
+ [9] RTCA Special Committee 186, “Minimum 
+Operational Performance Sta ndards for Universal Access 
+Transceiver (UAT) Automatic Dependent Surveillance – 
+Broadcast,” Document No. RTCA/DO-260B, 2009  
+ [10] RTCA Special Committee 186, “Minimum 
+Operational Performance Sta ndards for Universal Access 
+Transceiver (UAT) Automatic Dependent Surveillance – Broadcast,” Document No. RTCA/DO-282B, 2009 
+ 
+[11] RTCA Special Committee 159, “Minimum 
+Operational Performance Standards for Airborne 
+Supplemental Navigation Equipment Using Global 
+Positioning System (GPS),” Document No. RTCA/DO-208, 1991  
+ [12] Boeing CNS/ATM Focused Team (C/AFT) 
+Reference Docs Boeing Airplane documents, by model 
+airliner available at: 
+ http://www.boeing.com/comme rcial/caft/reference/docum
+ents/newdocs.htm 
+ 

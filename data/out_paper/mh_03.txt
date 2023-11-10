@@ -1,0 +1,623 @@
+The eyes and hearts of UA V pilots: observations of physiological
+responses in real-life scenarios
+Alexandre Duval1, Anita Paas2, Abdalwhab Abdalwhab1and David St-Onge1
+Abstract — The drone industry is diversifying and the number
+of pilots increases rapidly. In this context, ﬂight schools need
+adapted tools to train pilots, most importantly with regard to
+their own awareness of their physiological and cognitive limits.
+In civil and military aviation, pilots can train themselves on
+realistic simulators to tune their reaction and reﬂexes, but also
+to gather data on their piloting behavior and physiological
+states. It helps them to improve their performances. Opposed
+to cockpit scenarios, drone teleoperation is conducted outdoor
+in the ﬁeld, thus with only limited potential from desktop simu-
+lation training. This work aims to provide a solution to gather
+pilots behavior out in the ﬁeld and help them increase their
+performance. We combined advance object detection from a
+frontal camera to gaze and heart-rate variability measurements.
+We observed pilots and analyze their behavior over three ﬂight
+challenges. We believe this tool can support pilots both in their
+training and in their regular ﬂight tasks.
+I. I NTRODUCTION
+The industry of teleoperated drones for service, such as in
+infrastructure inspection, crops monitoring and cinematog-
+raphy, has expanded at least as fast as the technology that
+supports it over the past decade. However, in most countries
+the regulation is only slowly adapting. Nevertheless, several
+regulating bodies already recognized human factors as a core
+contributor to ﬂight hazards. While core technical features
+of the aerial systems are evolving, namely autonomy, ﬂight
+performances and onboard sensing, the human factors of
+UA V piloting stay mostly uncharted territory.
+Physiological measures, including eye-based measures
+(changes in pupil diameter, gaze-based data, and blink rate),
+heart rate variability, and skin conductance, are valuable
+indirect measures of cognitive workload. These measures
+are increasingly used to measure workload level during a
+task and are being integrated into interfaces and training
+applications to optimize performance and training programs
+[1].
+Eye-tracking glasses can be used to monitor training
+progress during various levels of task load. In a task requiring
+operators to track targets and other vehicles on a map,
+Coyne and Sibley [2] found a signiﬁcant decrease in operator
+situational awareness when task load was high, which was
+related to reduced eye gaze spent on the map. This suggests
+that eye gaze may be useful as a predictor of situational
+*We thank NSERC USRA and Discovery programs for their ﬁnancial
+support. We also acknowledge the support provided by Calcul Qu ´ebec and
+Compute Canada.
+1Alexandre Duval, Abdalwhab Abdalwhab and David St-Onge are with
+the Lab INIT Robots, Department of Mechanical Engineering, Ecole de
+technologie sup ´erieure, Canada name.surname@etsmtl.ca
+2Anita Paas is with the Department of Psychology, Concordia University,
+Canada anita.paas@concordia.caawareness. Further, Memar and Esfahani [3] found that gaze-
+based data were related to target detection and situational
+awareness in a tele-exploration task with a swarm of robots.
+Thus, multisensory conﬁgurations can be more robust to
+capture cognitive load. While each sensor is susceptible to
+some noise, these sources of noise do not overlap between
+sensors, such as HRV not inﬂuenced by luminance. This
+works aims at extracting gaze behavior and so we also gather
+pupil diameter for cognitive load estimation. However, we
+added another device extract HRV metrics and enhance our
+cognitive load estimation.
+Section II opens the path with an overview of the vari-
+ous inspirational domains to this work. We then build our
+solution on a biophysical capturing software (sec. III) and a
+detector trained on a custom dataset (sec. IV). Finally, we
+present the results of a small user study in sec. V and discuss
+our observations of the pilots behaviors.
+II. R ELATED WORKS
+A. On gaze-based behavioral studies
+The beneﬁt of eye tracking is that we can measure gaze
+behavior in addition to changes in pupil diameter. Gaze
+behavior can provide information about the most efﬁcient
+way to scan and monitor multiple sources of input. For
+example, in surveillance tasks, operators monitoring several
+screens can be supported by systems that track gaze behavior
+and automatically notify the operator to adjust their scanning
+pattern [4]. In a simulated task, Veerabhadrappa, et al.
+[5] found that participants achieved higher performance on
+a simulated UA V refuelling task when they maintained a
+longer gaze on the relevant region of interest compared to
+less relevant regions. Further, in training scenarios, gaze-
+based measures can identify operator attention allocation
+and quantify progress of novice operators [6]. Gaze-based
+measures of novices can also be compared with those of
+experts to determine training progress and ensure efﬁcient
+use of gaze.
+In a review paper focused on pilot gaze behaviour, Ziv
+[7] found that expert pilots maintain a more balanced visual
+scanning. Expert pilots scan the environment more efﬁciently
+and spend less time on each instrument compared to novices.
+However, in complex situations, experts spend more time
+on the relevant instruments which enables them to make
+better decisions than novices. Overall, Ziv concluded that
+the differences in gaze behavior between expert and novice
+pilots are related to differences in ﬂight performance.arXiv:2210.14910v1  [cs.HC]  26 Oct 2022B. On object detection
+Object detection identiﬁes various objects in the image
+such as cars, planes, dogs and cats and localize them, often
+using a bounding box around each object instance.
+A plethora of good models have been developed for
+object detection [8]. They can mainly be classiﬁed into two
+categories, two-stage object detectors, and single-stage object
+detectors. With two-stage detectors, such as R-CNN [9],
+SPP-net [10] and DetectoRS [11], the ﬁrst step involves
+creating region proposals, and the second step further reﬁnes
+the proposed bounding boxes and classify them. Whereas
+single-stage detectors directly generate bounding boxes and
+classes without the need for region proposals. Examples
+of those are YOLO [12], SSD [13], and EfﬁcientDet [14].
+Generally speaking, two-stage detectors are more accurate
+than single-stage detectors but less applicable in real-time
+scenarios.
+While these solutions are common for robotic perception
+[15] and static sensing [16], only a handful of works assess
+their potential to understand user behavior.
+Geert Br ˆone, et al [17] combined gaze data with object
+detection algorithms to argue the effectiveness of using
+detection algorithms for automatic gaze data analysis. They
+also designed a proof of concept for their method but did not
+report the results. Another research [18] investigated the use
+of two detection models (YOLOv2 and OpenPose) to relate
+the gaze location speciﬁcally to the interlocutor’s visible head
+and hands during humans face-to-face communication.
+A more recent work [19] trained a classiﬁcation model on
+synthetic data to classify images cropped around the gaze
+location as a method to annotate volume of interests. The
+issue with this approach is that an image (or image crop) will
+be assigned only one class. Even if it contains more than one
+object it will be labeled as an image of the most prominent
+object, missing the cases where a person could be looking
+at multiple objects that are close to each other. Whereas
+object detection holds the potential to relay this information
+by identifying all objects in the image not just the most
+prominent one. Similarly, [20] also used a classiﬁcation
+model combined with image cropping, and compared it to
+using an object detection model. However, they only relied
+on available pretrained models without any ﬁt to speciﬁc
+application.
+Unlike those previous works, our work presents a model
+tailored and tuned to a realist application and use the tools
+to extract meaningful behavioral data with UA V pilots.
+Closer to our research interest, Miller et al. [21] ﬁne tuned
+a pretrained InceptionV2 detection model to annotate objects
+of interest in eye-tracking video data, nut also integrate it
+with body motion capture data. Their aim was to relate the
+gaze location with the participant’s body position and other
+objects in the frame. Further, they deployed their method in
+a user study to investigate distance from gaze point to target
+object in a target interception task. Our work is different
+from theirs, in the application scenario, the tools we deploy
+(learning model and biophysics measures) and the fact that
+we provide a more in depth analysis of the user study.Finally, object detection demands a lots of processing
+power: running state-of-the-art detection algorithms at 30 fps
+can hardly be done onboard, a wearable or even a more
+capable robot computer. Previous performance test were
+conducted between variants of YOLO in live situation for
+drone emergency landing [22] in terms of the mean average
+precision (mAP) and frames per second (FPS). Two model
+stands out : YOLOv3 for is speed and YOLOv5 for its
+accuracy.
+III. O PERATOR BIOPHYSICS
+Fig. 1. Our contribution to HRI4ROS pipeline shown as ROS rqt graph.
+The input nodes are on the left. Each node publishes in a set of speciﬁc
+topics under the standard namespaces.
+Physiological signals capture and analysis are fundamental
+to human-centered robotic system design and validation. Sev-
+eral works demonstrate the relevance of these measurements,
+but each with its own implementation. It can then be time-
+consuming to reproduce any of these studies accurately and
+to deploy their tools and methods in other contexts.
+In robotics, the Robot Operating System (ROS) positions
+itself as a standard to share and collaborate on code and
+software infrastructure. Its community is slowly integrating
+user-based measurements and wearable device drivers to
+cope with the reproductibility and sharing challenge of the
+Human-Robot Interaction (HRI) community [23]. A stan-
+dard to include HRI considerations in ROS is currently in
+progress [24].
+Our work aims to contribute to the community effort
+with the integration of new sensor modality in the stan-
+dard. The standard recommends to split the human-related
+aspects into ﬁve sub-namespaces. However, to better ﬁt
+pupilometry data in the structure, we split the sub-namespace
+/human/faces/ <face id >in an other subcategory, namely
+theeyes. Eyes data are related to gaze, pupil diameter and
+blinks. The gaze messages (2D and 3D) are compose of a
+geometry msgs/Point and two timestamps : one from ROS,the other from the device (if available). The pupil messages
+(raw and ﬁltered) publishes the diameter value in millimeters
+as a ﬂoat64 alongside the same two timestamps. The pupil
+driver consider a web socket connection, generally over
+WiFi, compatible with several brands, namely Tobii and
+PupilLabs. Most of pupilometry commercial devices also
+grant access to live stream of the eyes camera and the scene
+camera, a frontal camera giving a ﬁrst person view of the
+scene as viewed by the user. Another node subscribe to these
+streams and convert them in ROS image topics.
+The second sensing modality is based on electrocardio-
+gram signal. The driver provides the raw ECG values (in
+mV) in the /humans/bodies/ <body id >namespace. We also
+provide with more advanced features extracted live from the
+signal: RR intervals and beats per minutes. The breathing rate
+can also be extracted from the ECG signal, or, if available,
+from an acelerometer position on the chest. All these data
+are published as stamped ﬂoat64 ROS messages.
+Figure 1 illustrates our contribution to the ROS4HRI
+pipeline [24], based on adding these two new sensing modal-
+ities. Each new user, or robot operator, is given a unique ID,
+based on the available modules to perform person identi-
+ﬁcation. The current HRI4ROS pipeline [23] recommends
+using face recognition, but one could also leverage pupil
+shape as a unique biometric identiﬁer using our contribution.
+The sensors reference frame can be link to the body with
+geometrical transformation (TF) messages. All these values
+are published live when using the devices, but they can
+easily be recorded in a ROSbag for post processing and
+data analysis. However, to monitor the data quality live and
+add some keypoints to the recordings, we also developed a
+Jupyter Notebook visualization interface. All code is publicly
+available online1.
+Live data processing
+Most pupillometry devices provide gaze information in the
+eye camera frame as well as in the user space, following a
+calibration step using markers. However, pupil diameter and
+ECG cannot be used in their raw format to infer cognitive
+state. A ﬁrst pass on the pupil value prevents propagation
+of any physical outliers ( 9< d(mm)<1). Then the pupil
+diameter data is processed over sliding windows of 1 second
+duration with:
+dfiltered =dlp−˜dbase (1)
+where dlpis the raw value after a low pass ﬁlter was applied
+with cutoff frequency of 4Hz, and ˜dbase is the median of the
+baseline values. A baseline of at least 30 seconds must be
+recorded before running any experiment, for instance when
+the participant is undergoing the calibration process of the
+glasses.
+As for the ECG data, we rely on a well maintained Python
+library popular among neuroscience academic projects, Neu-
+roKit2 . We provide it with the raw signal, in sliding windows
+of 30 seconds, and it includes the signal cleaning step and
+feature extraction. However, since several features may be
+1https://git.initrobots.ca/aduval/bio physicsselected by the developer depending on the study context, our
+node provides only RR interval, BPM outputs and breathing
+rate extracted from the cleaned signal.
+IV. L EARN TO SEE ROBOTS
+A. Dataset building
+Object detection is core to transferring the potential of
+gaze behavior analysis into UA V piloting task. Notwithstand-
+ing the accuracy of the existing models, it is known that a
+machine learning model is as good as the data used to train
+it. That dataset must contain enough images and instances
+for each class that the experiment targets. We collected
+our own dataset including four classes: UA V (drone), robot
+manipulator (arm), mobile robot base (rover) and remote
+controller. We selected classes that are available in our lab
+and that are more suitable to our experiment.
+TABLE I
+DATASET SPLIT DETAILS
+Class No. Train. instances No. Valid. instances All
+drone 425 116 541
+robot arm 165 75 240
+mobile robot 272 100 372
+controller 217 77 294
+Total 1079 368 1447
+For the UA V , we collected images of a small indoor
+collision-resilient quadcopter designed by de Azambuja et
+al. [25]. For the robot arm, we picked several photos of
+the Gen3 lite robot arm from Kinova2. For the mobile
+robot, we used images of the Clearpath Dingo-D3. Lastly
+for the controller, we selectted images of the PS4 Dualshock
+controller4, one of the most common controller in mobile
+robotics and the one provided with the Clearpath base.
+A total of 909 images with a total of 1447 object instances.
+To achieve this number and diversify the characteristics of the
+images, we leveraged four methods to collect those images.
+The ﬁrst was to look into our lab’s archive for videos and
+photos containing the target objects. Second, using a Python
+script, we automated download of relevant images from
+a search engine. Third, Downloading online public videos
+showing the objects and then extract frames from them.
+Finally, we took several new pictures and videos on our own,
+mostly to cope for the lack of public material on the custom
+UA V . We then annotate the images using an open source tool
+called LabelImg [26].
+Furthermore, it is known that collecting and annotating
+images is a time consuming task and deep learning models
+needs a lot of data to train. So, we leveraged transfer learning
+to utilize pretrained models on COCO dataset [27] then used
+our dataset for ﬁnetuing and validation.
+For the dataset split, since the resulting dataset is still
+rather small, we did not directly split the images to training
+2https://www.kinovarobotics.com/fr/produit/
+robot-gen3-lite
+3https://clearpathrobotics.com/dingo-indoor-mobile-robot/
+4https://www.playstation.com/en-us/accessories/
+dualshock-4-wireless-controller/TABLE II
+ALGORITHMS COMPARISON RESULTS
+Class V3T V3D V3SPP V5 V7
+all 0.938 (0.958) 0.977 (0.981) 0.971 (0.984) 0.974 (0.973) 0.976 (0.982)
+drone 0.915 (0.935) 0.968 (0.969) 0.954 (0.966) 0.964 (0.974) 0.964 (0.968)
+robot arm 0.966 (0.991) 0.996 (0.995) 0.98 (0.994) 0.99 (0.995) 0.994 (0.996)
+mobile robot 0.989 (0.995) 0.992 (0.995) 0.99 (0.995) 0.998 (0.995) 0.997 (0.996)
+controller 0.879 (0.911) 0.953 (0.964) 0.958 (0.98) 0.945 (0.929) 0.947 (0.966)
+and testing. Instead we tried to split them to maintain a
+percentage of around 80% of each class instances for training
+and around 20% for validation (some images may have 2
+or 3 instances of an object and others may have 1 or 0).
+This resulted in 684 images for training and 225 images for
+validation. Table I represents the dataset and the split details.
+B. Algorithms comparison
+As mentioned in sec. II, YOLO is well known for its
+object detection speed and accuracy with several versions
+of this model to choose from YOLOv1 to YOLOv7. Aiming
+at live detection eventually, we restrict our model selection
+to compare the YOLO algorithms family.
+We ﬁrst started with the evaluating of YOLOv3, YOLOv5
+and YOLOv7 performances in our speciﬁc detection prob-
+lem. For that, we selected three versions of YOLOv3: Tiny
+(V3T), default (V3D) and SPP (V3SPP), as well as the
+large version of YOLOv5 and YOLO7 largest model (e6e).
+Table II presents the results of the evaluation for each model
+pretrained in MS COCO, ﬁnetuned and evaluated on our
+collected dataset. Data augmentation was employed by the
+hyperparameters of YOLO during the models training to in-
+crease the effective size of the dataset and enhance the model
+generalization. The training and validation was conducted on
+Compute Canada clusters [28]. For each model, we reported
+F1 measure and mean average precision (between practices)
+at intersection over union of 0.5.
+Secondly, we needed to be able to use those trained
+detection models within ROS to ﬁt into the pipeline detailed
+in sec. III and to align the detection information with the
+person’s gaze information. To do that, we decided to look
+into the publicly available open source ROS packages for
+YOLOv3 [29], YOLOv5 [30] and YOLOv7 [31] using the
+weights from our training. When running the feed video
+through each model in live, we end up getting 8 FPS, 3 FPS
+and 1 FPS for YOLOv3, YOLOv5 and YOLOv7 respectively.
+The tests were conducted on an Intel® Xeon(R) E-2276M
+CPU @ 2.80GHz × 12 CPU, with a NVIDIA Quadro P620
+512 CUDA core GPU with 4 GB GDDR5, 16 GB DDR4
+RAM running Ubuntu 20.04.4 LTS and ROS Noetic.
+C. Gaze to objects
+Gaze tracking in a 3D environment is easy by itself. But
+combining gaze tracking on object in a dynamic 3D space
+makes it more difﬁcult. Detected objects from the video
+feed have bounding boxes around them. Adding the gaze
+coordinates base of the same image reference, we can deduct
+what the person is looking at. Like shown in Figure 2 the
+gaze is inside a bounding box, it means the person is looking
+on that particular object, in this case, a PS4 controller.
+Fig. 2. Gaze on a dualshock 4 controller. A person was asked to look for
+10 seconds at the remote controller. In pink we see the gaze. Each object
+in the video frame is bound and tagged with the class and conﬁdence of
+prediction.
+To avoid any collision, the person needs to sweep the
+gaze over the surrounding objects. To note if the person
+is looking at the action or not, we added a dynamic ROI
+(Region Of Interest) that stay attached to the detected object
+in the scene. We can see the ROI in green in the Figure 3.
+We use functions made by Dinu C. Gherman to deﬁne the
+ROI by giving points in an image5.
+Fig. 3. The gaze position within the ROI (green). The ROI is dynamic to
+follow the moving objects. The gaze (pink) is moving in this area between
+the drone and the robot arm.
+V. U SER STUDY
+A. Method
+The study was conducted indoors to maintain a more
+controlled environment. Figure 4 shows the map of the
+environment. A large and long room with a ceiling height
+of 3 meters. Participants (n = 8) piloted a drone around a
+stationary arm on top of a robot (either stationary or moving,
+see conditions below and Fig. 3) with the goal of ﬂying the
+drone around the arm as many times as possible. Biophysical
+measurements, including pupil diameter, eye gaze, and heart
+5https://www.oreilly.com/library/view/
+python-cookbook/0596001673/ch17s19.htmlFig. 4. Map of the indoor environment. The black dot represent the
+participant. The yellow rectangles with blue dot are the Dingo with the
+Kinova arm on top on their starting point. Blue line is the side to side path.
+Green line the back and forth path. Red curve the slalom path. The pink X
+represent the Cogniﬂy drone.
+rate (ECG), were recorded from each participant during each
+of the tasks. The study was divided into 5 tasks, with a
+duration of 1 minute each:
+1) Pilot the drone freely with no obstacles around (base-
+line condition to familiarize participants);
+2) Pilot the drone around a static vertical Kinova robot
+arm afﬁxed to a Clearpath Dingo-D;
+3) Pilot the drone around a vertical Kinova arm afﬁxed
+to a Clearpath Dingo-D moving back and forth at 25
+cm/s on a distance of 4 meters;
+4) Piloting the drone around a vertical Kinova arm afﬁxed
+to a Clearpath Dingo-D moving side to side at 25 cm/s
+on a distance of 4 meters;
+5) Piloting the drone around a vertical Kinova arm afﬁxed
+to a Clearpath Dingo-D moving in a slalom motion .
+Prior to the experiment, each user was asked about their
+experience with drone piloting. This needed to be considered
+because it can have a great impact on their performance. A
+person piloting a drone for the ﬁrst time will not have the
+same reﬂexes or familiarity as someone with many hours of
+ﬂight.
+Before starting the tasks, the participant put on the Polar
+H10 heart rate chest band sensor under the shirt to record
+heart rate measures and a pair of Tobii Pro Glasses 3 eye-
+tracking glasses. Then, we explained the controls of the
+Cogniﬂy drone [25]. Participants were instructed to stand
+still on a mark on the ground (black dot in Figure 4).
+To establish a baseline of luminance for each of the areas
+participants would be looking at, we had the participant look
+for 10 seconds each at the remote controller held in their
+hands, the drone, the Dingo-D, and the Kinova robot arm.
+Once done, we began Task 1.
+After completing Task 1 (freely ﬂying the drone in the
+area), participants completed Task 2 (stationary condition).
+After Task 2, participants completed either Task 3 (back and
+forth motion) or 4 (side to side motion). Tasks 3 and 4 were
+counterbalanced, so all participants did both, but not in the
+same order. Finally, participants completed Task 5 (slalom
+motion). During the experiment, drone crashes occurred for
+some participants (n=3). There is no particular task that
+had more crashes than others. In these cases, the task was
+restarted. Figure 5 show the classiﬁer distribution over all
+backnforth side2side slalom858790929597100Frames with at least 2 detections (Fig. 5. Detector performance: percentage of frames with at least 2 objects
+detected out of 3 (arm, base, uav).
+participant for the last three tasks: almost every frame had at
+least two objects detected, enough to compute a meaningful
+ROI.
+B. Results
+On average, participants completed the most circles around
+the Kinova arm in the back and forth (Task 3) and side
+to side (Task 4) conditions, and the least in the slalom
+condition (Task 5), suggesting that the slalom condition was
+most challenging. Pupil diameter measures support this idea,
+as participants had the largest pupil diameter in the slalom
+condition, on average (see Figure 6). Heart rate variability
+measures (SDNN) showed a small trend towards this pattern
+as well between the back and forth and slalom tasks.
+backnforth side2side slalom20.030.040.050.060.070.0SDNN
+backnforth side2side slalom-0.20.00.20.50.81.0Pupil variation (mm)
+Fig. 6. Cognitive load metrics average for all participants by task.
+We then split the data between expert and novice drone
+pilots, with experts having at least 15 hours of ﬂight ex-
+perience. There were four experts and four novices with
+this division. For overall performance, experts outperformednovices in all tasks except the side to side task (see Figure
+7). However, this could be due to additional task-speciﬁc
+training. Due to the counterbalancing (which did not take
+expertise into account), three out of the four novices per-
+formed the side to side task later in the experiment than
+most of the experts. The expert group maintained similar
+performance levels across tasks, while the novice group had
+a drop in performance for the slalom condition.
+The pupil measures differed slightly between the groups
+(see Figure 8), with expert pilots having the largest pupil
+diameter in the slalom condition, followed by the back and
+forth condition, and ﬁnally the side to side condition. Novice
+pilots had the largest pupil diameter in the back and forth
+condition, followed by slalom, and then the side to side
+condition. This suggests that cognitive load in expert pilots
+may have been highest in the slalom condition, whereas in
+novice pilots, cognitive load may have been highest in the
+back and forth condition.
+backnforth side2side slalom024681012Performances10.7512.75
+8.2512.25
+11.512
+Novices
+Experts
+Fig. 7. Average number of circles around the obstacle (arm) by group for
+the ﬁnal three tasks. All participants performed the slalom task last. Most
+novices performed the back and forth task before the side to side task, and
+the reverse for most experts.
+For the heart rate variability measures, experts had higher
+SDNN for the back and forth condition than for the side
+to side or slalom conditions. Novices had higher SDNN for
+the side to side condition, less for the slalom condition, and
+least for the back and forth condition. As with the pupil and
+performance measures, this pattern of results shows a trend of
+familiarization, as each group experienced increased SDNN
+(an indicator of lower cognitive load) in the condition most
+in the group performed fourth.
+Finally, as seen in Figure 8, experts shifted their gaze more
+than novices, but their gaze was more focused and intentional
+(see heatmap in Figure 9). This may suggest that experts
+were more comfortable with piloting a drone and were able
+to monitor the area more efﬁciently to perform the tasks
+compared to novices.
+VI. C ONCLUSION
+In order to better understand how UA V pilots operate,
+we introduced a complete integration of pupil and heart
+rate features into the HRI4ROS pipeline. We presented a
+set of ROS nodes to capture and process live data from
+these sensors and we built a dataset to train a model for
+object detection on pilot frontal camera feed. Our trained
+backnforth side2side slalom0.00.10.20.30.40.5Pupil variation (mm)0.5
+0.50.6
+0.3
+0.10.2
+Novices
+Experts
+backnforth side2side slalom050100150200250300350Number of gaze changes243273
+222309339357
+Novices
+ExpertsFig. 8. Differences in pupil diameter variance (top) and gaze changes
+(bottom) between experts and novices.
+Fig. 9. The gaze heatmap (gaze spatial distribution) for the slalom task:
+left for an expert operator, and right, for a novice.
+algorithm showed detection performance close to perfect. We
+then conducted a short user study, showing gaze behaviors
+that differ between expert and novice pilots and comparable
+cognitive load variation between tasks of different difﬁculty.
+Ultimately, we will extend this study to more participants
+and explore the relation with ﬂight patterns: experts seem to
+use yaw control more than novice.
+REFERENCES
+[1] J. Liu, A. Gardi, S. Ramasamy, Y . Lim, and R. Sabatini, “Cognitive
+pilot-aircraft interface for single-pilot operations,” Knowledge-
+Based Systems , vol. 112, pp. 37–53, 2016. [Online]. Available:
+http://dx.doi.org/10.1016/j.knosys.2016.08.031
+[2] J. T. Coyne and C. M. Sibley, “Impact of task load and gaze
+on situation awareness in unmanned aerial vehicle control,” 18th
+International Symposium on Aviation Psychology , pp. 458–463, 2015.
+[Online]. Available: \url{https://corescholar.libraries.wright.edu/isap \
+2015/29 }
+[3] A. H. Memar and E. T. Esfahani, “Physiological Measures for Human
+Performance Analysis in Human-Robot Teamwork: Case of Tele-
+Exploration,” IEEE Access , vol. 6, pp. 3694–3705, 2018.
+[4] A. Marois, D. Lafond, A. Williot, F. Vachon, and S. Tremblay,
+“Real-Time Gaze-Aware Cognitive Support System for Security
+Surveillance,” Proceedings of the Human Factors and ErgonomicsSociety Annual Meeting , vol. 64, no. 1, pp. 1145–1149, 2020.
+[Online]. Available: https://doi.org/10.1177/1071181320641274
+[5] R. Veerabhadrappa, I. Hettiarachchi, S. Hanoun, and D. Jia,
+“Identiﬁcation and Evaluation of Effective Strategies in a Dynamic
+Visual Task Using Eye Gaze Dynamics,” preprint , pp. 0–15, 2021.
+[Online]. Available: https://doi.org/10.21203/rs.3.rs-778091/v1
+[6] M. A. Shahab, M. U. Iqbal, B. Srinivasan, and R. Srinivasan, “Metrics
+for objectively assessing operator training using eye gaze patterns,”
+Process Safety and Environmental Protection , vol. 156, pp. 508–520,
+2021. [Online]. Available: https://doi.org/10.1016/j.psep.2021.10.043
+[7] G. Ziv, “Gaze Behavior and Visual Attention: A Review of Eye
+Tracking Studies in Aviation,” International Journal of Aviation
+Psychology , vol. 26, no. 3-4, pp. 75–104, 2016. [Online]. Available:
+https://doi.org/10.1080/10508414.2017.1313096
+[8] S. S. A. Zaidi, M. S. Ansari, A. Aslam, N. Kanwal, M. Asghar, and
+B. Lee, “A survey of modern deep learning based object detection
+models,” Digital Signal Processing , p. 103514, 2022.
+[9] R. Girshick, J. Donahue, T. Darrell, and J. Malik, “Rich feature
+hierarchies for accurate object detection and semantic segmentation,”
+inProceedings of the IEEE conference on computer vision and pattern
+recognition , 2014, pp. 580–587.
+[10] K. He, X. Zhang, S. Ren, and J. Sun, “Spatial pyramid pooling in deep
+convolutional networks for visual recognition,” IEEE Transactions on
+Pattern Analysis and Machine Intelligence , vol. 37, no. 9, pp. 1904–
+1916, 2015.
+[11] S. Qiao, L. Chen, and A. L. Yuille, “Detectors: Detecting
+objects with recursive feature pyramid and switchable atrous
+convolution,” CoRR , vol. abs/2006.02334, 2020. [Online]. Available:
+https://arxiv.org/abs/2006.02334
+[12] C.-Y . Wang, A. Bochkovskiy, and H.-Y . M. Liao, “Yolov7: Trainable
+bag-of-freebies sets new state-of-the-art for real-time object detectors,”
+2022. [Online]. Available: https://arxiv.org/abs/2207.02696
+[13] W. Liu, D. Anguelov, D. Erhan, C. Szegedy, S. Reed, C.-Y . Fu,
+and A. C. Berg, “Ssd: Single shot multibox detector,” in European
+conference on computer vision . Springer, 2016, pp. 21–37.
+[14] M. Tan, R. Pang, and Q. V . Le, “Efﬁcientdet: Scalable and efﬁcient
+object detection,” in Proceedings of the IEEE/CVF conference on
+computer vision and pattern recognition , 2020, pp. 10 781–10 790.
+[15] J. Ruiz-del-Solar, P. Loncomilla, and N. Soto, “A survey on deep
+learning methods for robot vision,” CoRR , vol. abs/1803.10862, 2018.
+[Online]. Available: http://arxiv.org/abs/1803.10862
+[16] Z. Zou, Z. Shi, Y . Guo, and J. Ye, “Object detection in 20 years: A
+survey,” arXiv preprint arXiv:1905.05055 , 2019.
+[17] G. Br ˆone, B. Oben, and T. Goedem ´e, “Towards a more effective
+method for analyzing mobile eye-tracking data: Integrating gaze data
+with object recognition algorithms,” PETMEI’11 - Proceedings of the
+1st International Workshop on Pervasive Eye Tracking and Mobile
+Eye-Based Interaction , pp. 53–56, 2011.
+[18] T. Callemein, K. Van Beeck, G. Br ˆone, and T. Goedem ´e, “Automated
+analysis of eye-tracker-based human-human interaction studies,” in
+International Conference on Information Science and Applications .
+Springer, 2018, pp. 499–509.
+[19] L. Stubbemann, D. D ¨urrschnabel, and R. Refﬂinghaus, “Neural net-
+works for semantic gaze analysis in xr settings,” in ACM Symposium
+on Eye Tracking Research and Applications , 2021, pp. 1–11.
+[20] M. Barz and D. Sonntag, “Automatic visual attention detection for
+mobile eye tracking using pre-trained computer vision models and
+human gaze,” Sensors , vol. 21, no. 12, p. 4143, 2021.
+[21] H. L. Miller, I. Raphael Zurutuza, N. Fears, S. Polat, and R. Nielsen,
+“Post-processing integration and semi-automated analysis of eye-
+tracking and motion-capture data obtained in immersive virtual reality
+environments to measure visuomotor integration,” in ACM Symposium
+on Eye Tracking Research and Applications , 2021, pp. 1–4.
+[22] U. Nepal and H. Eslamiat, “Comparing YOLOv3, YOLOv4 and
+YOLOv5 for Autonomous Landing Spot Detection in Faulty UA Vs,”
+Sensors , vol. 22, no. 2, p. 464, Jan. 2022, number: 2 Publisher:
+Multidisciplinary Digital Publishing Institute. [Online]. Available:
+https://www.mdpi.com/1424-8220/22/2/464
+[23] Y . Mohamed and S. Lemaignan, “ROS for Human-Robot Interaction,”
+in2021 IEEE/RSJ International Conference on Intelligent Robots and
+Systems (IROS) . Prague, Czech Republic: IEEE, 2021, pp. 3020–
+3027.
+[24] “New rep proposal: Human-robot interac-
+tion in ros (ros4hri),” https://discourse.ros.org/t/new-rep-proposal-human-robot-interaction-in-ros-ros4hri/23776,
+accessed: 2022-08-24.
+[25] R. de Azambuja, H. Fouad, Y . Bouteiller, C. Sol, and G. Beltrame,
+“When being soft makes you tough: A collision-resilient quadcopter
+inspired by arthropods’ exoskeletons,” in 2022 International Confer-
+ence on Robotics and Automation (ICRA) , 2022, pp. 7854–7860.
+[26] Tzutalin, “Labelimg,” https://github.com/tzutalin/labelImg, 2015.
+[27] T.-Y . Lin, M. Maire, S. Belongie, L. Bourdev, R. Girshick, J. Hays,
+P. Perona, D. Ramanan, C. L. Zitnick, and P. Doll ´ar, “Microsoft
+coco: Common objects in context,” 2014. [Online]. Available:
+https://arxiv.org/abs/1405.0312
+[28] S. Baldwin, “Compute canada: advancing computational research,”
+inJournal of Physics: Conference Series , vol. 341, no. 1. IOP
+Publishing, 2012, p. 012001.
+[29] M. Bjelonic, “YOLO ROS: Real-time object detection for ROS,” https:
+//github.com/leggedrobotics/darknet ros, 2016–2018.
+[30] V . Vasilopoulos and G. Pavlakos, “yolov3 pytorch Ros: Object de-
+tection for ROS using PyTorch,” https://github.com/vvasilo/yolov3
+pytorch ros, 2019.
+[31] L. Ewecker, “Ros package for ofﬁcial yolov7,” https://github.com/
+lukazso/yolov7-ros, 2021.

@@ -4,6 +4,6 @@
 VAR="$1"
 
 # Call the Python script with the function name and the variable
-python ingest_data.py "$VAR"
-python file_app.py "$VAR"
-python final.py "$VAR"
+python chat_paper/ingest_data.py "$VAR"
+python chat_paper/file_app.py "$VAR"
+python chat_paper/final.py "$VAR"

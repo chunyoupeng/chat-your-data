@@ -8,14 +8,9 @@ See [this blog post](blogpost.md) for a more detailed explanation.
 
 `pip install -r requirements.txt`
 
-## Step 1: Set your open AI Key
-
-```sh
-export OPENAI_API_KEY=<your_key_here>
-```
 
 
-## Step 2: Ingest your data
+## Step 1: Ingest your data
 
 Run: `python ingest_data.py`
 
@@ -28,3 +23,16 @@ Custom prompts are used to ground the answers in the state of the union text fil
 ## Running the Application
 
 By running `python app.py` from the command line you can easily interact with your ChatGPT over your own data.
+
+一共要传三个文件进去
+文件
+xx_src
+目录
+xx_src_catalog.md
+引用
+xx_src_refs.md
+
+顺序
+ingest_data.py
+file_app.py
+final.py
