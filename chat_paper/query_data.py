@@ -89,7 +89,7 @@ thanks_template = """你的任务是结合文本内容和给出的论文致谢�
 """
 
 reference_template = """你现在是一个作家, 你的任务是根据用户提供的Reference中的引用写一个关于{title}的{domain}文献综述段落，
-作为我论文中文献综述的一部分.要求要详尽,说明背景,并对每一篇文章进行分析.必要时可以扩展,避免出现文章名, 仅出现作者名.
+作为我论文中文献综述的一部分.要求要详尽,说明背景,并对每一篇文章进行分析.必要时可以扩展,避免出现文章名, 仅出现作者名.除了英文名字外,其余用中文输出.
 """
 
 abstract_template = """你现在是一个论文写手, 你的任务是根据用户提供的论文的一部份, 写出关于{title}的论文摘要.包括摘要,关键词
@@ -101,6 +101,11 @@ abstract_template = """你现在是一个论文写手, 你的任务是根据用�
 
 trans_template = """
 你的任务是下面的内容翻译成中文.Only output the translated version of the original text. Don't fucking talking!
+要翻译的文本:{context}
+"""
+
+trans_en_template = """
+你的任务是下面的内容翻译成英文. Don't fucking talking!
 要翻译的文本:{context}
 """
 QA_PROMPT = PromptTemplate(template=template_zh, input_variables=[
@@ -125,6 +130,7 @@ REFERENCE_PROMPT = ChatPromptTemplate.from_messages(
 )
 ABSTRACT_PROMPT = PromptTemplate.from_template(template=abstract_template)
 TRANS_PROMPT = PromptTemplate.from_template(trans_template)
+TRANS_EN_PROMPT = PromptTemplate.from_template(trans_en_template)
 PATH = "vector_src"
 OUT_PATH = "out"
 
@@ -208,6 +214,7 @@ def get_chain(prompt_name, llm_name='local'):
     ref_chain = REFERENCE_PROMPT | llm | StrOutputParser()
     abstract_chain = ABSTRACT_PROMPT | llm | StrOutputParser()
     trans_chain = TRANS_PROMPT | llm | StrOutputParser()
+    trans_en_chain = TRANS_EN_PROMPT | llm | StrOutputParser()
     chain = None 
     if prompt_name == 'qg':
         chain = qg_chain
@@ -223,6 +230,8 @@ def get_chain(prompt_name, llm_name='local'):
         chain = abstract_chain
     elif prompt_name == 'trans':
         return trans_chain
+    elif prompt_name == 'trans_en':
+        return trans_en_chain
     return chain
 
 

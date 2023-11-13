@@ -8,8 +8,8 @@ import os
 import sys
 import tiktoken  # !pip install tiktoken
 
-OUT_PAPER_PATH="out_paper"
-INPUT_PAPER_PATH="input_paper"
+OUT_PAPER_PATH="data/out_paper"
+INPUT_PAPER_PATH="data/input_paper"
 if not os.path.exists(OUT_PAPER_PATH):
     os.mkdir(OUT_PAPER_PATH)
 if not os.path.exists(INPUT_PAPER_PATH):
@@ -37,7 +37,7 @@ def translate_document(document):
     output = ""
     for d in new_docs:
         # output += chain.run(d.page_content)
-        output += chain.invoke({ "context": d.page_context })
+        output += chain.invoke({ "context": d.page_content })
     return output
 
 def load_paper(directory):

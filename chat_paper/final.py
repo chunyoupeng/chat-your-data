@@ -1,4 +1,3 @@
-# import 
 from logging import root
 from os import write
 import re
@@ -25,7 +24,7 @@ def get_thanks(content):
     这篇论文的完成得到了许多人的帮助与支持。我首先要向我的指导老师表示最深的感激，感谢您的无私奉献和精心指导。同时，我也要感谢那些与我并肩奋斗的同学，你们的友情与支持是我前进的力量。最重要的，我要感谢我的父母，你们是我永远的坚强后盾。每当想到大学生活，我都会感慨万千。"""
     chain = get_chain('thanks')
     rt =  chain.invoke({"text": content, "thanks": thanks})
-    rt = rt.replace("首先，", "").replace("其次，", "").replace("最后，", "").replace("再者 ，","").replace("再次 ，","")
+    rt = rt.replace("首先，", "").replace("其次，", "").replace("最后，", "").replace("再者，","").replace("再次，","")
     return rt 
 
 def get_abstract(content, title):
@@ -94,6 +93,8 @@ def write_main(question, db):
 
 def extend_content(question, content):
     print("Begin extending")
+    conclusions = ['总之','综上所述', '总而言之', '结论如下','简而言之','概括地说','汇总来看','简言之','一言以蔽之','综合来看','回顾总结', '']
+    conclusion = random.choice(conclusions)
     llm = get_llm('local', temperature=0.3)
     temp = """
     原文:
@@ -103,7 +104,7 @@ def extend_content(question, content):
     write_prompt = PromptTemplate.from_template(temp)
     write_chain = write_prompt | llm | StrOutputParser()
     rt = write_chain.invoke({"text":content, "question": question})
-    rt = rt.replace("首先，", "").replace("其次，", "").replace("最后，", "").replace("再者 ，","").replace("再次 ，","")
+    rt = rt.replace("首先，", "").replace("其次，", "").replace("最后，", "").replace("再者，","").replace("再次，","").replace("综上所述", conclusion)
     pattern = r"（[^）]*）"
     rt = re.sub(pattern, "", rt)
 
@@ -126,19 +127,19 @@ def main():
     with open(refs_path, 'r') as f:
         zh_refs, en_refs = f.read().split('---')
     for key, value in catalog_dict.items():
-        final_file.write(key + "\n")
+        final_file.write(key + "\n\n")
         if value:
             if '国内文献' in key or '国内研究' in key:
                 print(f"key is {key}")
                 print("这是国内文献")
                 domestic_review = get_domestic_review(title, zh_refs)
-                final_file.write(domestic_review + "\n")
+                final_file.write(domestic_review + "\n\n")
                 continue
             if '国外文献' in key or '国外研究' in key:
                 print(f"key is {key}")
                 print("这是国外文献")
                 overseas_review = get_overseas_review(title, en_refs)
-                final_file.write(overseas_review + "\n")
+                final_file.write(overseas_review + "\n\n")
                 continue
             question = get_chain('sentence_change', llm_name='openai').invoke({"question": value})
             print(f"The quesiont is {question}")
@@ -150,12 +151,16 @@ def main():
         f.seek(0)
         content = f.read()
         thanks = get_thanks(content[0:2000])
-        reference_part = "\n##参考文献\n\n" + zh_refs + '\n' + en_refs + '\n'
+        zh_refs, en_refs = zh_refs.replace('\n', '\n\n'), en_refs.replace('\n', '\n\n')
+        reference_part = "\n## 参考文献\n\n" + zh_refs + en_refs + '\n'
         f.write(reference_part)
         text = "\n## 致谢\n\n" + thanks + "\n"
         f.write(text)
         abstract_part = get_abstract(content[0:2000], title)
-        f.write("\n## 摘要\n\n"+abstract_part + "\n")
+        en_abstract_part = get_chain('trans_en').invoke({"context": abstract_part})
+        f.write("\n## 摘要\n\n"+abstract_part + "\n\n")
+        f.write("\n## Abstract\n\n"+en_abstract_part + "\n\n")
+
     to_docx(final_file_path)
     
     

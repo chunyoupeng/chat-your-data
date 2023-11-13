@@ -7,6 +7,7 @@ import sys
 if __name__ == "__main__":
     c = Console()
     init()
+    question_model = "openai_3"
     root_path = sys.argv[1]
     retriver = load_db(root_path).as_retriever(search_type="mmr", search_kwargs={'k': 8})
     qg_chain = get_chain('qg')
@@ -25,8 +26,8 @@ if __name__ == "__main__":
         for title, statement in questions.items():
             c.print("question is " + statement)
             if statement:
-                question = get_chain('sentence_change', llm_name='openai_3').invoke({"question": statement})
-                new_questions = get_chain("qg", llm_name='openai_3').invoke({"question": question}).split('\n')
+                question = get_chain('sentence_change', llm_name=question_model).invoke({"question": statement})
+                new_questions = get_chain("qg", llm_name=question_model).invoke({"question": question}).split('\n')
                 # new_question = get_chain.run(question=question).split('\n')
                 new_questions = [question] + new_questions
                 c.print(f"==============================\nNew questions is {new_questions}")
