@@ -19,6 +19,15 @@ set_verbose(True)
 # 写作
 
 
+def get_random_graph(picture_name, content):
+    def two_in_ten_chance():
+        return random.random() < 0.2
+    flag = two_in_ten_chance()
+    if flag:
+        chain = get_chain('graph')
+        chain.invoke({"input": content, "picture_name": picture_name})
+    return flag
+    
 def get_thanks(content):
     thanks = """论文致谢:
     这篇论文的完成得到了许多人的帮助与支持。我首先要向我的指导老师表示最深的感激，感谢您的无私奉献和精心指导。同时，我也要感谢那些与我并肩奋斗的同学，你们的友情与支持是我前进的力量。最重要的，我要感谢我的父母，你们是我永远的坚强后盾。每当想到大学生活，我都会感慨万千。"""
@@ -115,7 +124,7 @@ def main():
     global root_path
     # input_file="input/" + sys.argv[1] + "_catalog.md"
     # final_file_path = "final/"+ sys.argv[1] + "_final.md"
-    input_file = os.path.join('data', 'input', root_path +  '_catalog.md')
+    input_file = os.path.join('data', 'catalog', root_path +  '_catalog.md')
     with open(input_file, "r", encoding="utf-8") as f:
         catalog_dict = generate_statements(f.read())
     print(catalog_dict)

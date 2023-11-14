@@ -16,6 +16,7 @@ from langchain.chains import LLMChain
 from langchain.chains import RetrievalQAWithSourcesChain
 from langchain.memory import ConversationBufferMemory, ConversationSummaryMemory, ConversationBufferWindowMemory
 from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
+from langchain.utilities.python import PythonREPL
 import pickle
 import sys
 import os
@@ -108,6 +109,19 @@ trans_en_template = """
 你的任务是下面的内容翻译成英文. Don't fucking talking!
 要翻译的文本:{context}
 """
+
+
+template = """你的任务是根据用户给出的文本，提取出关键信息和逻辑流图，用python的Graphviz画出一个简单流程图，Flowchar！图中的文字必须用中文，字体使用"/home/dell/.fonts/fonts/WenQuanYiMicroHei.ttf"。代码中仅仅需要将图片保存到本地, 不展示.名字是{picture_name}
+尽可能的把图片设计得很美观
+Return only python code in Markdown format, e.g.:
+
+```python
+....
+```"""
+
+GRAPH_PROMPT = ChatPromptTemplate.from_messages([("system", template), ("human", "{input}")])
+
+
 QA_PROMPT = PromptTemplate(template=template_zh, input_variables=[
                            "question", "context"])
 QG_PROMPT = PromptTemplate(
@@ -215,6 +229,7 @@ def get_chain(prompt_name, llm_name='local'):
     abstract_chain = ABSTRACT_PROMPT | llm | StrOutputParser()
     trans_chain = TRANS_PROMPT | llm | StrOutputParser()
     trans_en_chain = TRANS_EN_PROMPT | llm | StrOutputParser()
+    graph_chain = GRAPH_PROMPT | llm | StrOutputParser() | PythonREPL().run
     chain = None 
     if prompt_name == 'qg':
         chain = qg_chain
@@ -232,6 +247,8 @@ def get_chain(prompt_name, llm_name='local'):
         return trans_chain
     elif prompt_name == 'trans_en':
         return trans_en_chain
+    elif prompt_name == 'graph':
+        return graph_chain
     return chain
 
 

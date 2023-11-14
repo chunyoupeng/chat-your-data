@@ -16,7 +16,7 @@ if __name__ == "__main__":
     out_file = open("data/out/" + root_path + ".json", "w")
     out_file.write("[\n")
     FIRST = True
-    with open("data/input/" + root_path + "_catalog.md", "r") as f:
+    with open("data/catalog/" + root_path + "_catalog.md", "r") as f:
         markdown_content_with_number = f.read()
         markdown_content = remove_numbers_from_headings(markdown_content_with_number)
 
