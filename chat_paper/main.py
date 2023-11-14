@@ -25,6 +25,11 @@ def begin(folder, subfolder):
     xx_src_refs.md to data/refs
     xx_src_catalog.md to data/input
     """
+
+    print("Beginning...")
+    img_path = os.path.join("img", subfolder + "_img")
+    if not os.path.exists(img_path):
+        os.makedirs(img_path)
     xx_src_dir = os.path.join(SOURCE_DIR, folder, subfolder)
     xx_src_dest = os.path.join(DESTINATION_DIR, "data", "docs", subfolder)
     if not os.path.exists(xx_src_dest):
@@ -40,13 +45,15 @@ def begin(folder, subfolder):
 
 
 def end(folder, subfolder):
+    print(f"Begin moving back to the {SOURCE_DIR}...")
     final_path = os.path.join(DESTINATION_DIR, "data", "final", subfolder + "_final.md")
     dest_path = os.path.join(SOURCE_DIR, folder)
-    if not os.path.exists(dest_path):
-        shutil.copy(final_path, dest_path)
-    # img_path = os.path.join(DESTINATION_DIR, "img", subfolder + "_img")
-    # dest_img_path = os.path.join(SOURCE_DIR, folder)
-    # shutil.copytree(img_path, dest_img_path)
+    shutil.copy(final_path, dest_path)
+
+    img_path = os.path.join("img", subfolder + "_img")
+    dest_img_path = os.path.join(SOURCE_DIR, folder, subfolder + "_img")
+    if not os.path.exists(dest_img_path):
+        shutil.copytree(img_path, dest_img_path)
 
 
 
@@ -56,13 +63,11 @@ def main():
         sys.exit(0)
     folder = sys.argv[1]
     subfolder = sys.argv[2]  # xxx_src
-    print("Beginning...")
     begin(folder, subfolder)
     run_script("chat_paper/ingest_data.py", [subfolder])
     run_script("chat_paper/file_app.py", [subfolder])
     run_script("chat_paper/final.py", [subfolder])
     end(folder, subfolder)
-    print("End")
 
 
 if __name__=="__main__":

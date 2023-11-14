@@ -111,7 +111,7 @@ trans_en_template = """
 """
 
 
-template = """你的任务是根据用户给出的文本，提取出关键信息和逻辑流图，用python的Graphviz画出一个简单流程图，Flowchar！图中的文字必须用中文，字体使用"/home/dell/.fonts/fonts/WenQuanYiMicroHei.ttf"。代码中仅仅需要将图片保存到本地, 不展示.名字是{picture_name}
+template = """你的任务是根据用户给出的文本，提取出关键信息和逻辑流图，用python的Graphviz画出一个简单流程图，Flowchar！特别关注时间，空间，顺序等关键信息。图中的文字必须用中文，字体使用"/home/dell/.fonts/fonts/WenQuanYiMicroHei.ttf"。代码中仅仅需要将图片保存到本地, 不展示.名字是{picture_name}
 尽可能的把图片设计得很美观
 Return only python code in Markdown format, e.g.:
 

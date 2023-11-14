@@ -125,6 +125,7 @@ def main():
     # input_file="input/" + sys.argv[1] + "_catalog.md"
     # final_file_path = "final/"+ sys.argv[1] + "_final.md"
     input_file = os.path.join('data', 'catalog', root_path +  '_catalog.md')
+    img_root = os.path.join("img", root_path + "_img")
     with open(input_file, "r", encoding="utf-8") as f:
         catalog_dict = generate_statements(f.read())
     print(catalog_dict)
@@ -153,6 +154,9 @@ def main():
             question = get_chain('sentence_change', llm_name='openai').invoke({"question": value})
             print(f"The quesiont is {question}")
             draft_text = write_main(question, db)
+            picture_name = os.path.join(img_root, key + '.png')
+            if get_random_graph(picture_name, draft_text):
+                print(f"Draw graph {picture_name}")
             result = extend_content(question, draft_text)
             final_file.write(result + "\n\n")
     final_file.close()

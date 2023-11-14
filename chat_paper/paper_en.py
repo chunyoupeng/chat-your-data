@@ -5,6 +5,7 @@ from langchain.prompts import PromptTemplate
 from query_data import *
 from langchain.document_loaders import PyPDFLoader
 import os
+import re
 import sys
 import tiktoken  # !pip install tiktoken
 
@@ -24,6 +25,11 @@ def tiktoken_len(text):
     return len(tokens)
 
 
+def remove_unnecessary_newlines(text):
+    # 正则表达式: 查找换行符，其后紧跟小写字母或某些标点
+    pattern = re.compile(r'\n(?=[a-z,\.])')
+    # 替换这些换行符为空字符串
+    return pattern.sub(' ', text)
 
 def translate_document(document):
     trans_text_splitter = RecursiveCharacterTextSplitter(
@@ -49,9 +55,10 @@ def load_paper(directory):
             loader = PyPDFLoader(filepath)
             document = loader.load()
             content = reduce(lambda x, y: x + y.page_content, document, "")
+            replaced_content = remove_unnecessary_newlines(content)
             new_filepath = os.path.join(OUT_PAPER_PATH, new_filename)
             with open(new_filepath, "w", encoding="utf-8") as f:
-                f.write(content)
+                f.write(replaced_content)
             # translate document
             translated_text = translate_document(document)
             translated_filename = "zh_" + new_filename
