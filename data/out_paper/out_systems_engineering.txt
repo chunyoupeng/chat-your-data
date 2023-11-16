@@ -1,0 +1,812 @@
+Part I
+Transforming Engineering
+Through Digital and Model-
+Based Methods
+Mark BlackburnChapter 1
+Fundamentals of Digital Engineering
+Mark R. Blackburn and Timothy D. West
+Stevens Institute of Technology, School of Systems and
+Enterprises, Hoboken, NJ, USA
+Background
+Between 2013 and 2021, the Systems Engineering Research Center
+(SERC) partnered with the Naval Air Systems Command (NAVAIR) to explore the viability of transforming systems engineering through holistic model ‐ centric system engineering. The vision driving this exploration was to leverage mission and system ‐ based analyses and engineering to reduce the development and integration cycle time by at least 25% for large ‐ scale air vehicle systems
+(Blackburn et al. 2021b). NAVAIR had a rigorous Systems
+Engineering Technical Review (SETR) process that incorporated over 6000 analysis and design checks. SETRs utilized a time ‐ consuming manual, paper ‐ based approach that made it hard to conduct asynchronous reviews as the design of different aspects of the system was maturing at different rates. In addition, the increasing complexity of missions and systems often yielded anomalous or contradictory requirements that prolonged system delivery by months. After one such situation, which was identified by the contractor, a NAVAIR lead engineer requested that the team model subsystem interactions that had resulted in the contradictory requirements. They discovered the underlying contradiction in the model and updated the requirements. This effort took approximately seven months. Similar cases shared with the research team became the motivation to develop a model ‐ based approach that would transform systems engineering through digital engineering.The eight ‐ year SERC research task for NAVAIR consisted of three major phases. During Phase One, from 2013 to 2015, the research team worked with the sponsor to perform a global scan of holistic and advanced approaches to Model Centric Engineering (MCE)/DE, with over 30 organizations providing their best examples and demonstrations. We met at engineering and manufacturing locations of industry (e.g., large DoD contractors and automakers) and government (e.g., NASA/JPL, Sandia National Labs); we usually spent a day seeing demonstrations and learning about the most advanced technologies being used by these organizations. Phase
+One culminated in late in 2015, when NAVAIR leadership decided to move quickly to keep pace with other organizations that have adopted DE. NAVAIR leadership desired to transform, not simply evolve, in order to perform effective oversight of prime contractors that are using modern modeling methods for mission, system, and discipline ‐ specific engineering (Blackburn et al. 2015).
+Phase Two began in early 2016, when the NAVAIR sponsor introduced the Systems Engineering Transformation (SET)
+Framework concept discussed in the New Approach Section. There was also a change in leadership who decided to accelerate SET
+(Blackburn et al. 2017). NAVAIR had used systems engineering rigor for many years and applied that rigor to systematic planning that develops six (6) functional areas, including SERC Research as shown in Figure 1.1. The SERC Research eventually contributed to many other facets of the SET plan, which are shown with round ‐ edge boxes with dashed lines, which many examples captured as models for a number of Surrogate Experiment use cases.
+Surrogate Pilot Experiment Called Skyzer
+The Surrogate Pilot experiments were conducted by a combination of SERC researchers, NAVAIR engineers, contractors, and a surrogate contractor over three phases starting in late 2017. Phase one (1) developed a Search and Rescue mission use case called
+Skyzer that culminated at the end of 2018 with the development ofmission and systems models that linked to the request for proposal
+(RFP) response model from the surrogate contractor. The focus was on characterizing how to run a model ‐ based acquisition for a program that is based on the SET Framework concept. The results produced an implementation that demonstrated how to fully link models in an authoritative source of truth (AST); the initial thinking was to establish a single source of truth, but as Skyzer developed into a distributed set of linked models, AST was deemed to be more descriptive of the linked Skyzer models. The team demonstrated the art ‐of ‐ the ‐ possible by doing “everything” in models, simulating a new operational paradigm between government and industry in a collaborative AST using the NASA JPL's Open Model Based
+Engineering Environment (OpenMBEE) combined with No Magic
+SysML model authoring tools and a model repository called
+Teamwork Cloud. The surrogate contractor's RFP response refined the mission and system models, creating subsystem models with detailed design and analysis information using multiple physics ‐ based and discipline ‐ specific models. We also introduced Digital
+Signoffs for the Source Selection technical evaluation, completed directly in the surrogate contractor's RFP response model using the
+View Editor and DocGen, which are components of OpenMBEE. We leveraged the unclassified surrogate pilot results and models to facilitate workforce development training that is being used by
+Defense Acquisition University to update its DE curriculum.
+Based on the success of Phase One of the Skyzer surrogate pilot,
+NAVAIR commissioned a Phase Two (2) effort starting in 2019, but with new objectives from evolving SET priorities (Blackburn et al.
+2021b). The most important priority was to align the Skyzer mission and system models with the new and evolving NAVAIR Systems
+Engineering Method (NAVSEM). During this phase, we demonstrated how Digital Signoffs in AST can transform Contract
+Data Requirements Lists (CDRLs) and Data Item Descriptions
+(DIDs). We created a Capability Based Test & Evaluation (CBT&E) model based on a Model ‐ Based Testing Engineering process that linked to the mission and system models. Additionally, wedemonstrated the use of models for capturing Statement of Work
+(SOW) language, which furthered the workforce development and training effort. We also joined our sponsors in presenting the models, methods, digital signoffs, and DE environments results to several contractors to get feedback on the DE approach that the sponsor would use on future programs.
+Surrogate Pilot Phase Three (3) began in 2020 and ended in August of 2021 (Blackburn et al. 2021b) and focused on presenting results and providing demonstrations to encourage program deployment.
+We continued aligning mission, system, and surrogate contractor
+RFP models with the evolving NAVSEM modeling method. We also created Stakeholder Analysis Model (SAMs) for Airworthiness
+(criteria to get flight clearance) derived from MIL ‐ STD ‐ 516C (2014) that aligns and links with Skyzer technical data in mission and systems models. We created a SAM for a Cost Model derived from
+MIL ‐ STD ‐ 881E that aligns and links with the Skyzer technical data in mission and systems models, as well as link to the CBT&E and
+Airworthiness models to factor in cost from those efforts. We created an example using Model Curation criteria applied to Skyzer models. We used the SAM models to demonstrate how to derive mission and system ‐ specific model information from reference models.Figure 1.1 SET functional areas with impacts on SET research and surrogate pilot.
+During Phase Three, the SERC researchers also supported additional efforts, such as (1) performing a Cyber Ontology Pilot using ontologies that have been transformed into training material for US Army DEVCOM sponsor, (2) investigating how Digital
+Signoffs (Blackburn and Kruse 2023) can contribute to a new form of technical Baselines Progress Measures to transform away from monolithic reviews, and (3) correlating Digital Engineering Success
+Measure (DESM) categories with lessons learned benefits observed during the NAVAIR Surrogate Pilot to further explain the benefits demonstrated by Skyzer (McDermott et al. 2020).
+In 2016, we started a similar SERC research task for the US Army, focused on DE approaches that could better inform science and technology decision making, which often requires the fabrication of pre ‐production prototypes. Our research included modeling and simulation of discipline ‐ specific, multi ‐ physics analyses to help them understand system and mission requirements and tradeoffs.
+We developed the interoperability and integration framework(IoIF), a computationally based framework that uses ontologies
+(a.k.a., information models) and semantic web technology to link different model data at different levels of abstraction with multi ‐ physics and discipline ‐ specific model data, facilitating greater cross ‐ domain model integration for analysis and design. We also developed two IoIF training course based on the Cyber Ontology use case, and a Catapult use case to help transition the research to
+DEVCOM, and this is being shared with the US Space Force (USSF).
+In 2022, we started another SERC research task with the USSF.
+They have similar challenges like NAVAIR; we have developed DE training material from the combined efforts of NAVAIR and
+DEVCOM. We are using the modeling pattern developed for Skyzer to create another surrogate set of models aligned with the domain of USSF called Spacer, with fire ‐ monitoring satellites that communicate with ground systems.
+Problem
+There are many possible ways to describe the challenges faced by the research sponsors. We characterized a simplified perspective on
+“traditional mission and systems engineering” process phases
+(Blackburn et al. 2018a, 2018b), as shown in Figure 1.2. We created a few surrogate use cases (i.e., fictious, but hypothetically relevant to the sponsor mission and systems). The information includes various types of linked modes and associated model artifacts that represent information for these different processes. Model artifact can be mapped into an underlying linked information model that enables a decision framework based on the Integrated Systems
+Engineering Decision Management (ISEDM) process for comparing different mission, system, and subsystem tradeoffs (Cilli 2015), which map back to the Concept of Operations (CONOPs). The fundamental problem faced by most organization was that the vast amount of information needed to make decisions was not integrated across the domains (e.g., mechanical, electrical, software, etc.) nor at different levels of abstraction (e.g., missions, systems,subsystems). Traditionally data and information are captured in disparate forms and documents. The relationships between these artifacts are often informal and must be understood, created, updated, and managed manually. The research sponsors, as well as industry contractors, understood that significant advances in computationally based methods, models, and tools had occurred, but they had been unable to transform these advances into a comprehensive digital engineering ecosystem. Therefore, we use the term digital engineering in the broadest sense to factor in all facets of analysis, design, and configuration management using models and simulations appropriate for the purpose and need. In addition, if any information is changed, it should trigger the re ‐ analysis of other related information to understand the potential impacts of the changes.
+Figure 1.2 Context of systems engineering of challenge areas.
+We notionally defined the relationships between information captured in a traditional “Vee” approach as it relates to information presented in five book chapters for DE.Chapter 1: Fundamentals of Digital Engineering provides an overview of the overarching approach for formalizing the processes shown in Figure 1.2 using different use case examples, which are discussed in more detail in the other four book chapters.
+Chapter 2: Mission and Systems Engineering Methods discusses “What” we want – requirements and constraints, as well as supporting structural and behavioral analyses, which refine one level of requirements (e.g., mission) down through lower levels of requirement (e.g., systems).
+Chapter 3: Transforming Systems Engineering Through
+Integrating Modeling and Simulation and Digital
+Threads discusses more about “How” (1 or more) – designs to achieve the “What,” as well as “How well” (usually many) to assess the “How” using analysis, testing, reviews, and assessing how the design satisfies the requirements, given the constraints to achieve the mission concept and mission measures. This is done using the formalization of the underlying “Information
+Model” that links the data or metadata from many different domains at different levels of abstraction using IoIF.
+Chapter 4: Digital Engineering Visualization
+Technologies and Techniques discusses how the formalization of different models discussed in Chapters 1–3 fit into a continuous loop using enabling technologies and IoIF.
+We transformed from a static, document ‐ based CONOPs into a dynamic graphical CONOPs enabled by gaming technologies to assist stakeholders and developers reach a shared mental model of the required capabilities of a future system. The
+Decision Framework enabled by IoIF demonstrates how data from the information model data can be used to populate the
+Decision Framework to determine the Key Performance
+Parameters (KPPs) and other mission measures of the various stakeholders based on various types of analyses and helpoptimize capabilities for mission effectiveness given time, cost, and risk considerations.
+Chapter 5: Interactive Model ‐ Centric Systems
+Engineering discusses how humans use or should use models to support decision making and communication of results. In this regard, the information in the chapter therefore applies to all types of modeling shown in Figure 5.2.
+Our research team formalized this conceptional characterization of mission, system, subsystem, multiple physics ‐ based, and discipline ‐ specific engineering models and linked interoperable models to demonstrate the art ‐ of ‐ the ‐ possible. The formalized Information
+Model concept is done using IoIF combined with domain and application ontologies; ontologies can be thought about as a type of schema for linking data from different modeling tools at different levels of abstraction. This formalization of models and simulations allowed us to demonstrate how to do integration and testing on the proverbial left side of the “Vee.” Historical evidence indicates that system integration and testing often uncover many defects
+(Chilenski and Ward 2014) that can be traced back to contradictory requirements, as discussed above.
+The remainder of this chapter provides an overview of the NAVAIR and US Army DEVCOM research. The subsequent chapters provide additional details for each of the major contributions to Digital
+Engineering.
+New Approach
+Skyzer Pilot Context
+In 2017, the NAVAIR leadership decided to conduct surrogate pilot experiments using an evolving set of use cases to simulate the execution of the new SET Framework concept, shown in Figure 1.31 as part of the SET Enterprise Deployment. The notional concept was to move away from the traditional “Vee” process approach into amore iterative approach. This notional framework represents a new operational paradigm between government and industry, but can apply equally well with contractors and subcontractors. The research provided analyses into the needed enterprise capabilities and built on efforts for cross ‐ domain model integration, model integrity, ontologies, semantic web technologies, multi ‐ physics modeling, and model visualization addressing evolving needs and priorities of SET (SERC RT ‐ 157/170/195/1008/1036) (Blackburn et al. 2021b). The research continuously demonstrated the benefits of modeling methods enabled by computational automation, and a
+Digital Engineering Environment that enabled collaboration in an
+AST.
+Figure 1.3 NAVAIR systems engineering transformation framework.
+The SET Framework looked for an iterative approach for considering the mission needs and measure for tradespace analyses using Multidisciplinary Design Analysis and Optimization (MDAO) at mission (Element 1), system (Element 2), and subsystem levels as extended by the contractor (Element 3), with continuous asynchronous reviews in a digital collaborative environment and interactions, such as digital signoffs within the AST (Elements 3 and
+4). The concept of a collaborative AST should enable the acquisitionorganization’s subject matter experts (SMEs) to have insight and oversight by seeing the model information, as well as the modeling methods used to produce analysis results to support for making decisions (Kruse et al. 2020). The results of the decisions could be captured as digital signoffs directly in the models by replacing traditional SETRs. Such digital signoffs should be done continuously and asynchronously as the design matures.
+Our SERC team created both linked models and established an implementation of a digital engineering environment (DEE) that simulated the execution of the SET Framework concept up to and including some of Element 3. The results demonstrate improved consistency, traceability, collaboration, and information sharing, and align with the five goals of the DoD Digital
+Engineering Strategy (Deputy Assistant Secretary of Defense
+(Systems Engineering) (2018)):
+1. Formalize the development, integration, and use of models to inform enterprise and program decision ‐ making.
+2. Provide an enduring, authoritative source of truth.
+3. Continuously incorporate technological innovation to improve the engineering practice.
+4. Establish a supporting infrastructure and environments to perform activities, collaborate, and communicate across stakeholders.
+5. Transform the culture and workforce to adopt and support digital engineering across the lifecycle.
+One of the best early decisions in the surrogate pilot experiments was to “model everything,” not because one would normally do that, but to demonstrate the art ‐ of ‐ the ‐ possible. This approach made everything accessible in the context of descriptive models using the
+System Modeling Language (SysML). These descriptive models formalize information about the system structure, behaviors, interfaces, and requirements and demonstrated how such anapproach can completely replace documents. We used NASA/JPL developed OpenMBEE, which provided collaborative access to the simulated government team members as well as the industry surrogate contractor. OpenMBEE also provided the DocGen capabilities (Kruse and Blackburn 2019), which permitted all stakeholders access to the model information using a web ‐ based representation of the model. DocGen creates stakeholder ‐ relevant views extracted directly from the modeled information, so SMEs can visualize modeled information in the OpenMBEE View Editor and perform digital signoffs, even if they lack SysML training or tools.
+The View Editor is a component of OpenMBEE that allows users to edit or comment on information generated from the model using a web browser, where edits in the View Editor can be synchronized back into the model if desired.
+We developed a modeling modularization method enabled by Magic
+Draw’s Project Usage model import capability, demonstrating the concept of and AST (Goal #2). We modeled everything demonstrating how one can transform many traditional document ‐ centric activities, for example, conducting certain types of SETRs in the DEE and eliminating some types of SETR checks that are subsumed into the modeling process. More importantly all models were linked together in the AST to promote collaboration/info sharing, information access, reduce defects, improve consistency, improve traceability, and eliminate some types of work for greater efficiencies.
+We used descriptive modeling methods to extend beyond processes guidelines (the “what”) and developed the analysis and design artifacts (the “how”) that should be modeled to have sufficient and relevant information to make decisions (Goal #1). Descriptive modeling languages should include structure (data properties, parts), behavior, interfaces, and requirements. Descriptive modeling methods are needed for different abstraction levels such as mission, system, contractor refinement of the system model, subsystem, and discipline ‐ specific models. A method also defines the types of relationships between the artifacts, which oftenprovides information about cross ‐ domain relationships and dependencies (Goal #1). Technology features that complement methods are the use of View and Viewpoints, which are inputs to
+OpenMBEE DocGen. A View and Viewpoint can be used to define the needed model artifacts that are associated with the desired modeling method. Methods define the required types of artifacts, which again leads to consistency, better understanding of the system architecture, standardization, as well as to more effectively assess completeness of the generated “specification.”
+The new approach also employed digital signoffs in the AST to provide an example for how to transform from document deliverables to support asynchronous reviews enabled by collaborative information sharing in the AST. Digital signoffs link criteria traditionally required in a document at various program review points to link with model artifacts as evidence. We determined an approach to use OpenMBEE View and Viewpoints as means for placing a digital signoff directly with model information that provided the needed evidence. Digital signoffs can be updated in the OpenMBEE View Editor, with the signoff information (e.g., approval, risk, approver, comments) added that gets synchronized back into the model. We also established a basis for automating digital signoff metrics. If a piece of information associated with a digital signoff is changed, we demonstrated how the signoff can be automatically reverted to a value such as “to be determined” (TBD) for triggering the need for another review using the View Editor.
+This should reduce cost by transforming/eliminating documents that take on a new form in the model providing greater efficiency, consistency, automation, and standardization.
+These examples represent the most important lessons learned through Skyzer such as Consistency, Collaboration/Info Sharing,
+Automation, Information Access, Improve Traceability, and
+Collaboration Environment in an AST, which are part of the DE technologies. We do know that there might be some perception that modeling takes longer, but we also know that the increased rigor reduces defects, especially cross ‐ domain, or level ‐ to ‐ level(mission to system), because all the models are linked together (i.e., traceability) using enabling technologies such as model imports.
+We are also able to render and edits these models to collaborate and share information directly in a “cloud ‐ like” way. The models increased rigor using formal standardized languages enabled more automation to increase productivity and provide greater efficiencies; these should result in reduced time.
+Figure 1.4 shows the DE for Systems Engineering Roadmap2 that depicts the DE Strategic Goals and some enabling technologies that have been demonstrated by surrogate models for our research sponsors, where the semantics underlying the DE information and technologies will evolve and align leading to advancements in DEE.
+The numbered items characterize one scenario on the roadmap:
+Figure 1.4 Digital engineering for systems engineering roadmap.
+1. We refer to Model Based Systems Engineering (MBSE), which is supported by descriptive modeling tools such as Magic Draw as a Technical Innovation (Goal 3) that has been strengtheningtraditional System Engineering as it has been evolving over the past 15 years.
+2. OpenMBEE played an important role in the surrogate pilot experiments to support a Collaborative Environment (Goal 4), where many of these same capabilities are part of the No Magic
+(now 3D Catia) suite of tools.
+3. OpenMBEE also provided support for an AST (Goal 2), but there are several methodological rules that must be followed to support the AST as a Collaboration Framework. (Several enabling technologies are part of No Magic toolset.)
+4. NAVAIR established NAVSEM modeling method that characterized modeling artifacts (how) for the different process steps (what).
+5. Those modeling method artifacts provided the basis for enabling digital signoffs, because a signoff is associated with a digital artifact.
+6. Semantic data exchange is another technical innovation (Goal
+3) that provides a basis for greater tool interoperability needed for collaboration that has been demonstrated with the
+DEVCOM use cases using IoIF.
+7. We envision that improving semantics integration will lead to artificial intelligence (AI) as part of domain ‐ based knowledge representation.
+8. The use of artificial intelligence (AI) and machine learning
+(ML) with the advancements of digital assistants in the future can promote more automation with modeling method compliance supporting augmented intelligence for engineering.
+9. All these lead to a more fully integrated digital engineering environment supporting richer decision ‐ making across the system domains under various mission scenarios.Results
+NAVAIR and Skyzer
+The Skyzer experiments conducted over three (3) surrogate pilot phases evolved and elaborated mission, system and subsystem analyses, and requirements using a hypothetical system called
+Skyzer, shown in Figure 1.5. In addition, three (3) different stakeholder analysis models (SAMs) link directly to the mission, system, and RFP response (contractor) models as shown in Figure
+1.6; those SAM models include:
+1. Capability ‐ Based Test & Evaluation (CBT&E), based on NAVAIR modeling approach for Mission ‐ Based Test Design (MBTD)
+2. Airworthiness Model derived from MIL ‐ STD 516C
+3. MBSE Cost Models derived from MIL ‐ STD 881E
+Skyzer’s CONOPs is for an UAV that provides humanitarian maritime support for search and rescue use cases as reflected in
+Figure 1.5. This use case was extended in Phase Two (2) to include a ship ‐ based Launch and Recovery (L&R) system to create another capability to research methods for CBT&E, based on a NAVAIR modeling approach for MBTD. Phase Three (3) developed a deep dive for the landing gear to examine scenarios for modeling information related to Airworthiness (the process used to get a flight clearance). In addition, Phase Three developed an MBSE Cost
+Model, which used the Skyzer Airframe characteristics for the cost modeling basis; the Airframe characteristics are derived from the
+Phase One contractor model. The scope of the UAV design included multi ‐ physics design considerations that are based on computational fluid dynamics (CFD) to analyze the airflow over the surface of the vehicle, structural integrity, weight, and vehicle packaging. The surrogate pilot team simulated a request for information (RFI) before officially releasing the RFP in the form of models concluding the Phase One effort. Performance requirementssuch as a cruise speed of 170 knots forced the design of Skyzer to be something other than a traditional helicopter and ultimately a design similar to the Bell Eagle Eye (“Bell Eagle Eye” 2022), which was proposed in the surrogate contractor RFP response models.
+This proposed design was evaluated in a surrogate source selection that was embedded as part of the contractor RFP response by the sponsor team (a retired NAVAIR SME who had no SysML training) using digital signoffs in the OpenMBEE View Editor. The efforts during Phase Three, in addition to the Airworthiness and Cost
+Model, included updates to digital signoffs, models to align with the evolution of NAVSEM, and recommendations for adding guidance to NAVSEM based on needs identified in the evolution of the modeling for Skyzer.
+Figure 1.5 Graphical CONOPS for Skyzer UAV.
+Source: Lestocq/Wikimedia Commons/CC BY ‐ SA 4.0.Figure 1.6 “Full Stack” of modularized models.
+The team discovered several important contributions as Skyzer was used to explain and demonstrate what it means to have an AST.
+These include how modeling methods characterize the needed modeling artifacts that enable the digital signoff concept, methods for model modularization to ensure separation of concerns, classification, acquisition, and how technical models at the mission and system model link to SAMs for Test and Evaluation,
+Airworthiness and Cost models. These SAM models link back to the
+“Full Stack” of technical models as reflected in Figure 1.6.
+Additionally, the SAM Cost Model links to the “Full Stack,” but can also link directly to the Airworthiness and CBT&E models. The surrogate contractor model was linked to the government models of the AST. The NAVAIR sponsors believed that these types of model examples provide demonstrations to justify program adoption as well as support workforce development.
+Three types of reference models shown in Figure 1.6. The first, shown in the upper left corner are reference models that generalize prior designs. These “reference architectures” can be used as astarting point (starter models) for a new design and may contribute to 60% or more of the design to accelerate the analysis and design process. Reference architectures often capture best practices and optimal designs from prior tradeoff analyses and actual deployments; such reference architectures may also bring verification support such as testing, which can also be used to reduce the time for developing a new system. Notice that reference architectures can also be used to represent prior missions such as
+Search and Rescue.
+Figure 1.7 Update View and Viewpoint for Skyzer system model.
+The second type of reference model is a process model. NAVSEM is a reference model that defines the process guidelines (what) and artifacts (how) that are captured in the Skyzer “Full Stack” of technical models. The NAVSEM method is formalized primarily using a SysML activity diagram, as shown in Figure 1.7. NAVSEM also describes the artifacts associated with each process such as the
+Selected Operational Use Case, which is represented using a SysML use case diagram. Skyzer also defined digital signoffs for each type of artifact.The third type of reference model defines the superset of all criteria that may be used for any modeling effort. For example, the
+Airworthiness reference model includes all the criteria from MIL ‐
+STD 516C (2014) along with best practice guidance from years of use by SMEs. An “Instance of Airworthiness” model for Skyzer as shown in Figure 1.6 uses a subset of the criteria that relates to the actual technical data of Skyzer’s “Full Stack.” For example, the
+Airworthiness reference model includes criteria for helicopters and air vehicles with a pilot, which would not apply to Skyzer, because it is an unmanned tilt ‐ rotor aircraft. The Cost Model is a reference model based on MIL ‐ STD 881E but also incorporates other methodological guidance captured by NAVAIR SMEs over years of doing cost analysis on system programs. The Cost Model links to the “Full Stack” of technical models but also links to the
+Airworthiness and CBT&E models to factor in costs associated with getting a flight clearance, which could involve flight testing. The
+Cost Model was developed with generic cost equations (surrogates), and based on the selection of a contractor, NAVAIR has captured cost equations for the different contractors based on prior programs. This allows NAVAIR to incorporate vendor ‐ specific cost equations based on historical cost data into their source selection analyses. Once the program starts, costs such as Total Ownership
+Cost can be continuously tracked during project execution as the design matures. In turn, this information can be used to refine the historical cost data for each contractor.
+In addition to the models shown in Figure 1.6, the research team developed other models, including (1) a Surrogate Project/Planning
+Model that characterizes the objectives for the surrogate pilot and research, (2) the Systems Engineering Technical and Management
+Plan model, a type of DE Systems Engineering Plan, (3) a Surrogate
+Acquisition Model for Skyzer to support Source Selection
+Evaluation and Estimation, and (4) View and Viewpoints for
+DocGen and other model Libraries that are used in conjunction with
+DocGen to generate the specifications from the models based on stakeholder views. This research produced over 60 products thatinclude models, presentation, reports, videos, and links to the surrogate pilot autogenerated models.
+Figure 1.8 Digital Engineering Environment (DEE) elements of authoritative source of truth.
+Figure 1.6 represents the data that were formalized as models using the DEE shown in Figure 1.8.3 The DEE capabilities support modeling for the Skyzer AST, model management system (MMS)
+(like configuration management), DocGen, and collaboration through web ‐ based browser to view the information generated from the model, as well as discipline ‐ specific and multi ‐ physics model and simulations. This shows that the models for the AST shown in
+Figure 1.6 are produced by a distributed set of tools in various environments; this perspective best illustrates why the AST is not a single source of truth. These and other details are covered in
+Chapter 2.Interoperability and Integration Framework
+(IoIF)
+Our research with US Army DEVCOM started in 2016 (Blackburn et al. 2017, 2018b) and revealed several key challenges involving the use of many types of modeling and simulation tools. In general, the tools were not integrated. Subject matter experts (SMEs) would often receive document ‐ based requirements that would be used to create some type of analysis models (e.g., aerodynamics, stress, thermal) and run various simulations to produce results that were captured in a report that is given to another SME (e.g., geometry), who would then repeat the process in their area of expertise. The typical result was a series of stove ‐ piped efforts that lacked the model integration needed for true model ‐ based design and development. DEVCOM needed a way to better integrate models for simulations across the various domains at different levels of abstraction to support an iterative process for tradespace analysis and decision ‐ making. Figure 1.9 below, excerpted from a SERC researcher’s dissertation on Mission Level Optimization (Chell
+2021), offers an approach to addressing DEVCOM for better model integration across disciplines.
+Figure 1.9 Model and simulation interactions for mission level optimization.Our early research demonstrated how ontologies and semantic web technologies (SWT) could provide a more effective way to
+“integrate” models using an interoperable repository that was formalized using ontologies (a type of information model) using
+IoIF. IoIF leverages SWT, including using an ontology to support a
+Decision Framework as reflected in Blackburn et al. (2018a, 2018b).
+IoIF is a framework that has evolved since 2017. The early results and demonstrations made IoIF and DEVCOM relevant domain ontologies the focus of the subsequent three ‐ year research task conducted under ART ‐ 002 (Blackburn et al. 2022a) and an additional two ‐ year research task conducted under ART ‐ 022.
+Specifically, we investigated various scenarios focused on five major
+IoIF demonstrations. Related efforts investigated the development of graphical CONOPs and DEVCOM ‐ relevant mission, system, subsystem and analysis models linked to co ‐ simulations workflows coordinated by the IoIF. IoIF uses a central interoperable repository to input and output various types of model information from different modeling tools and transforms or maps ontology aligned data from various types of models relevant for analysis use cases.
+In April 2018, the three Navy system commands (NAVAIR, NAVSEA and SPAWAR) initiated a plan to build mission and system ‐ relevant interoperable ontologies (Blackburn et al. 2021b). The initial effort focused on using an ontology architecture to scope the identified need, enforce interoperability, creating common terminology across domains, and serve as an enabler for DE. A Cyber Ontology pilot was conducted, where our SERC team supported the effort to develop and demonstrate how to use a SysML model of a computer architecture that aligns with a Cyber Vulnerability ontology using
+IoIF. IoIF provided the computational means for semantic reasoning, which associated potential vulnerabilities with elements of a computer network model and synchronized the information back in SysML, linking the vulnerability with the elements of the system model architecture. The Cyber Ontology was public domain and was used to develop an IoIF training course for our Armysponsor that is now being shared with NAVAIR, US Air Force and
+US Space Force.
+We also conducted research on using AI/ML Design Patterns for
+Digital Twins and Model ‐ Centric Engineering (Blackburn et al.
+2021a) using SWT, leveraging the resulting synergies derived from that research such as IoIF. We contributed our Skyzer and
+DEVCOM results to Digital Engineering Competency Frameworks
+(WRT ‐ 1006) (Pepe et al. 2020), because the Surrogate Pilot efforts illustrated new types of DE Competencies (e.g., Digital Signoffs).
+We correlated analysis on DESM categories with lessons learned from the Skyzer Surrogate Pilot under WRT ‐ 1001 (McDermott et al.
+2020). The Skyzer models are also being used for workforce development in the new Digital Acquisition University DE
+Curriculum upgrade. The team also developed Cyber Ontology Case
+Study Training Course, which was delivered virtually to DEVCOM attendees to support the transition of the research results to
+DEVCOM.
+The objective of this course was to educate attendees on the concept of a “full stack” of models that are “integrated” using the IoIF by extending the cyber ontology use case. The course guides attendees in how IoIF uses ontologies and SWT to map domain information to different types of models. Course exercises involve extending a computer network model developed in SysML to learn how to add stereotypes that tag objects in a SysML model that are mapped to a cyber ontology. The course has exercises for attendees to develop tool proxies using the IoIF service for exchanging data between IoIF with different modeling tools (e.g., MATLAB) and dashboards. The class exercises were designed to extend a SysML computer network model and ontology with a new type of component seeded with a vulnerability. The exercises help attendees learn how to use a triplestore data repository as reflected in Figure 1.10.
+The research team developed four use cases to investigate methods and technologies for modeling the “full stack” for an AST. Figure
+1.11 depicts the “full stack” of SysML models developed forDEVCOM's munitions ‐ centric mission and systems. This image shows the various elements that contribute to an “integrated” set of models and simulations. Starting at the top, we developed evolving ontologies that align with the DEVCOM munitions domain, as represented in Reference Architectures. We defined the mission model that characterized mission objectives and measures in the
+SysML descriptive modeling language. We defined a Graphical
+CONOPs, which was used to elicit requirements. The CONOPs was developed in the Unity gaming engine, which allowed us to validate model requirements through simulated operations. The system model and analysis models were also defined in SysML. The analysis model characterized the metadata returned from the various discipline ‐ specific co ‐ simulations using Computational
+Fluid Dynamics (CFD), Finite Element Analysis (FEA), Six Degree of Freedom (6DOF) analyses, thermal, and geometry analyses; this was all coordinated through IoIF. The team also used the IoIF to develop several dashboards that could visualize various design tradeoffs. We also developed an IoIF Service capability to eliminate file ‐based data exchanges between tools. Instead, IoIF uses a
+REpresentational State Transfer (REST) ‐ type interface for distributed data exchanges between IoIF and the modeling tools for a workflow. The various tools, including IoIF, are shown in green around the outside of the figure. Subsequent chapters provide additional details on the capabilities and limitations of these tools.Figure 1.10 IoIF cyber ontology ‐ based use case used in course and exercise.
+Figure 1.11 “Full Stack” of models for project research including designing system tools.Related Chapters
+Chapter 2: Mission and Systems Engineering Methods
+This chapter provides information on how the NAVSEM modeling methods was used to develop models for the Skyzer surrogate pilot.
+In addition, it discusses how model modularization should be done using enabling technologies within some descriptive modeling tools to link models at different levels of abstraction to establish a collaborative authoritative source of truth (AST). This chapter explains the use and approach for linking Stakeholder Analysis
+Models that are instantiated from reference models such as the Cost model, which is used as a case study in Chapter 2. The chapter also discusses the tools used to establish the AST and explains how modeling methods enable Digital Signoffs using OpenMBEE,
+DocGen, MMS, View Editor, and View and Viewpoints. The use of
+DocGen and Digital Signoffs demonstrated how to transform the way that we can do CDRLs and can be performed continuously as different parts of the models mature at different rates. This chapter also provides some guidelines on performing model management, which is similar to configuration management, but subtly different using models. Both sponsored research tasks developed a Digital SE
+Management and Technical Plan, which is a type of DE Systems
+Engineering Plan (DESEP) (Kruse et al. 2020). Finally, this chapter discusses how Digital Signoff can support the Source Selection process using an example from Skyzer.
+Chapter 3: Transforming Systems Engineering
+Through Integrating M&S and Digital Thread
+This chapter builds on Chapter 2 and goes into additional detail about how descriptive models typically defined in SysML, can be linked to discipline ‐ specific and multi ‐ physics models that often have their own simulations that is relevant to a particular need (e.g.,
+Computational Fluid Dynamic to understand airflow of a surface, aerodynamics, stress, thermal, etc.). This chapter discusses a novelapproach for formalizing how to characterize Digital Threads that link information from high ‐ level mission objectives down through parameters in the mission, system and discipline ‐ specific models using the concept of an Assessment Flow Diagram (AFD) (Cilli
+2015).
+This chapter discusses challenges of tool ‐ to ‐ tool integration that was overcome using domain/application interoperable ontologies that are aligned and configured with the computational framework called the IoIF. This chapter discusses new techniques to enhance design and analysis tasks that incorporate data integration and interoperability across various engineering tool suites spanning multiple domains at different abstraction levels. SWT offers data integration and interoperability benefits as well as other opportunities to enhance knowledge represented by disparate models. This chapter discusses a methodology for incorporating
+SWT into engineering design and analysis tasks. The methodology includes a new interface approach that provides a tool ‐ agnostic model representation enabled by SWT that exposes data stored for use by external users through standards ‐ based interfaces. Use of the methodology results in a tool ‐ agnostic authoritative source of information spanning the entire project, system, mission, enterprise domain, and using SWT to link descriptive models to discipline ‐ specific and multi ‐ physics models. This chapter also explains the benefits associated with using ontologies and SWT for engineering.
+Chapter 4: Digital Engineering Visualization
+Technologies and Techniques
+This chapter discusses how enabling technologies of gaming engines transformed the approach for developing Concept of
+Operations (CONOPs). There were several different use cases developed through two research tasks RT ‐ 168 and ART ‐ 002 that showed how to computationally enable Mission ‐ level concerns.
+Graphical CONOPs have been used to help elicit requirement to support model validation (getting the “right” mission and systemobjectives/requirements) using visualization, and have been used as way to provide confidence of the simulations by comparing results from 1D (i.e., one ‐ dimensional) simulation with 2D simulation (in the graphical CONOPs). This independence provides a way to verify that both the 1D and 2D are accurate, when they both converge to the same results. This further enables a way to run the gaming engine simulation through 1D inputs to simulate 1000s of trades vs.
+10s when run manually. This chapter shows DE visualization technologies that derive data from the IoIF such as Decision
+Framework Dashboard and Digital Thread analysis.
+Chapter 5: Interactive Model ‐ Centric Systems
+Engineering
+This chapter discusses how humans work or should work with models. Models are increasingly used for decision making in systems engineering, yet while human users are essential to a model's success, research into human ‐ model interaction has been lacking. Models represent an abstraction of reality and can come in a variety of forms and formats. Humans use models to augment their ability to make sense of the world and anticipate future outcomes. The idea that “humans use” models, highlights human interaction as a necessary factor in model ‐ centric engineering.
+Future Work
+The emphasis of future efforts should include support for transitioning the research to programs, such as the IoIF training course and the DAU DE curriculum using publicly available examples such as Skyzer to support workforce development. We did develop training material that required hands on exercises using models, code, tools and other technologies where the sponsors actually conducted demonstrations to present to their senior leadership. However, we need more support and workforce development for both the technical as well as the acquisition professional that support program solicitation, developing andresponding to the DE Request for Proposals (RFP), DE Systems
+Engineering Plan and DE Statement of Work. We investigated the concept of Baseline Progress Measure to continuously assess and measure maturity of analysis and design in the context of models.
+Digital signoffs are an enabling technology that provide measures and metrics to support the concept of Baseline Progress Measures.
+Figure 1.12 Digital Engineering Environment reference model.
+Finally, we provide a reference model abstraction of the different models that are associated with DE enabling technologies as shown in Figure 1.12. Most of the NAVAIR and DEVCOM case studies discussed in the following chapters focus on the early part of the lifecycle, primarily up to about contract award. There is a need to address the later stages of the lifecycle that are notionally reflected on the right side of this figure.
+ReferencesBell Eagle Eye (2022). In Wikipedia. https://en.wikipedia.org/w/index.php? title=Bell_Eagle_Eye&oldid=1111743865 (accessed 22 September
+2022).
+Blackburn, M.R. and Kruse, B. (2023). Conducting design reviews in a digital engineering environment. INCOSE Insight 25 (4): 42–
+46.
+Blackburn, M. R., Bone, M., and Witus, G. (2015). Transforming
+System Engineering Through Model ‐ Centric Engineering.
+Systems Engineering Research Center. Technical Report SERC ‐
+2015 ‐ TR ‐ 109.
+Blackburn, M. R., Blake, R., Bone, M., et al. (2017). Transforming
+Systems Engineering Through Model ‐ Centric Engineering.
+Systems Engineering Research Center. Technical Report SERC ‐
+2017 ‐ TR ‐ 101.
+Blackburn, M. R., Bone, M., Dzielski, J., et al. (2018a). Transforming
+Systems Engineering Through Model ‐ Centric Engineering.
+Systems Engineering Research Center. Technical Report SERC ‐
+2018 ‐ TR ‐ 103.
+Blackburn, M. R., Verma, D., Giffin, R., et al. (2018b). Transforming
+Systems Engineering Through Model ‐ Centric Engineering.
+Systems Engineering Research Center. Final Technical Report
+SERC ‐ 2017 ‐ TR ‐ 110.
+Blackburn, M. R., Austin, M., and Coelho, M. (2021a). Using AI/ML
+Design Patterns for Digital Twins and Model ‐ Centric
+Engineering. Systems Engineering Research Center. Final
+Technical Report SERC ‐ 2021 ‐ TR ‐ 007.
+Blackburn, M. R., Dzielski, J., Peak, R., et al. (2021b). Transforming
+Systems Engineering Through Model ‐ Centric Engineering. Final
+Technical Report SERC ‐ 2021 ‐ TR ‐ 012.Blackburn, M. R., Grosse, M. I., Gabbard, J., et al. (2022a).
+Transforming Systems Engineering Through Model ‐ Based
+Systems Engineering. Final Technical Report. Systems
+Engineering Research Center.
+Blackburn, M.R., McDermott, T., Kruse, B. et al. (2022b). Digital engineering measures correlated to digital engineering lessons learned from systems engineering transformation pilot. Insight
+25 (1): 61–64.
+Chell, B. (2021). Multidisciplinary System and Mission Design
+Optimization. Stevens Institute of Technology.
+Chilenski, J. and Ward, D. (2014). 2014 Modeling and Simulation
+(M&S) Subcommittee Report.
+Cilli, M. (2015). Seeking improved defense product development success rates through innovations to trade ‐ off analysis methods.
+Doctoral thesis. Stevens Institute of Technology.
+Deputy Assistant Secretary of Defense (Systems Engineering)
+(2018). Digital Engineering Strategy. US Department of Defense. https://ac.cto.mil/wp ‐ content/uploads/2019/06/2018 ‐ Digital ‐
+Engineering ‐ Strategy_Approved_PrintVersion.pdf.
+Kruse, B. and Blackburn, M. R. (2019). Collaborating with
+OpenMBEE as an authoritative source of truth environment. 17th
+Annual Conference on Systems Engineering Research (CSER)
+(3–4 April 2019). Washington, DC: National Press Club.
+Kruse, B., Hagedorn, T., Bone, M., and Blackburn, M. R. (2020).
+Collaborative management of research projects in SysML. 18th
+Annual Conference on Systems Engineering Research (CSER)
+(8–10 October 2020).
+McDermott, T., Van Aken, E., Hutchison, N., et al. (2020). Digital
+Engineering Metrics. Systems Engineering Research Center.
+Technical Report SERC ‐ 2020 ‐ SR ‐ 002.MIL ‐ HDBK ‐ 516C (2014). Department of Defense Handbook:
+Airworthiness Certification Criteria. U.S. Department of
+Defense. http://everyspec.com/MIL ‐ HDBK/MIL ‐ HDBK ‐ 0500 ‐
+0599/MIL ‐ HDBK ‐ 516C_52120/
+Pepe, K., Hutchison, N., Blackburn, M. et al. (2020). Preparing the acquisition workforce: a digital engineering competency framework. INCOSE International Symposium 30: 920–934. https://doi.org/10.1002/j.2334 ‐ 5837.2020.00763.x.
+Biographical Sketches
+Mark R. Blackburn, PhD is a Senior Research Scientist with
+Stevens Institute of Technology since 2011 and principal at
+KnowledgeBytes. Dr. Blackburn has been the Principal Investigator
+(PI) on 17 System Engineering Research Center (SERC) research tasks for both US Navy NAVAIR, US Army DEVCOM and US Space
+Force on Digital Engineering Transformation Research Tasks. He has also been PI on a FAA NextGen and National Institute of
+Standards and Technology projects and has received research funding from the National Science Foundation. He develops and teaches a course on Systems Engineering for Cyber Physical
+Systems. He is a member of the SERC Research Council,
+OpenMBEE Leadership Team and INCOSE Pattern Working Group focused on the Semantic Technologies for Systems Engineering initiative. Prior to joining Stevens, Dr. Blackburn worked in industry for more than 25 years. Dr. Blackburn holds a PhD from George
+Mason University, a MS in Mathematics (emphasis in CS) from
+Florida Atlantic University, and a BS in Mathematics (CS option) from Arizona State University.
+Timothy D. West currently serves as the Deputy Director of the
+U.S. Air Force Research Laboratory's Operations Directorate. In this capacity, he provides leadership and oversight of the Laboratory's air and space flight test program, demonstrating combat readiness of the military's latest science and technology developmentprograms. Prior to his current assignment, Mr. West served for nearly 30 years as a military officer in the U.S. Air Force, where he held command positions in science and technology, test and evaluation, and program management. He is a graduate of the US
+Air Force Test Pilot School, the Air Command and Staff College, and the Air War College. Mr. West holds MS degrees in Aerospace and
+Industrial Engineering from the University of Tennessee Space
+Institute, and a BS in Mechanical Engineering from the University of Kentucky. Mr. West is also a Systems Engineering PhD Candidate at Stevens Institute of Technology.
+Notes
+1 NAVAIR Public Release 2017–370. Distribution Statement A –
+“Approved for public release; distribution is unlimited.”
+2 https://sercuarc.org/wp ‐ content/uploads/2020/01/ROADMAPS_2.3.pdf
+3 NAVAIR Public Release 2019–443. Distribution Statement A –
+“Approved for public release; distribution is unlimited.”Chapter 2
+Mission and Systems Engineering Methods
+Benjamin Kruse, Brian Chell, Timothy D. West, and Mark R.
+Blackburn
+Stevens Institute of Technology, School of Systems and
+Enterprises, Hoboken, NJ, USA
+Problem
+As noted in Chapter 1, this initial research began in 2013 because the sponsor (NAVAIR) was concerned about the cycle time required to perform their mature Systems Engineering Technical Review
+(SETR) process for analyzing a mission, developing system requirements, performing system analysis and design, and conducting system testing in order to produce an integrated air vehicle. Their traditional “Vee” process relied on milestone ‐ centric document review as the primary mechanism to perform insight and oversight, which drove longer development cycles and stop ‐ work situations, which contributed to cost and schedule growth. They needed a faster, cheaper approach that was conducive to continuous design review and real ‐ time decision making, one that leveraged a comprehensive Digital Engineering Ecosystem to not only perform these tasks but also to capture the rationale behind them. They also wanted to leverage technology to identify contradictory requirements earlier in the analysis and design phases when the design was still fluid, rather than during system integration and testing of a near ‐ final design, where design changes are significantly more expensive. NAVAIR also wanted 25% reduction in development time from that of the traditional large ‐ scale systems, and they believed a more holistic Model ‐ Based Systems Engineering
+(MBSE) approach leveraging Mission ‐ based Analysis and
+Engineering could achieve this reduction.Background
+NAVAIR chartered the SERC to perform an evaluation of emerging system design through computationally ‐ enabled models. NAVAIR also tasked the SERC to begin collecting and structuring evidence to assess the technical feasibility of moving to a “complete” model ‐ driven lifecycle. The initial emphasis in 2013 was on the “technical feasibility” of such a Vision. At NAVAIR's direction, nontechnical hurdles (e.g., organizational adoption, training, usability, etc.) were ignored during early research. NAVAIR recognized the growing popularity of MBSE across government, industry, and academia.
+NAVAIR also understood that MBSE's multilevel, multi ‐ domain model, analysis, and simulation capabilities were steadily increasing to take advantage of high ‐ performance computing, and that emerging tool environments could now support various degrees of fidelity that connect to different and complementary views of the system under analysis and design.
+At NAVAIR's behest, we conducted a structured global scan
+(Blackburn et al. 2014) of the most advanced and holistic approaches to performing model ‐ centric engineering (MCE), which is now more generally referred to as digital engineering (DE). The global scan revealed that MCE/DE was in use, and adoption was accelerating. MCE1 can be characterized as an overarching digital engineering approach that integrates different model types with simulations, surrogates, systems, and components at different levels of abstraction and fidelity across disciplines throughout the lifecycle. Industry is trending toward more integration of computational capabilities, models, software, hardware, platforms, and humans ‐ in ‐ the ‐ loop. The integrated perspectives provide cross ‐ domain views for rapid system ‐ level analyses allowing engineers from various disciplines using dynamic models and surrogates to support continuous and often virtual verification and validation for trade ‐ space decisions in the face of changing mission needs.As part of the global scan, we performed site visits to various organizations. Figure 2.1 correlates some of the organizations visited with the MCE topics discussed during the global scan, including the lifecycle perspectives, shown in Figure 2.2, which are relevant to many cross ‐ cutting topics (Blackburn et al. 2015). We subsequently conducted additional research on most of these topics, as described in subsequent chapters of this book.
+In 2015, NAVAIR proposed a new framework for the systems engineering transformation (SET), depicted in Figure 1.3 of Chapter
+1, which would make the mission, system, and subsystem processes more iterative and agile. We assessed and refined the evolving framework in order to support a new operational paradigm to mission engineering, analysis, and acquisition, which would be jointly led by the government and research team with a collaborative, industry ‐ led design effort. As Figure 1.1 of Chapter 1 depicts, we binned research roadmap into six functional lanes to better align with NAVAIR's priorities in the accelerated SET and to address some of the non ‐ technical hurdles listed above.
+The research, which continued through 2021, yielded a modeling framework that leveraged high ‐ performance computing (HPC) to enable the AST and the integration of multi ‐ domain and multi ‐ physics models, and to provide a method for model integrity.
+Completing the modeling and infrastructure for the DE environment was a critical step to enabling an AST, as was selecting a modeling method. Despite the availability of thousands of software tools,2 no single tool or family of tools offered a truly comprehensive and integrated solution to DE. Every organization we interviewed had to architect and engineer their own DE environment to meet their unique needs. Most organization used a federated network of commercial tools, often developing the integrating fabric between the different tools, models, simulations, and data. Some organizations have encoded historical knowledge in reference models, model patterns to embed methodologicalguidance to support continuous orchestration of analysis through new modeling metrics, and automated workflows.
+The scope of the research looked at the cross ‐ cutting relationships associated with the research needs, as shown in Figure 2.3, including the evolving OpenMBEE as the experimental integrated modeling environment. The use of OpenMBEE proved to be very valuable, as discussed in the next section. Five use cases were employed in this research.
+UC00: Conduct automated model reasoning: This use case employed ontologies and semantic web technologies to perform reasoning about completeness and consistency across cross ‐ domain models to achieve model integration through interoperability. As discussed in more detail in Chapter 4, this use case demonstrated an authoritative source of truth (AST) using tool ‐ agnostic approaches to methodology enforcement and conformance that also support model integrity.
+Information about the systems and their various components were converted into explicitly defined, machine ‐ readable subject/predicate/object statements that complied with
+Resource Description Framework (RDF) and Web Ontology
+Language (OWL) taxonomies. Tools such as SPARQL Protocol and RDF Query Language (SPARQL) were then employed to enrich the provided assertions about the system by extracting and graphing logical implications that could be derived from the explicit statements.Figure 2.1 Traceability and scope of data collection of MCE relevant topics.Figure 2.2 SE transformation research areas (SERC).Figure 2.3 Cross ‐ cutting relationships of research needs.
+UC01: Research multidisciplinary design, analysis, and optimization (MDAO): This use case employed MDAO at the mission, system, and subsystem levels to enable continual assessment of design tradeoffs, as described in Chapter 4. This use case also investigated methods for tracing system capabilities through the performance of cross ‐ domain trade space analyses using MDAO techniques. MDAO is an approach for calculating optimal designs and understanding design trade ‐ offs in an environment that simultaneously connects many different models, evaluates them in a consistent and efficient manner, and optimizes for one or many objectives. For example, when designing a vehicle, there is typically a trade ‐ off between maximizing performance and maximizing efficiency.
+Calculating either of these objectives requires multiple disciplinary models (geometry, weight, aerodynamics, propulsion). MDAO prescribes ways to integrate these models and explore the necessary trade ‐ offs among the objectives to make a design decision. While the theoretical foundations ofMDAO are well established, several barriers to practical implementation exist. Chief among these is the lack of model integration, which prevents designers of one subsystem from easily assessing how changing a design variable affects the results of other subsystems' models or simulations – the stovepipes or siloes which many systems engineering efforts strive to overcome.
+UC02: Formalize an authoritative source of truth (AST) using an integrated modeling environment (IME): As the title implies, this use case employed an IME to develop an
+AST for use by NAVAIR and its industry partners. This not only is essential to provide a unified and ideally standardized access to the consistent and correct, i.e., true, system, and mission data for, e.g., MDAO or semantic reasoning, but also impacts all related workflows, which has implications on both technologies and workforce development. Especially in respect to allowing industry contractor access, methods for model modularization are also crucial to ensure separation of concerns, classification, and acquisition.
+UC03: Develop and manage models using an IME: The methodology for all these technologies in the context of the
+IME workflows, such as methods for the creation of system models, including interrelated subsystems and system of systems, related mission models, e.g., based on a digital mission model canvas, and methods for MDAO modeling
+(discussed in more detail in Chapter 4). Additionally, in order to handle such various models, there are methods for model management needed as well as for model modularization, to support constraints needed for developing an AST with many different users and roles, thereby relating to many other use cases. This handling of models also includes required methods for representing and organizing reference models, model libraries, process models, and discipline ‐ specific models.
+Having interconnected models in an AST also enables methods for tracing change impacts and developing and tracingcapability measures to KPPs; more details are discussed in
+Chapter 4.
+UC04: Integrate physics ‐ based modeling with SysML models: This use ‐ case ‐ enriched basic SysML models with the underlying physics ‐ based models. It included interconnecting
+MATLAB models and other physics ‐ based models with Cameo ‐ based SysML models, as well as MDAO ‐ derived physics models, to assess model integrity and design risks and uncertainties, as discussed in Chapter 3.
+New Approach
+Skyzer Surrogate Pilot Experiment
+As noted in Chapter 1, Skyzer is a notional aircraft acquisition program consisting of a tilt ‐ rotor remotely controlled unmanned air vehicle (UAV) to conduct ship ‐ based search and rescue for the Navy.
+The fictitious program was crafted by NAVAIR to evaluate and demonstrate the SET Framework (Figure 1.3 in Chapter 1), without the security constraints that accompany an actual weapon system acquisition program. Skyzer became the centerpiece of several
+Surrogate Pilot experiments, conducted by a combination of SERC researchers, NAVAIR engineers, contractors, and a surrogate contractor over three phases starting in late 2017 (Blackburn et al.
+2017). Figure 1.5 in Chapter 1 depicts the Concept of Operations
+(CONOPs) for Skyzer's humanitarian maritime search and rescue mission.
+Phase one (1) culminated at the end of 2018 with the development of mission and systems models that linked to the Request for
+Proposal (RFP) Response model from the Surrogate Contractor. The focus was on characterizing the process for running a model ‐ based acquisition based on the SET Framework concept. We successfully developed fully linked models in an AST. The Surrogate Pilot teamofficially released the RFP in the form of models, concluding the
+Phase One effort.
+The surrogate contractor's RFP response refined the mission and system, creating subsystem models with detailed design and analysis information using multi ‐ physics and discipline ‐ specific models. Performance requirements such as a cruise speed of 170 knots forced the design to be something other than a traditional helicopter and ultimately a design like the Bell Eagle Eye (“Bell
+Eagle Eye” 2023) was proposed in the surrogate contractor RFP response models. This proposed design was evaluated in a surrogate source selection that was embedded as part of the contractor RFP response by the sponsor team (a retired NAVAIR SME who had no
+SysML training) using introduced digital signoffs in the OpenMBEE
+(2023) View Editor, which are discussed below.
+The use case was extended in Phase Two (2) to include a ship ‐ based
+Launch and Recovery (L&R) system in order to create another capability, where we can research methods for Capability Based Test
+& Evaluation (CBT&E), based on a NAVAIR modeling approach for
+Mission ‐ Based Test Design (MBTD). Phase Three (3) developed a deep dive related to the landing gear in order to examine some scenarios for modeling information related to Airworthiness (the process used to get a flight clearance). In addition, Phase Three developed an MBSE Cost Model, which used the Skyzer Airframe characteristics for the cost modeling basis; with the Airframe characteristics being derived from the Phase One contractor model.
+The efforts during Phase Three, in addition to the Airworthiness and
+Cost Model, included updates to Digital Signoffs, updates to the models to align with the evolution of NAVSEM, and recommendations for adding guidance to NAVSEM based on needs identified in the evolution of the modeling for Skyzer.
+OpenMBEE, DocGen, and View Editor
+NASA/JPL developed OpenMBEE was used as part of the IME in order to provide collaborative access to the models for both thegovernment team members and the industry surrogate contractor
+(Hutchison et al. 2020). OpenMBEE has three main components: the Model Development Kit plugin (MDK) (Kruse and Blackburn
+2019), the Model Management System (MMS), and the View Editor.
+To serve as an AST, MMS stores the model data in an open and accessible way while providing versioning, workflow management, and access control to enable multi ‐ tool integration across disciplines. For instance, it stores all model elements of all incorporated SysML models, including their histories and branches.
+The MDK is a plugin for the NoMagic modeling tool that synchronizes between MMS and the SysML models. It also includes
+DocGen, which is a language for model ‐ based document creation based on the view and viewpoint paradigm. DocGen allows a model ‐ based document creation following ISO ‐ 42010 (ISO/IEC/IEEE
+2011), where views are defined as representations of a system from the perspective of a viewpoint. The viewpoints hereby provide the information needed to build a view out of the available data to address stakeholder concerns. DocGen permits all stakeholders access to stakeholder ‐ specific model information using a web ‐ based representation of the model using the View Editor. An example of
+View and Viewpoint hierarchy is provided in the Digital Signoff subsection below.
+The View Editor offers live access to web ‐ based model data in the form of DocGen views for agile virtual reviews and real ‐ time collaboration to surpass static documents. It enables a shift from document ‐ centric to model ‐ based approaches. As a component of
+OpenMBEE, the View Editor allows users to edit or comment on information generated from the model in a web browser, with most edits in the View Editor being synchronized back into the model.
+Skyzer SMEs used the View Editor to successfully visualize modeled information in the web browser and perform digital signoffs (as further explained below), without any SysML training or tools.
+The surrogate pilot effort demonstrated the value of having a set of generic viewpoints defined in a viewpoint library, as done for theRFP (Hutchison et al. 2020). With standardized viewpoints, only a few modelers need to know how to create them. Additionally, standardized viewpoints allow the modeler to pre ‐ plan view hierarchies to define the document structure and the type of required model content prior to the modeling, thereby guiding the modeling and design process by specifying what information is needed. This can be enhanced by including warning messages in the viewpoints and by checking the validity of model inputs. We employed a template view hierarchy in the NAVSEM process detailed below, being ever mindful of model ‐ based document creation best practices, such as limiting the size of diagrams and using their documentation and employing specific modeling considerations to enable a successful processing of model elements through the viewpoints.
+NAVSEM
+Chapter 1 provides a general overview of how the Skyzer models align with the NAVSEM method. NAVSEM defines both the process
+(what) as well as the method artifact (how), which are important to the digital signoff process. NAVSEM is formally described in a
+SysML as shown in Figure 2.4. There are 11 main process steps represented as an SysML activity diagram, and each of the process steps are further decomposed as shown in Figure 2.5. The approach fosters compliance with NAVSEM. The outline of the DocGen ‐ generated “document” is consistent with the NAVSEM process steps. If information is missing from an element within the outline, then this alerts reviewers that the model information is missing and thus not yet fully compliant with NAVSEM.
+Model Management and Modularization
+As part of the surrogate pilot experiment to “model everything” to demonstrate the art ‐ of ‐ the ‐ possible, we created multiple distributed models that were linked together in an AST to enable information sharing and access, better collaboration, improved consistency,enhanced traceability, reduced defects, and greater efficiencies through the elimination of certain types of work. These models captured both system information and linked project ‐ relevant data, to be used by DocGen and the View Editor.
+Figure 2.4 NAVSEM high ‐ level process.Figure 2.5 Internal package structure maps to DocGen ‐ generated structure.
+Figure 2.6 Five usage and user permission examples for mission requirements review.To effectively design and manage these distributed models, we split up the various models into manageable models and employed a modeling modularization method enabled by MagicDraw's project usage capability. Project usage provided a means for accessing shared elements of the used project from within another model, e.g., to allow traceability links from system elements back to specific mission requirements. This approach facilitated model library reuse, where the library is separated from the rest and protected from accidental changes, yet still available for use. Project usage also allowed us to separate mission, system, subsystem, analysis models or even SysML models that only include a view hierarchy to allow the resulting document to be editable in the web browser, while keeping the exposed model content read ‐ only. The project usage mechanism also enabled refined user ‐ access management, e.g., specific or partially restricted access.
+Figure 2.6 depicts an example structure of distributed and modularized models, where project usage relations are displayed as compositions (Kruse and Blackburn 2019). The white elements on the bottom represent connected domain models that allow traceability, e.g., of requirements from the mission model or system elements from the system model. In addition, these models are used by the predefined view hierarchies in the view models described above. The viewpoints come from the Viewpoint Library in the top ‐ left corner. The model for Issue Tracking on the right uses the two view models. This structure, together with specific access and editing rights, allows the reviewer to edit the Issue
+Tracking model and the Mission View Model. A reviewer can, for example, enter comments into the document that expose the mission requirements, or directly add comments as new issues in the Issue Tracking Model, while not being able to edit the actual requirements in the Mission Model.
+Digital SignoffDuring Phase Three of the surrogate pilot, we investigated the concept of digital signoffs embedded within the models (Blackburn and Kruse 2023). A digital signoff is a means to capture an evaluating intent (e.g., an approval or rejection), in a dependable, and legally binding way that does not require paper or electronic documents (e.g., PDFs), but is instead part of the model information that is being assessed. A digital signoff is directly associated with a modeling artifact that requires assessment, such as completeness, correctness, or risk. A key catalyst for developing this technology was, in government “talk,” to move away from document ‐ based
+Contract Data Requirement Lists (CDLRs) and Data Item
+Deliverables (DIDs), and leverage modeling technologies to support asynchronous reviews enabled by collaborative information sharing.
+A digital signoff is a template ‐ based artifact that can have one or more signoffs with different types of criteria that are used to characterize the state of the artifact that is being “signed ‐ off” in a model. A digital signoff has two parts (currently). The first part is the model element to be signed off (e.g., a use case, a diagram, a view, or a package) such as the Fault Tree analysis shown in Figure
+2.7, which is part of the model and may contain further associated or owned elements for which the signoff applies. The second part is there to capture the status of the signoff and to make the signoff accessible in any web browser. The status of each signoff can hereby include additional information about who performed a signoff. It is tracked when the signoff occurs in the MMS, and who performed it.
+An example is shown in Figure 2.7 that highlights a few points about the elements related to a digital signoff. The example shows hazard/failure analysis that is modeled using a fault tree (usually called fault tree analysis [FTA]). Briefly the FTA on the right of
+Figure 2.7 describes the analysis for the possibility of a hazard (e.g., vehicle accident, cyber ‐ attack) if the basic event (bottom nodes) manifest without mitigation. The digital signoff is associated with the model of the FTA (i.e., the evidence used in the decision). The digital signoff can be completed if a subject matter expert (SME) agrees that the FTA is consistent, complete, and correct. The FTA isthe model artifact being assessed for a potential hazard, and assessment of Completeness, Probability, and Impact is captured with Approval Status for digital signoff. An additional benefit of
+MBSE that is not usually possible in documents is the formalization of requirements, shown at the bottom of the FTA that has been defined as a mitigation against the manifestation of the basic event.
+This points out how traditional requirement management can be improved when the new requirement is placed with the analysis within the model. Keeping the requirement with the analysis allows for traceability in case the analysis changes. Just like the digital signoff that is embedded in the model, so is the associated mitigation requirement. Finally, we have also demonstrated that we can computationally “reset” a digital signoff if the associated model artifact is modified and automatically notify the reviewers that they should review the changes and update the digital signoff (Blackburn et al. 2020, 2021).
+Figure 2.7 Example digital signoff for fault tree model and analysis.
+How to Create Digital SignoffsThe demonstrated approach leverages DocGen using View and
+Viewpoints. The concept of View and Viewpoints (Delp et al. 2013) has been around for more than a decade, but the specific implementation that comes with OpenMBEE MDK and DocGen provides a concrete mechanism to produce stakeholder ‐ relevant views of models that are editable in the View Editor that runs in a web browser. Views are defined as representations of a system that address stakeholder concerns. They are built using Viewpoints, which specify the conventions and rules for constructing Views out of the available model information. This capability of View and
+Viewpoints to generate document ‐ like views directly from model content, can provide stakeholder relevant information to be viewed in a web browser or to be exported into a static document in Word or PDF.
+An excerpt of a Navy standard template ‐ based View and Viewpoint hierarchy is shown in Figure 2.8 as part of developing the system model views. We aligned it with the artifacts of the evolving
+NAVSEM (Blackburn et al. 2021), which is process step 3.0 for the system requirements analysis. This approach demonstrates that modeling can be used to align modeling artifacts with existing standards that traditionally have been document ‐ based. We have a set of View and Viewpoint hierarchies that extract information from all of the Skyzer models (e.g., mission, system, etc.) to “generate specifications.” A portion of the system model View and Viewpoint hierarchy includes the basic elements, as shown in Figure 2.8.Figure 2.8 Digital signoff are placed in view hierarchy with associated model artifacts to be signed off.3Figure 2.9 View Editor showing digital signoff for operational use case for system.
+Currently, we develop one or more View and Viewpoint hierarchies as shown in Figure 2.8. Each view can hereby be understood as a section of the live document that is automatically generated from the exposed model element(s) based on the DocGen instructions of the viewpoint for which it conforms. For instance, for signoffs we place a view (e.g., Operational Use Case Signoff) link to the model artifact to be signed off (e.g., Selected Operational Use Case) using an expose relation and have the View conform to a fitting
+Viewpoint (e.g., Dual Signoff Table) in order to create a table containing the signoff(s), which in this case requires two persons to sign off as shown in Figure 2.9, from an image of the View Editor.
+Authorized users can Enable Edits and select the Approval
+Status and provide the name of the approver.
+This type of technology enables and formalizes decision ‐ making, and directly associates each decision with specific model information related to that decision. Like DocuSign, the model anddigital signoff facilitates a digital document for a contract. The digital signoff can (and should) be located in one, and only one place to constitute decisions in an AST. Requesting specific model elements through digital signoffs that are part of standardized view hierarchies can also enforce the use of specific modeling methods such as the NAVSEM. This reduces time, because the signoff can be performed as soon as the associated artifacts are “ready for review.”
+The digital signoff is a DE construct, which means its state can be changed (computationally) if anything associated with the signed off artifacts (models) is changed. This can eliminate work and mistakes that occur when using documents, because it is often difficult to trace such relationships within one or more documents.
+This leads also to digital signoff metrics, as shown in Figure 2.10 that can be automatically generated to guide management and assessment of risk. These measures and metrics are automatically calculated and can again be viewed from a web browser.
+By having the View and Viewpoint hierarchies in separate SysML projects as their exposed model content, it is possible to assign editing rights for only the views with the signoffs and not the model content or vice versa. This can for instance prevent modelers from signing off their own work or alternatively reviewers from accidentally changing the underlying mission or system model. In addition to the examples in Figures 2.7 and 2.9, there are three examples shown in Figure 2.11, which reflects on how different digital signoff templates can be used depending on the needs of the particular signoff (e.g., single person vs. dual person signoff).
+Figure 2.10 Digital signoff metric example.Figure 2.11 Template based examples as seen via View Editor in the web browser.
+Multidisciplinary Design Analysis and Optimization
+(MDAO)
+As part of our MDAO ‐ related research task objectives, we investigated methods for assessing the impacts of design changes on system capabilities, supporting conceptual design trade ‐ off analyses while running complex, multi ‐ physics models efficiently.
+We performed design optimization on models ranging from the mission level all the way down to subsystem levels. Specific MDAO examples included:
+Generic multidisciplinary models of NAVAIR ‐ relevant system examples, including analyses of the geometry, structure, aerodynamics, propulsion, stress, thermal, and performance capabilities, to be used as an example case
+MDAO architectures such as multidisciplinary feasible and interdisciplinary feasible to compare simulation results when searching for optimized solutions (Chell 2021)Using systems representations (e.g., SysML, Domain Specific
+Models) to map inputs (parameters and variables) and outputs
+(objectives, constraints, intermediate parameters) among the individual models
+Conducting trade studies on the UAS design using established approaches and tools for MDAO, exploring different approaches, tools, and visualization techniques to display information and uncertainty most effectively for decision ‐ makers
+Exploring ways that previous trade study results on detail ‐ phase product design can be useful toward new conceptual design of products with varying mission capability requirements
+Using the surrogate pilot to understand the barriers to implementing this type of MDAO, culturally and practically/theoretically
+Exploring the ways that MDAO and MBSE tools can work together
+Optimizing complex models is a difficult problem, as solutions generally improve with the number of function evaluations within the optimization loop, and these models can have long run times.
+We investigated methods for enhancing MDAO workflow efficiency on a fixed ‐ wing model including using a combination of MDAO architectures and multi ‐ fidelity MDAO. MDAO architectures combine a multidisciplinary model with a solution algorithm, and multi ‐ fidelity MDAO leverages the fast run times of lower ‐ fidelity models with the accuracy of higher ‐ fidelity models.
+Another thrust within the MDAO research was to apply MDAO to mission ‐ level optimization using a graphical CONOPs. In this case, surrogate models were applied to speed up the run times of a multi ‐ physics quadcopter search mission model. This scenario contained high uncertainty, and the resulting search times could vary byseveral orders of magnitude. To reduce this uncertainty, a design of experiments (DOEs) approach was used to identify the inputs for a
+Monte Carlo simulation. Then, the outputs from those simulations were used to create surrogate models. Optimizing these surrogates found a more optimal design than any of the failure ‐ free designs within the DOE. More information on graphical CONOPs is presented in Chapter 4.
+Collaborative Management of Research Projects in
+SysML
+We created a model for the System Engineering Technical and
+Management Plan (Kruse et al. 2020). We used a similar approach for the research use cases and pilot case study to demonstrate how the management of systems engineering can be done in SysML models within OpenMBEE. Figure 2.12 provides an overview of the packages and model elements contained in this model. We created these elements and provided continuous updates from its DocGen view hierarchy to manage the project through supported web ‐ based collaboration, model ‐ based report generation, and enabled semantic reasoning.
+We have an underlying ontology that provides for semantic reasoning, which is seen as a key enabler and accomplished using a
+SysML profile that is aligned to an underlying project ontology. This results in not only using the advantages of a DE engineering environment for managing the project, but also demonstrates the benefit of semantic enabled reasoning that is a focus of research of the research project. As such it is not only used for the project model, but also throughout most of the various domain models, e.g., shown in Figure 2.6. Excerpts of the ontology as well as the profile for the project model are shown in Figure 2.13b (Kruse et al. 2020).
+The figure shows the ontology terms “Agent,” as the bearer of a
+“Role of Responsibility,” which gets prescribed by an “Assignment” that is to accomplish further things. On the SysML profile side there is the “perform” dependency with its tagged value, called “role ofresponsibility.” This relation is used below to specify that an “Agent” called Researcher performing the role of responsibility of the task lead for the “Assignment” Research Task 1. This example shows that there is not a one ‐ to ‐ one mapping between the terms of the project ontology and the matching project profile. For example, the term
+“Role of Responsibility” gets realized in form of a subsidiary property and the relations “bearer of” and “prescribes” are only realized implicitly through the “perform” dependency.Figure 2.12 Model packages and elements for the system engineering technical and management plan model.
+The content of the project model in SysML includes a hierarchy of assignment elements. Each assignment has a property for its status and can use its documentation for a textual description that alsobecomes part of the auto ‐ generated documents as project reports.
+Linked to the assignments are researchers and other stakeholders as “agents” that perform certain roles of responsibility, as shown in
+Figure 2.13b. The interrelations between the different assignments as well as their required inputs and outputs, i.e., the deliverables, are modeled using internal block diagrams, as shown Figure 2.14.
+This also shows an assignment to align and refactor the “Skyzer
+Mission Model” and “Skyzer System Model” according to the
+“NAVSEM Starter” process model, while investigating their use and applicability as well as documenting any lessons learned, e.g., about identified unnecessary process steps, as shown as a subsidiary assignment. By specifying the assignments as specialized class elements in the profile, they can be modeled with their interrelations and deliverables, in contrast to, e.g., extended requirements or activity elements.
+Figure 2.13 Project ontology ecosystem with excerpt of project ontology elements corresponding to SysML.Figure 2.14 Simplified internal block diagram of assignments with their interrelations and deliverables.
+The accomplishments of the project are modeled as shown on top of
+Figure 2.15 using a stereotyped dependency with comment, date, and status properties. The dependency relates the accomplished entity with the achieving assignment. Having a project usage relation in the modeling tool gives direct access to all other used
+SysML models of the project. This allows to directly refer to the used models, their content or their documents when capturing accomplishments. Examples are given on the bottom of Figure 2.15 with an excerpt from the View Editor showing an accomplished addition to the mission model in the form of an added diagram for the ongoing alignment to NAVSEM/ASRM and the completed change of the mission model document's view hierarchy. The representation in the View Editor allows researchers to edit the date, status, comment, as well as the names of the accomplished entity and the assignment in the table in a web browser, without a
+SysML modeling tool. It is also possible to adapt generic placeholder elements into new accomplishments. Similar placeholder elements also exist for assignment elements in the project backlog. Yet, to properly integrate the renamed placeholder elements, additional work in the SysML modeling tool is required.Figure 2.15 Example accomplishment in SysML (top) and derived
+View Editor table (bottom).
+Finally, the project model contains additional resources about the project goals, a brief overview over the investigated Skyzer case study, and a glossary with a list of used acronyms. The model data yields several metrics that are calculated and exposed within the generated documents. For example, for the number and status of accomplishments. This demonstrates that a System Engineering
+Technical and Management Plan can be modeled as a descriptive model and be potentially included as part of the AST.
+Ontologies
+In 2016, we started a similar SERC research task for the US Army, focused on science and technology (S&T), which often requires the fabrication of pre ‐ production prototypes. Therefore, our research included modeling and simulation of discipline ‐ specific, multi ‐ physics analyses that help them understand system and mission requirements and trade ‐ offs. We developed the Armaments
+Interoperability and Integration Framework (IoIF), a computationally based framework that uses ontologies (a.k.a. information models) and semantic web technology to link different model data at different levels of abstraction with multi ‐ physics and discipline ‐ specific model data, facilitating greater cross ‐ domainmodel integration for analysis and design. An example of the resulting ontology ecosystem under the Basic Formal Ontology
+(BFO) can be seen in Figure 2.13a. We also developed two IoIF training courses based on a Cyber Ontology and Catapult use cases to help transition the research to the Army sponsor. See Chapters 3 and 4 for more details on these use cases.
+Results
+The Skyzer experiments conducted over three (3) surrogate pilot phases evolved and elaborated mission, system and subsystem analyses and requirements using a hypothetical system called
+Skyzer and demonstrated how to systematically apply different types of modeling methods at the mission, system, and subsystem levels. These methods aligned with the NAVSEM process model, but also created artifacts to be used in DocGen and to created Digital
+Signoffs as a way to transform away from using document ‐ based signoff, by embedded the signoff with the decision evidence directly in the model. Methods define the required types of artifacts, which again leads to consistency, better understanding of the system architecture, standardization, as well as to more effectively assess completeness of the generated “specification.” The methods also included guidance for modularity that linked all models to support an AST as shown in Figure 1.6 in Chapter 1.
+Application of DE Metrics to Skyzer Pilot Lessons
+Learned
+We performed an analysis to correlate DE benefit categories with lessons learned benefits observed during the Surrogate Pilot that applied DE methods and tools using an AST by creating models for everything to demonstrate the art ‐ of ‐ the ‐ possible (McDermott et al.
+2020). The analysis correlated rating from 17 lesson learned
+(Blackburn et al. 2021) categories to 22 DE benefit areas grouped into four metrics. The metrics categories include:Measure people adoption and enterprise process adoption
+(adoption)
+Analyze breadth of usability and issues with usability (user experience)
+Measure productivity indicators (velocity/agility)
+Generate new value to the enterprise (quality and knowledge transfer)
+The correlated analysis uses a rating system to correlate the strength of each key lessons learned benefit against the benefit categories. We used the lessons learned in this analysis, because they directly rely on DE practices, methods, models, and tools that should enable efficiencies, and contribute to productivity. The DE approach integrated methods and tools with enabling technologies:
+Collaborative DE Environment (DEE) supporting an AST not just for the Government but also for the contractor. It also required the use of DEE technology features (e.g., Project Usage [model imports], DocGen, View Editor, Digital Signoffs) and methods to accomplish those lessons learned. The efforts demonstrated a means for a new operational paradigm to work directly and continuously in a collaborative DEE to transform, for example, how
+Contract Data Requirement List (CDRLs) can be subsumed into the modeling process using Digital Signoff directly in the model that is accessed through a collaborative DEE.
+Figure 2.16 shows correlated analysis of 22 DE Success Measure
+Categories with top 6 of 17 lessons learned benefits observed during
+NAVAIR Surrogate Pilot that applied DE methods and tools using an
+AST that modeled everything to demonstrate the art ‐ of ‐ the ‐ possible
+(McDermott et al. 2020).
+We used a scoring/weight of: blank (0), three (3), five (5), and nine
+(9), where 9 has a strong relationship from underlying aspects of the lesson learned/benefits to the benefits categories. We create a total weighting across the benefits categories (row 2 has score for each measure) and similarly for each lesson learned (final columncomputes score for each lesson learned by row). The highest ‐ ranking DE/MBSE benefit areas across the lessons learned are summarized below. The numbers in the parentheses reflect the rankings from Figure 2.16.
+[Knowledge Transfer] Better Communication/Info Sharing
+[Quality] Increased Traceability
+[Velocity/Agility] Improved Consistency
+[Knowledge Transfer] Better Accessibility of Information
+[User Experience] Higher Level of Support for Automation
+[Adoption] Quality and maturity of DE/MBSE Tools
+Figure 2.16 DE digital engineering measures correlated to DE lessons learned (Top 6).
+These align quite closely with the highest ranked metrics categories in the literature review and survey (McDermott et al. 2020). As this analysis was developed independently of the literature review and survey results, it provides additional validation of the rankings listed in Figure 2.16. Of note in this example, which is more advanced than a number of other DoD acquisition pilots, is the focus on automation. Reducing workload via automation is a key aspect of User Experience in the DE/MBSE implementation.
+Primary lessons learned are:It is technically feasible to develop everything as a model
+Must establish and align modeling with methods and guidelines
+Establish infrastructures for IME tools and AST as early as possible
+Technology enables collaborative capabilities in model centric engineering
+Both DE/MBSE are tightly coupled to quality of systems engineering methods, processes and workforce capabilities.
+However, the digital transformation of SE in much more tightly coupled with technology. The quality and maturity of the
+DE/MBSE tools, particularly integration of the Collaboration
+Environment and the AST is critical.
+Future Work
+Model ‐ based systems engineering (MBSE) has been around for at least 20 years and the process, methods and tools have matured.
+Many organizations have been actively using MBSE on programs for at least 10 years and some 20 years. There has been system engineering transformations for many organizations as well as the
+Government who acquires large scale systems of system. The acquisition process is moving away from documents and instead using tools and technologies using integrated models. Even the late adopters are aware of the benefits and while there is still a need for broader work force development for technical people performing
+MBSE using tools and language such as SysML, there is a new need for broader understanding by Subject Matter Experts (SME) that now must provide information to Stakeholder Analysis Models (e.g.,
+Cost, Reliability, Risk, etc.) that link with the technical models. It is well understood that the models should be integrated to establish an authoritative source of true, which also leverages rigorous model/configuration management. SMEs must be able to find, read,analyze and update information within the AST. However, we should not expect them to use the MBSE authoring tools. There are other approaches for using Tool Proxies, such as DocGen that generate views of model information, where SMEs can access, analyze and update information that can be synchronized back into the model using appropriate model/configuration management practices.
+There is also a need to develop other types of program ‐ related information such as a Digital Engineering Statement of Work
+(DESOW) that specifies how the work should be created in the form of models, such as Skyzer, which is an unclassified type of reference model that can be used to illustrate method ‐ compliance modeling.
+This needs to consider how the models should be evolved and maintained as programs go beyond manufacturing and production, to operations and sustainment.
+References
+Bell Eagle Eye (2023). https://en.wikipedia.org/wiki/Bell_Eagle_Eye (accessed 4 June
+2023).
+Blackburn, M. and Kruse, B. (2023). Conducting design reviews in a digital engineering environment. Insight 25 (4): 42–46.
+Blackburn, M., Cloutier, R., Hole, E., and Witus, G. (2014).
+Transforming System Engineering Through Model Based System
+Engineering. Systems Engineering Research Center, Final
+Technical Report, Research Task 48.
+Blackburn, M., Bone, M., and Witus, G. (2015). Transforming
+System Engineering Through Model ‐ Centric Engineering. System
+Engineering Research Center, Research Task 141. Technical
+Report SERC ‐ 2015 ‐ TR ‐ 109.Blackburn, M., Blake, R., Bone, M. et al. (2017). Transforming
+Systems Engineering Through Model ‐ Centric Engineering
+Research Task 157. SERC ‐ 2017 ‐ TR ‐ 101.
+Blackburn, M., Kruse, B., Stock, W., and Ballard, M. (2020). Digital engineering modeling methods for digital signoffs. NDIA
+Systems and Mission Engineering Conference. 2020 Virtual
+Systems and Mission Engineering Conference (10 November–13
+December 2020).
+Blackburn, M., Dzielski, J., Peak, R. et al. (2021). Transforming
+Systems Engineering Through Model ‐ Centric Engineering. Final
+Technical Report SERC ‐ 2021 ‐ TR ‐ 012, WRT ‐ 1036 (NAVAIR).
+Chell, B. (2021). Multidisciplinary system and mission design optimization. Dissertation. Stevens Institute of Technology.
+Delp, C., Lam, D., Fosse, E., and Lee, C. (2013). Model based document and report generation for systems engineering. In:
+IEEE Aerospace Conference (02–09 March 2013). Big Sky, USA.
+IEEE.
+Hutchison, N., Pepe, K., Blackburn, M. et al. (2020). Developing the
+Digital Engineering Competency Framework (DECF). Technical
+Report SERC ‐ 2020 ‐ TR ‐ 010.
+ISO/IEC/IEEE (2011). Systems and Software Engineering –
+Architecture Description. ISO/IEC/IEEE 42010:2011(E)
+(Revision of ISO/IEC 42010:2007 and IEEE Std 1471 ‐ 2000), pp.
+1–46. https://doi.org/10.1109/IEEESTD.2011.6129467.
+Kruse, B. and Blackburn, M. (2019). Collaborating with OpenMBEE as an authoritative source of truth environment. Procedia
+Computer Science 153 (C): 277–284.
+Kruse, B., Hagedorn, T., Bone, M., and Blackburn, M. (2020).
+Collaborative management of research projects in SysML. 18thAnnual Conference on Systems Engineering Research (CSER)
+(8–10 October 2020).
+McDermott, T., Van Aken, E., Hutchison, N. et al. (2020). Digital
+Engineering Metrics. Technical Report SERC ‐ 2020 ‐ SR ‐ 002.
+OpenMBEE: Open Model ‐ Based Engineering Environment (2023). www.openmbee.org (accessed 4 June 2023).
+Biographical Sketches
+Benjamin Kruse acquired his diploma in mechanical engineering in the field of aerospace at the Technical University Munich in
+Munich (2012, Germany) where he also started his doctorate before finishing his Dr.sc. at ETH Zurich in Zurich (2017, Switzerland).
+There he investigated formal and reuse ‐ based support for multi ‐ disciplinary concept design using the model ‐ based systems engineering language SysML. Afterward, he became a Research assistant professor at Stevens Institute of Technology in Hoboken,
+NJ (2017, USA), working on the model ‐ based systems engineering side of the systems engineering transformation through model ‐ centric engineering as part of implementing the Department of
+Defense's digital engineering strategy. This work was continued as an ISE Post ‐ Doctoral Associate for the Virginia Polytechnic Institute and State University in Blacksburg, VA (2021, USA) before switching to the e:fs TechHub GmbH in Gaimersheim (2022, Germany) in order to work as a developer for model ‐ based systems engineering in the Volkswagen Group.
+Brian Chell, PhD is a postdoctoral research associate with the
+Systems Engineering Research Center at Stevens Institute of
+Technology. His research interests are in distributed space systems and applying multidisciplinary design optimization techniques to mission ‐ level analysis. Brian received a PhD in systems engineering and an ME in space systems engineering from Stevens, and a BS inaerospace engineering sciences from the University of Colorado
+Boulder.
+Timothy D. West currently serves as the Deputy Director of the
+U.S. Air Force Research Laboratory's Operations Directorate. In this capacity, he provides leadership and oversight of the Laboratory's air and space flight test program, demonstrating combat readiness of the military's latest science and technology development programs. Prior to his current assignment, Mr. West served for nearly 30 years as a military officer in the U.S. Air Force, where he held command positions in science and technology, test and evaluation, and program management. He is a graduate of the US
+Air Force Test Pilot School, the Air Command and Staff College, and the Air War College. Mr. West holds MS degrees in aerospace and industrial engineering from the University of Tennessee Space
+Institute, and a BS in mechanical engineering from the University of
+Kentucky. Mr. West is also a Systems Engineering PhD Candidate at
+Stevens Institute of Technology.
+Mark R. Blackburn, PhD is a senior research scientist with
+Stevens Institute of Technology since 2011 and principal at
+KnowledgeBytes. Dr. Blackburn has been the principal investigator
+(PI) on 17 System Engineering Research Center (SERC) research tasks for US Navy NAVAIR, US Army DEVCOM, and US Space Force on Digital Engineering Transformation Research Tasks. He has also been PI on a FAA NextGen and National Institute of Standards and
+Technology projects and has received research funding from the
+National Science Foundation. He develops and teaches a course on
+Systems Engineering for Cyber Physical Systems. He is a member of the SERC Research Council, OpenMBEE Leadership Team and
+INCOSE Pattern Working Group focused on the Semantic
+Technologies for Systems Engineering initiative. Prior to joining
+Stevens, Dr. Blackburn worked in industry for more than 25 years.
+Dr. Blackburn holds a PhD from George Mason University, a MS in mathematics (emphasis in CS) from Florida Atlantic University, and a BS in mathematics (CS option) from Arizona State University.Notes
+1 DASD has increased the emphasis on using the term Digital
+Engineering. A draft definition provided by the Defense
+Acquisition University (DAU) for DE is: An integrated digital approach that uses authoritative sources of systems' data and models as a continuum across disciplines to support lifecycle activities from concept through disposal. This definition is similar to working definition used throughout our prior research task RT ‐ 48/118/141 for Model Centric Engineering
+(MCE).
+2 Certain commercial software products are identified in this material. These products were used only for demonstration purposes. This use does not imply approval or endorsement by
+Stevens, SERC, or NAVAIR, nor does it imply these products are necessarily the best available for the purpose. Other product names, company names, images, or names of platforms referenced herein may be trademarks or registered trademarks of their respective companies, and they are used for identification purposes only.
+3 NAVAIR Public Release 2019 ‐ 443. Distribution Statement A –
+“Approved for public release; distribution is unlimited.”Chapter 3
+Transforming Systems Engineering Through
+Integrating Modeling and Simulation and the
+Digital Thread
+Daniel Dunbar, Tom Hagedorn, Timothy D. West, Brian Chell,
+John Dzielski, and Mark R. Blackburn
+Stevens Institute of Technology, School of Systems and
+Enterprises, Hoboken, NJ, USA
+Introduction
+While discipline ‐ specific modeling and simulation have enabled immense gains in efficiency and computation, broader design and analysis tasks that must reach across disciplines and individual models to a broader system context often rely on manual transfer of data or direct tool ‐ to ‐ tool integration, which is brittle in nature
+(Bone et al. 2019). The chapter discusses digital engineering (DE) in the broadest way, and the accompanying authoritative source of truth (AST) seek to enable better collaboration between all types of models not only for individual system design and analysis tasks but across the entire life cycle of the system, including mission, system, and subsystem levels of abstraction. This chapter details efforts using graph data structures and ontology aligned data as an AST to enable cross model collaboration in a way that addresses current challenges in the process while building a foundation for future advances.
+The structure of the chapter is as follows: the Background and
+Motivating Use Case gives some background on modeling, simulation, and the concept of the Digital Thread and introduces a catapult use case that is used throughout the chapter. The
+Integration Methodology section discusses a high ‐ level frameworkenabled by ontology ‐ aligned graph data structures in a DE context, and a python ‐ based implementation of the framework is discussed in relation to the motivating use case. The Discussion section looks at the framework's application in light of the needs DE presents, and the Conclusion provides a summary as well as avenues for future expansion.
+Background and Motivating Use Case
+Modeling and Simulation
+Modeling and simulation in engineering is so ubiquitous that the existence of tools enabling sophisticated analysis to be performed with a mouse click may be taken for granted. The use of the singular verb in the previous sentence was deliberate, intended to imply that modeling and simulation capabilities are often so tightly coupled in modern tools that the boundary is indistinguishable to the user, and that both may be done nearly simultaneously. An Internet search will return many different definitions for a model and for a simulation, and these definitions often reflect some aspect of the individuals or organizations formulating the definition. In the context of DE, we need to recognize that all the definitions that might be conceived may fit some specific use case at some time. For this reason, it is worth taking a moment to consider what these two terms could mean, how they are different, and how they are related.
+These ideas will be important when we discuss the concept of the
+“full ‐ stack” of models that includes mission, system, physics ‐ based and discipline ‐ specific models, and a new construct called the assessment flow diagram (AFD). The full ‐ stack places the system of interest within the world of possibilities of its use, and at the same time may consider aspects of the system at the resolution of individual components and parts. The computationally formalized
+AFD (Cilli 2015) models the interconnection of simulation capabilities associated with one or more analysis or design processes.A model is a representation of something constructed for the purpose of informing about some aspect or aspects of a thing, mission, or system. Models, like the systems they are intended to describe, must have well defined boundaries so that it is clear what is and is not part of the system being modeled. Models may be physical representations, but often they are abstractions of some characteristics of a system or object. In the most general sense, models simply enumerate the features and characteristics of a system or thing. This is the nature of a reference model whose purpose is to describe the class of elements it represents. Reference models can be generalized to represent more specific types of elements in a class, or they can be extended to include information about how the enumerated features or characteristics of the system are related. These enumerable features may be divided into those that can be selected or specified individually, and those that can only be determined after some subset of the individual elements have been defined. Models may also contain information about how these features are related.
+A better way to motivate what constitutes a model is to consider some examples. The examples help to establish a broad view of what might be considered a model. We use a catapult example, derived from publicly available information as a “system of interest” throughout this chapter, and start by considering models of the features and characteristics of a catapult. A reference model for a catapult might have placeholders for its purpose in general terms of the type of target it is intended to attack, the kind of projectile, where it is to be used, the crew that operates it, and other characteristics. This model may be generalized into different and distinct models based on the energy storage mechanism and type of projectile. At this level of resolution, it is possible to consider the physical characteristics of the catapult and how it performs. These types of models can be characterized using the System Modeling
+Language (SysML) and its semantics. SysML is considered a
+“descriptive” modeling language because its purpose is to provide a capability to describe aspects of a system from many differentviewpoints. While it can be argued that SysML can be extended to describe anything, at some point it becomes necessary to use modeling tools specifically developed to represent and characterize something so that it can be fabricated. Examples of engineering discipline or domain ‐ specific tools are parametric solid modeling for mechanical engineering and circuit layout and design for electrical engineering.
+The catapult system used throughout this chapter is represented by a SysML block definition diagram shown in Figure 3.1. The catapult is part of a larger Artillery System and Catapult Mission and operates in a mission environment with defined targets. It has its own physical architecture defined in Figure 3.2 and represented as a project usage (i.e., a type of model import) in the Mission SysML model. Multiple levels of abstraction in the Mission and System architecture contain information and parameters that may be used in relevant modeling and simulation activities.Figure 3.1 Mission level block definition diagram.
+A simulation is a realization of a model that can be used to compute outputs or dependent variables based on a set of inputs or independent variables. In the context here, the model can be thought of as a description of a thing and the rules that characterize it. The simulation exercises the rules that complete the description of the system. In this sense, a rendering of a part by a solid modeling tool is a simulation. The purpose of the rendering is for the user to examine the part and perhaps see if it fits properly with renderings of other parts. Given a set of mathematical formulas, spreadsheets can be used to implement simulations. In our catapult example, we use a fire simulation to simulate the use of the catapult in the field.Digital Thread
+The digital thread (DT) is a common term within engineering that indicates a movement from individual models to a series of models working together in an integrated computing environment working toward a common goal within the engineered system's life cycle.
+Where two or more models contribute parameters, design constraints, etc. to a larger design or analysis task, the implementation of a DT creates an explicit connection that enables more automated and semi ‐ automated performance of complex analyses while reducing errors caused by manual connection of parameters across models. DT representations are discussed in
+Chapter 4.
+Whereas domain ‐ specific modeling and simulation is fairly limited in its scope through the limits of the software tool implementing the model simulation or the limited set of tool ‐ to ‐ tool integrations developed and maintained to connect one model and tool to another, the use of a centralized AST gives greater freedom to implement a DT that connects multiple tools and viewpoints of a system during design or analysis. This AST acts as a common source of information that all models within a system under design or a system of analysis can pull from to ensure consistent data usage.
+Figure 3.2 Partial catapult system physical architecture – imported as project usage.Figure 3.3 Abstract digital thread showing interconnections between models and MoEs.
+An abstraction of the catapult example (Figure 3.3) shows five models needed to be integrated in a DT to inform mission and system objectives. The System Model is parametrically informed by the Geometry Model and manual input. It in turn informs the other three models – the XY Analysis Model, the Fire Simulation Model, and the Fire Error Analysis Model. The XY Analysis Model informs the Fire Simulation Model and the Fire Error Analysis Model. The
+Fire Simulation Model informs the Fire Error Analysis Model. Two system level Measures of Effectiveness (MoEs) are defined –
+Circular Error Probability (CEP) and Range. The Fire Simulation
+Model produces Range, and the Fire Error Analysis Model produces
+CEP. All three mission ‐ level MoEs defined are provided by the Fire
+Simulation Model.
+As can be seen in Figure 3.3, the individual models used in the analysis are highly interconnected. A higher ‐ level analysis that seeks MoEs at the system and mission level requires the use of allof the models. Traditionally, the transfer of parameter information from model to model would be done either manually by designers and analysts or through direct tool ‐ to ‐ tool integration. The solution here enables a standards ‐ based approach to configuring interfaces that allows for automated and semi ‐ automated computer transfer of information without the burden of individual tool ‐ to ‐ tool interfaces being built and maintained.
+In this chapter, multiple modeling and simulation tools are used, primarily to show the flexibility of the methodology. It is understood that the number of modeling and simulation tools available and used by the broader community is larger than one chapter can address. Therefore, the chapter focuses on methodology and standards ‐ based integration protocols and data formats, such as the REpresentational State Transfer (REST), Application
+Programming Interface (API), and JavaScript Object Notation
+(JSON). This chapter serves as a foundation for building an ecosystem that fits many different design and domain contexts by describing a methodology for representing knowledge captured by models and simulations in a tool and domain agnostic graph data structure with the use of standards ‐ based techniques for interfacing with external tools.
+Integration Methodology
+Digital Engineering Framework for Integration and
+Interoperability
+The Digital Engineering Framework for Integration and
+Interoperability (DEFII) provides a conceptual foundation for integrating ontologies and other semantic technologies into a DE context (Dunbar et al. 2023). It lays out an approach for transforming data from tool ‐ specific sources into a tool ‐ agnostic graph representation that can be accessed and analyzed in multiple ways to yield unique insight into the system under design and enable DT applications.Ontology Development
+The foundation of the DEFII framework relies on ontology ‐ aligned data (Figure 3.4). Ontologies have been demonstrated to be useful potential candidates for representing ASTs in a DE context. They have their root in philosophy but have seen evolution in computer science and the natural sciences as a way of capturing knowledge in a manner that is both human and computer readable (Arp et al.
+2015). Modern ontologies can be written in languages like the Web
+Ontology Language (OWL)1 that enforce formal mathematical logic on the ontologies and enable automated reasoning to infer new information embedded in the logic of the explicitly asserted data.
+They are part of a suite of technologies referred to as Semantic Web
+Technology (SWT). This suite of technologies includes things like
+Description Logic reasoners, rule languages, query languages, and constraint languages that all operate on linked data captured as a graph to align with ontologies.Figure 3.4 Digital engineering framework for integration and interoperability (DEFII).
+Source: Adapted from Dunbar et al. (2023).
+Model integration is specifically aided by the use of ontologies because they enforce a common, controlled vocabulary. The same word can have very different meanings in different domains and tool sets. For example, a “layer” in a diagram or design application may refer to a collection of drawing components that is grouped together and can be made visible or invisible relative to other components in the drawing. However, a “layer” in the Additive
+Manufacturing domain may refer to an individual layer of filament in the 3D printing process. Thus, the same word used in two different ways introduces confusion when attempting to performmodel integration. Ontologies make explicit what terms have what definition in the model integration context. This enforcement of common terminology enables effective semantic integration.
+Realistically, the ontologies needed for most model integration are relatively small and could be captured in an Excel spreadsheet, or even in an old ‐ school steno notebook. However, we believe such an approach is short ‐ sighted, as it would create a new set of disciplinary “stovepipes” that would likely result in model integration issues downstream. Additionally, the logic, richness, and depth of a well ‐ designed ontology often gets lost in these rudimentary approaches. Instead, we recommend the use of tools such as Stanford University's Protégé,2 an open ‐ source graphical user interface (GUI) for building ontologies (Noy et al. 2003). To better facilitate cross ‐ compatibility between related application ontologies, we also recommend aligning ontological terms with a domain ‐ neutral, top ‐ level ontology, such as the Basic Formal
+Ontology (BFO) developed by Barry Smith and Pierre Grennon
+(Ruttenberg 2020), and ideally under a mid ‐ level “bridging” ontology that offers common semantic pathways to connect the domain ‐ neutral ontology with the domain/application ‐ specific ontology being developed. One such “bridging” construct that is gaining popularity is the Common Core Ontologies (CCO), a family of open ‐ source ontologies that “represent and integrate taxonomies of generic classes and relations across all domains of interest”
+(CUBRC, Inc. 2020). This approach not only enhances cross ‐ domain compatibility, but it also optimizes ontology extensibility, shareability, and usability – critical attributes for “future proofing” any ontology development. For additional insight on this subject, see Arp et al. (2015), which offers 24 best practices for ontology development.
+Data aligned to ontologies form a special kind of Graph Data
+Structure (GDS). GDS, in general, include a series of nodes connected by vertices. This data structure has been shown to be a useful representation for performing system design analysis (Cotteret al. 2022; Medvedev et al. 2021) and appropriate for use as an AST
+(Mordecai et al. 2021). Thus, ontology aligned data represented in a
+GDS enables the use of both reasoning based on the formal representation of the ontology and the graph ‐ based algorithms and research being performed on GDS more broadly. Thus, the advantages are threefold:
+1. Enforces a common vocabulary: the use of ontologies enforces a common vocabulary, at least within the AST. This common vocabulary ensures that all tools and users interacting with the data connected to the AST are clear about what data they are accessing.
+2. Enables semantic reasoning and querying: the formal nature of ontologies allows for semantic expansion of the underlying data. This utilizes relationships and axioms stored in the ontologies to infer additional facts about the data. In addition, querying using standard languages like SPARQL, a query language similar to SQL but for triplestore repositories instead of relational databases, enables precise extraction of data according to patterns.
+3. Access to graph ‐ based algorithms and analysis: mathematical graph theory has enabled the development of useful algorithms to analyze a graph data set. Analyses such as shortest path first can give unique insights to a system under design and are enabled by the graph data structure underlying the ontology ‐ aligned data.
+Reasoning and Rules
+The second layer of the DEFII framework is automated reasoning.
+As mentioned above, the use of ontologies creates opportunities for automated expansion of the underlying data by inferring additional facts about the system based on relationships and other axioms built into the ontologies themselves. In addition, use of rule languages like the Semantic Web Rule Language (SWRL) allows formore automated expansion of the data based on context ‐ specific rules. Both DL reasoning and SWRL rule application can happen in an automated fashion without any action by users of the framework. During the setup process of the triplestore repository used to house the ontology ‐ aligned data, reasoning profiles can be configured to automatically reason on data within the repository.
+Thus, this layer is below any interface layer to represent its automated nature.
+Interfaces
+The DEFII framework allow for the advantages of graph data structures, and more specifically ontology ‐ aligned graph data structures, without the need for all users of the framework to understand the details of ontologies or the broader SWT stack. It does this by abstracting away many of the details involved in the
+SWT stack and exposing data through controlled interfaces. There are three notional interfaces as part of the DEFII Framework to address this concern:
+1. Direct interface: the Direct Interface focuses on the SWT stack. While things like ontologies and DL reasoners are part of the foundation of the framework, the Direct Interface allows directed usage of other SWT tools. For example, SPARQL is a query language designed to query graph data structures and can be used to explore ontology aligned data.
+2. Mapping interface: the Mapping Interface is a tool or model ‐ dependent interface that can translate a tool or model data external to the framework into terms aligned with its underlying ontologies. This process b e g i n s with the tool or model in question and moves toward ontology ‐ aligned data.
+3. Specified model interface: the Specified Model Interface is a tool ‐ agnostic interface that exposes ontology aligned data to users and toolsets outside of the ontological context. Thisinterface b e g i n s with the ontology ‐ aligned data and moves outward.
+The Specified Model Interface must be configured to package models of interest together in a manner consistent with designers/analysts' needs. This is accomplished through the use of specifications within the system model. The use of the Model
+Interface Specification Diagram (MISD) (Figure 3.5) enables parameters found within a system model to be packaged together into a single interface.
+Figure 3.5 Abstract model interface specification diagram (MISD).
+After a model has been specified in an MISD, the model can then be exposed through the Specified Model Interface. The notional interface can be implemented in many ways, but the use of a REST
+API allows for a standards ‐ based interface to the packaged model.
+REST APIs are becoming ubiquitous in software development and interfacing and use the JSON format to transfer data between tools.For example, see Figure 3.6 where a simply physics model has packaged three different elements into a single model (MISD 1).
+Figure 3.6 Sample JSON representation of an MISD.
+Many software tools offer access to REST APIs using http services, so connecting model information to various software tools is typically straightforward. In the cases where a software package does not provide http services, simple middleware can be used to convert a packaged model from a JSON structure outputted by a
+REST API into a format that is readable by the tool in question, such as XML or comma separated variables (CSV).
+An additional advantage to packaging the models in a standard format like JSON is that this allows the models to be used by multiple tools for different purposes. For example, the fire simulation analysis model in the catapult example is run by
+MATLAB. A web application dashboard could also access the same information via the same REST API endpoint to provide visualizations on what MATLAB is using to perform its analysis. The specified model is tool ‐ agnostic – it is simply a collection of parameters grouped together in a way that is deemed useful to relevant stakeholders.
+Assessment Flow Diagram
+An AFD groups individual MISDs into a larger analysis context, where multiple models share parameters or influence each other.
+This concept is based on computationally formalizing Cilli's work onassessment flows (Cilli et al. 2015) and enables higher level analyses. Whereas an MISD packages particular parameters together in a way that makes them easily accessible to external tools, an AFD shows how the models themselves interact.
+Consider the catapult use case and the abstract DT shown in Figure
+3.3. The series of model interact with each other. This can affect things like sequencing and may also lead to necessary trade off analyses as a common parameter affects models in different ways.
+The inclusion of all models into a common AFD allows explicit, formal representation of the relationships between models to be considered during analysis. The use of a diagram also enables the communication of those connections in a human readable format.
+Figure 3.7 shows three MISDs aggregated to form a higher ‐ level
+AFD, and there is an implicit flow between the model's inputs
+(bottom blocks of MISD) and outputs (top blocks of MISD) to reach the high ‐ level system or mission objectives (Dunbar et al. 2023).
+Interoperability and Integration Framework
+The DEFII framework gives a conceptual method for implementing an AST in a functionally useful way in a Digital Engineering context.
+However, it must be instantiated in software. The Armaments
+Interoperability and Integration Framework (IoIF) (Bone et al.
+2018) is a python ‐ based implementation of the framework. Using this implementation in the Catapult use case produces an instantiation of the framework with implementation that is detailed in Figure 3.8.
+This implementation can use a number of different triplestores to store ontology aligned data. Ontotext's GraphDB3 is shown above.
+GraphDB provides functionality to perform SPARQL queries on the data directly using its graphical user interface (GUI). Dassault
+Systemes' SysML authoring suite, including Catia Teamwork Cloud4 is used to represent the system model. MATLAB5 and Creo6 are shown using middleware to connect the tools to the Specified Model
+Interface, and MATLAB and a Web Dashboard are shown with directaccess to the REST API. Python libraries have been built to enable the Mapping Interface and the Specified Model Interface. In addition to the System Model using the Mapping Interface, four different analysis models are represented.
+Figure 3.7 Abstract assessment flow diagram connecting system parameters, modeling, simulation, control, and visualization
+Dunbar et al. (2023).Figure 3.8 Instantiated framework of catapult use case – IoIF pythonic implementation.Figure 3.9 Ontological elements used in SysML profile and protégé editing software.
+Mapping is performed on the SysML model and uses SysML stereotypes to tag the system model with ontologically relevant terms. The model can be read programmatically, and components with stereotype tags that correspond to classes present in the ontologies can be matched to create an ontology aligned representation of the system model. A profile can be created in
+SysML to capture all the custom, ontology linked stereotypes included in a model for tagging (Figure 3.9 left). This Profile corresponds to ontologies represented the OWL ontology language.
+Mapping is then implemented in IoIF by extracting model elements that have been tagged with custom SysML stereotypes corresponding to classes in the ontologies being used for a specific project. Figure 3.10 from Dunbar et al. (2023) shows pseudocode that explains the mapping process from an RDF representation ofthe SysML system model (created by accessing the TWC REST API) to an ontology ‐ aligned AST.
+Ontologies are, by definition, extensible. This means that they can be expanded in the future. Ontologies only represent data explicitly stated and offer no insight using reasoning based on omission. This is not to be confused with reasoning based on mathematical logic.
+For example, a reasoner could properly infer from an ontology on family relations that a mother's son is her father's grandson, even if this relationship is not explicitly stated based on axioms defining the relationship between the terms mother, son, and father, and grandson. However, a reasoner could not infer from an ontology that a particular frog is NOT green simply because the ontology does not label the frog with the color green. This concept is connected to the idea of ontological realism and the use of the Open World
+Assumption, a philosophical assumption that has implications on engineering analysis beyond the scope of this chapter. However, incomplete ontologies are still usable and in most cases evolve over time.
+Partial implementations of ontologies are acceptable. Ontologies are based on a never ‐ ending expansion of the body of knowledge and thus are never fully “done.” They are always capable of being expanded in the future. In practical terms, this means that ontologies can be developed as far as they are useful without being overly concerned with capturing everything. Ontologies should be developed in a principled, consistent manner to promote interoperability (for more information on ontology development, see Arp et al. (2015)), but they need not be exhaustive beyond the usefulness of the project. If more detail is needed in the future, the ontologies can be extended without fear that the extensions will break the current functionality. An example of this is seen above. In
+Figure 3.1, all blocks are supplied with custom stereotypes that indicate an ontological class associated with the blocks. However,
+Figure 3.2 shows mixed results – the Catapult itself and multiple components within the Launch Arm Assembly are stereotyped, but many components in the diagram are not. The particular analysisbeing performed does not need representation of these components and subsystems, so the ontologies were not developed. This does not prevent successful execution of the Digital Thread as presented, nor it does prevent expansion of the ontological understanding of the catapult system in the future should further analyses need it. It is not an “all or nothing” approach.
+Figure 3.10 Mapping pseudocode.
+Source: Adapted from Dunbar et al. (2023).
+After a model has been mapped using the SysML stereotypes as tags to connect components to ontology classes, analysis can be performed on the graph representation. The two methods relevant to the DT shown above are the MISD and the AFD. Figure 3.11 shows a list of MISDs (tagged with the <<model>> stereotype) that are to be used in the System of Analysis. Note the Catapult Analysis block (tagged with the <<ActOfAnalysis>> stereotype) includes both the MISDs and the Catapult Mission block.Figure 3.11 Assessment flow diagram of analysis elements.
+Figure 3.12 Error model – MISD.An MISD also includes a parametric portion that shows how the model connects to the system under analysis. Figure 3.12 shows the constraint block associated with the ErrorXY MISD in a parametric diagram. The bottom ports indicate inputs to the model, and the top port indicate outputs. These can be connected to other components represented in the system model.
+When multiple MISDs are aggregated, an AFD can be formed. This displays not only multiple models of interest but how those models interact with each other. Figure 3.13 shows the full AFD for the
+Catapult Analysis. The system model parameters (at the bottom) are informed by the geometry model (on the right) and they inform additional models above them. These models are interrelated and produce outputs that correspond to System and Mission level objectives. The ports on the constraint blocks indicate direction of the links and show which ports act as inputs and which act as outputs. This formal representation may look like Figure 3.3 with more color and detail, but it brings much more value by being machine readable. IoIF can interpret the AFD to discover connections between models and impact analysis of changed parameters. Thus, the diagram is a way of configuring the way the
+AST works and how it packages information together for discipline ‐ specific tools to interact with the data and provide meaningful progress on design and analysis goals. Note – the AFD in Figure 3.13 is condensed to capture information in a format that is readable on letter paper. An AFD need not be so condensed in a computer model and expansion may make the diagram easier to read and understand depending on the context.
+The AFD in Figure 3.13 by itself would create four top level model segments in the JSON document for each instance represented in the SysML model: Geometry, ErrorXY, Fire Simulation, and
+FireErrorModel. A partial JSON output can be seen in Figure 3.14.
+Additional structure within a model may be needed and can be represented as an Internal Block Diagram in SysML and transformed to the REST API JSON structure. For example, theimplementation of the DT in the Catapult use case uses MATLAB to run a Fire Simulation model (Figure 3.15). This model requires data to be parsed into multiple Microsoft Excel files. The use of middleware to transform JSON from the REST API to spreadsheets could take care of parsing the data into the proper spreadsheets.
+However, pulling the structure into the SysML model allows the
+JSON structure itself to guide the parsing. This would allow other tools accessing the same REST API endpoint to see the groupings of parameters associated with the Fire Simulation model. An example of the JSON output is in Figure 3.16, and an example of the resulting excel file is in Figure 3.17.Figure 3.13 Catapult assessment flow diagram.Figure 3.14 Partial AFD JSON output.Figure 3.15 Internal block diagram for fire simulation model.
+Digital Thread Enacted
+With the AST established and the various MISDs aggregated into a broader AFD, the DT is enabled (Figure 3.18). This DT relies on the triplestore to exchange parameter values, which ensures that allmodels are accessing the same information. Sequencing is shown and can be automated.
+Figure 3.16 JSON output of segmented fire simulation model using IBD.
+Figure 3.17 Fire control projectile excel spreadsheet.
+Figure 3.18 Digital thread associated with interfaces and disciplines.1. The system model and associated analysis models (all in
+SysML) are imported to the Triplestore (functioning as the
+AST) via the mapping interface.
+2. CREO model results are written to parameters associated with the catapult system via a standard PUT call on the REST API. A custom middleware is used to convert the CSV report generated by CREO to the JSON structure setup by the Specified Model
+Interface.
+3. Parameters associated with the Error XY model are pulled from the AST via a GET request on the REST API. These are used to run a Python analysis script to produce a range of height adjustments on the catapult.
+4. The results of the Error XY analysis are written back to the AST using a PUT call on the REST API.
+5. Parameters associated with the MATLAB Fire Simulation model are pulled from the AST via a GET request on the REST
+API. A custom middleware is used to convert the JSON results of the GET request into a series of Microsoft Excel spreadsheets MATLAB expects to perform the simulation.
+6. The results of the Fire Simulation are written back to the AST.
+A custom middleware is used to convert the Excel report generated by MATLAB to the JSON structure setup by the
+Specified Model Interface.
+7. Parameters associated with the Fire Error model are pulled from the AST via a GET request on the REST API. These are used to run a Python analysis script to produce an error value.
+8. The results of the Fire Error analysis are written back to the
+AST using a PUT call on the REST API.
+9. A SPARQL query can be performed directly on the AST to list all the instances of the Catapult analysis currently in the AST. This is done via the Direct Interface. This is not needed for the specific DT discussed in this chapter, but it is an importantcapability for analysts to have and is displayed here to show how it could be used.
+Discussion
+Use of the DEFII framework addresses the DE need to establish an
+AST that can be used to implement DTs. It does so by representing system data in an ontology ‐ aligned graph data structure. This provides a few unique advantages as an approach that may not be readily apparent.
+The DEFII framework and the accompanying IoIF python ‐ based implementation enable implementation of a DT in a way that allows users unfamiliar with graph data structures (GDS), ontologies, or coding a way to configure their portion of the DT for use in a broader analysis context. The ability to configure the AST via diagrams in SysML allows system modelers to specify the models of interest. Discipline ‐ specific engineers can utilize the packaged models through a standard ‐ based access point like a REST API endpoint while continuing to do their primary design and analysis tasks in tools familiar to them.
+Because the AST is a graph data structure, implementing a DT as described in this chapter is only a portion of the capabilities and analyses that can be performed on the underlying system data.
+Graph ‐ based algorithms can provide additional insight into the structure of the system under design, DL reasoners can provide greater semantic expansion of the underlying data, and additional
+SWT tools can be deployed to provide value to designers and analysts. Thus, the DEFII framework addresses the known DT problems of today while setting up an ecosystem for more advanced applications in the future.
+Conclusion
+Future ExpansionWhile the current implementation of the DEFII framework utilizes ontologies to tag models and develop the graph ‐ based representation of the system under design or analysis, many advantages that come with the formal semantics of an ontology remain underutilized. The five use cases demonstrated to date do not take much advantage of formal reasoning, but it is an objective for future demonstrations and projects. Formal reasoning allows for the expansion of data based on axioms and relationships defined in ontologies, and this expansion could enable additional applications.
+Hennig et al. use the formal nature of ontologies to reason on engineering design to automatically determine certain aspects of the system under design such as connection of engineering disciplines to appropriate subsystems and the identification of Critical Item
+Lists (Hennig et al. 2016). These types of reasoning tasks could be incorporated into the various implementations of the DEFII framework.
+Additionally, use of ontology ‐ aligned data allows for further utilization of the SWT suite that has been built up over time to serve other industries and applications. Dunbar et al. (2022) looks at the use of the Shapes Constraint Language (SHACL) as a mechanism for verifying certain aspects of a system as defined by the ontology ‐ aligned data, such as whether certain parameters are present in the system under analysis or whether fields correspond to a defined set of regular expressions. This research sets the stage for more complex verification tasks such as checking whether a system of analysis is well formed in construction and in use.
+Final Thoughts
+Implementation of a Digital Thread (DT) in an automated or semi ‐ automated fashion is crucial to the future of systems engineering, because any change to any of the interrelated models, as reflected in the AFD, will likely change the DT. The multidisciplinary nature of complex projects means that shared parameters in a system across multiple engineering disciplines are a reality and a complicatingfactor in performing design and analysis tasks efficiently and consistently. Increasing project complexity often brings on the need for multidisciplinary modeling and simulation. The inputs to some models are the outputs to other models and this chapter discusses how to formalize these connections and build tools and tool proxies that can traverse the larger system of analysis using graph ‐ based interoperability as a means to achieve cross ‐ domain model integration. The DEFII framework gives a theoretical foundation to a graph ‐ based approach of the DT, and IoIF is an implementation of this framework, which has been used for several use cases. This discussion should to provide enough detail to readers and organizations to implement their own versions of the DEFII framework while general enough to expand to fit their own use cases.
+References
+Arp, R., Smith, B., and Spear, A.D. (2015). Building Ontologies with
+Bsic Formal Ontology. MIT Press.
+Bone, M., Blackburn, M., Kruse, B. et al. (2018). Toward an interoperability and integration framework to enable digital thread. System 6 (4): 46. https://doi.org/10.3390/systems6040046.
+Bone, M.A., Blackburn, M.R., Rhodes, D.H. et al. (2019).
+Transforming systems engineering through digital engineering.
+The Journal of Defense Modeling and Simulation: Applications,
+Methodology, Technology 16 (4): 339–355. https://doi.org/10.1177/1548512917751873.
+Cilli, M. V. (2015). Improving defense acquisition outcomes using an integrated systems engineering decision management
+(ISEDM) approach [PhD Thesis]. In ProQuest Dissertations and
+Theses. Doctoral dissertation. Stevens Institute of Technology. http://ezproxy.stevens.edu/login?url=https://www.proquest.com/dissertations ‐ theses/improving ‐ defense ‐ acquisition ‐ outcomes ‐ using/docview/1776469856/se ‐ 2? accountid=14052.
+Cilli, M., Parnell, G.S., Cloutier, R., and Zigh, T. (2015). A systems engineering perspective on the revised defense acquisition system. Systems Engineering 18 (6): 584–603. https://doi.org/10.1002/sys.21329.
+Cotter, M., Hadjimichael, M., Markina ‐ Khusid, A., and York, B.
+(2022). Automated detection of architecture patterns in MBSE models. In: Recent Trends and Advances in Model Based
+Systems Engineering (ed. A.M. Madni, B. Boehm, D. Erwin, et al.), 81–90. Springer International Publishing https://doi.org/10.1007/978 ‐ 3 ‐ 030 ‐ 82083 ‐ 1_8.
+CUBRC, Inc. (2020). An Overview of the Common Core Ontologies.
+Buffalo, NY: CUBRC. https://github.com/CommonCoreOntology/CommonCoreOntolo gies/blob/master/documentation/An%20Overview%20of%20the
+%20Common%20Core%20Ontologies%201.3.docx.
+Dunbar, D., Hagedorn, T., Blackburn, M., and Verma, D. (2022). Use of semantic web technologies to enable system level verification in multi ‐ disciplinary models. In: Advances in Transdisciplinary
+Engineering (ed. B.R. Moser, P. Koomsap, and J. Stjepandić). IOS
+Press https://doi.org/10.3233/ATDE220632.
+Dunbar, D., Blackburn, M., Hagedorn, T., and Verma, D. (2023).
+Graph representation of system of analysis in determining well ‐ formed construction. 2023 Conference on Systems Engineering
+Research (16–17 March 2023). Hoboken, NJ: Stevens Institute of
+Technology.
+Dunbar, D., Hagedorn, T., Blackburn, M. et al. (2023). Driving digital engineering integration and interoperability through semantic integration of models with ontologies. Systems
+Engineering 21662. https://doi.org/10.1002/sys.21662.Hennig, C., Viehl, A., Kämpgen, B., and Eisenmann, H. (2016).
+Ontology ‐ based design of space systems. In: The Semantic Web –
+ISWC 2016, vol. 9982 (ed. P. Groth, E. Simperl, A. Gray, et al.),
+308–324. Springer International Publishing https://doi.org/10.1007/978 ‐ 3 ‐ 319 ‐ 46547 ‐ 0_29.
+Medvedev, D., Shani, U., and Dori, D. (2021). Gaining insights into conceptual models: a graph ‐ theoretic querying approach. Applied
+Sciences 11 (2): 765. https://doi.org/10.3390/app11020765.
+Mordecai, Y., Fairbanks, J.P., and Crawley, E.F. (2021). Category ‐ theoretic formulation of the model ‐ based systems architecting cognitive ‐ computational cycle. Applied Sciences 11 (4): 1945. https://doi.org/10.3390/app11041945.
+Noy, N.F., Crubezy, M., Fergerson, R.W. et al. (2003). Protégé ‐ 2000: an open ‐ source ontology ‐ development and knowledge ‐ acquisition environment. AMIA Annual Symposium Proceedings
+2003: 953.
+Ruttenberg, A. (2020). Basic Formal Ontology (BFO). https://basic ‐ formal ‐ ontology.org (accessed June 11, 2023).
+Biographical Sketches
+Daniel Dunbar is a PhD candidate in systems engineering at
+Stevens Institute of Technology. His research interests include
+Digital Engineering and formal knowledge representation as a means to enable better multidisciplinary collaboration. He currently works as a research assistant for the Systems Engineering Research
+Center (SERC) under Dr. Mark Blackburn's leadership. Before joining Stevens, he worked in the telecommunications domain designing and implementing two ‐ way radio systems.
+Dr. Tom Hagedorn graduated from Boston University with a BS in biomedical engineering in 2010, and from the University of
+Massachusetts at Amherst with a PhD in 2018. His research focuseson applications of ontologies and semantic web technology to aid in various aspects of engineering design and systems engineering. This includes semantically enhanced linked data repositories, development of engineering domain ontologies, and the study of engineering methods using these tools. His doctoral work focused on semantically enabled design assistants in medical and advanced manufacturing contexts. His current work focuses on the development of digital engineering methods and frameworks built upon semantic web technologies.
+Timothy D. West currently serves as the deputy director of the
+U.S. Air Force Research Laboratory's Operations Directorate. In this capacity, he provides leadership and oversight of the Laboratory's air and space flight test program, demonstrating combat readiness of the military's latest science and technology development programs. Prior to his current assignment, Mr. West served for nearly 30 years as a military officer in the U.S. Air Force, where he held command positions in science and technology, test and evaluation, and program management. He is a graduate of the U.S.
+Air Force Test Pilot School, the Air Command and Staff College, and the Air War College. Mr. West holds MS degrees in aerospace and industrial engineering from the University of Tennessee Space
+Institute, and a BS in mechanical engineering from the University of
+Kentucky. Mr. West is also a systems engineering PhD candidate at
+Stevens Institute of Technology.
+Brian Chell, PhD, is a postdoctoral research associate with the
+Systems Engineering Research Center at Stevens Institute of
+Technology. His research interests are in distributed space systems and applying multidisciplinary design optimization techniques to mission ‐ level analysis. Brian received a PhD in systems engineering and an ME in space systems engineering from Stevens, and a BS in aerospace engineering sciences from the University of Colorado
+Boulder.
+John Dzielski, PhD, earned a BS in mechanical engineering from
+Carnegie ‐ Mellon University in 1982, and MS and PhD degrees inmechanical engineering from the Massachusetts Institute of
+Technology in 1984 and 1988, respectively. He has more than 30 years of experience relating to the design, integration, and at ‐ sea testing of unmanned undersea vehicle systems supporting various
+U.S. Navy missions. He has been involved in research and development of supercavitating vehicle technology since 1995. He is applying his experience in simulation ‐ based analysis, synthesis, and validation processes to the development of formal model ‐ based system engineering methods and processes using SysML integrated with modern analysis and design optimization tools. These methods rely heavily on semantic ‐ web technologies and are being developed for and delivered to several different government sectors. He may be the expert on American football dynamics and aerodynamics.
+Mark R. Blackburn, PhD, is a senior research scientist with
+Stevens Institute of Technology since 2011 and principal at
+KnowledgeBytes. Dr. Blackburn has been the principal investigator
+(PI) on 17 System Engineering Research Center (SERC) research tasks for both US Navy NAVAIR, US Army DEVCOM, and US Space
+Force on Digital Engineering Transformation Research Tasks. He has also been PI on a FAA NextGen and National Institute of
+Standards and Technology projects and has received research funding from the National Science Foundation. He develops and teaches a course on systems engineering for Cyber Physical
+Systems. He is a member of the SERC Research Council,
+OpenMBEE Leadership Team, and INCOSE Pattern Working Group focused on the Semantic Technologies for Systems Engineering initiative. Prior to joining Stevens, Dr. Blackburn worked in industry for more than 25 years. Dr. Blackburn holds a PhD from George
+Mason University, an MS in mathematics (emphasis in CS) from
+Florida Atlantic University, and a BS in mathematics (CS option) from Arizona State University.
+Notes
+1 https://www.w3.org/OWL/2 https://protege.stanford.edu
+3 https://graphdb.ontotext.com
+4 https://www.3ds.com/products ‐ services/catia/products/no ‐ magic/teamwork ‐ cloud/
+5 https://www.mathworks.com/products/matlab.html
+6 https://www.ptc.com/en/products/creoChapter 4
+Digital Engineering Visualization
+Technologies and Techniques
+Brian Chell, Tom Hagedorn, Roger Jones, and Mark R.
+Blackburn
+Stevens Institute of Technology, School of Systems and
+Enterprises, Hoboken, NJ, USA
+Problem
+A major challenge in mission and systems engineering is reconciling the differences between the actual needs of the end users, and how developers perceive those needs. It is important to get these different entities on the “same page,” with a shared concept of the system within its operational environment (Larson et al. 2009). It is accepted that with the maturing of DE technologies that documents are inadequate to facilitate the DE transformation. In addition, managing changes through complex toolsets and providing useful information without overloading those who do not have domain knowledge can be difficult. Visualization technologies are a good method for articulating details about the system analysis and design in a language that engineers, relevant stakeholders, and end users can all understand. The Concept of Operations (CONOPs) can be a means to bridge this gap significantly (AIAA 1993). The visualization of engineering data can take the form of simple plots and figures all the way to immersive environments enabled by gaming technology that supports virtual reality (VR) and augmented reality (AR). In the past, CONOPs have been document ‐ based and largely static, seeing few or no updates and being of limited use throughout system development (Korfiatis et al. 2012). There is a need to articulate a CONOPs dynamically to help communicate system capabilities to the users, aid in the elicitation of
