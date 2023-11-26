@@ -119,6 +119,12 @@ Return only python code in Markdown format, e.g.:
 ....
 ```"""
 
+summary_template = """对下面题目为{title}的论文写一段论文的总结部份
+论文内容：
+{content}
+总结：
+"""
+
 GRAPH_PROMPT = ChatPromptTemplate.from_messages([("system", template), ("human", "{input}")])
 
 
@@ -145,6 +151,7 @@ REFERENCE_PROMPT = ChatPromptTemplate.from_messages(
 ABSTRACT_PROMPT = PromptTemplate.from_template(template=abstract_template)
 TRANS_PROMPT = PromptTemplate.from_template(trans_template)
 TRANS_EN_PROMPT = PromptTemplate.from_template(trans_en_template)
+SUMMARY_PROMPT = PromptTemplate.from_template(summary_template)
 PATH = "vector_src"
 OUT_PATH = "out"
 
@@ -230,6 +237,7 @@ def get_chain(prompt_name, llm_name='local'):
     trans_chain = TRANS_PROMPT | llm | StrOutputParser()
     trans_en_chain = TRANS_EN_PROMPT | llm | StrOutputParser()
     graph_chain = GRAPH_PROMPT | llm | StrOutputParser() | PythonREPL().run
+    summary_chain = SUMMARY_PROMPT | llm | StrOutputParser()
     chain = None 
     if prompt_name == 'qg':
         chain = qg_chain
@@ -249,6 +257,8 @@ def get_chain(prompt_name, llm_name='local'):
         return trans_en_chain
     elif prompt_name == 'graph':
         return graph_chain
+    elif prompt_name == 'summary':
+        return summary_chain
     return chain
 
 

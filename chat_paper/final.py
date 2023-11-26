@@ -36,6 +36,11 @@ def get_thanks(content):
     rt = rt.replace("首先，", "").replace("其次，", "").replace("最后，", "").replace("再者，","").replace("再次，","")
     return rt 
 
+def get_summary(content, title):
+    chain = get_chain('summary')
+    rt =  chain.invoke({"content": content, "title": title})
+    return rt
+    
 def get_abstract(content, title):
     chain = get_chain('abstract')
     rt =  chain.invoke({"content": content, "title": title})
@@ -113,7 +118,7 @@ def extend_content(question, content):
     write_prompt = PromptTemplate.from_template(temp)
     write_chain = write_prompt | llm | StrOutputParser()
     rt = write_chain.invoke({"text":content, "question": question})
-    rt = rt.replace("首先，", "").replace("其次，", "").replace("最后，", "").replace("再者，","").replace("再次，","").replace("综上所述", conclusion)
+    rt = rt.replace("首先，", "").replace("其次，", "").replace("最后，", "").replace("再者，","").replace("再次，","").replace("综上所述", conclusion).replace("我们", "本研究")
     pattern = r"（[^）]*）"
     rt = re.sub(pattern, "", rt)
 
@@ -131,7 +136,7 @@ def main():
     print(catalog_dict)
     title = list(catalog_dict.keys())[0]
     final_file_path = os.path.join( 'data', "final", root_path + "_final.md" )
-    final_file = open(final_file_path, "w", encoding="utf-8")
+    final_file = open(final_file_path, "w+", encoding="utf-8")
     db = get_jsondb()
     refs_path = os.path.join('data', 'refs', root_path + '_refs.md')
     with open(refs_path, 'r') as f:
@@ -150,6 +155,13 @@ def main():
                 print("这是国外文献")
                 overseas_review = get_overseas_review(title, en_refs)
                 final_file.write(overseas_review + "\n\n")
+                continue
+            if '总结' in key:
+                print(f"key is {key}")
+                final_file.seek(0)
+                content = final_file.read()[0:4096]
+                summary_part = get_summary(content, title)
+                final_file.write(summary_part + "\n\n")
                 continue
             question = get_chain('sentence_change', llm_name='openai').invoke({"question": value})
             print(f"The quesiont is {question}")

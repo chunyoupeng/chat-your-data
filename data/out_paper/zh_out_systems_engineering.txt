@@ -1,7 +1,6 @@
 
  第一部分
-转换工程
-通过数字和模型方法
+转换工程通过数字和模型方法
 马克·布莱克本
  第1章
 数字工程的基础知识
@@ -538,13 +537,6 @@ John Dzielski,博士，1982年在卡内基梅隆大学获得机械工程学士�
 
 马克·R·布莱克本博士自2011年起担任史蒂文斯理工学院的高级研究员，同时也是知识字节公司的负责人。布莱克本博士是美国海军NAVAIR、美国陆军DEVCOM和美国太空 Force的17个系统工程研究中心（SERC）研究任务的首席研究员。他还曾担任FAANextGen和为国家标准与技术研究所（NIST）项目担任pi，并获得了国家科学基金会的研究资金。他负责为Cyber-Physical系统开发并教授系统工程课程。他是SERC研究委员会成员、OpenMBEE领导团队和INCOSE模式工作组的成员，该组致力于系统工程中的语义技术倡议。加入史蒂文斯之前，布莱克本博士在业界工作了25多年。布莱克本博士毕业于乔治·梅森大学，获得了数学博士学位（计算机科学方向），佛罗里达亚特兰大大学的数学硕士学位（ emphasis in CS），以及亚利桑那州立大学的数学学士学位（CS选项）。
 
-备注
-1 https://www.w3.org/OWL/
- 1. https://protege.stanford.edu
-2. https://graphdb.ontotext.com
-3. https://www.3ds.com/products ﹣ services/catia/products/no ﹣ magic/teamwork ﹣ cloud/
-4. https://www.mathworks.com/products/matlab.html
-5. https://www.ptc.com/en/products/creo
  第4章
 数字工程可视化
 技术和技巧

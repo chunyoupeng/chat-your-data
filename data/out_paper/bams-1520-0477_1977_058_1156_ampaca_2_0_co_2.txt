@@ -1,0 +1,192 @@
+Aeronautical Meteorology: 
+Progress and Challenges-
+Today and Tomorrow 
+Abstract 
+Weather strongly affects air carrier and general aviation  operations and the air traffic control system. Accidents, flight  delays, airport operations, and fuel economy are only a few  of the more significant factors in air transportation that are  affected directly by weather phenomena. 
+Data on the effect of weather on air transportation are pre- sented. The challenges to the aeronautical meteorologist to  meet the demands for service are categorized as: the chal- lenge to "do more with less," to "prove the value of aviation  weather service," and to provide more "tailored" service. An  assessment of today's services and capabilities is given, and  the progress in meeting these challenges is outlined briefly. 
+Challenges of tomorrow to the aeronautical meteorologist  are anticipated as not changing from today's challenges; how- ever, a shift in emphasis from the type of service provided  today is suggested. The need to highlight techniques of value  analyses and a role for the American Meteorological Society  in meeting this need are suggested. 
+1. Introduction 
+I welcome this opportunity to report on the progress  and the challenges yet to be met in aviation weather. 
+The American Meteorological Society's Committee on 
+Aeronautical Meteorology (CAMET), of which I am 
+Chairman, has made a matter of record its views on  aeronautical meteorology (Bromley, 1976). I shall up- date and amplify on the present state and what I per- ceive as the future state of the aviation weather science  and of the aviation weather service, as well as the chal- lenges that must be met in the future. 
+The national allocation of resources in providing avia- tion weather services exceeds 14 000 man-years and $200  million annually (U.S. Department of Commerce, 1976). 
+Aviation weather (both the science and the service) has  reached a state of maturity. It is a big business. Its future  is influenced not only by technological progress, which 
+I shall dwell on, but also strongly by regulatory, insti- tutional, and economic factors, which I shall touch on. 
+We must recognize these latter three factors as they im- pact on and influence technical progress in aviation  weather. Technology alone is not the sole bellwether of  the future but has to be shaped and honed by considera- tion of these other three factors. 
+My discussion will cover four major points: 1) the im- pact of weather on the safety and efficiency of the air  transportation system; 2) the challenges that need to be  met by aeronautical meteorology today; 3) the progress  and approach taken in meeting these challenges; and 4)  i Paper presented at the 57th Annual Meeting of the AMS, 
+17 January 1977, Tucson, Ariz. The author is Chairman of  the AMS Committee on Aeronautical Meteorology. Edmund Bromley, Jr. 
+Airport Division 
+Systems Research and Development Service 
+Federal Aviation Administration 
+Department of Transportation 
+Washington, D.C. 20590  what I perceive to be the challenges for the future to  the meteorologists and to the AMS regarding its role and  its acceptance of these challenges as opportunities. 
+2. Impact of weather on safety and  efficiency of air transportation 
+Statistics for 1975 on delays to aircraft for periods I>30  min (Fig. 1) show that weather is a significant causal  factor affecting the efficiency of air transportation. These  data are representative of data collected by the Federal 
+Aviation Administration (FAA) for the past 5 years. 
+Weather parameters are listed as mutually exclusive cate- gories. The percentage of weather-caused delays has  varied from 65% to 90% with the total number of these  delays being >30 000 per year for each year of the 5-year  period. 
+The evidence of the effect of weather on safety in  aviation is equally telling (Fig. 2). Weather is seen to be  the most prevalent causal factor (36%) in fatal general  aviation accidents (National Transportation Safety 
+Board, 1974), as well as being cited as a significant factor  in air carrier accidents within the last 2 years at the 
+Kennedy, Stapleton, and Philadelphia airports. 
+Of equal significance is the effect of a weather-related  phenomenon on the efficiency of the air transportation  system in terms of airport capacity. Increases in longi- tudinal separation standards from 3 mi to separations  from 3 to 6 mi have been in operational use to overcome  the potential safety hazard created by wake vortices of 
+FIG. 1. Breakdown by category of causes for air traffic delays  of 30 min or longer during 1975. 
+1156 Vol. 58, No. 11, November 1977 
+Unauthenticated | Downloaded 11/16/23 12:22 PM UTC
+Bulletin American Meteorological Society 1157 
+FIG. 2. General aviation fatal accidents in which weather  was involved.  the heavier class of aircraft. The effect of aircraft spac- ing on arrival runway capacity can be seen in the follow- ing figures: 
+Operations, h Spacing, mi 
+
+This increase in separation standards (and the ensuing  decrease in capacity) will be in use until a means is at  hand to assure that hazardous vortices do not exist in  the approach (departure) paths of the following aircraft. 
+A wake vortex advisory system being proposed for im- plementation is based on test results that indicate vortex  transport or decay is time oriented and dependent on  prevailing meteorological conditions (Hallock et al., 
+1976). Knowledge of the details of the wind field is the  key to being able to conduct future operations in a more  effective manner—minimizing delays without compromis- ing safety. A major impact on system efficiency will be  achieved when wake vortex advisory systems are in place  at the hub airports in the United States. 
+3. Challenges to aeronautical meteorology today 
+The future growth of air transportation demands an in- crease in the weather support to the system. As a matter  of fact, the planned improvements in the air transporta- tion system, coupled with the deficiencies that exist in  today's weather service, require an upgrading in aviation  weather services. This upgrading will come from techno- logical progress that has met and adequately responded  to the challenges that the economic, regulatory, and in- stitutional factors pose. Aeronautical meteorology must: 
+1) improve productivity—"do more with less"; 
+2) prove the value of aviation weather service; 
+3) provide a more tailored service. 
+These challenges are not unique to aviation weather nor  to aviation. 
+The first, to "do more with less," is a continuing chal- lenge to all managers of aviation weather services, in  government and in private industry. The FAA, for ex- ample, allocates >4500 man-years of effort each year in  providing weather services to aviation. The labor inten- sive nature of these services, coupled with increasing demand for service, dramatizes the relevance of "doing  more with less." 
+The second challenge cannot be separated entirely  from the first. However, it is one that I feel has been  neglected too long by the meteorological profession and  one in which the success and failures in providing an- swers are apt to be buried in institutional coffins rather  than shared with others. For example, although Fig. 1 
+(which depicts the impact of weather on efficiency of the  system) is quite impressive, it leaves entirely unanswered  the question of the value of improved weather informa- tion in the system and proving the value of improved  weather information in reducing delay. I am sure that  each airline meteorologist must periodically prove and  perhaps reprove the value of his service to airline man- agement. The need to share "techniques for assessing  value" and to share examples of proven value or ex- amples of proven nonvalue is especially pressing. Verifi- cation of weather forecasts as operational hits and opera- tional misses must be separated from verification of 
+"technical prowess" in forecasting of weather parameters  without an operational impact. Both types of assessment  are needed. Proving the worth of the service or of the  proposed technology carries with it the assumption that  quality control of the product is provided for. There is  ample evidence from recent assessments of aviation  weather services that insufficient attention is being given  to this essential function (NACOA, 1976). 
+Finally, providing a more tailored service poses the  biggest technical challenge to aeronautical meteorology. 
+The demand for tailored service includes providing: 
+1) wind data at selected altitudes for individual  flights; 
+2) forecasts of turbulence and alternate routings to  individual flights; 
+3) forecasts in time and space of the extent of thunder- storm blockage of air routes in use; 
+4) observations and forecasts of phenomena such as  wind shear or low visibility that pose potential  hazards to safe operation. 
+This service is recognized by aircraft operators as essen- tial to operating and fuel economies as well as for safe  operation of aircraft. 
+Aviation is a dynamic and demanding industry. Over  the years the meteorological profession, to its credit, has  responded to the demands for service even when the de- mands could not be completely met. Today's production  line weather products need further interpretation and re- finement before the user can optimize the use of weather  intelligence in his decision-making process. The weather  intelligence required for operational decision making,  especially relative to in-flight operation, needs to be  explicitly tailored. The challenge is to provide timely,  easily understood, relevant weather intelligence. The  technical challenge requires forecasts for very short time  periods—0 to 6 h—and requires definition and detail of  weather phenomena in the mesoscale rather than the  synoptic scale. 
+Unauthenticated | Downloaded 11/16/23 12:22 PM UTC
+1158 Vol. 58,, No. 11, November 1977 
+4. Progress in meeting the challenges 
+What progress is being made in meeting these chal- lenges? I believe it is appreciable. Let us look at each  challenge in turn.  a. Do more with less 
+The research and development efforts underway to im- prove the productivity of the aviation weather services  include programs in automating observations as well as  programs to provide the forecaster and the briefer with  tools to be more productive. 
+Today, aviation weather surface observations are taken  at ^1000 locations in the United States. Automation of  the aviation weather observation is designed to free  trained manpower from doing this task at those locations  where cost of the automated observation will be less than  the cost of human observer(s). The National Weather 
+Service (NWS) has two such sites in operation today, at 
+Summit, Alaska, and at Wendover, Utah. The automated  observations (AUTOB) stations provide observations  from remote sites where aircraft operations are minimal 
+(Lefkowitz and Bradley, 1976). The FAA has under de- velopment an automatic weather observation station,  called AV-AWOS, that is designed to provide a total  aviation weather observation, including automated ceil- ing and visibility observations, for those airports where 
+Flight Service Station specialists now provide this service 
+(Mandel, 1975). 
+The success of these programs will provide additional  flexibility to help meet this challenge. Plans call for pro- curement of the first "production" AV-AWOSs in fiscal  year 1979. 
+Automated data handling and dissemination systems  are being tested, installed, and operated. These systems,  such as AFOS (Automation of Field Operations and 
+Services), AWANS (Aviation Weather and NOTAM 
+System), and SAFE (System for Automated Flight Effi- ciency), make more efficient use of available personnel. 
+These information storage and retrieval systems auto- matically do the routine and standard functions so that  professional personnel can perform more effectively. 
+The AFOS system plans include automatically monitor- ing of aviation terminal forecasts by comparing the  forecasts with the surface observation (NWS, 1974). 
+The AWANS system now operating at the Atlanta 
+Flight Service Station (Gamble, 1975) and the SAFE  system of Continental Airlines improve the productivity  of the operators of the system and reduce the cost per  unit of service. 
+Being researched and tested for future implementation  are various means for user self-service. This concept im- proves the productivity of the specialist by providing the  pilot direct access to the weather information so he can  serve himself. Improvements in mass dissemination meth- ods, for example, PATWAS (Pilot Automatic Telephone 
+Weather Answering Service) and TWEB (Transcribed 
+Weather Broadcast), that eliminate human involvement  in the collation of the information are under test. A 
+"home version" of a self-briefing terminal, using the widely available TV in home or motel, will allow inter- active communications with the weather data base for  display on the TV screen (Bromley, 1975). 
+In addition to the technological advances to improve  productivity, a recent perceptive look at the institutional  factors affecting productivity of aviation weather services  was completed and reported by a select panel of the Na- tional Advisory Committee on Oceans and Atmosphere 
+(NACOA, 1976). Carrying out the panel's recommenda- tion can add to progress in improving the productivity  of the aviation weather services.  b. Prove the value 
+Reporting on progress in meeting this challenge is some- what more difficult because the analyses and studies on  value and on cost/benefits are not widely published or  distributed. The studies are of prime concern to the  institutional entity and are used to provide information,  usually privy to the institution, relevant to decisions on  resource allocations. The projected value of most of the  major research and development programs has been  documented. Examples of these studies are those done by  the U.S. Department of Transportation (1973), Melewicz 
+(1976), Computer Sciences Corp. (1976), and the NWS 
+(1974). 
+The benefits at one airport, O'Hare International,  from improving separation standards through use of a  wake vortex advisory system exceed many times the sys- tem costs (Computer Sciences Corp., 1976). 
+A notable effort in meeting the challenge of value  analysis is that of the Air Weather Service (AWS) of the 
+U.S. Air Force, which has had an organized and visible  value analysis program underway since 1972. The analy- sis is applied to operational missions (AWS, 1975). A  value analysis program is based on having user accept- ance of measures of system effectiveness. 
+Are measures of effectiveness for aviation weather  forecasts well known and accepted? Does more need to  be done? Does the AMS consider that it has a role in  meeting this challenge? It seems that the AMS should  provide, at least, the communication media and forum  for exchanging techniques in "value analysis," as well  as encourage exchange of examples of success and failure  in proving the value of improvements or of the aviation  services rendered.  c. More tailored service 
+Progress in meeting this goal is being made on many  fronts. Instrumentation and systems are being developed  and tested that provide better definition in time and  space of those atmospheric phenomena that present po- tential hazards to aircraft operating in the terminal area. 
+Some systems provide more detailed knowledge of the  wind field around and above an airport. The wake vor- tex system currently under test at O'Hare International  measures the winds at two levels from six locations with  the objective of defining the wind fields so as to de- termine the separation standards to be used in operating  from the runways (Hallock et al., 1976). A ground-based 
+Unauthenticated | Downloaded 11/16/23 12:22 PM UTC
+Bulletin American Meteorological Society 1159  system using Doppler technique on data from an acoustic  sensor and a microwave radar to determine the vertical  structure of the wind field up to 1500 ft above an air- port is under test at Dulles International Airport 
+(Hardesty et al., 1977). This wind information is pro- cessed so as to provide the controller (and pilot) with  information on the altitude and amount of significant  vertical wind shear. Location and tracking of thunder- storm gust fronts and the accompanying variation in  the wind field will be tested by a system of pressure  jump sensors at the Dulles test site (Beran et al., 1976; 
+Bedard et al., 1977). A lesser array of pressure sensors  is in place at O'Hare Airport. These systems are designed  to provide a tailored service to aviation to indicate  where a potential hazard for a particular flight exists so  that operational decisions can be made. 
+The wind shear program (Coons and Mandel, 1976)  includes efforts to: characterize wind shears, define the  wind shear hazard, develop both airborne and ground- based equipment, establish a wind shear data base, and  test techniques for forecasting the onset and intensity of  wind shear. Forecasts of 3-4 h of occurrences of frontal  wind shears are being made during an operational test  at seven East Coast airports. 
+Projects are underway to further tailor the wind in- formation needed by approaching and departing aircraft  by use of additional sensors at selected locations to pro- vide wind data more representative of the wind field the  individual aircraft will be flying through. 
+Better definition of thunderstorm extent and intensity  is available to the air traffic specialist through recent im- provements in digitalization and remote display of radar  echoes. These additional data heretofore available in  satisfactory detail only at the receiver site can now be  adapted for use in providing a tailored service (Wilk, 
+1976; Zittel, 1976). 
+A slant visual range system, to provide long sought after visibility intelligence that gives a pilot on the ap- proach an additional value to help him decide whether  to land, is being tested at the FAA facility at Atlantic 
+City, N.J. These additional data are designed for use at  specially designated runways by selected crews and air- craft capable of operation in very low visibility condi- tions (Hilsenrod, 1976; Lewis, 1976). 
+Progress is also being made in providing better defini- tion in time and space for weather data for use by indi- vidual flights. Real-time weather information is available  to the pilot through the En route Flight Advisory Ser- vice (EFAS) at 44 locations across the United States. An  on-going test at the Kansas City Air Route Traffic Con- trol Center provides a pilot in contact with the center  direct access to weather information available to the  meteorologists working there (Wuebker et al., 1976). 
+Projects such as ASDAR (Aircraft to Satellite Data Relay)  to demonstrate the potential of using a data link to  obtain additional weather information from the aircraft,  as well as to uplink data to the flight, are in the early  stages of development and testing. 
+An expressly tailored service is provided by airline  meteorology offices to the major air carriers in the form  of flight plans for each individual flight. Winds aloft,  turbulence data, and temperature data are provided for  use by the crew while en route. The winds aloft and  temperature data produced by the NWS each 6 h are  processed further; in some cases this honing includes  both time and space interpolation between the 6 h data  points in order to provide more significant values needed  for flight operations. Updating and upgrading of the  synoptic wind field products are routinely carried out by  feedback of wind and temperature data from aircraft  already flying the routes. It is a rare occasion when sig- nificant error in flight planning occurs due to inaccurate  winds aloft computer input after the first few hours of  aircraft operation during a particular day. A similar 
+TABLE 1. AMS technical committees that can make contributions with CAMET in meeting  the challenges of aeronautical meteorology. 
+Airspace Wind Ceiling and Visibility Snow & Ice Thunderstorms 
+Terminal Atmospheric Turbulence  and Diffusion 
+Laser Atmospheric Studies 
+Radar Meteorology Cloud Physics 
+Laser Atmospheric Studies 
+Radar Meteorology 
+Weather Modification Radar Meteorology 
+Severe Local Storms Atmospheric Electricity 
+Atmospheric Turbulence  and Diffusion 
+Radar Meteorology 
+Severe Local Storms 
+En route Atmospheric Turbulence  and Diffusion 
+Laser Atmospheric Studies Laser Atmospheric Studies 
+Radar Meteorology Radar Meteorology Atmospheric Electricity 
+Atmospheric Turbulence  and Diffusion 
+Radar Meteorology 
+Severe Local Storms 
+Airspace All of Above Weather Elements 
+Common to Terminal Atmospheric Measurements 
+& En route Meteorological Aspects of Aerospace Systems 
+Probability and Statistics 
+Weather Forecasting and Analysis 
+Unauthenticated | Downloaded 11/16/23 12:22 PM UTC
+1160 Vol. 58,, No. 11, November 1977  tailored service is provided to selected flights of U.S. 
+Air Force aircraft by the USAF's Global Weather 
+Central. 
+5. Challenges of the future 
+What are the challenges of the future? They should be  little different from those of today in terms of questions  to be answered. I believe we should look for changes in  the scale of phenomena from the synoptic scale to the  mesoscale, and changes in dimension, not only in y,  and z, but also in the time dimension. There will prob- ably be more emphasis on 0-30 min forecasts of occur- rence, intensity, and location of hazardous weather phe- nomena for real-time decisions regarding operations in  the terminal area. The 0-6 h forecasts for flight planning  purposes are also likely to receive more emphasis,  whereas improvements to weather forecasts in the 6-36 h  time frame may receive less. We should also anticipate  that there will be more customers for aviation weather  service and fewer professional meteorologists available. 
+This situation dictates a need for increased emphasis on  quality control of aviation weather products to safely  and efficiently fulfill the self-service customer's needs. 
+The need to develop and share techniques and results  on value analysis and cost/benefit studies provides the 
+AMS with an opportunity to foster such exchanges. What  should the role of the AMS technical committees be in  meeting these challenges? Table 1 lists the AMS technical  committees that I deem to have contributions to make  jointly with CAMET in seizing the opportunity to meet  the challenges of today and tomorrow in aeronautical  meteorology. 
+References 
+AWS, 1975: Management analysis: Applications of the AWS 
+Value Analysis Program. AWS pamphlet 178-2, Dept. of  the Air Force, Hq. AWS (MAC), Scott AFB, 111. 
+Bedard, A. J., Jr., W. H. Hooke, and D. W. Beran, 1977: 
+The Dulles Airport pressure jump detector array for gust  front detection. Bull. Amer. Meteor. Soc., 58, 920-926. 
+Beran, D. W., P. A. Mandics, A. J. Bedard, and R. G. Strauch, 
+1976: A wind shear and gust front warning system. Pre- prints, Seventh Conference on Aerospace and Aeronautical 
+Meteorology and Symposium on Remote Sensing from Satel- lites (Melbourne, Fla.), AMS, Boston, pp. 167-174. 
+Bromley, E., 1975: Aviation weather forecasts in tomorrow's  flight service system. Bull. Amer. Meteor. Soc., 56, 372-374.  , 1976: Atmospheric sciences and problems of society— 
+Aeronautical meteorological problems. Bull. Amer. Meteor. 
+Soc., 57, 439-440. 
+Computer Sciences Corp., 1976: Cost/benefits and implemen- tation of the Wake Vortex Avoidance System (WVAS) and 
+Vortex Advisory System (VAS). Final rept. for DOT/FAA, 
+Falls Church, Va. 
+Coons, F. G., and E. Mandel, 1976: The FAA wind shear  research and development program—A status report. Pre- prints, Seventh Conference on Aerospace and Aeronautical 
+Meteorology and Symposium on Remote Sensing from Satel- lites (Melbourne, Fla.), AMS, Boston, pp. 70-77. 
+Gamble, J. G., 1975: Automation of aviation weather briefing  information in a Flight Service Station. Paper presented at the Sixth Conference on Aerospace and Aeronautical Mete- orology, El Paso, Tex., AMS. 
+Hallock, J. N., W. D. Wood, and E. A. Spitzer, 1976: Vortex 
+Advisory System. Preprints, Seventh Conference on Aero- space and Aeronautical Meteorology and Symposium on 
+Remote Sensing from Satellites (Melbourne, Fla.), AMS, 
+Boston, pp. 162-166. 
+Hardesty, R. M., P. A. Mandics, D. W. Beran, and R. G. 
+Strauch, 1977: The Dulles Airport acoustic-microwave  radar wind and wind shear measuring system. Bull. Amer. 
+Meteor. Soc., 58, 910-918. 
+Hilsenrod, A., 1976: The FAA Slant Visibility Range Mea- surement System. Preprints, Seventh Conference on Aero- space and Aeronautical Meteorology and Symposium on 
+Remote Sensing from Satellites (Melbourne, Fla.), AMS, 
+Boston, pp. 235-236. 
+Lefkowitz, M., and J. T. Bradley, 1976: Field test results of  automation of clouds and visibility. Preprints, Seventh 
+Conference on Aerospace and Aeronautical Meteorology  and Symposium on Remote Sensing from Satellites (Mel- bourne, Fla.), AMS, Boston, pp. 154-158. 
+Lewis, W., 1976: Vertical fog classifications and slant/runway  visual range ratios. Preprints, Seventh Conference on Aero- space and Aeronautical Meteorology and Symposium on 
+Remote Sensing from Satellites (Melbourne, Fla.), AMS, 
+Boston, pp. 237-241. 
+Mandel, E., 1975: An early look at the development of an  unmanned automated surface aviation weather observation  system. Bull. Amer. Meteor. Soc., 56, 979-982. 
+Melewicz, F. M., 1976: Technical, economic and operational  aspects of an FAA engineering study and feasibility de- termination for a ground-based warm fog dispersal system. 
+Preprints, Seventh Conference on Aerospace and Aeronauti- cal Meteorology and Symposium on Remote Sensing from 
+Satellites (Melbourne, Fla.), AMS, Boston, pp. 219-224. 
+NACOA, 1976: Weather and air safety. Fifth Annual Report  to the President and the Congress, chap. 6, National Ad- visory Committee on Oceans and Atmosphere, Washington, 
+D.C., pp. 37^4. 
+National Transportation Safety Board, 1974: Special study of  fatal, weather-involved, general aviation accidents. NTSB 
+Rept. NTSB-AAS-74-2, Washington, D.C. 
+NWS, 1974: Program development plan—Automation of 
+Field Operations and Services. NOAA, Silver Spring, Md.,  pp. 24-26, 75-79. 
+U.S. Department of Commerce, 1976: The federal plan for  meteorological services and supporting research, Fiscal  year 1977. Federal Coordinator for Meteorological Services  and Supporting Research, NOAA, Washington, D.C., pp. 
+14-15. 
+U.S. Department of Transportation, 1973: A proposal for the  future of Flight Service Stations. Cost analysis of the  present FSS system, vol. 2, Washington, D.C. 
+Wilk, K., 1976: Evaluation of a remote weather radar dis- play. Development and Field Tests, vol. 1, DOT/FAA 
+Rept. FAA-RD-75-60,1, Washington, D.C., pp. 1-37. 
+Wuebker, L., E. Spring, E. Mandel, J. Langston, and F. 
+Blake, 1976: Colocated Flight Service Station Air Route 
+Traffic Control Center aviation weather unit. DOT/FAA 
+Rept. FAA-RD-76-152, Washington, D.C., pp. B-l-B-5. 
+Zittel, W. D., 1976: Evaluation of a remote weather radar  display. Computer Applications for Storm Tracking and 
+Warning, vol. 2, DOT/FAA Rept. FAA-RD-75-60, Wash- ington, D.C., pp. 1-56. • 
+Unauthenticated | Downloaded 11/16/23 12:22 PM UTC

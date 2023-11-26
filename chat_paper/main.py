@@ -36,12 +36,10 @@ def begin(folder, subfolder):
         shutil.copytree(xx_src_dir, xx_src_dest)
     xx_src_refs_file = os.path.join(SOURCE_DIR, folder, subfolder + "_refs.md")
     xx_src_refs_dest = os.path.join(DESTINATION_DIR, "data", "refs")
-    if not os.path.exists(xx_src_refs_dest):
-        shutil.copy(xx_src_refs_file, xx_src_refs_dest)
+    shutil.copy(xx_src_refs_file, xx_src_refs_dest)
     xx_src_catalog_file = os.path.join(SOURCE_DIR, folder, subfolder + "_catalog.md")
     xx_src_catalog_dest = os.path.join(DESTINATION_DIR, "data", "catalog")
-    if not os.path.exists(xx_src_catalog_dest):
-        shutil.copy(xx_src_catalog_file, xx_src_catalog_dest)
+    shutil.copy(xx_src_catalog_file, xx_src_catalog_dest)
 
 
 def end(folder, subfolder):
