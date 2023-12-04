@@ -17,7 +17,7 @@ import io
 root_path = sys.argv[1]
 set_verbose(True)
 # 写作
-
+main_llm = 'local'
 
 def get_random_graph(picture_name, content):
     def two_in_ten_chance():
@@ -90,7 +90,8 @@ def write_main(question, db):
     _template = """
     <信息>{context}</信息>
     根据上面的信息, 写出{question}相关的内容, 只写一个段落, 作为论文的一部份.要具体的分析,有相关的作者,文献,数据就要提出来详细说明.
-    请用一种连贯的叙述方式来阐述你的观点和论据。用丰富的词汇和多样的句式来表达你的观点,让你的回答更具可读性.句式和结构必须多变, 语句和词汇必须丰富.
+    请用一种连贯的叙述方式来阐述你的观点和论据。用丰富的词汇和多样的句式来表达你的观点,让你的回答更具可读性.句式和结构必须多变, 语句和词汇必须丰富。
+    使用简体中文输出。
     """
 
     retriever = db.as_retriever(search_type="mmr", search_kwargs={'k': 6, 'lambda_mult': 0.15})
@@ -98,7 +99,7 @@ def write_main(question, db):
     info = retriever.get_relevant_documents(query=question)
     content='\n'.join([i.page_content for i in info])
     prompt = PromptTemplate.from_template(_template)
-    llm = get_llm('local')
+    llm = get_llm(main_llm)
     chain = prompt | llm | StrOutputParser()
     rt = chain.invoke({"context": content, "question": question})
     print(f"The first content is {rt}")
@@ -107,9 +108,9 @@ def write_main(question, db):
 
 def extend_content(question, content):
     print("Begin extending")
-    conclusions = ['总之','综上所述', '总而言之', '结论如下','简而言之','概括地说','汇总来看','简言之','一言以蔽之','综合来看','回顾总结', '']
+    conclusions = ['总之', '总而言之', '结论如下','简而言之','概括地说','汇总来看','简言之','一言以蔽之','综合来看','回顾总结', '']
     conclusion = random.choice(conclusions)
-    llm = get_llm('local', temperature=0.3)
+    llm = get_llm(main_llm, temperature=0.3)
     temp = """
     原文:
     {text}

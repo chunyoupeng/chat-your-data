@@ -1,3 +1,4 @@
+from turtle import mode
 from httpx import stream
 from langchain.llms import LlamaCpp 
 from langchain.schema import StrOutputParser
@@ -17,6 +18,10 @@ from langchain.chains import RetrievalQAWithSourcesChain
 from langchain.memory import ConversationBufferMemory, ConversationSummaryMemory, ConversationBufferWindowMemory
 from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
 from langchain.utilities.python import PythonREPL
+from langchain.callbacks.manager import CallbackManager
+from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
+from langchain.llms import Ollama
+
 import pickle
 import sys
 import os
@@ -101,8 +106,11 @@ abstract_template = """你现在是一个论文写手, 你的任务是根据用�
 """
 
 trans_template = """
-你的任务是下面的内容翻译成中文.Only output the translated version of the original text. Don't fucking talking!
-要翻译的文本:{context}
+[INSTRUCT]你现在是一个翻译助手，你的任务是把下面的论文内容完整的翻译成中文.只输出翻译后的文本。[/INSTRUCT]
+Q: For service businesses, service quality is consider ed one  of the few means of differentiating the service off ered,  thereby attracting new customers and helping the fi rm  gain market share over its competitors (Venetis and Ghauri, 2004). To illustrate this point, one study  conducted in a banking setting, found that increasi ng  customer retention rates by five percent increased profits  by 85 percent (Reichheld and Sasser, 1990). Being a ble to offer a superior service quality offering will a llow a firm  to attract new customers and retain existing ones and in Lambert and Luiz.  
+A: 在服务行业中，服务质量被认为是区分所提供服务的少数几种方法之一，从而吸引新客户，并帮助企业在竞争对手中获得市场份额（Venetis和Ghauri，2004年）。为了说明这一点，一项在银行环境中进行的研究发现，将客户保留率提高5%可以使利润增加85%（Reichheld和Sasser，1990年）。能够提供优越的服务质量将使企业吸引新客户并保留现有客户，并且在Lambert和Luiz的研究中也有体现。
+Q: {context}
+A: 
 """
 
 trans_en_template = """
@@ -195,32 +203,25 @@ def get_llm(name, temperature=0.1):
         # streaming=True,  # ! important
         # callbacks=[StreamingStdOutCallbackHandler()]  # ! important
     )
-    n_gpu_layers = -1  # Change this value based on your model and your GPU VRAM pool.
-    n_batch = 256  # Should be between 1 and n_ctx, consider the amount of VRAM in your GPU.
 
-    # Make sure the model path is correct for your system!
-    llama = LlamaCpp(
-        model_path="../models/openbuddy-zephyr-7b-v14.1.Q5_K_M.gguf",
-        # n_threads=31,
-        n_ctx=8000,
-        max_tokens = 8000,
-        n_gpu_layers=n_gpu_layers,
-        n_batch=n_batch,
-        # callback_manager=callback_manager,
-        verbose=False,  # Verbose is required to pass to the callback manager
+    yi = Ollama(
+        model="yi:34b-chat", 
+        # callback_manager=CallbackManager([StreamingStdOutCallbackHandler()]),
+        temperature=temperature,
+    )
+    openchat = Ollama(
+        model="openchat:7b-v3.5-q6_K",
+        temperature=temperature,
     )
 
-    if name == 'local':
-        return local_llm
-    elif name == 'openai':
-        return openai_llm
-    elif name == 'openai_3':
-        return openai_llm_3
-    elif name == 'stream':
-        return stream
-    elif name == 'llama':
-        return llama
-    return None
+    match name:
+        case 'local': return local_llm
+        case 'openai': return openai_llm
+        case 'openai_3': return openai_llm_3
+        case 'stream': return stream
+        case 'yi': return yi
+        case 'openchat': return openchat
+        case _: None
 
 
 def get_chain(prompt_name, llm_name='local'):

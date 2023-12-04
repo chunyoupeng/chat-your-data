@@ -8,6 +8,7 @@ if __name__ == "__main__":
     c = Console()
     init()
     question_model = "openai_3"
+    main_llm = 'local'
     root_path = sys.argv[1]
     retriver = load_db(root_path).as_retriever(search_type="mmr", search_kwargs={'k': 8})
     qg_chain = get_chain('qg')
@@ -36,7 +37,7 @@ if __name__ == "__main__":
                     docs = retriver.get_relevant_documents(query=q)
                     content = "\n".join([doc.page_content for doc in docs])
                     # result = chain({"question": q}, return_only_outputs=True)
-                    doc_chain = get_chain("doc", llm_name='local')
+                    doc_chain = get_chain("doc", llm_name=main_llm)
                     result = doc_chain.invoke({"context": content, "question": question})
                     c.print("[green]Answer: [/green]" + result)
 
