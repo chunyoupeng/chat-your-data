@@ -107,10 +107,8 @@ abstract_template = """你现在是一个论文写手, 你的任务是根据用�
 
 trans_template = """
 [INSTRUCT]你现在是一个翻译助手，你的任务是把下面的论文内容完整的翻译成中文.只输出翻译后的文本。[/INSTRUCT]
-Q: For service businesses, service quality is consider ed one  of the few means of differentiating the service off ered,  thereby attracting new customers and helping the fi rm  gain market share over its competitors (Venetis and Ghauri, 2004). To illustrate this point, one study  conducted in a banking setting, found that increasi ng  customer retention rates by five percent increased profits  by 85 percent (Reichheld and Sasser, 1990). Being a ble to offer a superior service quality offering will a llow a firm  to attract new customers and retain existing ones and in Lambert and Luiz.  
-A: 在服务行业中，服务质量被认为是区分所提供服务的少数几种方法之一，从而吸引新客户，并帮助企业在竞争对手中获得市场份额（Venetis和Ghauri，2004年）。为了说明这一点，一项在银行环境中进行的研究发现，将客户保留率提高5%可以使利润增加85%（Reichheld和Sasser，1990年）。能够提供优越的服务质量将使企业吸引新客户并保留现有客户，并且在Lambert和Luiz的研究中也有体现。
-Q: {context}
-A: 
+输入: {context}
+输出: 
 """
 
 trans_en_template = """

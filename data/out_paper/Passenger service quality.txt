@@ -1,0 +1,501 @@
+ African Journal of Business Management Vol. 5(29), pp. 11662-11675, 23 November, 2011     
+Available online at http://www.academicjournals.org /AJBM 
+DOI: 10.5897/AJBM11.1741 
+ISSN 1993-8233 ©2011 Academic Journals 
+ 
+ 
+ 
+ 
+Full Length Research Paper 
+  
+Passenger service quality expectations as perceived  by  long haul airline managers in South Africa 
+ 
+Adam Lambert 1 and John M. Luiz 2* 
+ 
+1Wits Business School, Johannesburg, South Africa. 
+2Graduate School of Business, University of Cape Tow n, South Africa. 
+ 
+Accepted 22 September, 2011 
+ 
+The elements of the service quality mix are an impo rtant consideration for airlines in deciding on the   level of service provision offered by their airline . This study aims to determine passenger expectatio ns  of service quality as perceived by airline managers  working at long haul airlines operating in South 
+Africa. The extent to which passenger expectations inform airline strategy is also examined. Gap 1 of  the SERVQUAL model, the difference between managers ’ perceptions of customer expectations and  customer expectations, is used to frame the researc h problem. Within this, the five dimensions (also  considered antecedents of service quality) proposed  by the SERVQUAL model are examined to  determine the relative importance. Airline managers  and travel industry managers perceptions are  found to be similar with both groups ranking reliab ility as the most important dimension to passengers ,  echoing results seen with passengers. Trust and saf ety emerges as important themes within the  reliability dimension. The tangibles dimension is f ound to be the least important to passengers, yet i s  rated as the area that is considered the primary ar ea of investment by airline respondents. Overall,  airline managers’ perceptions of the relative impor tance passengers place on the dimensions of service   quality match those found in the literature. Their financial investment strategies, though, do not mat ch  the elements of the service quality mix found to be  important to passengers. 
+ 
+Key words:  Service quality mix, airline industry, South Afric a. 
+ 
+ 
+INTRODUCTION 
+ 
+With the airline industry under economic pressure  triggered by the global financial crisis, it will b ecome more  critical for airlines to offer a service quality pa ckage that  passengers prefer, particularly for Full Service Ca rriers 
+(FSCs) where the expectations are typically higher.  
+Presenting the right service offering will be a key  issue in  attracting  and retaining passengers as competition  between  
+ 
+ 
+ 
+*Corresponding author. E-mail: johnluiz@hotmail.com . 
+ 
+Abbreviations: FSCs,  Full service carriers; AMs,  airline  managers; CS/D,  customer satisfaction / dissatisfaction; LCCs,   low cost carriers; TIMs,  travel industry managers; TMC,  travel  management company; IATA, International Air Transport 
+Association.  airlines grows. Research has shown that the aspects  of  the overall service package airlines present to pas sen- gers are an important determinant in a passenger’s  choice of airline (Bejou and Palmer, 1998; Sultan a nd 
+Simpson, 2000; Pakdil and Aydın, 2007; Park, 2007; 
+Martín et al., 2008). This makes it important for a irline  managers’ (AMs) to understand the value that  passengers place on the various aspects of their se rvice  quality mix as these choices will directly affect a n airline’s  strategic positioning. Deciding, for example, to mo ve from  a three class configuration (offering first class, business  class and economy class) to two class configuration  
+(offering only business class and economy class) as   some airlines have done, can exclude a potentially  lucrative segment of the market for an airline. Air lines are  cutting costs in order to survive and this will  in   some  cases     
+ 
+ 
+  cases, impact on service quality levels. Knowing wh ether 
+AMs’ perceptions are in tune with passenger  expectations of service quality will present an imp ortant  finding as if they are not in tune, it could be exp ected that  decisions made with regard to the service quality m ix  may not be what passengers want which could negativ ely  impact on revenues.  
+Research has shown that the increased competition i n  the industry has resulted in two fundamental change s 
+(Mason, 2001; Evangelho et al., 2005; Fourie and Lu bbe, 
+2006; Balcombe et al., 2009): Firstly, it has seen prices  cut as airlines compete to win market share. Second ly, it  has seen a further segmentation in the market as ai rlines  seek to target more specific customer segments, cre ating  what has become known as the low cost carrier (LCC)  or 
+“no frills” airlines that have targeted more price- sensitive  passengers. As increasing competition causes airlin es to  segment the market further, airlines will have to b ecome  clearer on the service quality expectations of thei r target  markets.  
+Concil (2009) argues that, following this economic  crisis, the airline industry will not be the same a s it was  before the financial crisis as airlines have had to  make  fundamental changes to the way they operate in orde r to  survive. This study serves to guide airlines and tr avel  industry professionals as they implement changes to  their  business models. It is important for airlines, as t hey  emerge out of this crisis, that they are certain of  the value  that passengers ascribe to different aspects of the   service quality mix they present to their passenger s.  
+This study assesses AMs perceptions of passengers’  expectations of service quality on long-haul flight s  originating in South Africa. The extent to which  passenger expectations inform airline strategy is a lso  examined. The study provides guidance to AMs and  other travel industry professionals regarding the g aps, if  any, that may exist in terms of what AMs think  passengers expect. This will be particularly import ant in  the light of the current market turmoil as airlines  balance  cutting costs against providing services that passe ngers  will value.  
+ 
+ 
+LITERATURE REVIEW 
+ 
+For service businesses, service quality is consider ed one  of the few means of differentiating the service off ered,  thereby attracting new customers and helping the fi rm  gain market share over its competitors (Venetis and  
+Ghauri, 2004). To illustrate this point, one study  conducted in a banking setting, found that increasi ng  customer retention rates by five percent increased profits  by 85 percent (Reichheld and Sasser, 1990). Being a ble  to offer a superior service quality offering will a llow a firm  to attract new customers and retain existing ones  and  in  Lambert and Luiz         11663 
+ 
+ 
+  so doing, help to improve profits. Edvardsson (1998 ) de- fines service quality as the level to which a servi ce meets  a customer’s expectations and the degree to which t he  service satisfies the customer’s needs and requirem ents.  
+The Gaps model examines five gaps / disconfirmation s  in measuring service quality (Figure 1). This model   incorporates analysis along five dimensions, said t o be  antecedents of service quality: reliability, assura nce,  tangibles, empathy and responsiveness (Parasuraman et  al., 1993).  
+ 
+ 
+Dimensions of service quality 
+ 
+In their original research, Parasuraman et al. (198 8)  determined ten dimensions of service quality. These  ten  dimensions were later revised and summarised down t o  five, namely reliability, tangibles, assurance, emp athy  and responsiveness. Of importance to managers is wh ich  of these dimensions customers rank as most importan t  and which dimensions customers consider least  important. Having this understanding will allow man agers  to focus effort and investment in areas most import ant to  customers and should allow for improvement to the  service quality mix provided. Parasuraman et al. (1 985)  found that reliability was the dimension ranked as most  important for customers. The authors also found thi s to  be the case across the four service categories inve sti- gated (retail banking, credit card services, a secu rities  brokerage and a product repair and maintenance faci lity)  and argued that these results could be extrapolated   across all service businesses. In essence, regardle ss of  the type of service business, customers would rate  reliability as the most important dimension. This r esult  was later confirmed by Boulding et al. (1993) who a lso  found reliability to be the most important dimensio n  across the service businesses assessed in their stu dy.  
+The SERVQUAL model has been criticised for a lack o f  consideration for cross-cultural differences and in dustry- specific differences (Johnson and Mathews, 1997; 
+Espinoza, 1999; Ladhari, 2008). Cross-cultural sens itivity  is particularly important in the long haul airline setting  where airlines serve markets with different languag es,  cultures and customs. Managing service quality in t his  setting requires a degree of sensitivity to these  differences to ensure that passenger expectations ( which  may incorporate very different needs) are met. It h as  been argued that managers should be aware of the  aspects of the service delivery process that are op en to  differences across cultures and that managers shoul d  also be aware of the aspects that are stable across   cultures (Espinoza, 1999). An obvious example in an   airline setting would be the meal service on a long  haul  flight. Meal preferences often reflect one aspect o f the  differences that can be seen across cultures and fo r  airlines   11664         Afr. J. Bus. Manage. 
+ 
+ 
+ 
+ 
+GAP 5 
+GAP 4 
+MANAGEMENT 
+PERCEPTIONS OF 
+CUSTOMER 
+EXPECTATIONS 
+WORD – OF - 
+MOUTH 
+PERSONAL 
+NEEDS 
+PAST EXPERIENCE 
+EXPECTED SERVICE 
+PERCEIVED 
+SERVICE 
+SERVICE DELIVERY 
+ 
+EXTERNAL 
+COMMUNICATIONS TO 
+CUSTOMERS  
+SERVICE 
+SPECIFICATIONS GAP 1 
+GAP 2 GAP 3 
+CUSTOMER 
+MARKETER 
+ 
+ 
+Figure 1.  The SERVQUAL model of service quality. 
+Source: Parasuraman et al. (1985). 
+ 
+ 
+  airlines the challenge lies in meeting the needs of   passengers that could reflect a broad variety of  nationalities on any one flight. 
+The SERVQUAL model has also received criticism for  not considering industry-specific differences in cu stomer  expectations and therefore, variations of the SERVQ UAL  model have been developed to deal with these  differences seen (Cronin and Taylor, 1992; Bahia an d 
+Nantel, 2000; Gounaris, 2005).  
+ 
+ 
+Customer expectations of service quality 
+ 
+This study is bounded in Gap 1 of the SERVQUAL mode l  and therefore, examines the gap between managers’  perceptions of customer expectations and customers’   expectations of service quality. AMs develop servic e  specifications based on what they believe will sati sfy passengers’ service quality needs. If AMs do not  accurately understand what passengers expect, they  could potentially design services that passengers d o not  value.  
+One of the distinguishing characteristics of servic es  that have been mentioned is heterogeneity, the vari ation  in service from one service encounter to the next. This  variation is what managers attempt to control with  aspects such as training programmes and performance   evaluations. All of this is aimed at meeting (or in deed  exceeding) customers’ expectations of the service  provided. Customers evaluate service quality throug h a  process of first forming an expectation (or predict ion) of  the service. During the service process itself the level of  service influences the customer’s perception of the  level  of service quality received thus influencing the cu stomer’s  perception of the service quality of the organisati on 
+(Parasuraman et al., 1985; 1988; Bolton and Drew, 1 991;     
+ 
+ 
+ 
+McKnight, 2009). This gap is what has become known as  the expectations-performance gap and explains the  disconfirmation theory of service quality evaluatio n where  service quality is measured by the difference betwe en  what a customer would score for their expectation o f the  service concerned and what they would score for the ir  perception of the service. Gap 5 of the SERVQUAL  model shown in Figure 1, illustrates this gap from the  customer’s point of view. Parasuraman et al. (1993)  also  postulated that Gap 5 could be seen as a sum of the   scores of the previous four Gaps. In this way a ser vice  expectation is changed into a perception by the lev el and  type of service provided. 
+Expectations can be viewed as the standards against   which customers will compare subsequent service  encounters (Parasuraman et al., 1993) where these  comparisons would form the evaluation of service qu ality. 
+Expectations are beliefs a customer has about a ser vice 
+(or product) before they have consumed the service (or  product). These beliefs could be formed through pri or  exposure to the service, word of mouth, advertising  and  other types of communication the company has publis hed 
+(Boulding et al., 1993). These beliefs, or predicti ons,  become the standard against which the customer  assesses the company’s performance.  
+Parasuraman et al. (1993) propose three types of  customer expectations of service: desired service,  adequate service and perceived service. This model of  expectations is borne out of the research into cust omer  satisfaction / dissatisfaction (CS/D) where researc hers  have attempted to identify the antecedents of CS/D 
+(Boulding et al., 1993; Parasuraman et al., 1993). Within  the concept of expected service, the authors have p ro- posed two levels of expectation: desired and adequa te  service. 
+ Desired service is defined as what the customer ho pes  to receive and ‘is a blend of what the customer bel ieves 
+“can be” and “should be” ‘ (Parasuraman et al., 199 3). 
+What the authors argue though is that customers are   realists and so anticipate that a potentially lower  level of  service could be possible. Thus they hold a second level  of expected service, adequate service, which they p ro- pose is the minimum (or threshold) level of perform ance. 
+The third level of customer expectation the authors   propose is predicted service. This is the level of service  customers anticipate they will receive and sits out side the 
+‘expected service’ box. 
+Between the desired service and adequate service  levels lies an area the authors refer to as the zon e of  tolerance which is the area within which customers are  willing to accept the heterogeneity. This is the ar ea  managers are attempting to influence with their sta ff  through aspects such as training and performance  management. Interestingly, Parasuraman et al. (1993 )  found that the zone of tolerance varied from  custo mer  to Lambert and Luiz         11665 
+ 
+ 
+  customer and also varied for different service aspe cts  such as price.  
+Customers were also shown to have a narrower zone  of tolerance for certain service dimensions so, for   example, some customers may have narrower zones of  tolerance for unreliable service. 
+This model expands the degree to which managers  have influence over the customer’s expectation- perception gap. Originally, it was postulated that  managers could influence customer satisfaction thro ugh  either managing customers’ expectations or percepti ons 
+(Parasuraman et al., 1985; Boulding et al., 1993). That is,  managers could firstly influence the promises made to  customers in advertising or promotional material in  order  to reduce any incongruence between the customer’s  expectations of what would happen and what the  company actually planned to provide. Secondly,  managers could influence the customer’s perception  through managing the quality of service provided. 
+Boulding et al. (1993) found that customers are mor e  likely to recommend a service if they have higher  perceptions of the service quality. Their most impo rtant  insight for managers though, is their finding that  increasing a customer’s expectations of service qua lity  before the encounter actually leads to higher perce ptions  of service quality, after the service encounter. Th is  contradicts the original research quoted earlier wh ich  showed that managers could intervene on the expec- tations side of Gap 5 to lower customers’ expectati ons of  service in order to prevent disappointment after th e  service encounter. The authors found, therefore, th at  managers should manage customers’ expectations up  rather than down if they want to improve perception s of  service. 
+ This appears quite risky as organisations, by  increasing customers’ expectations of service, coul d  potentially set themselves up to fail if they are n ot able to  deliver on the ‘promise’ made when the customer  consumes the service. 
+ 
+ 
+Passenger expectations in the airline industry 
+ 
+It has been shown that customers rate reliability a s the  most important service quality dimension across ser vice  industries. In the study of European and American ( US)  passengers, the results of Parasuraman et al. (1985 )  were confirmed for the airline industry (Sultan and  
+Simpson, 2000) in that reliability was ranked by re spon- dents as the dimension most important to passengers . 
+The authors found that tangibles were ranked as the  least  important service quality dimension. Another findin g of  this study was a significant difference in expectat ion  scores between US and European passengers across 18   of the 22 SERVQUAL questions,  leading  the  author s  to   11666         Afr. J. Bus. Manage. 
+ 
+ 
+  conclude that service quality differs by nationalit y. This  finding has important implications for AMs, particu larly  those operating long haul services. Understanding t hat  expectations are different between different nation alities  would help AMs develop specific service specificati ons  for each international route / region. Within this result was  the finding that US passenger expectations were  significantly higher than European expectations in 17 of  the questions. This indicates that European passeng ers  could be more critical in their evaluation of airli ne service  quality. The result could also raise the question o f cultural  differences in completing survey questionnaires. Th is is  particularly important in the South African (and in deed the 
+African) context where significant differences coul d  present in the interpretation and completion of sur vey  questionnaires. 
+Tsaur et al. (2002) found tangibles as the most  important dimension of service expectation. Reliabi lity  was rated as the second most important dimension bu t  the study does not indicate whether there was a  significant difference between the two. This study  surveyed tour guides in Taiwan who had travelled on   three airlines operating in Taiwan. A significantly  more  elaborate means of assessing the relative importanc e of  each of the dimensions was used which may explain t he  differing results. A case study conducted with the ma- nagement, staff and passengers of a national carrie r in  the Asia-Pacific region (Kiatcharoenpol and 
+Laosirihongthong, 2006) found that assurance was th e  service quality dimension passengers rated as most  important. This study did not, however, rate the re lative  importance passengers placed on each of the five  dimensions but rather showed the disconfirmation 
+(difference) scores passengers gave to Gap 5 (as a  rating of the airline concerned) .  
+ 
+ 
+The extent to which passenger expectations of  service quality informs the strategic positioning o f  long-haul airlines 
+ 
+The extent to which passenger expectations inform a irline  strategic positioning could be viewed using Porter’ s five  forces as a lens. From a market forces point of vie w,  deregulation in the airline industry has lowered th e  barriers to entry for new entrants into the market 
+(Heracleous et al., 2006) and in the South African  context, this has increased competition in both dom estic  and international routes. This increased competitio n has  increased the bargaining power of buyers who now ha ve  a greater choice of airlines to choose from and are  now  more able to shop around for the best price. For ex ample,  the South African domestic air travel market has se en the  entry of low cost carriers (LCCs) such as Kulula.co m, 
+1Time and Mango. LCCs have  traditionally  targeted   the   
+ 
+ 
+  new, more price sensitive leisure traveller segment  
+(Mason, 2001) not previously targeted by network  carriers such as South African Airways and British 
+Airways. Traditionally, FSCs such as the state-owne d  incumbent, South African Airways, focused on the  relatively price-insensitive business traveller. To  this  extent, one could argue that passengers’ expectatio ns of  more favourable pricing had informed the strategies  of  domestic airlines.  
+One of the distinguishing features of FSCs over LCC s  is the fact that they offer a business class servic e. 
+Interestingly Mason (2001) found that 79% of passen gers  surveyed in their UK study did not feel that busine ss  class service offered value for money for short-hau l 
+(domestic) travel which is surprising considering t hat all  or most FSCs (or network carriers) like South Afric an 
+Airways and British Airways offer a business class  service. With such a large margin of passengers  indicating they do not see the value of a business class  service on short-haul routes, one would have to ask  the  question why it is that FSCs still offer this servi ce,  indicating a gap between passenger expectations and   how these expectations inform airline strategy. 
+ 
+ 
+RESEARCH METHODOLOGY 
+ 
+The scarcity of research in the area of AMs’ perception s of  passenger expectations has prompted this study. An e xploratory  approach was thus required and as such the qualitativ e method  was selected. The qualitative approach used permits a  smaller  sample size which allows for a greater depth of info rmation to be  drawn from respondents during the interview process. A fi eld-based  approach was used, where face-to-face interviews allowe d the  researcher to gain respondents’ responses first-hand.  
+The target population for this study was middle to se nior-level  managers in the airline and travel management indust ry. The  sample frame was limited to managers working in sales  and  marketing positions at airlines operating long haul routes and who  were responsible for developing strategies at a local level. Long  haul routes were defined as flights of eight hours i n duration or  longer. The sample drew respondents from a convenience  sample  of 18 respondents. Ten AMs and eight travel industry managers 
+(TIMs) were interviewed. In order to improve the valid ity of the  study, the sample of AMs was triangulated by adding a secondary  sample of managers in a related industry. The reasonin g was that,  as travel managers, these respondents typically acte d as  intermediaries between airlines and customers and wou ld therefore,  have a good understanding of passenger expectations of service  quality. It was also felt that TIMs could present an  independent and  unbiased view being able to see the situation from t he airlines’ point  of view as well as from passengers’ point of view. 
+The purpose of the study was to examine passenger  expectations of service quality from the point of vie w of AMs. The  review of literature revealed a scarcity of research i n this area,  particularly with regard to the application of the five  dimensions of  service quality reported in the SERVQUAL model. Whilst  the  literature revealed rankings of these five dimensio ns by  passengers, none were found for AMs.  
+Thus   at  the  outset  it  was  decided that  a  ra nking  of  the  five   Lambert and Luiz         11667 
+ 
+ 
+ 
+Table 1. Summary results for the ranking exercise.  
+ 
+Dimension Airline managers 
+ Travel industry managers 
+Count Mean Standard  deviation Count Mean Standard  deviation 
+Tangibles 10 4.2 1.23  8 3.1 1.81 
+Reliability 10 1.6 0.97  8 1.8 1.16 
+Responsiveness 10 2.5 1.27  8 3.1 1.25 
+Assurance 10 3.5 0.85  8 3.3 0.71 
+Empathy 10 3.2 1.40  8 3.8 1.49 
+ 
+ 
+  service quality dimensions should be included and t his item was  labelled the ‘ranking exercise’. To further explore AMs’  views of the  relative importance passengers would place on the fiv e dimensions,  a ‘rating exercise’ was also included. This exercise required  managers to rate each factor related to the five dime nsions using a 
+Likert scale.  
+In this study, only the descriptions were listed in the research  instrument. By having hidden the names of each of t he five  dimensions in both the ranking and the ratings exerc ises, at all  times the respondents did not know what the factors  they were  reviewing were related to. All they knew was that th ey were rating  aspects of service quality from an airline passenger’ s perspective. 
+This was done to remove bias and thus improve the reli ability and  validity of the study. These two exercises were spec ifically placed at  the end of the research questionnaire to allow for re spondents’  opinions and perceptions to be drawn out before the s pecific detail  of the two exercises was explored. This was done al so to limit bias  and to prevent priming respondents’ answers to the op en-ended  questions.  
+The information gained from interviews and the lite rature review  was analysed using content analysis where the purpos e of the  analysis was to identify specific content and the c haracteristics of  the messages gained during the interviews. Although the qualitative  approach formed the primary paradigm within which thi s study has  been structured, some elements of the mixed method ap proach  were incorporated. 
+ Limited statistical analysis was used to draw furthe r information  from the data gathered. Specifically, the Thurstone Ca se V method  was used to convert the responses from the ranking exe rcise into  interval scale scores (R scores) to allow for reliable  comparison of  the relative rankings achieved in each dimension. A lack of data in  the literature illustrating how AMs felt passengers wo uld rank the  five SERVQUAL dimensions made the ranking exercise an  important tool for inclusion in the interview questi onnaire.   
+ 
+ 
+PRESENTATION AND DISCUSSION OF RESULTS 
+ 
+Results of the ranking exercise 
+ 
+The ranking exercise was included in the research t ool  due to the lack of available data on AM’s views on  passengers’ ranking of the five dimensions of servi ce  quality. The results of the ranking exercise, as sh own in 
+Table 1, reveal two important findings. Firstly, AM ’s and 
+TIMs’ ranking of the five dimensions proved to be  remarkably similar indicating agreement between bot h groups in their view of how passengers rank the fiv e  dimensions. Secondly, the results of the ranking ex ercise  reveal that AMs’ ranking of the most and least impo rtant  of the SERVQUAL dimensions were the same as those  found by (Sultan and Simpson, 2000). This indicates  that  the AMs interviewed do indeed have a good idea of h ow  passengers would rank the most and least important 
+SERVQUAL dimensions. 
+To allow for statistically reliable comparison of t he  rankings within each group of respondents, the rank ings  were converted into an interval scale, using the 
+Thurstone Case V procedure (Figure 2). Thurstone  scaling converts comparative judgements into an int erval  scale which allows for statistically reliable compa rison  between responses. 
+Reliability scored as most important dimension for both 
+AMs and TIMs. Differences appeared with the dimensi on  rated as least important, with AMs rating tangibles  as the  least important dimension and TIMs rating empathy a s  least important. These are presented and explained  further in the discussion.  
+ 
+ 
+Reliability  
+ 
+The description for the reliability dimension was d rawn  from Sultan and Simpson (2000): “The airline’s abil ity to  perform the promised service dependably and  accurately”. The low mean ranking scores for reliab ility  indicate that both groups of managers believe that  reliability is the most important of the five dimen sions. 
+Looking at the R scores highlights the closeness of  the  mean rankings for reliability, with AMs scoring 0.9 9 and 
+TIMs scoring 1.16. Whilst TIMs placed a greater deg ree  of importance on reliability, every single one of t he AMs  interviewed ranked reliability over tangibles. That  is to  say that 100% of all AMs interviewed felt that pass engers  ranked reliability as more important than tangibles . 75%  of TIMs felt that reliability was more important th an  tangibles. 
+It was established earlier that reliability is the dimension  most important to  customers  across  service  indu stries  11668         Afr. J. Bus. Manage. 
+ 
+ 
+ 
+ 
+ 
+Figure 2. Summary of rankings converted into interval scale sc ores (R scores). 
+ 
+ 
+  and to customers in the airline industry also. This  finding  was confirmed with this study from the point of vie w of 
+AMs and TIMs. The importance lies in the fact that that  both groups of managers know what it is that is mos t  important to passengers. Understanding that reliabi lity is  the most important service quality dimension sugges ts  that AMs are more likely to be making the correct c hoices  for passengers in managing their airline’s service quality  mix. 
+Timeliness is one of the factors of reliability mea sured. 
+To illustrate the importance of timeliness and mana gers’  understanding of its importance, one of the respond ents  interviewed made reference to an on-time departure  statistic shown in bold on the opening screen of th eir  airline’s intranet portal. This on-time statistic i s updated  throughout the day and gives the whole airline visi bility of  their on-time departure performance. The respondent   mentioned that on-time departures are so important to  their customers that their airline has focused the whole  company on ensuring they achieve the highest possib le  percentage of on-time departures. The day of the  interview the on-time departure rate was 97% but th e day  before it was much lower at 51% due to weather conditions in other parts of Europe. Knock-on effec ts  elsewhere in their network had affected their on-ti me  performance at their main hub airport which had the n  caused a ripple effect through the rest of their ne twork  serving other regions, thereby reducing their overa ll  performance. 
+How important reliability, in this case safety, is to  passengers was also highlighted by having interview ed a  senior manager at an airline a few days after airli nes had  grounded their fleets of Airbus A380s fitted with R olls 
+Royce engines. An engine fault in one of the Rolls Royce  engines on an Airbus A380 had forced an emergency  landing in Singapore and subsequently created a ser ious  public relations issue for the airlines involved. T he  respondent and her team in Johannesburg had been  working around the clock, not only to resolve passe nger  queries but also to manage the knock-on effect of t he  loss of capacity from their network as they had to ground  their Airbus A380s. At the time of the interview tw o flights  to Johannesburg from the airline’s hub airport had  already been cancelled to re-allocate the Boeing 74 7s 
+(used on this route) to the routes serviced by the Airbus 
+A380. This example highlights the importance of  an other    
+ 
+ 
+  theme that emerged in the discussions around reliab ility,  trust. 
+Trust emerged as a key factor in the discussions of   reliability and its importance to passengers, with  respondents mentioning trust as a reason they felt  passengers would rank reliability as most important , in 
+80% of the cases. A situation such as with the faul t found  with Rolls Royce engines on Airbus A380 aircraft ca n  seriously affect an airline’s reputation and hence the trust  passengers place in the airline. 30% of AMs felt th at trust  formed a large part of the reason that passengers c hose  to re-book with an airline, suggesting that trust c ould  potentially play an important part in securing repe at  business. 
+To assess whether passengers’ expectations had  influenced their airline’s investment strategy, AMs  were  asked to mention the top three areas their airlines  were  investing in. Interestingly, only 20% of the AMs  interviewed mentioned an aspect related to reliabil ity as  their airline’s primary investment area. In these c ases,  the investments were made in the area of safety. If   reliability is seen by managers as the most importa nt  service quality dimension to passengers, it is inte resting  to note that only a small fraction of the responden ts inter- viewed mentioned this as an area of investment focu s for  their airlines. 90% of the airline respondents ment ioned  fleet or product (seats, on-board entertainment, me als  etc.) as one of the top three investment focus area s,  reflecting the tangibles dimension as the area of f ocus for  investment. 
+ 
+ 
+Tangibles  
+ 
+Sultan and Simpson (2000) defined the tangibles dim en- sion as “The appearance of the airline’s ground fac ilities,  aircraft, personnel and communications channels”. T he  ranking of the least important service quality dime nsion  revealed an important difference between AMs’ views  of  passenger expectations and those of managers in the   travel industry. AMs ranked tangibles as the servic e  quality dimension that passengers rate as the least   important, with a mean score of 4.2 whereas TIMs ra nked  empathy as the least important, with a mean score o f 3.8. 
+As mentioned, 90% of airline respondents indicated that  fleet or product was one of the top three areas of  investment for their airline which is ironic as AMs   themselves ranked tangibles as the least important of the  five service quality dimensions. This may be explai ned by  the fact the airline industry is heavily capital in tensive with  high aircraft acquisition costs and where the cost of  engines and interior fitting almost equals the cost  of the  aircraft itself. 
+When asked to expand further, airline respondents  mentioned   two   main   reasons   for   the  inves tment  in  Lambert and Luiz         11669 
+ 
+ 
+  product. The first reason quoted was that the newer   aircraft burned significantly less fuel than older aircraft. 
+An example given by two AMs was that the Airbus A38 0  carried significantly more passengers than a Boeing  747  but burnt less fuel and generated significantly les s noise. 
+Fuel typically represents the second highest cost f or most  airlines (after staff costs) and also represents a fixed cost  as the fuel is allocated once the flight takes off,  even  when fuel is dumped along route (Heracleous et al.,  
+2006). The second reason airline respondents mentio ned  was the investment in new seats. Seat design has  evolved in the last 20 years with business class ca bins  offering significantly more than was offered in fir st class  cabins 20 years ago. Newer and more innovative seat s  provide airlines with two benefits, namely cost sav ing and  a means to attract new customers. On the cost savin g  side, one respondent mentioned that new innovative seat  designs reduced the weight of seats thus allowing f or  more efficient fuel consumption. This respondent re ferred  to a “thin cut, high-base seat”, referring to the t hinness of  the seatback and the height of the seat above the f loor. 
+The respondent mentioned that newer seats have thin ner  seat-backs which reduce the space taken up by each row  of seats, thus allowing for more rows of seats to b e fitted  in the aircraft. “High-base” made reference to the amount  of space available to the passenger in the foot wel l  the  seat in front of them. The more space available, th e more  a passenger is able to stretch their legs out durin g flight,  whilst seated. Advances in technology and design ha ve  thus also helped to improve the service quality pac kage  an airline can offer to its passengers. For example , in  business class most airlines now offer lie-flat sea ts and  many even offer fully-flat beds, with seats that re cline to a  completely horizontal position. Most airlines now o ffer  audio and video on demand in all cabins on their lo ng  haul routes. These are features airlines have used to  attract passengers and are an area that sees a grea t deal  of competition between airlines with different airl ines  trying to outdo each other with the benefits they o ffer their  passengers. This competition has taken place in the  area  of the tangibles dimension and may also go some way  to  explain why it is that airlines have focused on tan gibles  as an investment area despite the fact that some of  the  research, and indeed the airline respondents, have  shown it to be the area of least importance to  passengers. 
+Another very important factor listed by one airline   respondent was the fact that newer aircraft allowed  for  improved efficiency. The Airbus A380 for example  allowed Air France to cut 20% off their operational  costs  on the Johannesburg – Paris route. In addition to t his,  aircraft with such large capacity allow airlines to  transport  greater numbers of passengers into airports where b i- lateral agreements have restricted landing rights. Put  differently, the main deck of an  Airbus  A380  car ries  the   11670         Afr. J. Bus. Manage. 
+ 
+ 
+  same number of seats as a Boeing 777-200 and the  upper deck carries as many seats as an Airbus A340-
+300. For example, where an airline has only been  allocated one landing slot per day at a particular airport,  they may be able to fly in double the number of  passengers on aircraft with larger capacities. This  helps  improve efficiency greatly by generating larger rev enues  per flight with lower costs. 
+ 
+ 
+Empathy 
+ 
+Empathy was described in the research tool as “The  caring, individualised attention the airline provid es its  customers” (Sultan and Simpson, 2000). 50% of the  travel industry respondents ranked empathy as the l east  important dimension. A common theme that emerged  from both groups of managers is the fact that if th e airline  is doing what it should with the other four factors , “caring  individualised attention” becomes less important.  
+Empathy ranked as the second least important  dimension for AMs with 20% of the respondents ranki ng  empathy as the least important. One respondent  specifically mentioned that an airline’s “ability t o perform  is determined by the factors further up”. To put it   differently, at least 50% of the travel industry re spondents  explained their ranking of the fifth dimension (wha tever  they had ranked it to be) as not being the least im portant  but rather that they felt that the other four dimen sions  were more important.  
+ 
+ 
+Responsiveness  
+ 
+Interestingly both groups of respondents ranked  responsiveness as the second most important dimensi on,  however in the travel group, responsiveness tied wi th  tangibles for second place (both with a mean score of 3.1  and an R score of 0.36). AMs’ mean rank score of re s- ponsiveness was 2.5, with an R score of 0.65. Of in terest  is the fact that, comparatively, AMs felt passenger s place  greater importance on responsiveness than was the c ase  with TIMs. This result suggests that AMs could be  overestimating the importance passengers place on t he  staff-related aspects of the service quality mix. 
+With both groups having scored responsiveness as th e  second most important dimension, the description us ed in  the research tool reveals more: “The airline’s will ingness  to help customers and provide prompt service” (Sult an  and Simpson, 2000). This indicates that respondents  did  not feel responsiveness was most important, they fe lt that 
+“willingness to help” and “providing prompt service ” to  passengers was the next most important aspect. The  very nature of airline travel would explain why rel iability  would rank as most important and,  with  responsive ness,  the importance of  the  staff  side  of  the  servi ces  mix  is    
+ 
+ 
+  illustrated. 
+Responsiveness ranked as most important by only one   respondent, an AM and he felt that passengers do no t  want to wait for anything. His airline aimed for a check-in  queuing time of “less than four minutes in business  class  and less than 12 min in economy class”. This was th e  same respondent who had an on-time departure statis tic  clearly displayed on the intranet portal of his des k top. 
+The passenger group in their home market, according  to  the respondent, were very time oriented and did not  like  delays. This may indicate why he felt responsivenes s  was the most important dimension. On the other side  of  the scale not one respondent, from both groups, ran ked  responsiveness as the least important dimension whi ch  clearly indicates that both groups felt that it lie s  somewhere in the middle.  
+Assurance was described in the research tool as “Th e  knowledge and courtesy of airlines’ employees and t heir  ability to convey trust and confidence” (Sultan and  
+Simpson, 2000). Assurance ranked in the middle of t he  five dimensions as the third least / most important   dimension for both groups. The mean rank score for AMs  was 3.5 and the R score, 0.38. TIMs’ mean rank scor e for  assurance was 3.3 and their R score was 0.27. 25% o f  travel respondents ranked assurance as the least  important dimension and none of the airline respond ents  ranked it as least important. 
+The results of the ranking exercise indicate a clos e  relationship between AMs and TIMs views of the rela tive  importance of the service quality dimensions. AMs’  rankings though, more closely mirror the results fo und by 
+Sultan and Simpson (2000) where reliability was fou nd to  be the most important and tangibility to be the lea st  important of the SERVQUAL dimensions. 
+ 
+ 
+Results of the rating exercise 
+ 
+Respondents were asked to rate the factors related to  each of the dimensions of service quality as propos ed by 
+Tsaur et al. (2002). The rating scores have been  summarised for each group of respondents and are  presented in Table 2. A correlation was run on each  of  the factors and the relationship with each of the o ther  factors to determine the internal consistency of th e  responses in the ratings exercise. Cronbach’s alpha   scores approaching one indicate higher levels of in ternal  consistency and scores closer to zero indicate lowe r  levels of internal consistency. A Cronbach’s alpha score  of 0.82 was achieved, indicating a high degree of i nternal  consistency within the responses to the ratings exe rcise. 
+ 
+ 
+Tangibles  
+ 
+The overall scores  for  both  groups  of  responde nts  are  Lambert and Luiz         11671 
+ 
+ 
+ 
+Table 2. Summary of the rating scores for the tangibles dimensi on. 
+ 
+Tangible Airline manager 
+ Travel industry manager 
+Count Mean Standard  deviation Range Count Mean Standard  deviation Range 
+Comfort and cleanliness of seat 10 4.80 0.42 1  8 4 .75 0.46 1 
+Food 10 4.30 0.82 2  8 4.25 0.71 2 
+On-board entertainment 10 4.30 0.95 3  8 4.50 0.79 2 
+Convenient ticketing process  10 4.20 0.79 2  8 4.1 3 0.99 2 
+Mean rating  4.40     4.41   
+ 
+ 
+  very close and could actually be considered the sam e,  indicating agreement between both groups. Indeed, b y  looking at the results more closely it can be seen that 
+AMs and travel managers rated ‘comfort and cleanlin ess  of seat’ with the highest mean rating (4.80 and 4.7 5  respectively) and both groups rated ‘convenient tic keting  process’ with the lowest mean rating (4.20 and 4.13 ) 
+(Table 2). 
+Convenient ticketing process scored the lowest rati ng  of the factors listed in the tangibles dimension. T he  reason could be that 25 % of TIMS mentioned that  approximately 80% of air ticket bookings are proces sed  through travel management companies or travel  agencies. At least two travel respondents mentioned  that  the South African air travel booking market are sti ll  conservative in that the majority of passengers do not  book with the airline directly. This is in contrast  to other  markets where in the United Kingdom, for example,  approximately 30% of business travellers using netw ork  carriers book through a travel agency or through an  in- house travel department (Mason, 2001). 
+10% of AMs and 25% of TIMs mentioned that aspects  of seat quality have become a means that airlines h ave  used to differentiate themselves from their competi tors,  since passengers spend the majority of their time i n their  seats during flight. Making this experience more  comfortable and enjoyable have been the means throu gh  which airlines have innovated in order differentiat e  themselves and hence also to attract new customers.   
+A great deal of competition has taken place, partic ularly  in the premium cabins, where lie-flat seats have al most  become a given and where airlines are now  differentiating further by offering fully-horizonta l beds in  business class. Emirates and Etihad Airways offer f irst  class ‘suites’ with doors that close to provide com plete  privacy and Emirates now also offer shower spas in first  class in their Airbus A380s. Despite the fight to a ttract  premium travellers, a fair amount of development ha s  also taken place in the economy cabins. As lie-flat  seats  are now considered to be a ‘hygiene’ factor in busi ness  class,   so   too   has  on-demand  entertainment  become  expected in economy class cabins on long haul fligh ts. 
+Added to this is, as one respondent put it, is the fact  that “as the length of the flight increases, the ne eds of  passengers become more disparate”. By this he meant   that for a short, one hour flight, passengers would  expect  very little from an airline. Whereas the longer the  flight,  the varied passengers’ needs increase that is, drin ks,  food, snacks, entertainment and so forth. He also  mentioned that passengers are also beginning to dem and  these various services at different times and to ca ter for  this many airlines have begun offering entertainmen t on  demand so passengers can now watch / listen to any of  the entertainment available when they want to. In  business class, passengers can dine “on demand” and  so  are not forced to eat when “the trolley comes aroun d”. 
+One airline respondent mentioned that their airline  offers  snacks such as ice creams and popcorn to passengers ,  in all three of their cabins to enjoy after their m eals whilst  watching a movie, for example. This particular airl ine also  offered an on-board food and beverage manager who i s  responsible for the catering needs of passengers in  all  three cabins, with an emphasis on the premium cabin s,  again aiming to cater to as many needs of passenger s as  possible. 
+The danger for AMs is to lose focus of what is impo r- tant to passengers, particularly considering the gr eater  disparity with longer flights. Hence, the importanc e of 
+AMs being aware of passenger expectations allows fo r  the correct decisions to be made. For example, one of  the AMs criticised Emirates for the offer of shower  spas in  first class cabins on Airbus A380 aircraft. He ment ioned  that to accommodate this the airline would need to do the  following: carry sufficient quantities of water; pr ovide for  the fuel required to transport this additional wate r all the  way to the destination (as international law does n ot allow  for the waste water to be dumped as is the case wit h  fuel); sufficient space would need to be allocated for the  shower and this space would sacrifice further seati ng. So,  whilst seating has been established to be important  to  managers, the degree of this importance is a key is sue  for  AMs  in  terms  of  how  far   they  go   to   attract new   11672         Afr. J. Bus. Manage. 
+ 
+ 
+ 
+Table 3. Summary of the rating scores for the reliability dimens ion.  
+ 
+Reliability Airline manager 
+ Travel industry manager 
+Count Mean Standard  deviation Range Count Mean Standard  deviation Range 
+Professional skill of crew 10 4.50 0.85 2  8 4.88 0 .35 1 
+Timeliness 10 4.60 0.52 1  8 4.50 0.76 2 
+Safety 10 4.70 0.48 1  8 5.00 0.00 0 
+Mean rating  4.60     4.8   
+ 
+ 
+  passengers. Furthermore, how do AMs balance the cos t  of providing these services with an expected return  on  investment? 
+ 
+ 
+Reliability  
+ 
+Safety scored the highest mean rating in this dimen sion  for both airline and travel respondents, with mean scores  of 4.70 and 5.00 respectively (Table 3). Every trav el  respondent interviewed regarded safety with the hig hest  rating (5) and surprisingly 30% of airline responde nts  gave safety a four rating.  
+One airline respondent mentioned “I believe that sa fety  is a hygiene factor” in saying that it should be a given that  safety is of the highest priority. He went on to sa y that the  core focus in the area of safety is around airport and  aircraft security, with the global terror threat. H e felt that  airlines should add additional focus in the area of  airport  security, and work more closely with airport author ities to  reduce the risk of attacks by terrorists. 
+In 2009, the global accident rate was one western-b uilt  hull loss for every 1.4 million flights (IATA, 2011 ). This  dropped to one accident in 1.6 million flights in 2 010, the  lowest in history. In real terms this translates to  a total of 
+17 hull losses (down from 19 in 2009) across 36.8 m illion  flights carrying 2.4 billion people. Looking at the se  statistics, it is clear that airlines and airport c ompanies  have focused a great deal of time and effort in saf ety. 
+From a South African point of view, of concern is t he fact  whilst African carriers carried only 2% of global a ir traffic  in 2010; they carried 23% of the western-built jet hull  losses. Whilst African International Air Transport 
+Association (IATA) member airlines showed lower  accident rates, this statistic should be of concern  to 
+African carriers if they are aiming to encourage vi sitors to  travel to the continent. It was shown earlier that reliability  ranks as the most important dimension for passenger s  and industry managers and if African carriers are a iming  to win market share from other network carriers the y will  have to improve how reliable their airlines are per ceived  to be. Such high accident statistics will do damage  to 
+African carriers, reducing them  will  help  to  im prove  the  perception of reliability. 
+To illustrate this, one of the respondents intervie wed is  an American citizen and in discussing the options p as- sengers have when booking an air ticket he mentione d  that Americans are more likely to book internal fli ghts,  within the US, over the internet. For flights to Af rica or  other developing regions they are much more likely to  book with a travel agent due to the greater uncerta inty  around travelling to these areas. If passengers eve n  vaguely doubt how reliable an airline is they would  be  less likely to book with that airline. 
+ 
+ 
+Responsiveness  
+ 
+The greatest variation in mean ratings was seen wit h the  responsiveness dimension, with mean ratings of 4.45  and 
+4.13 for AMs and TIMs, respectively (Table 4). Also  of  interest are the tighter ratings for travel respond ents,  indicating a narrow spread of scores than with the airline  respondents where greater variation can be seen. 
+The service quality literature reviewed in the hote l  industry revealed a tendency for hotel managers to  overestimate the importance guest place on the staf f- related aspects of service quality. The higher mean   ratings for AMs could be suggesting a similar tende ncy. If  anything, it reveals that travel respondents were m ore  critical in their rating of the factors related to  responsiveness. The narrower spread of ratings sugg ests  a greater level of agreement between travel respond ents  than is the case with the airline respondents where  the  greater spread of results suggest less agreement in  how  each respondent rated these factors. 
+ 
+ 
+Assurance  
+ 
+Assurance saw similar mean rating scores between bo th  groups of respondents. AMs’ mean rating score for  assurance was 4.20 and that for TIMs was 4.10. 
+Differences in which factor was rated most importan t  emerged, with airline respondents rating “actively  providing service”  as  most  important  (4.50)  an d  travel   Lambert and Luiz.         11673 
+ 
+ 
+ 
+Table 4. Summary of the rating scores for the responsiveness dim ension.  
+ 
+Responsiveness Airline manager 
+ Travel industry manager 
+Count Mean Standard  deviation Range Count Mean Standard  deviation Range 
+Courtesy of crew 10 4.50 0.71 2  8 4.25 0.46 1 
+Responsiveness of crew 10 4.40 0.84 2  8 4.00 0.53 2 
+Mean rating  4.45     4.13   
+ 
+ 
+ 
+Table 5. Summary of the rating scores for the assurance dimensio n.  
+ 
+Assurance Airline manager 
+ Travel industry manager 
+Count Mean Standard  deviation  Range Count Mean Standard  deviation  Range 
+Actively providing service 10 4.50 0.85 2  8 4.25 0 .71 2 
+Convenient departure and arrival time 10 4.50 0.70 2  8 4.50 0.53 1 
+Language skill of crew 10 3.70 0.95 2  8 3.50 0.93 3 
+Mean rating  4.20     4.08   
+ 
+ 
+  respondents rating “convenient departure and arriva l  time” as most important (4.50) (Table 5). 
+Both groups agreed with the factor considered to be   least important to passengers, “Language skill of c rew”  scoring the lowest rating of all 15 factors measure d. This  was a surprising result, considering the brief of t he  discussion was long haul airlines. One could argue that  language skill would not be important on a short-ha ul  flight but long haul flights, by their nature, take   passengers to and from very different markets /  countries. Interestingly though, Emirates specifica lly  recruits staff from the markets to which it flies. Emirates  do this in order to ensure that on flights to the m arket  concerned, the local language is spoken and at leas t  some of the staff will understand the local customs . 
+Another airline respondent proudly mentioned the fa ct  that her airline employed people from over 100 diff erent  countries. She further stated the largest part of t his was  in the cabin crew to ensure that passengers saw a 
+“familiar face” on board.  
+With regard to customs and culture, another airline   respondent mentioned that Spanish passengers do not   like butter. He mentioned that Spanish passengers  preferred Olive Oil to butter and yet they found th at South 
+African passengers preferred butter or margarine so  on  their flights to Johannesburg they had to ensure th at they  carried both Olive Oil and butter or margarine. He  mentioned that it may appear trivial, but for a Spa nish  passenger flying into Spain this could be quite imp ortant,  particularly in the premium cabins where passengers   tend to be more demanding. Placing such close attention and effort into recrui ting  cabin staff would indicate a high level of importan ce  being placed on language skill and understanding of  local  customs yet the mean scores for both groups of  managers indicate that this is not so. 
+ 
+ 
+Empathy  
+ 
+Empathy is the dimension that saw the second most  disagreement between both groups of managers  interviewed, with airline respondents’ mean rating for  empathy 4.17 and travel industry respondents 3.96 
+(Table 6). Again, travel industry respondents appea r to  be more critical in their rating than AMs. Indeed, on  closer examination, 40% of the airline respondents rated  two, or fewer, factors less than five; meaning that  they  rated five for at least 13 of the 15 factors measur ed. Not  one travel industry respondent rated less than five  of the 
+15 factors with a rating of less than five, indicat ing their  more critical approach to the questionnaire. This g ives  the impression that the some of the AMs interviewed  felt  all or most of the factors were important, suggesti ng a  lack of a critical understanding of exactly what it  is that  passengers feel is important. 
+“Extended travel service” was defined for the purpo se  of this study as those peripheral services offered by the  airline through their website or call centre, such as  booking car rental or accommodation. The fact that  approximately 80% of air ticket bookings in South A frica  are    processed    through   a   travel    agency  or   travel   11674         Afr. J. Bus. Manage. 
+ 
+ 
+ 
+Table 6. Summary of the rating scores for the empathy dimension .  
+ 
+Empathy Airline manager  Travel industry manager 
+Count Mean Standard  deviation Range  Count Mean Standard  deviation Range 
+Convenient ticketing process 10 4.50 0.71 2  8 4.00  1.07 2 
+Customers complaints handling 10 4.60 0.70 2  8 4.2 5 0.71 2 
+Extended travel service 10 4.40 1.07 3  8 3.63 0.74  2 
+Mean rating   4.17    3.95   
+ 
+ 
+  management company (TMC) would suggest why this  received such a low rating of importance to passeng ers. 
+Another difference of interest is seen with the 
+“customer complaints” factor. AMs rated this factor  4.60  and travel industry respondents rated this lower at  4.25. 
+The questions were focused at airlines and these re sults  suggest that TIMs feel this is not as important to airlines  as they handle the bulk of air ticket bookings. At least 
+50% of TIMs mentioned, unprompted, that passengers  often confuse the responsibility between the airlin e and  the travel management company. This means that if, for  example, a passenger’s baggage went missing, the  passenger would complain to the travel agency rathe r  than the airline. 
+ 
+ 
+How perceptions of passenger expectations inform  airline strategy 
+ 
+Perhaps unsurprisingly, 100% of AMs responded in th e  affirmative when asked whether their strategy is in formed  by passenger expectations. Every airline manager fe lt  that their airline listened to passengers and attem pted to  incorporate their needs into their strategy. The re sult was  different for TIMs. 38% of TIMs felt that airlines do not  consider passengers’ expectations in formulating th eir  strategies. 50% felt that airlines do incorporate p assenger  preferences in their strategy and one TIM answered that  they do so only partly. 
+It may therefore be concluded that whilst passenger   expectations do inform airline strategic positionin g, there  are factors which indicate otherwise and that the r esult is  only partly true. For example, the AMs interviewed  indicated overwhelmingly that their airlines invest  in the  tangibles dimension as their primary area of invest ment  which they themselves ranked as the least important  to  passengers.  
+ 
+ 
+Conclusion 
+ 
+The first important finding of the study was the si milarity  between AMs and TIMs rankings of the  five  SERVQUA L dimensions. While there was some variation between the  overall rankings between both groups of respondents , the  overall results are remarkably similar. Both groups   ranked reliability as the most important dimension for  passengers producing a similar result to that seen by 
+Sultan and Simpson (2000). This result is also cons istent  with similar research conducted in other industries  where  reliability was also found to be the most important   dimension to customers (Parasuraman et al., 1985, 
+1993).  
+Within the discussion of reliability, trust emerged  as a  major theme for both groups of respondents. Eighty per  cent of respondents interviewed felt that trust for med a  large part of why they had ranked reliability as mo st  important. Trust also emerged as an important drive r of  repeat business. The very nature of air travel expl ains the  importance of this finding. Of the aspects related to  reliability, safety emerged as the most important f actor for  passengers, as rated by both AMs and TIMs. This fin ding  is particularly important in the South African cont ext as it  was shown that, in 2010, African carriers carried 2 % of  the global air traffic and yet carried 23% of the W estern- built jet hull losses.  
+Only 20% of the AMs interviewed listed an aspect of   reliability as their airline’s primary investment a rea which  is surprising considering the AMs themselves had ra ted  reliability as most important to passengers. AMs ra nked  tangibles as the least important dimension for  passengers yet 90% of the AMs interviewed indicated   that fleet / product represented their airline’s pr imary area  of investment, meaning that tangibles represents th eir  primary area of investment. Whilst it could be argu ed that  new aircraft would improve reliability, the primary  reasons  given for this focus on investment do not indicate that. 
+AMs mentioned cost saving and cabin upgrades as the   primary reasons for their airline’s investment in f leet /  product. It could be argued that the reason for air lines’  focus on investment outside of reliability could be  due to  the fact that, in Western markets, the accident rat e has  fallen to the lowest level in aviation history (IAT A, 2011). 
+As mentioned, this is not the case for African carr iers  though and would present an area of opportunity for   carriers on the African continent wanting to improv e  their    
+ 
+ 
+  reliability as well as the level of trust passenger s place in  their airline. An improvement to seating was listed  as a  second reason airlines were investing in fleet / pr oduct  and, indeed, AMs and TIMS both rated “comfort and  cleanliness of the seat” as the most important fact or of  the tangibles dimension. Three respondents mentione d  that this was due to the fact airlines were using s eat  improvements as a means to attract new passengers.  
+The study was not designed to assess the importance   of the relationship between AMs and TIMS yet the  importance of this relationship emerged as an impor tant  theme. It was found that TIMs did not feel that all  airlines  focus sufficient effort on their relationship with TMCs. The  majority of TIMs mentioned that they encouraged the  sale  of air tickets with the airlines with which they ha d the best  relationship. This is particularly important in the  South 
+African context, as established; the majority of TI Ms  mentioned or confirmed the fact that 80% of air tic ket  bookings are processed through TMCs. Airlines not  placing sufficient emphasis on managing these  relationships could be losing business to those air lines  encouraging a closer relationship with TMCs. This i s  particularly important considering the fact that, a s one  respondent put it, “there is a price war going on a t the  moment”. A price war would suggest that airline sea ts  have become commoditised where the differentiation is  based on price rather than other aspects such as se rvice  quality. For an airline this means that strong rela tionships  would be more important to ensure that its price br eaks  or special fares reach customers quickly and that T MCs  promote these fares above other airlines’ fares. 
+ 
+ 
+REFERENCES  
+ 
+Bahia K, Nantel J (2000). A reliable and valid meas urement scale for  the perceived service quality of banks. Int. J. Ban k Mark., 18(2): 84-
+91. 
+Balcombe K, Fraser I, Harris L. (2009). Consumer wi llingness to pay for  in-flight service and comfort levels: A choice expe riment. J. Air 
+Transport Manage., 15(5): 221-226. 
+Bejou D, Palmer A (1998). Service failure and loyal ty: an exploratory  empirical study of airline customers. J. Serv. Mark et., 12(1): 7-22. 
+Bolton RN, Drew JH (1991). A multistage model of cu stomers'  assessments of service quality and value. J. Consum . Res., 17(4): 
+375. 
+Boulding W, Kalra A, Staelin R, Zeithaml VA (1993).  A dynamic process  model of service quality: from expectations to beha vioral intentions. J. 
+Market. Res., 30(1): 7-27. 
+Concil A (2009). Continued Traffic Improvement - Bu t Much Ground Still  to be Covered. Vol. 2010, IATA, Geneva. 
+Cronin JJ, Taylor SA (1992). Measuring service qual ity: a re- examination and extension. J. Mark., 56(3): 55-68. 
+Edvardsson B (1998). Service quality improvement. M anag. Serv. 
+Qual., 8: 142-149. 
+ 
+ 
+ 
+ 
+ 
+ Lambert and Luiz         11675 
+ 
+ 
+ 
+Espinoza MM (1999). Assessing the cross-cultural ap plicability of a  service quality measure - A comparative study betwe en Quebec and 
+Peru. Int. J. Serv. Ind. Manage., 10(5): 449-468. 
+Evangelho F, Huse C, Linhares A (2005). Market entr y of a low cost  airline and impacts on the Brazilian business trave lers. J. Air 
+Transport Manage., 11(2): 99-105. 
+Fourie C, Lubbe B (2006). Determinants of selection  of full-service  airlines and low-cost carriers—A note on business t ravellers in South 
+Africa. J. Air Transport Manage., 12(2): 98-102. 
+Gounaris S (2005). Measuring service quality in b 2  b services: an  evaluation of the SERVQUAL scale vis-a-vis the INDS ERV scale. J. 
+Serv. Mark., 19(6): 421-435. 
+Grönroos C (1984). A service quality model and its marketing  implications. Eur. J. Mark., 18(4): 36-44. 
+Heracleous L, Wirtz J, Pangarkar N (2006). Flying H igh in a competitive  industry. Mc-Graw-Hill. 
+IATA (2011). Aircraft accident rate is the lowest i n history, (Last updated  on 23 February 2011), accessed 23 February, 2011, f rom  http://www.iata.org/pressroom/pr/Pages/2011-02-23-0 1.aspx. 
+Johnson C, Mathews BP (1997). The influence of expe rience on service  expectations. Int. J. Serv. Ind. Manage., 8(4): 290 -305. 
+Kang G, James J (2004). Service quality dimensions:  an examination of 
+Gronroos’ service quality model. Manag. Serv. Qual. , 14(4): 266-277. 
+Kiatcharoenpol T, Laosirihongthong T (2006). Innova tions in service  strategy: an evaluation of quality in airline servi ce operations by using 
+SERVQUAL model. A paper presented at the 2006 IEEE 
+International Conference held in Singapore on the 2 1 June.  
+Ladhari R (2008). Alternative measures of service q uality: a review. 
+Manag. Serv. Qual., 18(1): 65. 
+Martín JC, Román C, Espino R (2008). Willingness to  Pay for Airline 
+Service Quality. Transport Rev., 28(2): 199-217. 
+Mason KJ (2001). Marketing low-cost airline service s to business  travellers. J. Air Transport Manage., 7(2): 103-109 . 
+McKnight S (2009). Bridging the gap between service  provision and  customer expectations. Perform. Measure. Metrics, 1 0(2): 79-93. 
+Pakdil F, Aydın Ö (2007). Expectations and percepti ons in airline  services: An analysis using weighted SERVQUAL score s. J. Air 
+Transport Manage., 13(4): 229-237. 
+Parasuraman A, Berry LL, Zeithaml VA (1993). More o n improving  service quality measurement. J. Retail., 69(1): 140 -147. 
+Parasuraman A, Zeithaml VA, Berry LL (1985). A conc eptual model of  service quality and its implications for future res earch. J. Mark., 49(4): 
+41-50. 
+Parasuraman A, Zeithaml VA, Berry LL (1988). SERVQU AL: A Multiple-
+Item Scale for Measuring Consumer Perceptions of Se rvice Quality. 
+J. Retail., 64(1): 5-6. 
+Park JW (2007). Passenger perceptions of service qu ality: Korean and 
+Australian case studies. J. Air Transport Manage., 13(4): 238-242. 
+Reichheld FFYS, Sasser E (1990). Zero defections: Q uality comes to  services, Harv. Bus. Rev., 68(5): 105-111. 
+Sultan F, Simpson MC (2000). International service variants: airline  passenger expectations and perceptions of service q uality. J. Serv. 
+Mark., 14(3): 188-216. 
+Tsaur SH, Chang TY, Yen CH (2002). The evaluation o f airline service  quality by fuzzy MCDM. Tour. Manage., 23(2): 107-11 5. 
+Venetis KA, Ghauri PN (2004). Service quality and c ustomer retention:  building long-term relationships. Eur. J. Mark., 38 (11/12): 1577-1598. 
+ 

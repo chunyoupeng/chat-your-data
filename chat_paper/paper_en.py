@@ -38,7 +38,7 @@ def remove_unnecessary_newlines(text):
 def translate_document(document):
     trans_text_splitter = RecursiveCharacterTextSplitter(
         separators=["\n\n", "\n", " ", ""],
-        chunk_size=1024,
+        chunk_size=1500,
         chunk_overlap=0,
         length_function=tiktoken_len,
     )
