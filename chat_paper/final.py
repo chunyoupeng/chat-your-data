@@ -1,6 +1,7 @@
 from logging import root
 from os import write
 import re
+import time
 import random
 from change_sentence import *
 from query_data import *
@@ -19,6 +20,7 @@ set_verbose(True)
 # 写作
 main_llm = 'local'
 
+# convert ppt file  to text file
 def get_random_graph(picture_name, content):
     def two_in_ten_chance():
         return random.random() < 0.2
@@ -106,6 +108,12 @@ def write_main(question, db):
     return rt
 
 
+def revise_content(title, input):
+    print("Begin revising content")
+    chain = get_chain('revise') 
+    rt = chain.invoke({"title": title, "input": input})
+    return rt
+
 def extend_content(question, content):
     print("Begin extending")
     conclusions = ['总之', '总而言之', '结论如下','简而言之','概括地说','汇总来看','简言之','一言以蔽之','综合来看','回顾总结', '']
@@ -115,23 +123,49 @@ def extend_content(question, content):
     原文:
     {text}
 
-    对原文扩写, 作为{question}研究中的一部份"""
+    对原文扩写, 作为{question}研究中的一部份，简体中文输出"""
     write_prompt = PromptTemplate.from_template(temp)
     write_chain = write_prompt | llm | StrOutputParser()
     rt = write_chain.invoke({"text":content, "question": question})
-    rt = rt.replace("首先，", "").replace("其次，", "").replace("最后，", "").replace("再者，","").replace("再次，","").replace("综上所述", conclusion).replace("我们", "本研究")
+    rt = rt.replace("首先，", "").replace("其次，", "").replace("最后，", "").replace("再者，","").replace("再次，","").replace("综上所述", conclusion).replace("我们", "本研究").replace("总的来说", conclusion)
     pattern = r"（[^）]*）"
     rt = re.sub(pattern, "", rt)
 
     print(f"The second content is {rt}")
     return rt
 
+def draft_to_revise(final_file, value, db):
+    """vluse: 类似于雷电天气下民航飞机的飞行风险及预防措施分析中,研究背景，论文题目+小标题
+    final_file: 写入的文件
+    db: jsondb
+    """
+    sentence_change_chain = get_chain('sentence_change', llm_name='openai')
+    question = sentence_change_chain.invoke({"question": value})
+    print(f"The quesiont is {question}")
+    draft_text = write_main(question, db)
+    revised_text = revise_content(value, draft_text)
+    extended_text = extend_content(question, revised_text)
+    final_file.write(extended_text + "\n\n")
+
+def write_refs(title, final_file_path, zh_refs, en_refs):
+    with open(final_file_path, "a+", encoding="utf-8") as f:
+        f.seek(0)
+        content = f.read()
+        thanks = get_thanks(content[0:2000])
+        zh_refs, en_refs = zh_refs.replace('\n', '\n\n'), en_refs.replace('\n', '\n\n')
+        reference_part = "\n## 参考文献\n\n" + zh_refs + en_refs + '\n'
+        f.write(reference_part)
+        text = "\n## 致谢\n\n" + thanks + "\n"
+        f.write(text)
+        abstract_part = get_abstract(content[0:2000], title)
+        en_abstract_part = get_chain('trans_en').invoke({"context": abstract_part})
+        f.write("\n## 摘要\n\n"+abstract_part + "\n\n")
+        f.write("\n## Abstract\n\n"+en_abstract_part + "\n\n")
+
 def main():
+    """初稿=>修改=>扩展"""
     global root_path
-    # input_file="input/" + sys.argv[1] + "_catalog.md"
-    # final_file_path = "final/"+ sys.argv[1] + "_final.md"
     input_file = os.path.join('data', 'catalog', root_path +  '_catalog.md')
-    img_root = os.path.join("img", root_path + "_img")
     with open(input_file, "r", encoding="utf-8") as f:
         catalog_dict = generate_statements(f.read())
     print(catalog_dict)
@@ -149,45 +183,30 @@ def main():
                 print(f"key is {key}")
                 print("这是国内文献")
                 domestic_review = get_domestic_review(title, zh_refs)
-                final_file.write(domestic_review + "\n\n")
+                revised_domestic_review = revise_content(value, domestic_review)
+                final_file.write(revised_domestic_review + "\n\n")
                 continue
             if '国外文献' in key or '国外研究' in key:
                 print(f"key is {key}")
                 print("这是国外文献")
                 overseas_review = get_overseas_review(title, en_refs)
-                final_file.write(overseas_review + "\n\n")
+                revised_overseas_review = revise_content(value, overseas_review)
+                final_file.write(revised_overseas_review + "\n\n")
                 continue
             if '总结' in key:
                 print(f"key is {key}")
                 final_file.seek(0)
                 content = final_file.read()[0:4096]
                 summary_part = get_summary(content, title)
-                final_file.write(summary_part + "\n\n")
+                revised_summary_part = revise_content(value, summary_part)
+                final_file.write(revised_summary_part + "\n\n")
                 continue
-            question = get_chain('sentence_change', llm_name='openai').invoke({"question": value})
-            print(f"The quesiont is {question}")
-            draft_text = write_main(question, db)
-            picture_name = os.path.join(img_root, key + '.png')
-            if get_random_graph(picture_name, draft_text):
-                print(f"Draw graph {picture_name}")
-            result = extend_content(question, draft_text)
-            final_file.write(result + "\n\n")
+            draft_to_revise(final_file, value, db)
     final_file.close()
-    with open(final_file_path, "a+", encoding="utf-8") as f:
-        f.seek(0)
-        content = f.read()
-        thanks = get_thanks(content[0:2000])
-        zh_refs, en_refs = zh_refs.replace('\n', '\n\n'), en_refs.replace('\n', '\n\n')
-        reference_part = "\n## 参考文献\n\n" + zh_refs + en_refs + '\n'
-        f.write(reference_part)
-        text = "\n## 致谢\n\n" + thanks + "\n"
-        f.write(text)
-        abstract_part = get_abstract(content[0:2000], title)
-        en_abstract_part = get_chain('trans_en').invoke({"context": abstract_part})
-        f.write("\n## 摘要\n\n"+abstract_part + "\n\n")
-        f.write("\n## Abstract\n\n"+en_abstract_part + "\n\n")
+    write_refs(title, final_file_path, zh_refs, en_refs)
 
-    to_docx(final_file_path)
+
+    # to_docx(final_file_path)
     
     
 if __name__ == "__main__":

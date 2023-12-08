@@ -94,8 +94,10 @@ thanks_template = """你的任务是结合文本内容和给出的论文致谢�
 
 """
 
-reference_template = """你现在是一个作家, 你的任务是根据用户提供的Reference中的引用写一个关于{title}的{domain}文献综述段落，
-作为我论文中文献综述的一部分.要求要详尽,说明背景,并对每一篇文章进行分析.必要时可以扩展,避免出现文章名, 仅出现作者名.除了英文名字外,其余用中文输出.
+reference_template = """你现在是一个写作助手, 你的任务是根据用户提供的Reference中的引用写一个关于{title}的{domain}文献综述段落，
+作为论文中文献综述的一部分.要求要详尽,说明背景,并对每一篇文章进行分析.必要时扩展.在举出作者的时候都要以作者名(时间)的形式.例如，某作者（2009）在某研究文章中提出了。。
+除了英文名字外,其余用简体中文输出.
+输出：
 """
 
 abstract_template = """你现在是一个论文写手, 你的任务是根据用户提供的论文的一部份, 写出关于{title}的论文摘要.包括摘要,关键词
@@ -130,6 +132,12 @@ summary_template = """对下面题目为{title}的论文写一段论文的总结
 总结：
 """
 
+revise_template = """
+输入：{input}
+背景：输入是一篇初稿阶段的论文的一个小节，小节的标题是{title}。这部分包含了若干问题，例如语法错误、论述不清晰、结构混乱、术语使用不当等，并且不符合学术论文的标准写作规范。
+要求：请对这一部分进行修改，以使其更加符合学术论文的规范。请特别注意用词的准确性和专业性，并提供一个清晰、逻辑严谨的重写版本。输出修改后的这一段论文内容。
+输出：
+"""
 GRAPH_PROMPT = ChatPromptTemplate.from_messages([("system", template), ("human", "{input}")])
 
 
@@ -157,8 +165,8 @@ ABSTRACT_PROMPT = PromptTemplate.from_template(template=abstract_template)
 TRANS_PROMPT = PromptTemplate.from_template(trans_template)
 TRANS_EN_PROMPT = PromptTemplate.from_template(trans_en_template)
 SUMMARY_PROMPT = PromptTemplate.from_template(summary_template)
+REVISE_PROMPT = PromptTemplate.from_template(revise_template)
 PATH = "vector_src"
-OUT_PATH = "out"
 
 
 def get_llm(name, temperature=0.1):
@@ -177,7 +185,7 @@ def get_llm(name, temperature=0.1):
         model="gpt-3.5-turbo",
         openai_api_base="http://localhost:8001/v1",
         openai_api_key="EMPTY",
-        max_tokens=5999,
+        max_tokens=6999,
         temperature=temperature,
         # streaming=True,
         # callbacks=[StreamingStdOutCallbackHandler()]
@@ -236,28 +244,32 @@ def get_chain(prompt_name, llm_name='local'):
     trans_en_chain = TRANS_EN_PROMPT | llm | StrOutputParser()
     graph_chain = GRAPH_PROMPT | llm | StrOutputParser() | PythonREPL().run
     summary_chain = SUMMARY_PROMPT | llm | StrOutputParser()
-    chain = None 
-    if prompt_name == 'qg':
-        chain = qg_chain
-    elif prompt_name == 'sentence_change':
-        chain = sentence_change_chain
-    elif prompt_name == 'doc':
-        chain = doc_chain
-    elif prompt_name == 'thanks':
-        chain = thanks_chain
-    elif prompt_name =='ref':
-        chain = ref_chain
-    elif prompt_name == 'abstract':
-        chain = abstract_chain
-    elif prompt_name == 'trans':
-        return trans_chain
-    elif prompt_name == 'trans_en':
-        return trans_en_chain
-    elif prompt_name == 'graph':
-        return graph_chain
-    elif prompt_name == 'summary':
-        return summary_chain
-    return chain
+    revise_chain = REVISE_PROMPT | llm | StrOutputParser()
+    match prompt_name:
+        case 'qg':
+            return qg_chain
+        case 'sentence_change':
+            return sentence_change_chain
+        case 'doc':
+            return doc_chain
+        case 'thanks':
+            return thanks_chain
+        case 'ref':
+            return ref_chain
+        case 'abstract':
+            return abstract_chain
+        case 'trans':
+            return trans_chain
+        case 'trans_en':
+            return trans_en_chain
+        case 'graph':
+            return graph_chain
+        case 'summary':
+            return summary_chain
+        case 'revise':
+            return revise_chain
+        case _:
+            return None
 
 
 def init():
@@ -267,8 +279,6 @@ def init():
         sys.exit(-1)
     if not os.path.exists(PATH):
         os.makedirs(PATH)
-    if not os.path.exists(OUT_PATH):
-        os.makedirs(OUT_PATH)
 
 
 def load_db(root_path):

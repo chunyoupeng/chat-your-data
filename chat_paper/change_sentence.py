@@ -1,4 +1,12 @@
 def generate_statements(markdown_content):
+    """输出示例：
+    # 雷电天气下民航飞机的飞行风险及预防措施分析 -- 
+    ## 绪论 -- 
+    ### 研究背景 -- 雷电天气下民航飞机的飞行风险及预防措施分析中,研究背景
+    ### 国内外研究进展 -- 雷电天气下民航飞机的飞行风险及预防措施分析中,国内外研究进展
+    #### 国外研究进展 -- 雷电天气下民航飞机的飞行风险及预防措施分析中,国外研究进展
+    #### 国内研究进展 -- 雷电天气下民航飞机的飞行风险及预防措施分析中,国内研究进展
+    ### 研究意义及内容 -- 雷电天气下民航飞机的飞行风险及预防措施分析中,研究意义及内容"""
     # 将Markdown文本拆分成行
     lines = markdown_content.strip().split('\n')
 
@@ -43,7 +51,7 @@ def remove_numbers_from_headings(input_text):
 
 
 if __name__ == '__main__':
-    with open("input/mh_src_catalog.md", "r") as f:
+    with open("data/mh_src_catalog.md", "r") as f:
         rt = generate_statements(f.read())
         for k,v in rt.items():
             print(k,"--",v)

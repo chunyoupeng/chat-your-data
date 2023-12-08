@@ -24,7 +24,7 @@ def main(root_path: str) -> None:
   
     OUT_JSON_PATH = f"data/out/{root_path}.json"
     if os.path.exists(OUT_JSON_PATH):
-        print(f"{OUT_JSON_PATH} already exists, please delete it first")
+        print(f"{OUT_JSON_PATH} already exists, using the old one")
         return
   
     out_file = open(OUT_JSON_PATH, "w")

@@ -27,9 +27,9 @@ def begin(folder, subfolder):
     """
 
     print("Beginning...")
-    img_path = os.path.join("img", subfolder + "_img")
-    if not os.path.exists(img_path):
-        os.makedirs(img_path)
+    # img_path = os.path.join("img", subfolder + "_img")
+    # if not os.path.exists(img_path):
+    #     os.makedirs(img_path)
     xx_src_dir = os.path.join(SOURCE_DIR, folder, subfolder)
     xx_src_dest = os.path.join(DESTINATION_DIR, "data", "docs", subfolder)
     if not os.path.exists(xx_src_dest):
@@ -48,10 +48,10 @@ def end(folder, subfolder):
     dest_path = os.path.join(SOURCE_DIR, folder)
     shutil.copy(final_path, dest_path)
 
-    img_path = os.path.join("img", subfolder + "_img")
-    dest_img_path = os.path.join(SOURCE_DIR, folder, subfolder + "_img")
-    if not os.path.exists(dest_img_path):
-        shutil.copytree(img_path, dest_img_path)
+    # img_path = os.path.join("img", subfolder + "_img")
+    # dest_img_path = os.path.join(SOURCE_DIR, folder, subfolder + "_img")
+    # if not os.path.exists(dest_img_path):
+    #     shutil.copytree(img_path, dest_img_path)
 
 
 
