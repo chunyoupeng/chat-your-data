@@ -1,0 +1,453 @@
+Returns management employee development: antecedents and outcomes
+
+Article    in  The Int ernational Journal of L ogistics Manag ement  · No vember 2019
+
+Hao zhe Chen
+Iowa St ate Univ ersity
+Stefan E. Genche v
+Univ ersity of Centr al Oklahoma
+P. Geoffr ey Willis
+Univ ersity of Centr al Oklahoma
+Ben Griffis
+Unaffiliat ed
+
+Abstract
+Purpose –The purpose of this paper is to empirically investigate the antecedents and impacts of a largely overlooked concept, employee development, within the challenging area of returns management.
+Design/methodology/approach –The proposed relationships are validated through structural equation modeling analysis with survey data collected in India.
+Findings –Combining the ability –motivation –opportunity model in human resource management and the theoretical tenets associated with dynamic capabilities, the authors confirmed that supply chain learning, returns management orientation and information support are important antecedents of returns management employee development. In turn, the findings suggest that, as a dynamic capability, returns managementemployee development positively impacts a firm ’s returns management and market performance.
+Practical implications –To successfully tackle the challenges related to handling returns, companies must focus their resources not only on new technologies and related processes, but also on employee training anddevelopment as well.
+Originality/value –Although recruiting and retaining talent in supply chain management has long been recognized as a serious global challenge, no previous research has empirically studied employee development practices in the returns management context.
+Keywords India, Survey, Information technology, Reverse logistics
+Paper type Research paper
+1. Introduction
+Today ’s consumers –especially those purchasing online –expect the purchasing process to be a “breeze. ”Unfortunately, in many instances, the process is extended because a consumer decides he/she does not like the product or there are problems (damage, incorrect item, etc.).
+The seller must then accommodate a return request. For companies looking to secure long-term success and customer satisfaction/loyalty, it is imperative that they realize the importance of efficiently handling returned merchandise in a way that is viewed as virtually effortless by the customer. This is supported by a UPS survey of consumers that found,
+“Returns can be a deal-breaker [ …] 48% (of consumers) would drop a retailer with a less- than-easy returns process ”(Gooley, 2013, p. 44).
+Reverse logistics refers to the efficient, cost-effective flow of raw materials, in-process inventory, finished goods and related information from point of consumption to point of origin for the purpose of recapturing value or for proper disposal (Rogers and Tibben-Lembke, 1998).
+Both practitioners and academics have gradually realized the critical importance of effective reverse logistics and have argued it can be a value center (Wang et al., 2017). Our focus is onThe International Journal of
+Logistics Management
+Vol. 30 No. 4, 2019 pp. 1016-1038
+0957-4093
+DOI 10.1108/IJLM-08-2018-0218Received 31 August 2018
+Revised 19 June 20197 September 201913 October 2019Accepted 17 October 2019The current issue and full text archive of this journal is available on Emerald Insight at: www.emeraldinsight.com /0957-4093.htm
+1016IJLM
+30,4one of the key processes within reverse logistics –returns management (Croxton et al., 2001;
+Zhou et al., 2011). The returns management process includes the activities necessary to handle the reverse flow of goods from customers. The importance of employees and job performance in the supply chain context is widely recognized (e.g. Ellinger et al., 2008, 2010; Swart et al., 2012;
+Kane Is Able, 2014), but there is still a significant need for human resource management in the supply chain management context (Fisher et al., 2010; Flöthmann et al., 2017). We believe that employee development is particularly imp ortant for returns management due to the challenging nature of the tasks and responsibilities involved. This notion is supported by
+Govindan and Bouzon ’s (2018) framework, which identified employees not only as stakeholders but also as drivers of reverse logistics ’successful implementation. While much has been written on returns management, little research attention has been given to returns management employees. The current study is undertaken to address this important research void.
+Strategic human resource management research increasingly focuses on human resource systems rather than single practices. The current study thus draws upon the ability –motivation –opportunity (AMO) model of human resource management and explores the antecedents of effective returns management employee development ( Jiang et al. , 2012;
+Boon et al., 2019). According to the AMO literature, ability refers to skill-enhancing practices that are designed to foster skilled, capable employees; motivation refers to practices that provide stimulus to employees to perform their job with more enthusiasm; and opportunity denotes practices that facilitate employees ’effort in achieving organizational objectives
+(Lepak et al., 2006; Liao et al., 2009). In line with the AMO model, we select and examine three antecedents in the returns management context: supply chain learning as an ability, returns management orientation as a motivation and returns management information support as an opportunity. It is proposed that these three antecedents encompass both internal and external (supply chain) perspectives that provide the foundation for a formalized system to develop returns management employees and that will ultimately impact firm performance through creating happy customers and improving efficiency.
+The first antecedent, supply chain learning, focuses on “knowledge applied to facilitate exchange within supply chains ”(Claycomb et al. , 2001; Spekman et al. ,2 0 0 2 ) .R e t u r n s management employees must deal with the uncer tainties associated with product returns in terms of quantity, condition, timing, etc., and supply chain learning ability can be expected to be a factor relevant to these employees ’ability to perform their tasks effectively and efficiently.
+Supply chain learning could include knowledg e exchange between a firm and its suppliers, customers, distributors or other supply chain parties such as service providers (Flint et al., 2008).
+Within the returns management context this would include, but not be limited to, understanding customer expectations as to how they want to be able to return product, what constitutes an acceptable level of effort necessary to make a ret urn, length of time to process a return, etc.
+Our second antecedent is returns management orientation, which refers to the guiding philosophy or approach whereby a firm recognizes the importance that returns management has to overall business performance (Mai et al. , 2012). Returns necessitate extra, time-consuming but critical steps. How post-purchase returns issues are handled is important to customers. An easy return process can have a huge impact on repeat sales
+(Burnson, 2014). At the other extreme, poor service or complicated requirements can lose customers. Therefore, highly motivated returns management employees are crucial for successfully performing these tasks. A firm ’s orientation toward returns management determines its resource commitment to this area and thus it could have a significant influence on its returns management employees ’motivation as well.
+Our final antecedent, returns management information support, presents an opportunity and a tool for returns management employees to effectively deal with the complexity and sheer volume of returns. Jack et al. (2009) highlighted the importance of developing information system capabilities to support reverse logistics and returns. Similarly, Terry (2014) noted that1017Returns management employee developmentsuccessful returns handling is predicated on “better use of data ”(p. 54). The data can be used to develop more efficient processes that impact customers, provide valuable information about the root causes of returns, identify patterns and changes in demand, and help returns management employees make “intelligent ”decisions.
+Returns management employee development as the focal concept of this study is about employees ’personal growth and performance through developing necessary skills and knowledge related to product returns (cf. Nadler and Nadler, 1989). The lack of personnel resources has been identified as a significant barrier to good reverse logistics/returns management and “the need for training extends throughout the company and reaches up and downstream ”(Ravi and Shankar, 2005, p. 1016). As Gibson et al. (2015) noted about the link between talent availability and supply chain strategy: “the game plan is only as good as the team that will execute it ”(p. 21). We consider returns management employee development as a unique dynamic capability. The focus of dynamic capabilities is the firm ’s ability to integrate, build and reconfigure resources to adapt to the changing environment (Teece et al., 1997). More specifically, Eisenhardt and Martin (2000) emphasized the importance of organizational and strategic routines as necessary mechanisms in developing dynamic capabilities.
+2. Literature review
+2.1 Returns management employee development
+Employee development can be summarized as “an integrated set of planned programs, provided over a period of time, to help assure that all individuals have the competence necessary to perform to their fullest potential in support of the organization ’s goals ”( Jacobs and Washington, 2003, p. 344). Past research has shown that employee development can contribute to improved employee retention, improved employee skills and knowledge, improved employee confidence and morale, and greater strategic advantage (Gutteridge et al. , 1993; Tansky and Cohen, 2001). Successful employee development programs benefit the employer as well. When organizations invest in their employees, the employees tend to reciprocate in positive ways (Cropanzano and Mitchell, 2005). Advantages can be gained through differentiation on the basis of the skills, knowledge and motivation of the workforce
+(Aguinis and Kraiger, 2009). Employees who are given development opportunities are likely to become prosocially motivated, that is, they desire to expend effort to benefit the organization (Kuvaas and Dysvik, 2009).
+Existing literature has largely focused on several key aspects of the broad employee development concept. One of the main employee development practices is training, which refers to a systematic, formal process of developing employees ’knowledge, skills and abilities for improved individual, team and organizational effectiveness (Goldstein and Ford, 2002).
+Training is also used to reinforce the values and culture of an organization and communicate the firm ’s commitment to its employees (Ellinger et al. , 2007). Another key employee development practice is empowerment, which is an “active work orientation where an individual wishes and feels able to shape his/her work role and context ”(Spreitzer, 1995, p. 1444). Employee empowerment involves delegating authority to the lower levels in an organization to facilitate competent decision making (Spreitzer, 1996). Empirical studies have shown that empowerment can generate a variety of positive outcomes such as job satisfaction, organizational commitment and improved performance (Spreitzer, 1995; Spreitzer et al., 1997;
+Kirkman and Rosen, 1999; Seibert et al., 2004; Maloni et al., 2017). Thus, employee development is critical for the growth and stability of an organization (Broadhurst, 2012), and it should be an important topic for supply chain management research (Maloni et al., 2017).
+While employee development is not a new concept, it has not gained much attention from returns management researchers. In the scarce literature on this topic, the central role of employees in returns management may be best summarized by Genchev (2009). His study of returns policies and practices at a large electronics wholesaler revealed the consensus among1018IJLM
+30,4senior management that “the best workers are in the area of returns. ”In fact, his study participants stated that “returns personnel can pretty much do any other job in the distribution center but it doesn ’t work the other way around ”(Genchev, 2009, p. 142). Such practical insights underline the role of employees and their professional development as a necessity.
+Therefore, we contend that employee development can be an effective tool for managing a firm ’s returns management operations and achieving strategic goals. As has been noted, “the accomplishment of any organization is tremendously reliant on its employees ”(J e h a n z e ba n d
+Bashir, 2013, p. 243). This is an even more relevant consideration given that returns management is closely associated with customer service quality. Returns management personnel very often are the “face ”of the company and the employees customers interact with most often. Customer contact employees are key to delivering quality, value and customer satisfaction which, in turn, affects firm performance (Orr et al., 2011).
+Limited existing studies that include the role of returns management employees predominantly used qualitative research methods to answer research questions such as how they contribute to value creation related to returns management (Pal, 2017), or how they alleviate the pressure and risk involved in processing returns (Narayana et al., 2014). While these studies have enhanced our understanding of this important topic, quantitative studies are needed to validate qualitative findings (Chatha et al., 2015). Therefore, the current study addresses this critical void by developing and executing an empirical quantitative research related to returns management employee development.
+2.2 Supply chain learning
+It has been suggested that knowledge is the most strategically important resource of a firm because knowledge-based resources are usually socially complex and difficult to imitate
+(Grant, 1996; Spender, 1996; Phelan and Lewin, 2000). Therefore, effective organizational learning, i.e., the process of accumulating relevant knowledge, has been identified as a crucial factor in companies ’pursuit of competitive advantage. Learning not only allows a firm to develop its core competences and better control its operational processes, it can also help the firm maintain a broader knowledge base, absorb new knowledge and remain flexible (Fiol and Lyles, 1985; Grant, 1996; Flöthmann et al. , 2017).
+Flint et al. (2008) defined supply chain learning as the process of “ensuring that one ’so w n firm as well as suppliers and customers are actively managing the learning process aimed atsupply chain management issues ”(p. 264). In other words, effective supply chain learning engages the processes of generating, disseminating, sharing and applying value-creating knowledge among supply chain members. Supply chain learning enables partners to gain access to each other ’s know-how or resources (Akande et al., 2010; Loke et al., 2012), enhances ability to sense and act upon unexpected events and trends in the marketplace (Tippins and
+Sohi, 2003; Ngai et al., 2011), enables the effective management of activities (Yu et al., 2013), and offers the potential to enhance a firm ’s competitiveness (Bessant et al., 2003).
+Returns management is a series of activities that encompass various supply chain members and processes, and product returns involve a significant amount of irregularity and unknown factors, such as return volume, product condition, etc. With so much inherent complexity and uncertainty associated with returns management, proactive learning becomes crucial. Knowledge about the fast-evolving products, ever-changing markets and customers, and related supply chain processes is vital for returns management professionals. The knowledge supports sound decision making and execution. Therefore, supply chain learning is a very relevant topic in the returns management context.
+2.3 Returns management orientation
+Firms place different emphases on actions based on the specific strategic business orientations they select (Olson et al. , 2005). Min and Mentzer (2004) examined the concept of supply chain1019Returns management employee developmentorientation, which they defined as an organization ’s recognition of the systemic, strategic implications of tactical activities involved in managing supply chain flows. It has been argued that companies need to understand the implications of supply chain orientation in order to take meaningful actions (Mollenkopf et al. , 2007). We take a similar view and propose that companies must develop a returns management orientation in order to effectively implement the returns management process. We thus adopt Mai et al. ’s (2012) definition of returns management orientation as “the recognition by a firm of the importance of returns management to its overall business operations and performance ”(p. 47).
+Firms that have a strong returns management orientation are aware of the strategic and tactical importance of managing returns; thus, they are more likely to actively engage in certain organizational behaviors and activities. They would place a priority on understanding the different returns management components, processes and courses of action. Returns management orientation may also motivate companies to develop necessary tactical capabilities such as returned product screening, testing, diagnostic ability, etc., in order to respond to the wants and needs of customers (prompt and efficient handling of returned merchandise, speedy processing of reimbursement/credit assignment, etc.).
+Therefore, returns management orientation can directly influence the company ’s resource commitment and allocation to returns management, which may include technological, managerial and financial resources.
+2.4 Returns management information support
+Many managers believe that information techno logy is the single most important contributing factor influencing logistics and supply chain management performance improvement (Dawe,
+1994). Numerous empirical logis tics studies have also confirmed t he importance of information technology capabilities with respect to superior o verall logistics competence and performance
+(Bowersox and Daugherty, 1995; Closs et al., 1997; Closs and Xu, 2000; Lewis and Talalayevsky,
+2000; Edwards et al., 2001; Closs and Savitskie, 2003; Patterson et al., 2003; Daugherty et al., 2005).
+In general, capable information support enable s businesses to eliminate waste and cut cost, improve labor productivity, enhance resource utiliz ation, increase asset recovery, and ease cash flow problems (Ross, 2002; Sundarraj and Talluri, 2003).
+A related argument exists that an efficient information technology system is equally important for returns management (Rogers and Tibben-Lembke, 1998; Daugherty et al. ,
+2005; Ravi and Shankar, 2005). Excellent information support can be very useful in product development programs to better design for return, recovery, reuse and so on (Ravi and
+Shankar, 2005). Efficient information systems can also help to track and trace product returns, link with previous sales, support product return forecasting, help inventory management, and plan and control product recovery activities (Daugherty et al., 2002; Ravi and Shankar, 2005). Furthermore, researchers have argued that information support is critical to improving returns management service quality through more fluid and transparent processes (e.g. Daugherty et al. , 2005). With easy access to critical information and knowledge about market, customers, products, transaction details, return authorization, return status, etc., returns management employees are in position to make sound decisions
+(Tan et al. , 2003). Therefore, information support is considered as an important driver to returns management employee development.
+3. Conceptual model and hypotheses
+3.1 Conceptual model
+Dynamic capability has been defined as “a learned and stable pattern of collective activity through which the organization systematically generates and modifies its operating routines in pursuit of improved effectiveness ”(Zollo and Winter, 2002, p. 340).1020IJLM
+30,4Anand et al. (2009) explicitly emphasized the importance of employees ’participation and continuous learning to achieving strategic congruence and broad organizational purposes
+(Anand et al. , 2009). Because returns management involves substantial uncertainties and irregularities, it is critical to keep returns management employees updated with the latest knowledge and skills and provide them with adequate support. Therefore, it is argued that returns management employee development is a dynamic capability. Consistent with the
+AMO model and dynamic capabilities perspective, we propose supply chain learning, returns management orientation and returns management information support as antecedents to returns management emp loyee development, which, in turn, is hypothesized to be linked to better performance (Figure 1).
+3.2 Supply chain learning and returns management employee development
+Effective supply chain management requires firms to be able to understand, interpret and respond to what customers value (Hammer, 2001; Mentzer et al. , 2001). To meet the challenge, learning has become a key strategic weapon, particularly in dynamic competitive environments. Organizations capable of creating, retaining and transferring knowledge can use organizational knowledge and learning to gain performance improvements (Yao et al. ,
+2012; Flöthmann et al. , 2017). When elevated to the supply chain level, learning involves generating, disseminating, sharing and applying value-creating knowledge among different supply chain members. Supply chain professionals, including returns management employees, should recognize the potential to be gained by constantly monitoring and usingnew knowledge. This is supported by Giri and Glock ’s (2017) finding that returns management employees with high learning effects can help companies achieve a higher level of product recovery rate and better economic advantage.
+The link between supply chain learning and returns management employee development can be explained by a number of factors. First, supply chain learning ’s holistic scope, which includes both up- and down-stream partners, fits well with returns management ’s boundary-spanning nature (i.e. Flint et al., 2008). When a firm engages in active supply chain learning, the overall supply chain perspective and knowledge can positively influence the effectiveness of returns management employee development programs. Also, supply chain learning requires the development of relational bonds among different supply chain partners (Spekman et al., 2002; Flint et al., 2008), which can be extremely helpful in returns management employee development. Bessant et al. (2003) noted that learning is not a natural feature of business networks and it is unlikely to thrive unless it is a part of inter-firm collaboration stressing trust, co-operation and mutual dependence. The collaborative relationships that are developed in supply chain learning not only help transfer knowledge but also encourage information sharing about processes, structures and systems among different parties. Such a collaborative environment is very beneficial to returns management
+Conceptual framework1021Returns management employee developmentemployees, whose success is largely dependent on their interactions with different supply chain parties. Finally, supply chain learning fosters a culture that emphasizes continuous learning, encourages questioning behavior and rewards working hard to improve the quality (Spekman et al., 2002; Loke et al., 2012). Supply chain learning is thus necessary for returns management employees to successfully cope with the dynamic nature of their job.
+Therefore, we propose that:
+H1. A firm ’s supply chain learning positively impacts its returns management employee development.
+3.3 Returns management orientation and returns management employee development
+Employees have been identified as an organization ’s greatest asset (Broadhurst, 2012).
+Optimal results are only achieved when employees are managed and directed in a manner to create value. Thus, formalized training and development are needed to equip employees with necessary knowledge or skills. It has been posited “that successful companies achieve that status, in part, because they commit substantial amounts of their resources to employee development programs ”( Jacobs and Washington, 2003, p. 343). In contrast, firms without employee development programs tend to under-perform relative to industry financial averages (McDonald and Smith, 1995). What is worth noting is that implementing employee development requires resource commitment, which, in turn, warrants the recognition and support from top management. Therefore, business orientation becomes a particularly relevant factor.
+As discussed previously, returns management orientation refers to a company ’s recognition of the importance of returns management to its overall business success, and such mindset will affect the company ’s resource commitment to activities and practices related to returns management. Returns management is not always considered a priority, and it has been ad hoc at many companies with strategies, operations and guidelines not well defined or thought out (Mollenkopf and Closs, 2005). Daugherty et al. (2005) suggested that resource or asset commitment is essential to developing returns management-related capabilities and achieving better returns management performance. Each company hasresource constraints, and thus cannot accommodate all supply chain initiatives. When a company understands and appreciates returns management, it is more likely to realize that value would not be able to be fully captured unless relevant employees are properly developed and trained. In other words, returns management orientation motivates a company to commit to returns management employee development in order to fully capture the value of returned products (cf. Chen et al. , 2017). Therefore, in the current research, we argue that adoption of returns management orientation encourages and supports returns management employee development. Therefore:
+H2. A firm ’s returns management orientation positively impacts its returns management employee development.
+3.4 Returns management information support and returns management employee development
+Successful supply chain management has long been linked to the management of information flow, which includes the amount and the quality of information shared. Timely, accurate and relevant information is essential to sound supply chain decision making.
+Therefore, adoption and successful implementation of information technology are generally considered prerequisites for logistics success (Richey, Chen, Genchev and Daugherty, 2005).
+However, firms usually select and install information systems with forward distribution and logistics in mind; reverse flows have received much less attention (Stock, 2001).1022IJLM
+30,4Returns management has unique information needs regarding transportation, warehousing, inventory control and processing due to the differences between forward and reverse flows.
+As noted by Terry (2014), “At the heart of many of these reverse logistics (returns management) initiatives is better data ”(p. 54). The importance of information support to returns management has also been highlighted by other researchers (e.g. Daugherty et al. ,
+2005; Richey, Chen, Genchev and Daugherty, 2005; Olorunniwo and Li, 2010).
+Numerous employees are typically involved in processing returns and must have access to complete information about the circumstances in order to make optimal decisions and take appropriate actions (Tan et al., 2003). The information needed for returns management employees could include complete product information, technical specifications, state of the network (order, inventory level, etc.), market situation, customer requirements and so on
+(Chouinard et al. , 2005). If relevant information is adequately collected and can be handily accessed, it will be much easier to develop highly competent returns management employees and enable them to make fast and informed decisions. As an important tool to provide employees the opportunity to perform their tasks successfully, returns management information support is suggested as an important impacting factor to successful returns management employee development. Thus:
+H3. A firm ’s returns management information support positively impacts to its returns management employee development.
+3.5 Returns management employee development and performances
+Employee development programs are believed to make positive contributions to organizational performance ( Jacobs and Washington, 2003). The general premise is that organizations offering an array of learning opportunities enable employees to perform better on their jobs. This should enable the organization as a whole to perform better as well
+(Torraco and Swanson, 1995). For example, research has provided support for positiverelationships between employee development and customer satisfaction as well as between employee development and organization profit (Goldstein, 2003). Formalized employee development programs can yield additional, direct benefits for a company. The commitment to development programs is likely to result in more loyal employees, who are more engaged and more productive (Lipman, 2013).
+Recent trends such as increased prevalence of omnichannel retailing and tighter regulations (prompting more recalls) have increased the complexities involved in returns management. At the same time, customers expect returns to be easy and seamless (Terry,
+2014). As noted by Burnson (2014), “the ease of the return process and how they (customers) are treated have a huge impact on repeat sales. ”Employee development programs enable and assist employees to design and improve customer-centered returns management processes, equip employees with the most up-to-date and relevant knowledge and skills to cope with operational challenges, which, in turn, will positively impact customer service and operations efficiency. According to Stock and Mulki (2009), “Organizations have also realized that a better understanding of product returns and efficient management of reverse logistics can provide them with a competitive advantage ”(p. 33). With strong returns management performance, a company not only captures more value from product returns and reduces costs associated with returns, it can also ensure customer satisfaction and foster stronger customer relationships. Therefore, it can be expected that:
+H4. A firm ’s returns management employee development positively impacts its returns management performance.
+H5. A firm ’s returns management employee development positively impacts its market performance.1023Returns management employee development3.6 Returns management performance and firm market performance
+Industry statistics have highlighted the importance of returns management. It is estimated that US electronics manufacturers alone spend an estimated $16.7bn annually to receive, assess, repair, rebox, restock and resell product, representing 5 –6 percent of revenues
+(Douthit et al. , 2011). With online retail being growing at an exponential rate (Griffis et al. ,
+2012), Rao et al. (2014) reported that product returns in online retailing can represent up to
+22 percent of sales. Research sponsored by UPS (2015) found that, “online shoppers care about returns convenience with 66% reviewing return policy before making a purchase ”.
+For those firms involved in omnichannel distribution, meeting challenges related to thereturns management component of reverse logistics may be even more critical and more complex. For example, companies must be prepared to handle the returns regardless of the reason for the return –from products that just did not suit the customers to expired products to recalls on products that have the potential to endanger public safety (Terry,
+2014). Therefore, effective returns management has become a competitive necessity.
+Researchers have suggested that strategically addressing returns can result in improved customer loyalty, increased revenues, lower costs, improved profitability, enhanced brand image and higher levels of customer service (e.g. Rogers et al. , 2002; Stock et al. , 2006).
+It has also been argued that creating customer value through the returns management process may lead to superior performance and competitive advantage (Stock et al. , 2006;
+Mollenkopf et al. , 2011). Therefore, we propose:
+H6. A firm ’s returns management returns management performance positively impacts its market performance.
+4. Methodology
+4.1 Data collection
+In the current study, we aim to develop and test a theory-based conceptual model regarding returns management employee development that may be applied to different contexts. Thus, a quantitative research approach using survey method is deemed appropriate. While the majority of previous supply chain and logistics research has been conducted in western countries, emerging countries present a meaningful arena to introduce or test theories. The reason is that today ’s supply chain professionals need to better understand business practices related to their supply chains in different countries. As one of the world ’s largest emerging economies, India plays an increasingly important role in global supply chains. Understanding
+Indian companies ’logistics practices becomes a relevant and imperative task. However, Ravi and Shankar (2015) recently pointed out that reverse logistics is a relatively new area in India and there were only a few case studies on this topic. Ravi and Shankar (2015) also found that
+Indian companies are starting to consider implementing returns management programs as a strategic-level decision. India thus presents a viable research context for the current study.
+In order to control the variances due to economic development imbalance, our study focuses on one of the most developed areas in the country –the Bangalore area. This is in line with the approach suggested by Huo et al. (2014). Hoskisson et al. (2000) strongly encouraged the use of credible local partners when collecting data in emerging economies such as India and China. Our study relied on partnering with a local professional organization in India, which provided its member company directory along with basic company information and their key logistics managers ’contact information. From the companies listed in this directory, we randomly selected 150 companies from the manufacturing and retail sectors, which are the primary industries that engage in returns management activities. The professional organization also offered crucial help in survey administration: printed surveys and mailed them to target respondents along with a cover letter and postage prepaid return envelope. It was made clear to all participants that the1024IJLM
+30,4survey was voluntary and that responses would be reported only in aggregate form and available to them upon request. In order to ensure the qualification of key informants, we emphasized in the cover letter the importance of having sufficient knowledge of the company ’s returns management.
+With two follow-up reminders to each potential respondent, we received 141 responses during the 3-month data collection period in 2016. We dropped 12 responses due to a large amount of incomplete information. This resulted in 129 usable survey responses
+(an effective response rate of 86 percent). We used the widely accepted mean substitution to replace the missing data in the remaining responses. All responding firms are Indian companies with 78 companies in manufacturing and 51 in retail, suggesting that both business-to-consumer and business-to-business settings are captured in the study. The responding firms had approximately 5,500 employees on average and their average annual sales volume was around $46m. All respondents held logistics-related positions, ranging from manager, director, to vice president. They have an average of 14.6 years overall work experience and an average of 7.9 years ’experience with their current company.
+Non-response bias was tested with the approach suggested by Armstrong and Overton
+(1977). The comparison of early responses and late responses did not yield significant differences on the survey items, suggesting non-response bias is not a concern in this study.
+In order to operationalize the constructs included in the proposed model and to ensure high reliability and validity, we drew upon established measurements using multi-item
+Likert-type scales. Flint et al. ’s (2008) scale of supply chain learning was adopted in the current study. Returns management orientation was measured with the scale developed by
+Maiet al. (2012). We adapted Whipple et al. ’s (2002) scale to measure returns management information support. Items from Goldstein (2003) were modified to measure returns management employee development. Richey, Genchev and Daugherty ’s (2005) scale was adapted to assess returns management performance. Finally, because it is almost impossible to obtain objective firm performance data due to various constraints in the India context, we used the subjective scale adapted from Fawcett (1991) to measure firm market performance.
+All the measurement items and related descriptive statistics are shown in Table I.
+4.2 Measurement assessment
+All scales were assessed with various statistical tests to ensure construct reliability and validity. Cronbach ’sαvalues were calculated and all values exceeded the suggested 0.7
+(Nunnally, 1978). The constructs ’reliability was further tested with the approach recommended by Fornell and Larcker (1981), which does not assume all loadings are the same. Again, allcomposite reliability values were well above the suggested 0.7 level. The information about each construct ’sC r o n b a c h ’sαand composite reliability is provided in Table I. In sum, the proposed constructs demonstrated a high level of internal consistency reliability.
+Content validity refers to the notion that me asures must capture the domain of interest but not contain extraneous content. In order to ensur e content validity, all our measurement scales were either adopted or adapted from existing lite rature (Hinkin, 1995). As an additional measure, the final version of the survey was subject to the r e v i e wo fa ne x p e r tp a n e l which consists of four logistics academics and three industry executi ves from the USA. They carefully reviewed all the survey items to make sure they represent the theo retical latent construct they are designed to measure (Hair et al., 2006). Minor changes and adjustments were made to the survey according to the expert panel ’s feedback. This procedure thus helps achieve content validity by ensuring measurement scales adequately capture the con tent domains and yield no extraneous content.
+A confirmatory factor analysis (CFA) using maximum likelihood estimation was also conducted. AMOS 23 was used to assess and validate the constructs (Gerbing and
+Anderson, 1988). All latent variables were allowed to correlate with each other. Results of the CFA measurement model are shown in Table II. CMIN/df was developed to address the1025Returns management employee developmentConstructs and measurement items Mean SD
+Supply chain learning (Source: Flint et al., 2008 )
+Cronbach ’sα¼0.841, composite reliability ¼0.845
+At our firm …
+SL1. we try to ensure that managers are constantly learning about better ways to serve our customers 5.56 1.12
+SL2. we try to ensure that managers in our supplier organizations are learning better ways to operate and serve us 5.42 1.39
+SL3. we try to ensure that managers in our customer organizations learn better ways to manage their business and work with us 5.40 1.21
+SL4. we try to ensure that market and customer learning is shared across organization in our supply chains 5.40 1.20
+SL5. we ensure that employees and managers change their behaviors and processes appropriately as a result of new knowledge they acquire about customers 5.60 1.20
+Returns management orientation (Source: Mai et al., 2012 )
+Cronbach ’sα¼0.892, composite reliability ¼0.898
+RO1. Product returns will waste a large amount of our firm ’s capital and time (Reverse coded) 4.76 1.30
+RO2. Even if customers want to return products, we will try to stop that process
+(Reverse coded) 4.98 1.24
+RO3. Our firm designs complex return procedures to minimize the amount of returns
+(Revers coded) 4.53 1.71
+RO4. Returns are inevitable, thus we need to take a proactive approach 5.15 1.35
+RO5. Returns can help identify areas that need improvements 5.37 1.46
+RO6. If managed effectively, returns management will contribute to our company ’s long-term growth 5.24 1.48
+RO7. Returns management is a great approach to improve customer relationships 5.36 1.65
+Returns management information support (Source: Whipple et al., 2002 )
+Cronbach ’sα¼0.796, composite reliability ¼0.808
+IS1. Our firm always has related information available to facilitate returns management decision making 4.40 1.40
+IS2. In our firm, the information related to returns management is very accurate 4.37 1.35
+IS3. In our firm, the information related to returns management is very timely 4.53 1.53
+Returns management employee development (Source: Goldstein, 2003 )
+Cronbach ’sα¼0.914, composite reliability ¼0.917
+ED1. Our firm ’s returns management personnel demonstrate work improvement commitment 4.95 1.21
+ED2. Our firm has the propensity to involve and empower employees in returns management planning and decision making 4.82 1.45
+ED3. Our firm has the propensity to invest in training employees to develop returns management-related skills, knowledge and abilities 5.03 1.32
+ED4. Our firm uses statistical techniques to measure and monitor returns management work improvement 5.10 1.30
+ED5. The economic needs of our returns management personnel are met 4.99 1.18
+Returns management performance (Source: Richey, Genchev and Daugherty ’s, 2005 )
+Cronbach ’sα¼0.894, composite reliability ¼0.898
+Our firm ’s returns management performance compared to major competitors
+RP1. Cost containment 4.86 1.26
+RP2. Environmental regulatory compliance 5.08 1.25
+RP3. Processing effectiveness 5.16 1.31RP4. Return on investment (ROI) 5.29 1.24
+RP5. Labor productivity 5.38 1.09
+RP6. Recovery of assets 5.30 1.14
+(continued )Table I.
+Construct measurementdescriptive statistics1026IJLM
+30,4limitations of χ2index (Byrne, 2001); the suggested ratio is within the range from 3 to 1
+(Carmines and McIver, 1981). The relative χ2value (CMIN/df) of 1.582 falls into the recommended range. CFI is a comparative fit index that accounts for sample size –a common bias in index calculations (Bentler, 1990; Byrne, 2001). The current model has a CFI value of 0.921, above the suggested 0.9 threshold value (Bentler, 1990). RMSEA represents the discrepancy per degree of freedom measured in terms of the population
+(Hair et al., 2006). The RMSEA value of 0.067 is within the suggested range (less than 0.08)
+(Browne and Cudeck, 1993). The above critical indices all demonstrate a good fit between the measurement model and the data.
+The standardized regression estimates in Table II provide evidence of construct validity.
+All item loadings for each of the constructs are significant at 0.05 level with critical ratio (CR) valuesW1.96. Therefore, all four constructs have met the convergent validity requirements
+(Fornell and Larcker, 1981; Gerbing and Anderson, 1988). Average variance extracted (AVE) was also calculated (as shown in Table III), and AVE values of all the constructs exceeded the shared variances between each pair of the constructs, again supporting discriminant validity
+(Fornell and Larcker, 1981). In addition, the AVE for all constructs exceeded 0.50, further underscoring convergent validity (Fornell and Larcker, 1981). In summary, all scales used to measure the model ’s factors demonstrate adequate reliability and validity.
+Because all respondents had connection s with the professional organization we partnered with in this study, the respondents may share certain common values/norms or customs/culture. Therefore, several tests w ere performed to assess common method bias.
+First, as suggested by Podsakoff et al. (2003), we performed Harman ’s one-factor test by including all items in a principal components factor analysis. No single factor accounted for most of the covariance, suggesting no evidence of common method bias in the study.
+Second, Podsakoff et al. (2003) suggested that the best approximation of common method variance is if all variables load on a general fa ctor. Therefore, a partial correlation method was employed by adding the highest factor from a principal component factor analysis into the partial least squares model as another control factor for all dependent variables.
+This factor did not significantly increase the variance explained in any of the dependent variables, once again indicating that commo nm e t h o db i a si sn o tas i g n i f i c a n tp r o b l e mi n the data. Finally, the correlation matrix did n ot indicate any highly correlated factors, whereas evidence of common method bias s hould have resulted in extremely high correlations ( rW0.90). In sum, our analysis results suggest that common method bias is not a major concern.
+4.3 Hypothesis testing and results
+The proposed conceptual model was tested with structural equation modeling by using
+AMOS 23 software. Structural model testing results are presented in Table IV. The analysis yielded the following fit indices: χ2¼677.214 (df ¼425, po0.001), CMIN/df ¼1.593,
+CFI¼0.906 and RMSEA ¼0.068. These fit indices suggest satisfactory model fit withConstructs and measurement items Mean SD
+Firm market performance (Source: Fawcett, 1991 )
+Cronbach ’sα¼0.922, composite reliability ¼0.922
+Our firm ’s performance when compared to major competitors …
+MP1. Overall competitiveness 5.53 1.31
+MP2. Sales revenue growth 5.36 1.24
+MP3. Profit growth 5.33 1.29MP4. ROI 5.46 1.19
+MP5. Customer satisfaction 5.69 1.26
+Table I.1027Returns management employee developmentthe data. AMOS outputs on paths ’standardized regression weights with relevant CR and p-values were then examined to test the hypotheses. All six proposed relationships were supported with significant p-values.
+5. Discussion
+Our research touches on two areas considered vital to supply chain success –handling product returns and talent development. Companies are pressured to deliver ever-better customer service levels and to handle an immense and growing volume of returned merchandise. Morgan et al. (2016) argued for the importance of developing competency related to returns management, and they also suggested that developing such competency requires firms to commit specific resources, such as supply chain collaboration andConstructs and measurement items Std weight CR p-value
+Confirmative factor analysis results1028IJLM
+30,4information technology. The current study extends their research effort and centers on a generally overlooked concept in returns management literature –employee development.
+After all, all returns management processes and technologies need to be managed by employees. Initial employee recruiting and screening can focus on requisite skills, but subsequent specialized training and development programs are needed to equip these employees with a tailored profile of knowledge and skills. Properly trained and prepared employees are essential to providing hassle-free product return services. Thus, talent development in the form of returns management employee development is proposed as a dynamic capability.
+Using the AMO model, we propose that three specific types of resources are foundational to returns management employee development –supply chain learning, returns management orientation and returns management information support. The three resources in combination provide an environment to promote success. Supply chain learning means knowing as much as possible about relevant supply chain members and processes. For example, returns management employees should understand the company ’s customers and how they can be better served. Regular returns procedures should be developed in conjunction with customers to facilitate handling and expedite processing.
+Similarly, the knowledge about suppliers/manufacturers, product specifics and production processes is also crucial to sound returns management decision making and execution.
+A returns management orientation means the organization recognizes the importance of returns management to overall business performance. Returns cannot be ignored or be considered as an afterthought. Instead, organizations must be prepared to effectively handlePath Std. weight CR p Note
+H1: supply chain learning →returns management employee development0.210 2.660 ¼0.008 Supported
+H2: returns management orientation →returns management employee development0.485 5.115 o0.001 Supported
+H3: returns management information support →returns management employee development0.347 4.036 o0.001 Supported
+H4: returns management employee development →returns management performance0.773 6.799 o0.001 Supported
+H5: returns management employee development →firm market performance0.487 4.379 o0.001 Supported
+H6: returns management performance →firm market performance 0.408 3.532 o0.001 Supported
+Notes: Fit statistics: χ2¼677.214 (df ¼425,po0.001), CMIN/df ¼1.593, CFI ¼0.906, RMSEA ¼0.068Table IV.
+Hypothesis testing resultsConstruct SL RO IS ED RP MP
+Supply chain learning (SL) 1
+Returns management orientation (RO) 0.368** 1
+Returns management information support (IS) 0.276** 0.351** 1
+Returns management employee development (ED) 0.443** 0.614** 0.552** 1Returns management performance (RP) 0.450** 0.646** 0.365** 0.667** 1Firm market performance (MP) 0.418** 0.693** 0.402** 0.716** 0.717** 1Mean 5.47 5.06 4.44 4.98 5.18 5.48SD 0.96 1.14 1.20 1.12 1.00 1.10
+AVE 0.524 0.560 0.587 0.689 0.569 0.702
+Notes: Correlation is significant at * po0.005; ** po0.01 (two-tailed)
+Table III.
+Construct correlation matrix1029Returns management employee developmentthem. Information support is especially important because of the sheer volume of returns, the variety of returns and the potential knowledge to be gained (e.g. early awareness of product defects or carrier-related damage problems, etc.). It is hard to imagine how returns management employees can develop the necessary job capability without access to all the necessary information.
+Our analysis provides empirical support of the critical importance of returns management employee development, wh ich includes training, empowerment, organizational commitment and necessary support. Our results also offer evidence that returns management employee development as a dynamic capability can contribute to enhanced returns management and a variety of dimensions of firm market performance.
+Therefore, we believe that our study brings much needed attention to returns management employee development. Talent development and retention are strategic priorities at most firms and this is particularly true with supply chain jobs. With a strong demand for employees and a shortage of well-trained supply chain personnel, internal talent development becomes even more important. Employee development involving training and employee empowerment offers a way to deal with external competition for talent. Although representing unique challenges, successful returns management employee development prepares employees to handle their jobs (more knowledge, skills and abilities) and develop a strong set of company-specific skills and knowledge. This will not only result in greater job satisfaction and organizational commitment, but it is also an effective way to compete with external employment opportunities. In the meantime, well-trained, happy returns management employees can help protect and promote relationships with customers. In other words, they become a valuable asset to the company.
+6. Implications
+6.1 Theoretical implications
+As one of the first empirical attempts to address employee development issue in the returns management context, our study has important theoretical implications. First and foremost, this study enriches the application of the AMO model and advances the understanding of mechanisms involved in creating and sustaining dynamic capabilities, and the related outcomes. Specifically, the current research considers supply chain learning, returns management orientation and returns management information support as antecedents of returns management employee development, a dynamic capability, which leads to enhanced returns-specific and overall firm performance. Weerawardena and Mavondo (2011, p. 1220) pointed out that “the dynamic capability view still lacks a strong empirical base. ”Our study addresses this need by utilizing quantitative data analysis to support a particular conceptualization of the theory. In addition to the model and method applied, a further contribution is the context of the research. In order to fully understand dynamic capabilities ’ nature, Easterby-Smith et al. (2009) suggested exploring the construct in various contexts, including in “[…] other countries with different constraints and conditions [ …]”(p. S7). The current research responds to this call by using data from returns management program development and implementation in India.
+Also, applying the AMO model and the dynamic capabilities view within supply chain management and logistics contexts addresses the need for theory-based research. Thomas et al. (2011) argued that human resources is a differentiator in companies ’pursuit of competitive advantage based on their supply chain and logistics operations: “Rather than focusing solely on traditional areas of supply chain management, perhaps firms should reallocate resources to address human resource issues in their supply chains ”(p. 665).
+The current research fits well with the suggested schematic. It provides a well-defined theoretical contribution in terms of striking a balance between the competitive drive of the firm in its employee development/human resource management dynamic capabilities1030IJLM
+30,4and the related practical implications for returns management program development and implementation.
+6.2 Managerial implications
+Today ’s companies generally invest in updating s upply chain technologies and processes, including the ones that are related to returns ma nagement. However, too often they overlook the key to any supply chain success –the employees who work in the area! It is these employees who perform various tasks in different processes, execute all the operational strategies and planning, and represent the company and interact with customer on a daily basis. Even the best supply chain process will fail without capable em ployees and effective returns management.
+As discussed previously, returns management is a challenge. Product returns are a part of service offerings, and firm assets must be developed and deployed in a manner meeting customer demands. Returns management is also a critical component for recapturing value and minimizing environmental impacts. Unfortunately, returns management employee development has not been a priority for many companies. In fact, development of skilled returns management employees is a component of the more global problem facing companies today –attracting, recruiting and developing supply chain talent. Having employee development programs in place could make a significant difference in terms of a company ’s competitiveness.
+In the returns management context, our study empirically supported the positive impacts of employee development on firm performance, suggesting that committing to employee development in the returns management area is a worthy and rewarding effort. In addition, our study findings also highlight important areas when implementing returns management employee development initiatives: the company must focus on developing employees ’learning ability, recognizing the importance of returns management, and providing sufficient information support. In line with Wang et al. ’s (2017) suggestion that returns management should take a supply chain perspective, we urge companies to formally incorporate returns management employee development into the overall supply chain strategy.
+7. Limitations and future research
+As one of the first to explore returns management employee development topic, we acknowledge that the current study is not ideal and still has its limitations, but at the same time also believe this suggests plenty of opportunities for future research.
+In order to test the proposed conceptual model, our study collected and analyzed data from manufacturing and retail companies in the context of India. While India represents aninteresting and meaningful research context, it is certainly possible that using including data from other industries or other countries could generate different analysis results.
+We hope future research could collect and analyze empirical data from different contexts to validate, generalize or modify our conceptual model.
+Also, while we took the widely accepted approach and used existing scales to measure constructs in the proposed model, several constructs in the study remain fairly generic.
+For example, we adapted items from Goldstein (2003) to measure returns management employee development, but we did not differentiate the types of employees who could be involved in the product return process. Returns management employees at different positions may require differentiated development strategies and practices, thus leaving great opportunities for future research. Also, Flint et al. ’s (2008) scale was used to capture supply chain learning at a high level, but examining learning at different levels (i.e. strategic, tactical or operational) could yield more interesting results.
+Furthermore, we realize that the cross-sectional nature of the data used in the current study might not fully capture the dynamic mechanism and significance of employee development, as it is a continuous process and consistently evolves. Thus, longitudinal data1031Returns management employee developmentor in-depth case analysis could collect rich information to help us better understand the returns management development processes. Also, instead of solely relying on perceptions of the same managers for all constructs, future study could utilize data from different sources and both objective and subjective scale measurements improve study validity.
+Despite of above-mentioned limitations, we believe our study makes important contributions to returns management literature by highlighting the relevance of a largely overlooked concept –returns management employee development. We hope that companies and managers will pay more attention to the human elements of returns management and that our study will stimulate much more academic research on this crucial topic.
+References
+Aguinis, H. and Kraiger, K. (2009), “Benefits of training and development of individuals and teams, organizations, and society ”,Annual Review of Psychology , Vol. 60, pp. 451-474.
+Akande, W.A., Adetoun, B.E., Tserere, M.M., Adewuyi, M.F. and Akande, E.T. (2010), “Should we put locals in charge? Managing relationships within prospective US-South African joint ventures ”,
+Journal of Business Economics and Management , Vol. 11 No. 4, pp. 550-575.
+Anand, G., Ward, P.T., Tatikonda, M.V. and Schilling, D.A. (2009), “Dynamic capabilities through continuous improvement infrastructure ”,Journal of Operations Management , Vol. 27 No. 6, pp. 444-461.
+Armstrong, J.S. and Overton, T.S. (1977), “Estimating non-response bias in mail surveys ”,Journal of
+Marketing Research , Vol. 14 No. 3, pp. 396-402.
+Bentler, P.M. (1990), “Fit indexes, Lagrange multipliers, constraint changes and incomplete data in structural models ”,Multivariate Behavioral Research , Vol. 25 No. 2, pp. 163-172.
+Bessant, J., Kaplinsky, R. and Lamming, R. (2003), “Putting supply chain learning into practice ”,
+International Journal of Operations & Production Management , Vol. 23 No. 2, pp. 167-184.
+Boon, C., Den Hartog, D.N. and Lepak, D.P. (2019), “A systematic review of human resource management systems and their measurement ”,Journal of Management , Vol. 45 No. 6, pp. 2498-2537.
+Bowersox, D.J. and Daugherty, P.J. (1995), “Logistics paradigms: the impact of information technology ”,
+Journal of Business Logistics , Vol. 16 No. 1, pp. 65-80.
+Broadhurst, J. (2012), “Employee development is a great business opportunity ”,Human Resource
+Management International Digest , Vol. 20 No. 6, pp. 27-30.
+Browne, M.W. and Cudeck, R. (1993), “Alternative ways of assessing model fit ”, in Bollen, K.A. and
+Long, J.S. (Eds), Testing Structural Equation Models , Sage Publications, Newbury Park, CA, pp. 136-162.
+Burnson, P. (2014), “Improving reverse logistics with a returns management strategy ”, available at: www. logisticsmgmt.com/article/improving_reverse_logistics_with_a_returns_managementstrategy(accessed May 6, 2018).
+Byrne, B.M. (2001), Structural Equation Modeling with AMOS: Basic Concepts, Applications, and
+Programming , Lawrence Erlbaum Associates, Mahwah, NJ.
+Carmines, E.G. and McIver, J.P. (1981), “Analyzing models with unobserved variables: analysis of covariance structures ”, in Bohrnstedt, G.W. and Borgatta, E.F. (Eds), Social Measurement:
+Current Issues , Sage Publications, Beverly Hills, CA, pp. 65-115.
+Chatha, K.A., Butt, I. and Adeel, T. (2015), “Research methodologies and publication trends in manufacturing strategy ”,International Journal of Operations & Production Management , Vol. 35
+No. 4, pp. 487-546.
+Chen, H., Anselmi, K., Falasca, M. and Tian, Y. (2017), “Measuring returns management orientation ”,
+International Journal of Logistics Management , Vol. 28 No. 2, pp. 251-265.
+Chouinard, M., D ’Amours, S. and Aït-Kadi, D. (2005), “Integration of reverse logistics activities within a supply chain information system ”,Computers in Industry , Vol. 56 No. 1, pp. 105-124.1032IJLM
+30,4Claycomb, C., Droge, C. and Germain, R. (2001), “Applied process knowledge and market performance: the moderating effect of environmental uncertainty ”,Journal of Knowledge Management , Vol. 5
+No. 3, pp. 264-278.
+Closs, D.J. and Savitskie, K. (2003), “Internal and external information technology integration ”,
+International Journal of Logistics Management , Vol. 14 No. 10, pp. 63-76.
+Closs, D.J. and Xu, K. (2000), “Logistics information technology practice in manufacturing and merchandising firms ”,International Journal of Physical Distribution & Logistics Management ,
+Vol. 30 No. 10, pp. 869-886.
+Closs, D.J., Goldsby, T.J. and Clinton, S.R. (1997), “Information technology influences on world class logistics capability ”,International Journal of Physical Distribution & Logistics Management ,
+Vol. 27 No. 1, pp. 4-17.
+Cropanzano, R. and Mitchell, M.S. (2005), “Social exchange theory: an interdisciplinary review ”,Journal of Management , Vol. 31 No. 6, pp. 874-900.
+Croxton, K.L., García-Dastugue, S.J., Lambert, D.M. and Rogers, D.S. (2001), “The supply chain management processes ”,The International Journal of Logistics Management , Vol. 12 No. 2, pp. 13-36.
+Daugherty, P.J., Myers, M.B. and Richey, R.G. (2002), “Information support for reverse logistics: the influence of relationship commitment ”,Journal of Business Logistics , Vol. 23 No. 1, pp. 85-106.
+Daugherty, P.J., Richey, R.G., Genchev, S.E. and Chen, H. (2005), “Reverse logistics: superior performance through focused resource commitments to information technology ”,
+Transportation Research Part E , Vol. 42 No. 1, pp. 77-92.
+Dawe, R.L. (1994), “An investigation of the pace and determination of information technology use in the manufacturing materials logistics system ”,Journal of Business Logistics , Vol. 15 No. 1, pp. 229-260.
+Douthit, D., Flach, M. and Agarwal, V. (2011), “A returning problem: reducing the quantity and cost of product returns in consumer electronics ”, available at: www.accenture.com/SiteCollection
+Documents/PDF/Accenture-Reducing-the-Quantity-and-Cost-of-CustomerReturns.pdf (accessedMay 6, 2018).
+Easterby-Smith, M., Lyles, M.A. and Peteraf, M.A. (2009), “Dynamic capabilities: current debates and future directions ”,British Journal of Management , Vol. 20 No. S1, pp. S1-S8.
+Edwards, P., Peters, M. and Sharman, G. (2001), “The effectiveness of information systems in supporting the extended supply chain ”,Journal of Business Logistics , Vol. 22 No. 1, pp. 1-27.
+Eisenhardt, K.M. and Martin, J.A. (2000), “
+Dynamic capabilities: what are they? ”,Strategic Management
+Journal , Vol. 21 Nos 10/11, pp. 1105-1121.
+Ellinger, A.E., Elmada ğ, A.B. and Ellinger, A.D. (2007), “An examination of organizations ’frontline service employee development practices ”,Human Resource Development Quarterly , Vol. 18
+No. 3, pp. 293-314.
+Ellinger, A.E., Keller, S.B. and Ba ş, A.B.E. (2010), “The empowerment of frontline service staff in 3PL companies ”,Journal of Business Logistics , Vol. 31 No. 1, pp. 79-98.
+Ellinger, A.E., Ketchen, D.J., Hult, G.T.M., Elmada ğ, A.B. and Richey, R.G. (2008), “Market orientation, employee development practices, and performance in logistics service provider firms ”,Industrial
+Marketing Management , Vol. 37 No. 4, pp. 353-366.
+Fawcett, S.E. (1991), “The status and impact of logistics issues in the success of co-production via maquiladoras ”,The International Journal of Logistics Management , Vol. 2 No. 2, pp. 30-41.
+Fiol, C.M. and Lyles, M.A. (1985), “Organizational learning ”,Academy of Management Review , Vol. 10
+No. 4, pp. 808-813.
+Fisher, S.L., Graham, M.E., Vachon, S. and Vereecke, A. (2010), “Guest editors ’note: don ’tm i s st h e b o a t :r e s e a r c ho nH R Ma n ds u p p l yc h a i n s ”,Human Resource Management ,V o l .4 9N o .5 , pp. 813-828.1033Returns management employee developmentFlint, D.J., Larsson, E. and Gammelgaard, B. (2008), “Exploring processes for customer value insights, supply chain learning and innovation: an international study ”,Journal of Business Logistics ,
+Vol. 29 No. 1, pp. 257-281.
+Flöthmann, C., Hoberg, K. and Gammelgaard, B. (2017), “Disentangling supply chain management competencies and their impact on performance: a knowledge-based view ”,International Journal of Physical Distribution & Logistics Management , Vol. 48 No. 6, pp. 630-655.
+Fornell, C. and Larcker, D.F. (1981), “Evaluating structural equation models with unobservable variables and measurement error ”,Journal of Marketing Research , Vol. 18 No. 3, pp. 382-388.
+Genchev, S.E. (2009), “Reverse logistics program design: a company study ”,Business Horizons , Vol. 52
+No. 2, pp. 139-148.
+Gerbing, D.W. and Anderson, J.C. (1988), “An updated paradigm for scale development incorporating unidimensionality and its assessment ”,Journal of Marketing Research , Vol. 25 No. 2, pp. 186-192.
+Gibson, B.J., Goffnett, S.P. and Williams, Z.S. (2015), “Creating an SCN ‘dynasty ’: how to build your team like the pros ”,CSCMP ’s Supply Chain Quarterly , Vol. 9 No. 1, pp. 21-26.
+Giri, B.C. and Glock, C.H. (2017), “A closed-loop supply chain with stochastic product returns and worker experience under learning and forgetting ”,International Journal of Production Research ,
+Vol. 55 No. 22, pp. 6760-6778.
+Goldstein, I.L. and Ford, J.K. (2002), Training in Organizations , 4th ed., Wadsworth, Belmont, CA.
+Goldstein, S.M. (2003), “Employee development: an examination of service strategy in a high-contact service environment ”,Production and Operation Management , Vol. 12 No. 2, pp. 186-203.
+Gooley, T. (2013), “The difference is in the details ”,DC Velocity , Vol. 11 No. 1, pp. 44-46.
+Govindan, K. and Bouzon, M. (2018), “From a literature review to a multi-perspective framework for reverse logistics barriers and drivers ”,Journal of Cleaner Production ,V o l .1 8 7 , pp. 318-337.
+Grant, R.M. (1996), “Toward a knowledge-based theory of the firm ”,Strategic Management Journal ,
+Vol. 17, Special Issue, pp. 109-122.
+Griffis, S.E., Rao, S., Goldsby, T.J. and Niranjan, T.T. (2012), “The customer consequences of returns in online retailing: an empirical analysis ”,Journal of Operations Management , Vol. 30 No. 4, pp. 282-294.
+Gutteridge, T.G., Leibowitz, Z.B. and Shore, J.E. (1993), “When careers flower, organizations flourish ”,
+Training and Development Journal , Vol. 47 No. 11, pp. 24-29.
+Hair, J.H., Black, W.C., Babin, B.J., Anderson, R.E. and Tatham, R.L. (2006), Multivariate Data Analysis ,
+Pearson/Prentice Hall, Upper Saddle River, NJ.
+Hammer, M. (2001), The Agenda –What Every Business Must Do to Dominate the Decade , Crown
+Business, New York, NY.
+Hinkin, T.R. (1995), “A review of scale development practices in the study of organizations ”,Journal of
+Management , Vol. 21 No. 5, pp. 967-988.
+Hoskisson, R.E., Eden, L., Lau, C.M. and Wright, M. (2000), “Strategy in emerging economies ”,Academy of Management Journal , Vol. 43 No. 3, pp. 249-267.
+Huo, B., Qi, Y., Wang, Z. and Zhao, X. (2014), “The impact of supply chain integration on firm performance: the moderating role of competitive strategy ”,Supply Chain Management: An
+International Journal , Vol. 19 No. 4, pp. 369-384.
+Jack, E.P., Powers, T.L. and Skinner, L. (2009), “Reverse logistics capabilities: antecedents and cost savings ”,International Journal of Physical Distribution & Logistics Management , Vol. 40 No. 3, pp. 228-246.
+Jacobs, R. and Washington, C. (2003), “Employee development and organizational performance: a review of literature and directions for future research ”,Human Resource Development
+International , Vol. 6 No. 3, pp. 343-354.1034IJLM
+30,4Jehanzeb, K. and Bashir, N.A. (2013), “Training and development program and its benefit to employee and organization: a conceptual study ”,European Journal of Business and Management , Vol. 5
+No. 2, pp. 243-252.
+Jiang, K., Lepak, D.P., Hu, J. and Baer, J.C. (2012), “How does human resource management influence organizational outcomes? A meta-analytic investigation of mediating mechanisms ”,Academy of
+Management Journal , Vol. 55 No. 6, pp. 1264-1294.
+Kane Is Able (2014), “Labor management strategies in the warehouse ”, available at: www. logisticsmgmt.com/wp_content/kane_labormgmt_wp_091014.pdf (accessed May 26, 2018).
+Kirkman, B.L. and Rosen, B. (1999), “Beyond self-management: antecedents and consequences of team empowerment ”,Academy of Management Journal , Vol. 42 No. 1, pp. 58-74.
+Kuvaas, B. and Dysvik, A. (2009), “Perceived investment in employee development, intrinsic motivation and work performance ”,Human Resource Management Journal , Vol. 19 No. 3, pp. 217-236.
+Lepak, D.P., Liao, H., Chung, Y. and Harden, E.E. (2006), “A conceptual review of human resource management systems in strategic human resource management research ”, in Martocchio, J.J. (Ed.),
+Research in Personnel and Human Resource Management , Vol. 25, JAI Press, Greenwich, CT, pp. 217-271.
+Lewis, I. and Talalayevsky, A. (2000), “Third-party logistics: leveraging information technology ”,
+Journal of Business Logistics , Vol. 21 No. 2, pp. 173-185.
+Liao, H., Toya, K., Lepak, D.P. and Hong, Y. (2009), “Do they see eye to eye? Management and employee perspectives of high-performance work systems and influence processes on service quality ”,
+Journal of Applied Psychology , Vol. 94 No. 2, pp. 371-391.
+Lipman, V. (2013), “Why employee development is important, neglected and can cost you talent ”, available at: www.forbes.com/sites/victorlipman/2013/01/29/why-development- planning-is-important-neglected-and-can-cos t-you-young-talent/#3aa24d3b6f63 (accessed
+April 26, 2018).
+Loke, S.P., Downe, A.G., Sambasivan, M. and Khalid, K. (2012), “A structural approach to integrating total quality management and knowledge management with supply chain learning ”,Journal of
+Business Economic and Management , Vol. 13 No. 4, pp. 776-800.
+McDonald, D. and Smith, A. (1995), “A proven connection: performance management and business results ”,Compensation and Benefits Review , Vol. 27 No. 1, pp. 59-64.
+Mai, E.S., Chen, H. and Anselmi, K. (2012), “The role of returns management orientation, internal collaboration, and information support in reverse logistics ”,Journal of Transportation
+Management , Vol. 23 No. 1, pp. 45-59.
+Maloni, M.J., Campbell, S.M., Gligor, D.M., Scherrer, C.R. and Boyd, E.M. (2017), “Exploring the effects of workforce level on supply chain job satisfaction and industry commitment ”,International
+Journal of Logistics Management , Vol. 28 No. 4, pp. 1294-1318.
+Mentzer, J.T., Flint, D.J. and Hult, T.M. (2001), “Logistics service quality as a segment-customized process ”,Journal of Marketing , Vol. 65 No. 2, pp. 82-104.
+Min, S. and Mentzer, J.T. (2004), “Developing and measuring supply chain management concepts ”,
+Journal of Business Logistics , Vol. 25 No. 1, pp. 63-99.
+Mollenkopf, D.A. and Closs, D.J. (2005), “The hidden value in reverse logistics ”,Supply Chain
+Management Review , Vol. 9 No. 5, pp. 4-43.
+Mollenkopf, D.A., Frankel, R. and Russo, I. (2011), “Creating value through returns management: exploring the marketing-operations interface ”,Journal of Operations Management , Vol. 29 No. 5, pp. 391-403.
+Mollenkopf, D.A., Russo, I. and Frankel, R. (2007), “The returns management process in supply chain strategy ”,International Journal of Physical Distribution & Logistics Management , Vol. 37 No. 7, pp. 568-592.1035Returns management employee developmentMorgan, T.R., Richey, G.R. and Autry, C.W. (2016), “Developing a reverse logistics competency: the influence of collaboration and information technology ”,International Journal of Physical
+Distribution & Logistics Management , Vol. 46 No. 3, pp. 293-315.
+Nadler, L. and Nadler, Z. (1989), Developing Human Resources , Jossey-Bass, San Francisco, CA.
+Narayana, S.A., Elias, A.A. and Pati, R.K. (2014), “Reverse logistics in the pharmaceuticals industry: a systemic analysis ”,International Journal of Logistics Management , Vol. 25 No. 2, pp. 379-398.
+Ngai, E.W.T., Chau, D.C.K. and Chan, T.L.A. (2011), “Information technology, operational, and management competencies for supply chain agility: findings from case studies ”,Journal of
+Strategic Information Systems , Vol. 20 No. 3, pp. 232-249.
+Nunnally, J.C. (1978), Psychometric Theory , 2nd ed., McGraw-Hill, New York, NY.
+Olorunniwo, F.O. and Li, X. (2010), “Information sharing and collaboration practices in reverse logistics ”,Supply Chain Management: An International Journal , Vol. 15 No. 6, pp. 454-462.
+Olson, E.M., Slater, S.F. and Hult, G.T.M. (2005), “The performance implications of fit among business strategy, marketing organization structure, and strategic behavior ”,Journal of Marketing ,
+Vol. 69 No. 3, pp. 49-65.
+Orr, L.M., Bush, V.D. and Vorhier, D.W. (2011), “Leveraging firm-level marketing capabilities with marketing employee development ”,Journal of Business Research , Vol. 64 No. 10, pp. 1074-1081.
+Pal, R. (2017), “Value creation through reverse logistics in used clothing networks ”,International
+Journal of Logistics Management , Vol. 28 No. 3, pp. 864-906.
+Patterson, K.A., Grimm, C.M. and Corsi, T.M. (2003), “Adopting new technologies for supply chain management ”,Transportation Research Part E: Logistics and Transportation Review , Vol. 39
+No. 2, pp. 95-121.
+Phelan, S.E. and Lewin, P. (2000), “Arriving at a strategic theory of the firm ”,International Journal of
+Management Reviews , Vol. 2 No. 4, pp. 305-323.
+Podsakoff, P.M., MacKenzie, S.B., Lee, J.-Y. and Podsakoff, N.P. (2003), “Common method biases in behavioral research: a critical review of the literature and recommended remedies ”,Journal of
+Applied Psychology , Vol. 88 No. 5, pp. 879-903.
+Rao, S., Rabinovich, E. and Raju, D. (2014), “The role of physical distribution services as determinants of product returns in internet retailing ”,Journal of Operations Management , Vol. 32 No. 6, pp. 295-312.
+Ravi, V. and Shankar, R. (2005), “Analysis of interactions among the barriers to reverse logistics ”,
+Technological Forecasting and Social Change , Vol. 72 No. 8, pp. 1011-1029.
+Ravi, V. and Shankar, R. (2015), “Survey of reverse logistics practices in manufacturing industries: an
+Indian context ”,Benchmarking: An International Journal , Vol. 22 No. 5, pp. 874-899.
+Richey, G.R., Genchev, S.E. and Daugherty, P.J. (2005), “The role of resource commitment and innovation in reverse logistics performance ”,International Journal of Physical Distribution &
+Logistics Management , Vol. 35 No. 4, pp. 233-257.
+Richey, G.R., Chen, H., Genchev, S.E. and Daugherty, P.J. (2005), “Developing effective reverse logistics programs ”,Industrial Marketing Management , Vol. 34 No. 4, pp. 830-840.
+Rogers, D.S. and Tibben-Lembke, R.S. (1998), Going Backwards: Reverse Logistics Trends and Practices ,
+Reverse Logistics Executive Council, Pittsburgh, PA.
+Rogers, D.S., Lambert, D.M., Croxton, K.L. and García-Dastugue, S.J. (2002), “The returns management process ”,The International Journal of Logistics Management , Vol. 13 No. 2, pp. 1-18.
+Ross, A. (2002), “A multi-dimensional empirical exploration of technology investment, coordination, and firm performance ”,International Journal of Physical Distribution & Logistics Management ,
+Vol. 32 No. 7, pp. 591-609.
+Seibert, S.E., Silver, S.R. and Randolph, A.W. (2004), “Taking empowerment to the next level: a multiple-level model of empowerment, performance, and satisfaction ”,Academy of Management
+Journal , Vol. 47 No. 3, pp. 332-349.1036IJLM
+30,4Spekman, R.E., Spear, J. and Kamauff, J. (2002), “Supply chain competency: learning as a key component ”,Supply Chain Management: An International Journal , Vol. 7 No. 1, pp. 41-55.
+Spender, J.C. (1996), “Making knowledge the basis of a dynamic theory of the firm ”,Strategic
+Management Journal , Vol. 17, Special Issue, pp. 45-62.
+Spreitzer, G.M. (1995), “Psychological empowerment in the workplace: dimensions, measurement, and validation ”,Academy of Management Journal , Vol. 38 No. 5, pp. 1442-1465.
+Spreitzer, G.M. (1996), “Social structural characteristics of psychological empowerment ”,The Academy of Management Journal , Vol. 39 No. 2, pp. 483-504.
+Spreitzer, G.M., Kizilos, M.A. and Nason, S.W. (1997), “Dimensional analysis of the relationship between psychological empowerment and effec tiveness, satisfaction, and strain ”,Journal of
+Management , Vol. 23 No. 5, pp. 679-704.
+Stock, J.R. (2001), “The seven deadly sins of reverse logistics ”,Material Handling Management , Vol. 56
+No. 3, pp. 5-11.
+Stock, J.R. and Mulki, J.P. (2009), “Product returns processing: an examination of practices of manufacturers, wholesalers/distributors, and retailers ”,Journal of Business Logistics , Vol. 30
+No. 1, pp. 33-62.
+Stock, J.R., Speh, T. and Shear, H. (2006), “Managing product returns for competitive advantage ”,MIT
+Sloan Management Review , Vol. 48 No. 1, pp. 57-62.
+Sundarraj, R.P. and Talluri, S. (2003), “A multi-period optimization model for the procurement of component-based enterprise information technologies ”,European Journal of Operations
+Research , Vol. 146 No. 2, pp. 339-351.
+Swart, W., Hall, C. and Chen, H. (2012), “Human performance in supply chain management ”,Supply
+Chain Forum: An International Journal , Vol. 13 No. 2, pp. 10-20.
+Tan, A.W., Yu, W.S. and Arun, K. (2003), “Improving the performance of a computer company in supporting its reverse logistics operations in the Asia-Pacific region ”,International Journal of
+Physical Distribution & Logistics Management , Vol. 33 Nos 1/2, pp. 59-74.
+Tansky, J.W. and Cohen, D.J. (2001), “The relationship between organizational support, employee development, and organizational commitment: an empirical study ”,Human Resource
+Development Quarterly , Vol. 12 No. 3, pp. 285-300.
+Teece, D.J., Pisano, G. and Shuen, A. (1997), “Dynamic capabilities and strategic management ”,
+Strategic Management Journal , Vol. 18 No. 7, pp. 509-533.
+Terry, L. (2014), “Managing retail returns: the good, the bad, and the ugly ”,Inbound Logistics , Vol. 34
+No. 2, pp. 49-52, 54.
+Thomas, R.W., Defee, C., Randall, W.S. and Williams, B. (2011), “Assessing the managerial relevance of contemporary supply chain management research ”,International Journal of Physical
+Distribution & Logistics Management , Vol. 41 No. 7, pp. 655-667.
+Tippins, M.J. and Sohi, R.S. (2003), “IT competency and firm performance: is organizational learning a missing link? ”,Strategic Management Journal , Vol. 24 No. 8, pp. 745-761.
+Torraco, R.J. and Swanson, R.A. (1995), “The strategic roles of human resource development ”,
+HR: Human Resource Planning , Vol. 8 No. 4, pp. 10-21.
+UPS (2015), “UPS Ready for National Returns Day ”, available at: www.supplychain247.com/article/ ups_ready_for_national_returns_day (accessed January 6, 2018).
+Wang, J.J., Chen, H., Rogers, D.S., Ellram, L.M. and Grawe, S.J. (2017), “A bibliometric analysis of reverse logistics research (1992-2015) and opportunities for future research ”,International
+Journal of Physical Distribution & Logistics Management , Vol. 47 No. 8, pp. 666-687.
+Weerawardena, J. and Mavondo, F.T. (2011), “Capabilities, innovation and competitive advantage ”,
+Industrial Marketing Management , Vol. 40 No. 8, pp. 1220-1223.
+Whipple, J.M., Frankel, R. and Daugherty, P.J. (2002), “Information support for alliances: performance implications ”,Journal of Business Logistics , Vol. 23 No. 2, pp. 67-82.1037Returns management employee developmentYao, Y., Dong, Y. and Dresner, J. (2012), “Supply chain learning and spillovers in vendor management inventory ”,Decision Sciences , Vol. 43 No. 6, pp. 979-1001.
+Yu, W., Jacobs, M.A., Salisbury, W.D. and Enns, H. (2013), “The effects of supply chain integration on customer satisfaction and financial performance: an organizational learning perspective ”,
+International Journal of Production Economics , Vol. 146 No. 1, pp. 346-358.
+Zhou, H., Benton, W.C., Schilling, D.A. and Milligan, G.W. (2011), “Supply chain integration and the
+SCOR model ”,Journal of Business Logistics , Vol. 32 No. 4, pp. 332-344.
+Zollo, M. and Winter, S.G. (2002), “Deliberate learning and the evolution of dynamic capabilities ”,
+Organization Science , Vol. 13 No. 3, pp. 339-351.
+Further reading
+Marchese, K. and Dollar, B. (2015), Supply Chain Talent of the Future , Deloitte Consulting LLP.
+Corresponding author
+Haozhe Chen can be contacted at: hzchen@iastate.edu
+For instructions on how to order reprints of this article, please visit our website: www.emeraldgrouppublishing.com/licensing/reprints.htm
+Or contact us for further details: permissions@emeraldinsight.com1038IJLM
+30,4
+View publication stats

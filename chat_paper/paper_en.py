@@ -32,7 +32,6 @@ def remove_unnecessary_newlines(text):
     pattern = re.compile(r'\n(?=[a-z,\.])')
     text = pattern.sub(' ', text)
     # 替换这些换行符为空字符串
-    # text = re.sub(r'\s+', ' ', text)
     return text
 
 def translate_document(document):

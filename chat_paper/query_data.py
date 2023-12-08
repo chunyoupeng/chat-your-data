@@ -107,8 +107,7 @@ abstract_template = """你现在是一个论文写手, 你的任务是根据用�
 
 trans_template = """
 [INSTRUCT]你现在是一个翻译助手，你的任务是把下面的论文内容完整的翻译成中文.只输出翻译后的文本。[/INSTRUCT]
-输入: {context}
-输出: 
+{context}
 """
 
 trans_en_template = """
@@ -178,7 +177,7 @@ def get_llm(name, temperature=0.1):
         model="gpt-3.5-turbo",
         openai_api_base="http://localhost:8001/v1",
         openai_api_key="EMPTY",
-        max_tokens=8000,
+        max_tokens=5999,
         temperature=temperature,
         # streaming=True,
         # callbacks=[StreamingStdOutCallbackHandler()]
@@ -186,7 +185,7 @@ def get_llm(name, temperature=0.1):
 
     openai_llm = ChatOpenAI(
         openai_api_base="https://aiapi.xing-yun.cn/v1",
-        openai_api_key="sk-3e5wTBAl2iFDvQvW9b5693C90a97425eBf3b4bEa558eC66a",
+        openai_api_key="sk-RSAL5bknVmekLf005e714770B4Af431d821397F97d865cEb",
         temperature=temperature,
         model_name="gpt-4",
         # streaming=True,  # ! important
@@ -195,7 +194,7 @@ def get_llm(name, temperature=0.1):
 
     openai_llm_3 = ChatOpenAI(
         openai_api_base="https://aiapi.xing-yun.cn/v1",
-        openai_api_key="sk-3e5wTBAl2iFDvQvW9b5693C90a97425eBf3b4bEa558eC66a",
+        openai_api_key="sk-RSAL5bknVmekLf005e714770B4Af431d821397F97d865cEb",
         temperature=temperature,
         model_name="gpt-3.5-turbo",
         # streaming=True,  # ! important
