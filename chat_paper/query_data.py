@@ -95,7 +95,8 @@ thanks_template = """你的任务是结合文本内容和给出的论文致谢�
 """
 
 reference_template = """你现在是一个写作助手, 你的任务是根据用户提供的Reference中的引用写一个关于{title}的{domain}文献综述段落，
-作为论文中文献综述的一部分.要求要详尽,说明背景,并对每一篇文章进行分析.必要时扩展.在举出作者的时候都要以作者名(时间)的形式.例如，某作者（2009）在某研究文章中提出了。。
+作为论文中文献综述的一部分.要求要详尽,说明背景,并对每一篇文章进行分析.必要时扩展.在举出作者的时候都要以作者名(时间)的形式.例如，某作者（2009）在某提出了。。[2].
+Keller（2010）提出了。。。[9].引用的哪一篇文献，比如[2]需要在句子的结尾，记住，是句末标出来。
 除了英文名字外,其余用简体中文输出.
 输出：
 """
@@ -108,8 +109,9 @@ abstract_template = """你现在是一个论文写手, 你的任务是根据用�
 """
 
 trans_template = """
-[INSTRUCT]你现在是一个翻译助手，你的任务是把下面的论文内容完整的翻译成中文.只输出翻译后的文本。[/INSTRUCT]
+[INSTRUCT]你现在是一个翻译助手，你的任务是把下面的论文内容完整的翻译成简体中文.只输出翻译后的文本。[/INSTRUCT]
 {context}
+输出:
 """
 
 trans_en_template = """
@@ -193,20 +195,20 @@ def get_llm(name, temperature=0.1):
 
     openai_llm = ChatOpenAI(
         openai_api_base="https://aiapi.xing-yun.cn/v1",
-        openai_api_key="sk-RSAL5bknVmekLf005e714770B4Af431d821397F97d865cEb",
+        openai_api_key="sk-Ny6WUAgn9PQCOMqQ0d9a0174Ba9e45348862D2746aF44923",
         temperature=temperature,
         model_name="gpt-4",
-        # streaming=True,  # ! important
-        # callbacks=[StreamingStdOutCallbackHandler()]  # ! important
+        streaming=True,  # ! important
+        callbacks=[StreamingStdOutCallbackHandler()]  # ! important
     )
 
     openai_llm_3 = ChatOpenAI(
         openai_api_base="https://aiapi.xing-yun.cn/v1",
-        openai_api_key="sk-RSAL5bknVmekLf005e714770B4Af431d821397F97d865cEb",
+        openai_api_key="sk-Ny6WUAgn9PQCOMqQ0d9a0174Ba9e45348862D2746aF44923",
         temperature=temperature,
         model_name="gpt-3.5-turbo",
-        # streaming=True,  # ! important
-        # callbacks=[StreamingStdOutCallbackHandler()]  # ! important
+        streaming=True,  # ! important
+        callbacks=[StreamingStdOutCallbackHandler()]  # ! important
     )
 
     yi = Ollama(
@@ -214,11 +216,18 @@ def get_llm(name, temperature=0.1):
         # callback_manager=CallbackManager([StreamingStdOutCallbackHandler()]),
         temperature=temperature,
     )
-    openchat = Ollama(
-        model="openchat:7b-v3.5-q6_K",
-        temperature=temperature,
-    )
+    # openchat = Ollama(
+    #     model="openchat:7b-v3.5-q6_K",
+    #     temperature=temperature,
+    # )
 
+    openchat = ChatOpenAI(
+        openai_api_base="https://localhost:18888/v1",
+        openai_api_key="EMPTY",
+        model="gpt-3.5-turbo",
+        temperature=temperature,
+        max_tokens=3999
+    )
     match name:
         case 'local': return local_llm
         case 'openai': return openai_llm

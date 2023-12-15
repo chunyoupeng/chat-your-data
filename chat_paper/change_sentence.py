@@ -37,7 +37,7 @@ import re
 
 def remove_numbers_from_headings(input_text):
     # Match one or more '#' characters followed by spaces and the number pattern
-    pattern = re.compile(r'(#+ )\d+(\.\d+)* ')
+    pattern = re.compile(r'(#+ )\d+(\.\d+)*')
 
     # Define a replacement function that retains the '#' characters and the following space
     def repl(matchobj):

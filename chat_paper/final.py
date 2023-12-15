@@ -127,7 +127,7 @@ def extend_content(question, content):
     write_prompt = PromptTemplate.from_template(temp)
     write_chain = write_prompt | llm | StrOutputParser()
     rt = write_chain.invoke({"text":content, "question": question})
-    rt = rt.replace("首先，", "").replace("其次，", "").replace("最后，", "").replace("再者，","").replace("再次，","").replace("综上所述", conclusion).replace("我们", "本研究").replace("总的来说", conclusion)
+    rt = rt.replace("首先，", "").replace("其次，", "").replace("最后，", "").replace("此外，","").replace("再者，","").replace("再次，","").replace("综上所述", conclusion).replace("我们", "本研究").replace("总的来说，", conclusion).replace("研究者们","").replace("研究人员","")
     pattern = r"（[^）]*）"
     rt = re.sub(pattern, "", rt)
 
