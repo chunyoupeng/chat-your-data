@@ -12,7 +12,7 @@ import sys
 import json
 
 question_model = "openai_3"
-main_llm = 'local'
+main_llm = 'stream'
 
 def get_paper(root_path):
     OUT_JSON_PATH = f"data/out/{root_path}.json"
