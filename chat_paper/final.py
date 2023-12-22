@@ -5,6 +5,7 @@ import time
 import random
 from turtle import mainloop
 from change_sentence import *
+from constant import MAIN_LLM
 from query_data import *
 from langchain.prompts import PromptTemplate
 from langchain.chat_models import ChatOpenAI
@@ -19,7 +20,7 @@ import io
 root_path = sys.argv[1]
 set_verbose(True)
 # 写作
-main_llm = 'stream'
+main_llm = MAIN_LLM
 
 # convert ppt file  to text file
 def get_random_graph(picture_name, content):

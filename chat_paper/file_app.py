@@ -1,4 +1,5 @@
 import pickle
+from constant import MAIN_LLM
 from query_data import  init, get_chain, load_db
 from rich.console import Console
 from paper import Paper
@@ -12,7 +13,7 @@ import sys
 import json
 
 question_model = "openai_3"
-main_llm = 'stream'
+main_llm = MAIN_LLM
 
 def get_paper(root_path):
     OUT_JSON_PATH = f"data/out/{root_path}.json"
