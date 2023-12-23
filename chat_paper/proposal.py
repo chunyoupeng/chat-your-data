@@ -28,6 +28,11 @@ class Proposal:
     
 def main():
     catalog_path = sys.argv[1]
-    question_lst = sys.argv[2]
-    
-    proposal = Proposal()
+    question_path = sys.argv[2]
+    with open(question_path, "r") as f:
+        question_lst = f.read().split("\n")
+    proposal = Proposal(catalog_path, question_lst)
+    proposal()
+
+if __name__ == '__main__':
+    main()
