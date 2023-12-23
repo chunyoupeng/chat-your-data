@@ -197,7 +197,7 @@ def get_llm(name, temperature=0.1):
         openai_api_base="https://aiapi.xing-yun.cn/v1",
         openai_api_key="sk-Ny6WUAgn9PQCOMqQ0d9a0174Ba9e45348862D2746aF44923",
         temperature=temperature,
-        model_name="gpt-4",
+        model_name="gpt-4-1106-preview",
         streaming=True,  # ! important
         callbacks=[StreamingStdOutCallbackHandler()]  # ! important
     )

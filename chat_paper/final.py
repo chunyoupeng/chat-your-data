@@ -21,7 +21,7 @@ root_path = sys.argv[1]
 set_verbose(True)
 # 写作
 main_llm = MAIN_LLM
-
+question_generator_llm = QUESTION_GENERATOR_LLM
 # convert ppt file  to text file
 def get_random_graph(picture_name, content):
     def two_in_ten_chance():
@@ -141,7 +141,7 @@ def draft_to_revise(final_file, value, db):
     final_file: 写入的文件
     db: jsondb
     """
-    sentence_change_chain = get_chain('sentence_change', llm_name='openai')
+    sentence_change_chain = get_chain('sentence_change', llm_name=question_generator_llm)
     question = sentence_change_chain.invoke({"question": value})
     print(f"The quesiont is {question}")
     draft_text = write_main(question, db)

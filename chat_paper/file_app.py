@@ -1,5 +1,5 @@
 import pickle
-from constant import MAIN_LLM
+from constant import MAIN_LLM, QUESTION_GENERATOR_LLM
 from query_data import  init, get_chain, load_db
 from rich.console import Console
 from paper import Paper
@@ -12,7 +12,7 @@ import os
 import sys
 import json
 
-question_model = "openai_3"
+question_model = QUESTION_GENERATOR_LLM
 main_llm = MAIN_LLM
 
 def get_paper(root_path):
