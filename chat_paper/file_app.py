@@ -35,7 +35,7 @@ def main(root_path: str) -> None:
     OUT_JSON_OBJECT = f"data/objects/{root_path}.pkl"
     retriver = load_db(root_path).as_retriever(search_type="mmr", search_kwargs={'k': 8})
     paper = get_paper(root_path)
-    if paper.get_json_complete():
+    if paper.json_complete:
         print(f"{OUT_JSON_PATH} already exists, using the old one")
         return
     print("[bold]Chat with your docs!")
@@ -82,13 +82,14 @@ def main(root_path: str) -> None:
                         json_str = json.dumps(data, ensure_ascii=False)
                         out_file.write(json_str)
   
-                    c.print("[bold red]---------------")
+                    print("[bold red]---------------")
   
             out_file.write("]")
   
         out_file.close()
-        paper.set_json_complete = True
+        paper.json_complete = True
     except Exception as e:
+        paper.json_complete = False
         print(e)
     finally:
         with open(OUT_JSON_OBJECT, "wb") as f:

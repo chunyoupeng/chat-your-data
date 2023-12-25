@@ -111,10 +111,19 @@ def write_main(question, db):
     return rt
 
 
+def handle_final_text(text):
+    # Remove the title
+    pattern = re.compile(r'^标题.*\n')
+    text = re.sub(pattern, '', text, flags=re.MULTILINE)
+    # Replace all the bad words
+    text = text.replace('我们', '本文')
+    return text
+
 def revise_content(title, input):
     print("Begin revising content")
     chain = get_chain('revise', llm_name=main_llm) 
     rt = chain.invoke({"title": title, "input": input})
+    rt = handle_final_text(rt)
     return rt
 
 def extend_content(question, content):
