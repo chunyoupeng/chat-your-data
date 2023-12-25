@@ -20,10 +20,12 @@ class Proposal:
         self.write_file(chain)
 
     def write_file(self, chain):
+        with open(self.catalog_path, "r") as f:
+            catalog_content  = f.read()
         with open(self.proposal_path, "w", encoding="utf-8") as f:
             for q in self.question_lst:
                 print(q)
-                rt = chain.invoke({"catalog": self.catalog_path, "question": q})
+                rt = chain.invoke({"catalog": catalog_content, "question": q})
                 f.write(f"{q}\n{rt}\n\n")
     
 def main():

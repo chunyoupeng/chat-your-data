@@ -97,20 +97,20 @@ thanks_template = """你的任务是结合文本内容和给出的论文致谢�
 reference_template = """你现在是一个写作助手, 你的任务是根据用户提供的Reference中的引用写一个关于{title}的{domain}文献综述段落，
 作为论文中文献综述的一部分.要求要详尽,说明背景,并对每一篇文章进行分析.必要时扩展.在举出作者的时候都要以作者名(时间)的形式.例如，某作者（2009）在某提出了。。[2].
 Keller（2010）提出了。。。[9].引用的哪一篇文献，比如[2]需要在句子的结尾，记住，是句末标出来。
-除了英文名字外,其余用简体中文输出.
+除了英文名字外,其余用简体中文输出.如果文章之前有一定的关系，需要你把他们整理在一段说明。体现文章的逻辑关系。
 输出：
 """
 
-abstract_template = """你现在是一个论文写手, 你的任务是根据用户提供的论文的一部份, 写出关于{title}的论文摘要.包括摘要,关键词
-相关论文:{content}
-输出详细:
+abstract_template = """相关论文:{content}
+你现在是一个论文写手, 你的任务是根据上面用户提供的论文的一部份, 写出关于{title}的论文摘要.包括摘要,关键词,500字
+输出格式:
 摘要:
 关键词:
 """
 
 trans_template = """
-[INSTRUCT]你现在是一个翻译助手，你的任务是把下面的论文内容完整的翻译成简体中文.只输出翻译后的文本。[/INSTRUCT]
 {context}
+[INSTRUCT]你现在是一个翻译助手，你的任务是把上面的论文内容完整的翻译成简体中文.只输出翻译后的文本。[/INSTRUCT]
 输出:
 """
 
@@ -187,7 +187,7 @@ def get_llm(name, temperature=0.1):
         model="gpt-3.5-turbo",
         openai_api_base="http://localhost:8001/v1",
         openai_api_key="EMPTY",
-        # max_tokens=6999,
+        max_tokens=6999,
         temperature=temperature,
         # streaming=True,
         # callbacks=[StreamingStdOutCallbackHandler()]

@@ -5,7 +5,7 @@ import time
 import random
 from turtle import mainloop
 from change_sentence import *
-from constant import MAIN_LLM
+from constant import *
 from query_data import *
 from langchain.prompts import PromptTemplate
 from langchain.chat_models import ChatOpenAI
@@ -22,20 +22,21 @@ set_verbose(True)
 # 写作
 main_llm = MAIN_LLM
 question_generator_llm = QUESTION_GENERATOR_LLM
+openai_llm = OPENAI_LLM
 # convert ppt file  to text file
 def get_random_graph(picture_name, content):
     def two_in_ten_chance():
         return random.random() < 0.2
     flag = two_in_ten_chance()
     if flag:
-        chain = get_chain('graph', llm_name=main_llm)
+        chain = get_chain('graph', llm_name=openai_llm)
         chain.invoke({"input": content, "picture_name": picture_name})
     return flag
     
 def get_thanks(content):
     thanks = """论文致谢:
     这篇论文的完成得到了许多人的帮助与支持。我首先要向我的指导老师表示最深的感激，感谢您的无私奉献和精心指导。同时，我也要感谢那些与我并肩奋斗的同学，你们的友情与支持是我前进的力量。最重要的，我要感谢我的父母，你们是我永远的坚强后盾。每当想到大学生活，我都会感慨万千。"""
-    chain = get_chain('thanks', main_llm)
+    chain = get_chain('thanks', openai_llm)
     rt =  chain.invoke({"text": content, "thanks": thanks})
     rt = rt.replace("首先，", "").replace("其次，", "").replace("最后，", "").replace("再者，","").replace("再次，","")
     return rt 
@@ -46,17 +47,17 @@ def get_summary(content, title):
     return rt
     
 def get_abstract(content, title):
-    chain = get_chain('abstract', llm_name=main_llm)
+    chain = get_chain('abstract', llm_name=openai_llm)
     rt =  chain.invoke({"content": content, "title": title})
     return rt
 
 def get_domestic_review(title, zh_refs):
-    chain = get_chain('ref', 'openai_3')
+    chain = get_chain('ref', openai_llm)
     out = chain.invoke({"reference": zh_refs, "domain": "国内", "title": title})
     return out
     
 def get_overseas_review(title, en_refs):
-    chain = get_chain('ref', 'openai_3')
+    chain = get_chain('ref', openai_llm)
     out = chain.invoke({"reference": en_refs, "domain": "国外", "title": title})
     return out
 
@@ -129,7 +130,7 @@ def extend_content(question, content):
     write_prompt = PromptTemplate.from_template(temp)
     write_chain = write_prompt | llm | StrOutputParser()
     rt = write_chain.invoke({"text":content, "question": question})
-    rt = rt.replace("首先，", "").replace("其次，", "").replace("最后，", "").replace("此外，","").replace("再者，","").replace("再次，","").replace("综上所述，", '').replace("我们", "本研究").replace("总的来说，", '').replace("研究者们","").replace("研究人员","")
+    rt = rt.replace("首先，", "").replace("其次，", "").replace("最后，", "").replace("此外，","").replace("再者，","").replace("再次，","").replace("综上所述，", '').replace("我们", "本文").replace("总的来说，", '').replace("研究者们","").replace("研究人员","").replace("研究表明，", "")
     pattern = r"（[^）]*）"
     rt = re.sub(pattern, "", rt)
 
@@ -160,7 +161,7 @@ def write_refs(title, final_file_path, zh_refs, en_refs):
         text = "\n## 致谢\n\n" + thanks + "\n"
         f.write(text)
         abstract_part = get_abstract(content[0:2000], title)
-        en_abstract_part = get_chain('trans_en', llm_name=main_llm).invoke({"context": abstract_part})
+        en_abstract_part = get_chain('trans_en', llm_name=openai_llm).invoke({"context": abstract_part})
         f.write("\n## 摘要\n\n"+abstract_part + "\n\n")
         f.write("\n## Abstract\n\n"+en_abstract_part + "\n\n")
 
@@ -185,15 +186,15 @@ def main():
                 print(f"key is {key}")
                 print("这是国内文献")
                 domestic_review = get_domestic_review(title, zh_refs)
-                revised_domestic_review = revise_content(value, domestic_review)
-                final_file.write(revised_domestic_review + "\n\n")
+                # revised_domestic_review = revise_content(value, domestic_review)
+                final_file.write(domestic_review + "\n\n")
                 continue
             if '国外文献' in key or '国外研究' in key:
                 print(f"key is {key}")
                 print("这是国外文献")
                 overseas_review = get_overseas_review(title, en_refs)
-                revised_overseas_review = revise_content(value, overseas_review)
-                final_file.write(revised_overseas_review + "\n\n")
+                # revised_overseas_review = revise_content(value, overseas_review)
+                final_file.write(overseas_review + "\n\n")
                 continue
             if '总结' in key:
                 print(f"key is {key}")
