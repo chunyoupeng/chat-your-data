@@ -26,7 +26,6 @@ def get_paper(root_path):
     return paper
 
 def main(root_path: str) -> None:
-    c = Console()
     init()
   
     OUT_JSON_PATH = f"data/out/{root_path}.json"
@@ -39,8 +38,8 @@ def main(root_path: str) -> None:
     if paper.get_json_complete():
         print(f"{OUT_JSON_PATH} already exists, using the old one")
         return
-    c.print("[bold]Chat with your docs!")
-    c.print("[bold red]---------------")
+    print("[bold]Chat with your docs!")
+    print("[bold red]---------------")
   
     out_file = open(OUT_JSON_PATH, "w")
     out_file.write("[\n")
@@ -55,20 +54,20 @@ def main(root_path: str) -> None:
             print(questions)
   
             for title, statement in questions.items():
-                c.print(f"question is {statement}")
+                print(f"question is {statement}")
                 if statement:
                     question = get_chain('sentence_change', llm_name=question_model).invoke({"question": statement})
                     new_questions = get_chain("qg", llm_name=question_model).invoke({"question": question}).split('\n')
                     new_questions = [question] + new_questions
-                    c.print(f"==============================\nNew questions is {new_questions}")
+                    print(f"==============================\nNew questions is {new_questions}")
   
                     for q in new_questions:
-                        c.print(q)
+                        print(q)
                         docs = retriver.get_relevant_documents(query=q)
                         content = "\n".join([doc.page_content for doc in docs])
                         doc_chain = get_chain("doc", llm_name=main_llm)
                         result = doc_chain.invoke({"context": content, "question": question})
-                        c.print("[green]Answer: [/green]" + result)
+                        print("[green]Answer: [/green]" + result)
   
                         if FIRST:
                             FIRST = False
