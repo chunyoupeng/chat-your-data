@@ -29,9 +29,9 @@ def main(root_path: str) -> None:
     init()
   
     OUT_JSON_PATH = f"data/out/{root_path}.json"
-    if os.path.exists(OUT_JSON_PATH):
-        print(f"{OUT_JSON_PATH} already exists, using the old one")
-        return
+    # if os.path.exists(OUT_JSON_PATH):
+    #     print(f"{OUT_JSON_PATH} already exists, using the old one")
+    #     return
     OUT_JSON_OBJECT = f"data/objects/{root_path}.pkl"
     retriver = load_db(root_path).as_retriever(search_type="mmr", search_kwargs={'k': 8})
     paper = get_paper(root_path)

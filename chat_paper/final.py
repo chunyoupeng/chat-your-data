@@ -54,11 +54,13 @@ def get_abstract(content, title):
 def get_domestic_review(title, zh_refs):
     chain = get_chain('ref', openai_llm)
     out = chain.invoke({"reference": zh_refs, "domain": "国内", "title": title})
+    out = handle_final_text(out)
     return out
     
 def get_overseas_review(title, en_refs):
     chain = get_chain('ref', openai_llm)
     out = chain.invoke({"reference": en_refs, "domain": "国外", "title": title})
+    out = handle_final_text(out)
     return out
 
 def to_docx(filename):
@@ -113,10 +115,12 @@ def write_main(question, db):
 
 def handle_final_text(text):
     # Remove the title
-    pattern = re.compile(r'^标题.*\n')
-    text = re.sub(pattern, '', text, flags=re.MULTILINE)
+    pattern = re.compile(r'^标题.*\n', flags=re.MULTILINE)
+    text = re.sub(pattern, '', text)
     # Replace all the bad words
-    text = text.replace('我们', '本文')
+    replace_lst = ["研究发现，","研究显示，","一些研究发现，","是的，","首先，","其次，","接下来，", "最后，"]
+    for r in replace_lst:
+        text = text.replace(r, '')
     return text
 
 def revise_content(title, input):
